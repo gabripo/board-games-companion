@@ -112,5 +112,65 @@
     "showOnBoard": "Show on board",
     "watch": "Watch",
     "related": "Related rules"
+  },
+  "actor": {
+    "active-player": "Active player",
+    "all-players": "Everyone",
+    "each-player": "Each player",
+    "team": "Team",
+    "leader": "Leader",
+    "game": "Game"
+  },
+  "flow": {
+    "playerRing": "{{count}} players, {{order}}",
+    "order": {
+      "clockwise": "clockwise",
+      "counterclockwise": "counter-clockwise",
+      "track": "by turn-order track",
+      "other": "special order"
+    },
+    "eachPlayerTurn": "Each player takes a turn, {{order}}",
+    "everyoneAtOnce": "Everyone at once",
+    "until": "until {{condition}}",
+    "chooseN_one": "Choose {{count}} of {{total}}",
+    "chooseN_other": "Choose {{count}} of {{total}}",
+    "chooseRange": "Choose {{min}}–{{max}} of {{total}}",
+    "rollDice_one": "Roll {{count}} die",
+    "rollDice_other": "Roll {{count}} dice",
+    "when": "When {{condition}}"
+  },
+  "setup": {
+    "title": "Setup",
+    "general": "General",
+    "progress": "{{done}} of {{total}} setup steps done",
+    "showOther_one": "Show {{count}} step for other sessions",
+    "showOther_other": "Show {{count}} steps for other sessions",
+    "hideOther": "Only this session",
+    "reset": "Reset checklist",
+    "where": "Where?"
+  },
+  "learn": {
+    "goal": "Goal",
+    "howToWin": "How to win",
+    "walkthroughs": "Step-by-step tutorials",
+    "steps_one": "{{count}} step",
+    "steps_other": "{{count}} steps",
+    "glossary": "Icons & terms",
+    "gameLoop": "How a game flows",
+    "noFlow": "Nothing to show for this session."
+  },
+  "rules": {
+    "title": "Rules",
+    "myths": "Common misconceptions",
+    "edgeCases": "Edge cases",
+    "search": "Search rules",
+    "searchPlaceholder": "Search rules, terms, topics…",
+    "allTopics": "All",
+    "count_one": "{{count}} rule",
+    "count_other": "{{count}} rules",
+    "noResults": "No rules match your search.",
+    "onlyThisSession": "Only rules for this session",
+    "showOther_one": "Show {{count}} rule for other sessions",
+    "showOther_other": "Show {{count}} rules for other sessions"
   }
 }

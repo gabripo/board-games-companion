@@ -112,5 +112,65 @@
     "showOnBoard": "Mostra sulla plancia",
     "watch": "Guarda",
     "related": "Regole correlate"
+  },
+  "actor": {
+    "active-player": "Giocatore di turno",
+    "all-players": "Tutti",
+    "each-player": "Ogni giocatore",
+    "team": "Squadra",
+    "leader": "Primo di mano",
+    "game": "Gioco"
+  },
+  "flow": {
+    "playerRing": "{{count}} giocatori, {{order}}",
+    "order": {
+      "clockwise": "in senso orario",
+      "counterclockwise": "in senso antiorario",
+      "track": "secondo il tracciato di turno",
+      "other": "ordine speciale"
+    },
+    "eachPlayerTurn": "Ogni giocatore fa il suo turno, {{order}}",
+    "everyoneAtOnce": "Tutti insieme",
+    "until": "finché {{condition}}",
+    "chooseN_one": "Scegli {{count}} tra {{total}}",
+    "chooseN_other": "Scegli {{count}} tra {{total}}",
+    "chooseRange": "Scegli da {{min}} a {{max}} tra {{total}}",
+    "rollDice_one": "Tira {{count}} dado",
+    "rollDice_other": "Tira {{count}} dadi",
+    "when": "Quando {{condition}}"
+  },
+  "setup": {
+    "title": "Preparazione",
+    "general": "Generale",
+    "progress": "{{done}} di {{total}} passi di preparazione completati",
+    "showOther_one": "Mostra {{count}} passo per altre partite",
+    "showOther_other": "Mostra {{count}} passi per altre partite",
+    "hideOther": "Solo questa partita",
+    "reset": "Azzera la lista",
+    "where": "Dove?"
+  },
+  "learn": {
+    "goal": "Obiettivo",
+    "howToWin": "Come si vince",
+    "walkthroughs": "Tutorial passo passo",
+    "steps_one": "{{count}} passo",
+    "steps_other": "{{count}} passi",
+    "glossary": "Icone e termini",
+    "gameLoop": "Come si svolge la partita",
+    "noFlow": "Niente da mostrare per questa partita."
+  },
+  "rules": {
+    "title": "Regole",
+    "myths": "Errori comuni",
+    "edgeCases": "Casi particolari",
+    "search": "Cerca nelle regole",
+    "searchPlaceholder": "Cerca regole, termini, argomenti…",
+    "allTopics": "Tutte",
+    "count_one": "{{count}} regola",
+    "count_other": "{{count}} regole",
+    "noResults": "Nessuna regola corrisponde alla ricerca.",
+    "onlyThisSession": "Solo le regole di questa partita",
+    "showOther_one": "Mostra {{count}} regola per altre partite",
+    "showOther_other": "Mostra {{count}} regole per altre partite"
   }
 }
