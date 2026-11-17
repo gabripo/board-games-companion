@@ -251,7 +251,7 @@ export const sequentialGame: GameGuide = {
     {
       id: "table",
       title: L("Table", "Tavolo"),
-      image: { src: "images/table.webp", width: 1600, height: 1200, alt: L("Table", "Tavolo") },
+      image: { src: "images/table.svg", width: 1600, height: 1200, alt: L("Table", "Tavolo") },
       hotspots: [
         {
           id: "map",
@@ -593,6 +593,7 @@ export const diceGame: GameGuide = {
           effect: L("Gain fish equal to the lower die.", "Ottieni pesci pari al dado più basso."),
           blocking: true,
           ruleRefs: ["dock-blocking"],
+          sceneRef: { sceneId: "harbor", hotspotId: "dock-fish" },
         },
         {
           id: "trade",
@@ -600,12 +601,79 @@ export const diceGame: GameGuide = {
           cost: L("2 fish", "2 pesci"),
           effect: L("Gain 1 coin.", "Ottieni 1 moneta."),
           conditions: { playerCount: [3, 4] },
+          sceneRef: { sceneId: "harbor", hotspotId: "dock-trade" },
         },
       ],
     },
   ],
-  scenes: [],
-  walkthroughs: [],
+  scenes: [
+    {
+      id: "harbor",
+      title: L("Harbor board", "Plancia del porto"),
+      image: { src: "images/harbor.svg", width: 1600, height: 1000, alt: L("Harbor", "Porto") },
+      hotspots: [
+        {
+          id: "dice-tray",
+          label: L("Dice tray", "Vassoio dei dadi"),
+          description: L("Roll here.", "Tira qui."),
+          shape: { kind: "rect", rect: { x: 0.05, y: 0.6, w: 0.3, h: 0.3 } },
+          ruleRefs: ["bust"],
+        },
+        {
+          id: "dock-fish",
+          label: L("Fishing dock", "Molo di pesca"),
+          shape: { kind: "rect", rect: { x: 0.45, y: 0.1, w: 0.2, h: 0.35 } },
+          ruleRefs: ["dock-blocking"],
+          clip: { videoId: VIDEO_ID, start: 210, end: 245, lang: "en" },
+        },
+        {
+          id: "dock-trade",
+          label: L("Trading dock", "Molo commerciale"),
+          shape: { kind: "rect", rect: { x: 0.72, y: 0.1, w: 0.2, h: 0.35 } },
+        },
+      ],
+      annotations: [
+        { id: "worker-here", kind: "marker", at: { x: 0.55, y: 0.27 }, tone: "place" },
+        {
+          id: "to-dock",
+          kind: "arrow",
+          from: { x: 0.2, y: 0.6 },
+          to: { x: 0.5, y: 0.4 },
+          label: L("Then place a worker", "Poi piazza un lavoratore"),
+        },
+        { id: "tray-glow", kind: "highlight", rect: { x: 0.05, y: 0.6, w: 0.3, h: 0.3 } },
+      ],
+    },
+  ],
+  walkthroughs: [
+    {
+      id: "first-roll",
+      title: L("Your first roll", "Il tuo primo tiro"),
+      level: "newbie",
+      steps: [
+        {
+          id: "roll",
+          text: L("Roll both dice in the tray.", "Tira entrambi i dadi nel vassoio."),
+          flowNodeRef: "roll",
+          sceneId: "harbor",
+          focus: { x: 0, y: 0.5, w: 0.45, h: 0.5 },
+          annotations: ["tray-glow"],
+        },
+        {
+          id: "place",
+          text: L("No 7? Place a worker on a dock.", "Niente 7? Piazza un lavoratore su un molo."),
+          flowNodeRef: "place-worker",
+          sceneId: "harbor",
+          annotations: ["to-dock", "worker-here"],
+          check: {
+            question: L("Which dock gives you fish?", "Quale molo ti dà pesci?"),
+            answerHotspotId: "dock-fish",
+            explanation: L("The fishing dock, on the left.", "Il molo di pesca, a sinistra."),
+          },
+        },
+      ],
+    },
+  ],
   guides: GUIDES("earn the most coins", "guadagnare più monete"),
 };
 

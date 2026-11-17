@@ -86,7 +86,7 @@ describe("loadGameDir()", () => {
 
   it("reports missing scene images", async () => {
     const dir = await writeGame(tmp);
-    await rm(join(dir, "images/table.webp"));
+    await rm(join(dir, "images/table.svg"));
     const r = await loadGameDir(dir);
     expect(r.issues).toContainEqual(
       expect.objectContaining({ path: "scenes[0].image.src", severity: "error" }),
@@ -118,9 +118,9 @@ describe("bundleAll()", () => {
     );
     expect(writtenIndex.games.find((g) => g.id === "tile-trek")).toMatchObject({
       bundle: "tile-trek/guide.json",
-      cover: "tile-trek/images/table.webp",
+      cover: "tile-trek/images/table.svg",
     });
-    expect(existsSync(join(out, "tile-trek/images/table.webp"))).toBe(true);
+    expect(existsSync(join(out, "tile-trek/images/table.svg"))).toBe(true);
 
     const bundle = JSON.parse(await readFile(join(out, "tile-trek/guide.json"), "utf8"));
     expect(parseGuide(bundle).ok).toBe(true);

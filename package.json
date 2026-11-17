@@ -15,7 +15,8 @@
     "validate": "tsx packages/schema/src/cli/validate.ts",
     "schemas": "tsx packages/schema/src/cli/export-json-schema.ts",
     "build": "pnpm validate && turbo run build",
-    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate"
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate",
+    "fixtures": "tsx packages/schema/src/cli/build-fixtures.ts"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
