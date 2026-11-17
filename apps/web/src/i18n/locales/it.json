@@ -195,5 +195,58 @@
     "showMe": "Mostramelo",
     "seeIt": "Guardalo nel video",
     "finish": "Fine"
+  },
+  "dice": {
+    "title": "Dadi",
+    "sumOdds_one": "Probabilità di ogni risultato con {{count}} dado",
+    "sumOdds_other": "Probabilità di ogni totale con {{count}} dadi",
+    "outcomeOdds": "probabilità di ogni esito"
+  },
+  "scoring": {
+    "title": "Punteggio",
+    "calculator": "Calcolatore di punteggio",
+    "category": "Categoria",
+    "playerShort": "G{{n}}",
+    "cell": "{{category}}, giocatore {{n}}",
+    "total": "Totale",
+    "tieBreakers": "Spareggi",
+    "reset": "Azzera i punteggi",
+    "timing": {
+      "immediate": "Durante la partita",
+      "end-game": "A fine partita",
+      "both": "Durante e alla fine"
+    }
+  },
+  "actions": {
+    "title": "Azioni",
+    "blocking": "Blocca gli altri",
+    "cost": "Costo"
+  },
+  "cards": {
+    "title": "Carte",
+    "count_one": "{{count}} carta",
+    "count_other": "{{count}} carte",
+    "handLimit": "Limite di mano",
+    "anatomy": "Anatomia della carta"
+  },
+  "timer": {
+    "label": "Timer",
+    "timeUp": "Tempo!",
+    "pause": "Pausa",
+    "start": "Via",
+    "resume": "Riprendi",
+    "reset": "Azzera"
+  },
+  "play": {
+    "playerOf": "Giocatore {{n}} di {{count}}",
+    "pickOne": "Cosa fai?",
+    "skip": "Salta",
+    "iRolled": "Ho tirato…",
+    "round": "Round {{n}}",
+    "whereAmI": "Dove siamo",
+    "gameOver": "Fine della partita!",
+    "restart": "Ricomincia",
+    "reminders": "Promemoria",
+    "endLoop": "Fatto: {{condition}}"
   }
 }

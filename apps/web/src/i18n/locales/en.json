@@ -195,5 +195,58 @@
     "showMe": "Show me",
     "seeIt": "See it in the video",
     "finish": "Finish"
+  },
+  "dice": {
+    "title": "Dice",
+    "sumOdds_one": "Chance of each result with {{count}} die",
+    "sumOdds_other": "Chance of each total with {{count}} dice",
+    "outcomeOdds": "chance of each outcome"
+  },
+  "scoring": {
+    "title": "Scoring",
+    "calculator": "Score calculator",
+    "category": "Category",
+    "playerShort": "P{{n}}",
+    "cell": "{{category}}, player {{n}}",
+    "total": "Total",
+    "tieBreakers": "Tie-breakers",
+    "reset": "Clear scores",
+    "timing": {
+      "immediate": "During the game",
+      "end-game": "End of game",
+      "both": "During & at the end"
+    }
+  },
+  "actions": {
+    "title": "Actions",
+    "blocking": "Blocks others",
+    "cost": "Cost"
+  },
+  "cards": {
+    "title": "Cards",
+    "count_one": "{{count}} card",
+    "count_other": "{{count}} cards",
+    "handLimit": "Hand limit",
+    "anatomy": "Card anatomy"
+  },
+  "timer": {
+    "label": "Timer",
+    "timeUp": "Time!",
+    "pause": "Pause",
+    "start": "Start",
+    "resume": "Resume",
+    "reset": "Reset"
+  },
+  "play": {
+    "playerOf": "Player {{n}} of {{count}}",
+    "pickOne": "What do you do?",
+    "skip": "Skip",
+    "iRolled": "I rolled…",
+    "round": "Round {{n}}",
+    "whereAmI": "Where we are",
+    "gameOver": "End of the game!",
+    "restart": "Start again",
+    "reminders": "Reminders",
+    "endLoop": "Done: {{condition}}"
   }
 }
