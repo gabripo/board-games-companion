@@ -43,9 +43,13 @@ Full design rationale: `docs/architecture-and-phase1.md`.
 packages/schema/     Zod core, flow graph, modules, scenes; integrity checks; bundle + validate CLI
 packages/core-ports/ GuideRepository, BlobStore, JobRunner interfaces + current adapters
 packages/ingest/     pipeline stages (pure functions) + CLI       [Phase 2]
-apps/web/            static PWA
+apps/web/            static PWA (hash routes; data only via GuideRepository context)
+  src/{routes,game}/   screens; GameProvider = guide + session + level + rule/clip sheets
+  src/{learn,rules,play,scenes}/  tabs; scenes = SceneViewer (zoom + SVG hotspots), story mode
+  src/flow/            GameLoopView + pure stepper.ts (Play tab cursor)
   src/modules/<kind>/  one renderer per mechanic module (registry in src/modules/index.ts)
-  src/flow/            generic flow-graph renderer + turn simulator
+  src/{i18n,settings,offline,ui}/  locales, persisted stores, PWA/offline, primitives
+  vite/games-plugin.ts serves /games from dist/games or dist/fixture-games (VITE_CONTENT)
 apps/admin/          local-only review UI + hotspot editor        [Phase 2]
 content/games/<id>/  game, flow, rules, setup, scenes, walkthroughs, guides .json; modules/<module-id>.json; images/
                      (folders starting with `_` are drafts and are skipped)
@@ -57,7 +61,8 @@ sources/             raw PDFs/transcripts — GITIGNORED, never committed
 
 ```
 pnpm install
-pnpm dev          # web app on :5173
+pnpm dev          # fixtures + web app on :5173 (VITE_CONTENT=games for real content)
+pnpm fixtures     # archetype games + placeholder art → dist/fixture-games
 pnpm typecheck    # tsc --noEmit in every package (turbo)
 pnpm lint         # biome check .
 pnpm format       # biome format --write .
@@ -65,8 +70,8 @@ pnpm test         # vitest (schema, integrity, content, unit)
 pnpm validate     # validate content/games/* → write dist/games (--no-out, --strict, [dir])
 pnpm schemas      # export JSON Schemas to dist/schemas (LLM structured output)
 pnpm check        # typecheck + lint + test + validate
-pnpm e2e          # playwright mobile viewport (use --trace off)
-pnpm build        # runs validate, then builds web
+pnpm build        # validate + fixtures, then builds web (PWA + service worker)
+pnpm e2e          # Playwright on the prod build: Pixel 7 + iPad landscape (--trace off)
 ```
 Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 
@@ -128,9 +133,10 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 - All views filter by session `conditions`; filtered content stays reachable on demand.
 - Offline: app shell precached; per-game "Download for offline" caches bundle + images;
   `navigator.storage.persist()`. YouTube clips degrade to "needs connection".
-- UI strings in `apps/web/src/locales/{en,it}.json`; no hard-coded text.
+- UI strings in `apps/web/src/i18n/locales/{en,it}.json` (same keys; `test/i18n.test.ts` checks
+  every `t("…")` key exists); no hard-coded text.
 - Hotspots render as SVG overlay (not canvas) with accessible labels + list-mode fallback.
-- The web app gets data only through the `GuideRepository` React context provider.
+- Scene annotations are decoration (`pointer-events: none`); hotspots must stay tappable.
 
 ## Testing conventions
 

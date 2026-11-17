@@ -50,7 +50,12 @@
     "about": "Le guide scaricate restano salvate su questo dispositivo."
   },
   "offline": {
-    "banner": "Sei offline: le guide scaricate funzionano comunque."
+    "banner": "Sei offline: le guide scaricate funzionano comunque.",
+    "ready": "Disponibile offline",
+    "remove": "Rimuovi",
+    "download": "Scarica per l'uso offline",
+    "downloading": "Download in corso…",
+    "error": "Download non riuscito: riprova quando sei online."
   },
   "game": {
     "notFound": "Questo gioco non esiste.",

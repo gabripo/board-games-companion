@@ -1,18 +1,20 @@
 import { getRouteApi, Link } from "@tanstack/react-router";
-import { type ReactNode, useState } from "react";
+import { lazy, type ReactNode, Suspense, useState } from "react";
 import { TABS, type Tab, useGame } from "../game/GameProvider";
 import { SessionSheet, useSessionLabel } from "../game/SessionSheet";
 import { useL, useTranslation } from "../i18n";
 import { LearnTab } from "../learn/LearnTab";
 import { useWakeLock } from "../offline/useWakeLock";
-import { PlayTab } from "../play/PlayTab";
 import { RulesTab } from "../rules/RulesTab";
-import { BoardTab } from "../scenes/BoardTab";
-import { ScenePane } from "../scenes/ScenePane";
 import type { Level } from "../settings/settings";
 import { BottomSheet } from "../ui/BottomSheet";
 import { Icon, type IconName } from "../ui/Icon";
-import { Button, cx, SegmentedControl } from "../ui/primitives";
+import { Button, cx, SegmentedControl, Spinner } from "../ui/primitives";
+
+// Heavier tabs (zoom/pan, animation, stepper) load on demand.
+const PlayTab = lazy(() => import("../play/PlayTab").then((m) => ({ default: m.PlayTab })));
+const BoardTab = lazy(() => import("../scenes/BoardTab").then((m) => ({ default: m.BoardTab })));
+const ScenePane = lazy(() => import("../scenes/ScenePane").then((m) => ({ default: m.ScenePane })));
 
 const route = getRouteApi("/game/$gameId/");
 
@@ -183,7 +185,9 @@ export function GameScreen() {
         {twoPane && (
           <aside className="hidden landscape:lg:block">
             <div className="sticky top-24 pt-4">
-              <ScenePane />
+              <Suspense fallback={null}>
+                <ScenePane />
+              </Suspense>
             </div>
           </aside>
         )}
@@ -193,7 +197,7 @@ export function GameScreen() {
           aria-label={t(`tabs.${tab}`)}
           className="mx-auto w-full max-w-3xl"
         >
-          {panels[tab]}
+          <Suspense fallback={<Spinner label={t("common.loading")} />}>{panels[tab]}</Suspense>
         </main>
       </div>
 

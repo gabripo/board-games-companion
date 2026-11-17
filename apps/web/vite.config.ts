@@ -39,6 +39,9 @@ export default defineConfig(({ mode }) => {
           ],
         },
         workbox: {
+          // Take control on first visit so runtime caching works before any reload.
+          clientsClaim: true,
+          skipWaiting: true,
           globPatterns: ["**/*.{js,css,html,svg,png,woff2}"],
           globIgnores: ["games/**"],
           navigateFallback: "index.html",

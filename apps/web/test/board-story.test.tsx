@@ -55,7 +55,9 @@ describe("story mode", () => {
     expect(
       await screen.findByText("Which dock gives you fish?", { exact: false }),
     ).toBeInTheDocument();
-    expect(screen.getByTestId("annotation-to-dock")).toBeInTheDocument();
+    // Annotations must never swallow taps meant for the hotspots below them.
+    expect(screen.getByTestId("annotation-to-dock")).toHaveAttribute("pointer-events", "none");
+    expect(screen.getByTestId("annotation-worker-here")).toHaveAttribute("pointer-events", "none");
     const finish = screen.getByRole("button", { name: "Finish" });
     expect(finish).toBeDisabled();
 

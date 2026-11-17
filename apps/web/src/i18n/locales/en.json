@@ -50,7 +50,12 @@
     "about": "Guides are stored on this device once downloaded."
   },
   "offline": {
-    "banner": "You are offline — downloaded guides still work."
+    "banner": "You are offline — downloaded guides still work.",
+    "ready": "Available offline",
+    "remove": "Remove",
+    "download": "Download for offline",
+    "downloading": "Downloading…",
+    "error": "Download failed — try again online."
   },
   "game": {
     "notFound": "This game does not exist.",

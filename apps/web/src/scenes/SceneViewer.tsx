@@ -146,6 +146,7 @@ export function SceneViewer(props: SceneViewerProps) {
                   onKeyDown={onKey(h)}
                 />
               ))}
+              {/* Annotations are decoration: taps must reach the hotspots underneath. */}
               {visibleAnnotations.map((a, i) => (
                 <AnnotationView
                   key={a.id}
@@ -266,7 +267,7 @@ function AnnotationView(props: {
   switch (a.kind) {
     case "arrow":
       return (
-        <g data-testid={`annotation-${a.id}`}>
+        <g data-testid={`annotation-${a.id}`} pointerEvents="none">
           <motion.line
             x1={a.from.x * W}
             y1={a.from.y * H}
@@ -303,7 +304,7 @@ function AnnotationView(props: {
         warning: "var(--warn)",
       }[a.tone ?? "info"];
       return (
-        <g data-testid={`annotation-${a.id}`}>
+        <g data-testid={`annotation-${a.id}`} pointerEvents="none">
           <motion.circle
             cx={a.at.x * W}
             cy={a.at.y * H}
@@ -328,6 +329,7 @@ function AnnotationView(props: {
       return (
         <motion.rect
           data-testid={`annotation-${a.id}`}
+          pointerEvents="none"
           x={a.rect.x * W}
           y={a.rect.y * H}
           width={a.rect.w * W}

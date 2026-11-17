@@ -21,3 +21,5 @@ jobs:
       - run: pnpm test
       - run: pnpm validate
       - run: pnpm build
+      - run: pnpm --filter @bgc/web exec playwright install --with-deps chromium
+      - run: pnpm e2e

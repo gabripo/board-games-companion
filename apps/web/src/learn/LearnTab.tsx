@@ -4,6 +4,7 @@ import { useGame } from "../game/GameProvider";
 import { RuleLinks } from "../game/RuleSheet";
 import { useL, useTranslation } from "../i18n";
 import { ModuleSlots } from "../modules/ModuleSlots";
+import { OfflineButton } from "../offline/OfflineButton";
 import { SceneCrop } from "../scenes/SceneCrop";
 import { Icon } from "../ui/Icon";
 import { Card, Chip, EmptyState, SectionTitle } from "../ui/primitives";
@@ -102,6 +103,7 @@ export function LearnTab() {
   return (
     <div className="space-y-8 p-4">
       <Overview />
+      <OfflineButton />
       <section>
         <SectionTitle
           icon="loop"

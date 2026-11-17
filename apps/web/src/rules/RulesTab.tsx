@@ -4,6 +4,7 @@ import { CitationChip, RuleCard } from "../game/RuleCard";
 import { RuleLinks } from "../game/RuleSheet";
 import { useL, useLocale, useTranslation } from "../i18n";
 import { ModuleSlots } from "../modules/ModuleSlots";
+import { OfflineButton } from "../offline/OfflineButton";
 import { Icon } from "../ui/Icon";
 import { Accordion, Button, Chip, EmptyState, SectionTitle } from "../ui/primitives";
 import { buildRuleSearch } from "./search";
@@ -146,6 +147,7 @@ export function RulesTab() {
       <MythVsRule />
       <EdgeCases />
       <ModuleSlots slot="ReferencePanel" />
+      <OfflineButton />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import {
   createRootRoute,
   createRoute,
   createRouter,
+  lazyRouteComponent,
   type RouterHistory,
 } from "@tanstack/react-router";
 import { TABS, type Tab } from "./game/GameProvider";
@@ -11,7 +12,6 @@ import { GameScreen } from "./routes/GameScreen";
 import { Home } from "./routes/Home";
 import { NotFound, Root } from "./routes/Root";
 import { SettingsScreen } from "./routes/Settings";
-import { WalkthroughScreen } from "./routes/WalkthroughScreen";
 
 export interface GameSearch {
   tab?: Tab | undefined;
@@ -53,7 +53,7 @@ export const gameIndexRoute = createRoute({
 export const walkthroughRoute = createRoute({
   getParentRoute: () => gameRoute,
   path: "walkthrough/$walkthroughId",
-  component: WalkthroughScreen,
+  component: lazyRouteComponent(() => import("./routes/WalkthroughScreen"), "WalkthroughScreen"),
 });
 
 const routeTree = rootRoute.addChildren([

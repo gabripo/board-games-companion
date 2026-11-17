@@ -16,7 +16,8 @@
     "test": "turbo run test",
     "validate": "tsx packages/schema/src/cli/validate.ts",
     "schemas": "tsx packages/schema/src/cli/export-json-schema.ts",
-    "build": "pnpm validate && turbo run build",
+    "build": "pnpm validate && pnpm fixtures && turbo run build",
+    "e2e": "pnpm fixtures && pnpm --filter @bgc/web e2e",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate"
   },
   "pnpm": {
