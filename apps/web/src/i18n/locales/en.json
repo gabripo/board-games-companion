@@ -1,0 +1,116 @@
+{
+  "common": {
+    "close": "Close",
+    "back": "Back",
+    "loading": "Loading…",
+    "retry": "Try again",
+    "done": "Done",
+    "notFound": "Page not found",
+    "home": "Back to games",
+    "minutes": "{{value}} min",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "app": {
+    "title": "Board Games Companion"
+  },
+  "welcome": {
+    "subtitle": "Learn new games fast and settle rules at the table.",
+    "chooseLanguage": "Choose your language"
+  },
+  "home": {
+    "fixturesNotice": "Demo content: these are synthetic sample games used while real guides are being prepared.",
+    "loadError": "Could not load the games.",
+    "empty": "No games yet.",
+    "gamesList": "Games",
+    "complexity": "Complexity {{value}} of 5"
+  },
+  "turnModel": {
+    "sequential": "Turn-based",
+    "simultaneous": "Simultaneous",
+    "real-time": "Real-time",
+    "phase-rounds": "Rounds & phases",
+    "mixed": "Mixed"
+  },
+  "interaction": {
+    "competitive": "Competitive",
+    "cooperative": "Co-op",
+    "team": "Teams",
+    "hidden-traitor": "Hidden traitor",
+    "solo": "Solo"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "largeText": "Text size",
+    "largeTextHint": "Bigger text for reading across the table.",
+    "about": "Guides are stored on this device once downloaded."
+  },
+  "offline": {
+    "banner": "You are offline — downloaded guides still work."
+  },
+  "game": {
+    "notFound": "This game does not exist.",
+    "loadError": "Could not load this guide."
+  },
+  "level": {
+    "label": "Experience level",
+    "newbie": "Newbie",
+    "experienced": "Experienced",
+    "promptTitle": "Have you played {{game}} before?",
+    "promptBody": "We will show the right things first. You can switch any time from the top bar.",
+    "teachMe": "No — teach me",
+    "quickReference": "Yes — quick reference"
+  },
+  "tabs": {
+    "label": "Guide sections",
+    "learn": "Learn",
+    "play": "Play",
+    "board": "Board",
+    "rules": "Rules"
+  },
+  "session": {
+    "title": "This game session",
+    "players": "Players",
+    "fewer": "Fewer players",
+    "more": "More players",
+    "best": "Best with {{list}}",
+    "variants": "Variants",
+    "expansions": "Expansions",
+    "playersN_one": "{{count}} player",
+    "playersN_other": "{{count}} players",
+    "base": "base game"
+  },
+  "clip": {
+    "title": "Video clip",
+    "offline": "This clip needs an internet connection.",
+    "play": "Play clip from {{from}} to {{to}}",
+    "replay": "Replay",
+    "lang": {
+      "en": "Video in English",
+      "it": "Video in Italian"
+    }
+  },
+  "citation": {
+    "official": "official",
+    "page": "p. {{page}}",
+    "watchAt": "Watch at {{time}}",
+    "web": "Article"
+  },
+  "conditions": {
+    "players": "{{list}} players"
+  },
+  "rule": {
+    "title": "Rule",
+    "less": "Less",
+    "more": "Details",
+    "commonMistake": "Common mistake",
+    "unverified": "Unverified",
+    "showOnBoard": "Show on board",
+    "watch": "Watch",
+    "related": "Related rules"
+  }
+}

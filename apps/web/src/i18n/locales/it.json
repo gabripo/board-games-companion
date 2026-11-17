@@ -1,0 +1,116 @@
+{
+  "common": {
+    "close": "Chiudi",
+    "back": "Indietro",
+    "loading": "Caricamento…",
+    "retry": "Riprova",
+    "done": "Fatto",
+    "notFound": "Pagina non trovata",
+    "home": "Torna ai giochi",
+    "minutes": "{{value}} min",
+    "next": "Avanti",
+    "previous": "Indietro"
+  },
+  "app": {
+    "title": "Compagno di Giochi da Tavolo"
+  },
+  "welcome": {
+    "subtitle": "Impara nuovi giochi in fretta e risolvi i dubbi sulle regole al tavolo.",
+    "chooseLanguage": "Scegli la lingua"
+  },
+  "home": {
+    "fixturesNotice": "Contenuti dimostrativi: sono giochi di esempio sintetici, in attesa delle guide reali.",
+    "loadError": "Impossibile caricare i giochi.",
+    "empty": "Ancora nessun gioco.",
+    "gamesList": "Giochi",
+    "complexity": "Complessità {{value}} su 5"
+  },
+  "turnModel": {
+    "sequential": "A turni",
+    "simultaneous": "Simultaneo",
+    "real-time": "In tempo reale",
+    "phase-rounds": "Round e fasi",
+    "mixed": "Misto"
+  },
+  "interaction": {
+    "competitive": "Competitivo",
+    "cooperative": "Cooperativo",
+    "team": "A squadre",
+    "hidden-traitor": "Traditore nascosto",
+    "solo": "Solitario"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "theme": "Tema",
+    "dark": "Scuro",
+    "light": "Chiaro",
+    "largeText": "Dimensione testo",
+    "largeTextHint": "Testo più grande per leggere dall'altro lato del tavolo.",
+    "about": "Le guide scaricate restano salvate su questo dispositivo."
+  },
+  "offline": {
+    "banner": "Sei offline: le guide scaricate funzionano comunque."
+  },
+  "game": {
+    "notFound": "Questo gioco non esiste.",
+    "loadError": "Impossibile caricare questa guida."
+  },
+  "level": {
+    "label": "Livello di esperienza",
+    "newbie": "Principiante",
+    "experienced": "Esperto",
+    "promptTitle": "Hai già giocato a {{game}}?",
+    "promptBody": "Ti mostreremo prima le cose giuste. Puoi cambiare in qualsiasi momento dalla barra in alto.",
+    "teachMe": "No, insegnami",
+    "quickReference": "Sì, consultazione rapida"
+  },
+  "tabs": {
+    "label": "Sezioni della guida",
+    "learn": "Impara",
+    "play": "Gioca",
+    "board": "Plancia",
+    "rules": "Regole"
+  },
+  "session": {
+    "title": "Questa partita",
+    "players": "Giocatori",
+    "fewer": "Meno giocatori",
+    "more": "Più giocatori",
+    "best": "Ideale in {{list}}",
+    "variants": "Varianti",
+    "expansions": "Espansioni",
+    "playersN_one": "{{count}} giocatore",
+    "playersN_other": "{{count}} giocatori",
+    "base": "gioco base"
+  },
+  "clip": {
+    "title": "Video",
+    "offline": "Questo video richiede una connessione a internet.",
+    "play": "Riproduci il video da {{from}} a {{to}}",
+    "replay": "Rivedi",
+    "lang": {
+      "en": "Video in inglese",
+      "it": "Video in italiano"
+    }
+  },
+  "citation": {
+    "official": "ufficiale",
+    "page": "p. {{page}}",
+    "watchAt": "Guarda a {{time}}",
+    "web": "Articolo"
+  },
+  "conditions": {
+    "players": "{{list}} giocatori"
+  },
+  "rule": {
+    "title": "Regola",
+    "less": "Meno",
+    "more": "Dettagli",
+    "commonMistake": "Errore comune",
+    "unverified": "Da verificare",
+    "showOnBoard": "Mostra sulla plancia",
+    "watch": "Guarda",
+    "related": "Regole correlate"
+  }
+}

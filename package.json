@@ -7,6 +7,8 @@
     "node": ">=22.18"
   },
   "scripts": {
+    "dev": "pnpm fixtures && turbo run dev --filter @bgc/web",
+    "fixtures": "tsx packages/schema/src/cli/build-fixtures.ts",
     "typecheck": "turbo run typecheck",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
@@ -15,8 +17,7 @@
     "validate": "tsx packages/schema/src/cli/validate.ts",
     "schemas": "tsx packages/schema/src/cli/export-json-schema.ts",
     "build": "pnpm validate && turbo run build",
-    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate",
-    "fixtures": "tsx packages/schema/src/cli/build-fixtures.ts"
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
