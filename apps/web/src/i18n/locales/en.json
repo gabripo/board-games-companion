@@ -172,5 +172,28 @@
     "onlyThisSession": "Only rules for this session",
     "showOther_one": "Show {{count}} rule for other sessions",
     "showOther_other": "Show {{count}} rules for other sessions"
+  },
+  "board": {
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetZoom": "Reset zoom",
+    "noRules": "No rules linked to this spot yet.",
+    "empty": "This game has no board pictures yet.",
+    "view": "Board view",
+    "picture": "Picture",
+    "list": "List",
+    "hideOutlines": "Hide hotspots",
+    "showOutlines": "Show hotspots",
+    "hint": "Tap a highlighted area to see its rules. Pinch to zoom."
+  },
+  "story": {
+    "notFound": "Tutorial not found.",
+    "progress": "Step {{current}} of {{total}}",
+    "tryIt": "Try it:",
+    "correct": "Correct!",
+    "tryAgain": "Not quite — try again.",
+    "showMe": "Show me",
+    "seeIt": "See it in the video",
+    "finish": "Finish"
   }
 }

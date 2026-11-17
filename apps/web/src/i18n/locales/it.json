@@ -172,5 +172,28 @@
     "onlyThisSession": "Solo le regole di questa partita",
     "showOther_one": "Mostra {{count}} regola per altre partite",
     "showOther_other": "Mostra {{count}} regole per altre partite"
+  },
+  "board": {
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "resetZoom": "Ripristina zoom",
+    "noRules": "Nessuna regola collegata a questo punto.",
+    "empty": "Questo gioco non ha ancora immagini della plancia.",
+    "view": "Vista plancia",
+    "picture": "Immagine",
+    "list": "Elenco",
+    "hideOutlines": "Nascondi aree",
+    "showOutlines": "Mostra aree",
+    "hint": "Tocca un'area evidenziata per vederne le regole. Pizzica per ingrandire."
+  },
+  "story": {
+    "notFound": "Tutorial non trovato.",
+    "progress": "Passo {{current}} di {{total}}",
+    "tryIt": "Prova tu:",
+    "correct": "Esatto!",
+    "tryAgain": "Non proprio, riprova.",
+    "showMe": "Mostramelo",
+    "seeIt": "Guardalo nel video",
+    "finish": "Fine"
   }
 }
