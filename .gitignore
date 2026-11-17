@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.turbo/
+coverage/
+*.log
+.DS_Store
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# raw ingestion sources (rulebook PDFs, transcripts) — never committed
+sources/
+
+# playwright
+test-results/
+playwright-report/
