@@ -1,0 +1,102 @@
+{
+  "id": "ad-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Armed & Dangerous",
+    "it": "Personaggi · Armed & Dangerous (Armati e pericolosi)"
+  },
+  "conditions": {
+    "expansions": ["armed-dangerous"]
+  },
+  "ruleRefs": ["ad-overview"],
+  "sections": [
+    {
+      "id": "al-preacher",
+      "title": {
+        "en": "Al Preacher · 4 ♥",
+        "it": "Al Preacher · 4 ♥"
+      },
+      "body": {
+        "en": "If another player plays a blue or orange card, he may pay 2 tokens to draw a card.",
+        "it": "Se un altro gioca una carta blu o arancione, può pagare 2 segnalini per pescare una carta."
+      }
+    },
+    {
+      "id": "bass-greeves",
+      "title": {
+        "en": "Bass Greeves · 4 ♥",
+        "it": "Bass Greeves · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may discard a card from hand to add 2 tokens to one of his cards.",
+        "it": "Una volta per turno può scartare una carta dalla mano per aggiungere 2 segnalini a una sua carta."
+      }
+    },
+    {
+      "id": "bloody-mary",
+      "title": {
+        "en": "Bloody Mary · 4 ♥",
+        "it": "Bloody Mary · 4 ♥"
+      },
+      "body": {
+        "en": "Each time one of her BANG! cards is cancelled, she draws a card.",
+        "it": "Ogni volta che una sua carta BANG! è annullata, pesca una carta."
+      }
+    },
+    {
+      "id": "frankie-canton",
+      "title": {
+        "en": "Frankie Canton · 4 ♥",
+        "it": "Frankie Canton · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may take 1 token from any card and put it on his character.",
+        "it": "Una volta per turno può prendere 1 segnalino da qualunque carta e metterlo sul personaggio."
+      }
+    },
+    {
+      "id": "julie-cutter",
+      "title": {
+        "en": "Julie Cutter · 4 ♥",
+        "it": "Julie Cutter · 4 ♥"
+      },
+      "body": {
+        "en": "Each time a player makes her lose at least 1 life point, she draws!: on Hearts/Diamonds that player is the target of a BANG!.",
+        "it": "Ogni volta che un giocatore le fa perdere almeno 1 punto vita estrae: con Cuori/Quadri quel giocatore è bersaglio di un BANG!."
+      }
+    },
+    {
+      "id": "mexicali-kid",
+      "title": {
+        "en": "Mexicali Kid · 4 ♥",
+        "it": "Mexicali Kid · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may pay 2 tokens to shoot an extra BANG! (no card needed).",
+        "it": "Una volta per turno può pagare 2 segnalini per sparare un BANG! extra (senza carta)."
+      }
+    },
+    {
+      "id": "ms-abigail",
+      "title": {
+        "en": "Ms. Abigail · 4 ♥",
+        "it": "Ms. Abigail · 4 ♥"
+      },
+      "body": {
+        "en": "She may ignore brown cards valued J, Q, K or A if she is the only target.",
+        "it": "Può ignorare le carte marroni di valore J, Q, K o A se è l'unico bersaglio."
+      }
+    },
+    {
+      "id": "red-ringo",
+      "title": {
+        "en": "Red Ringo · 4 ♥",
+        "it": "Red Ringo · 4 ♥"
+      },
+      "body": {
+        "en": "He starts with 4 tokens; once per turn he may move up to 2 of them onto his cards.",
+        "it": "Inizia con 4 segnalini; una volta nel turno può spostarne fino a 2 sulle sue carte."
+      }
+    }
+  ]
+}

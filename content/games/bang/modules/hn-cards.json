@@ -1,0 +1,157 @@
+{
+  "id": "hn-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · High Noon",
+    "it": "Carte · High Noon (Mezzogiorno di Fuoco)"
+  },
+  "conditions": {
+    "expansions": ["high-noon"]
+  },
+  "ruleRefs": ["hn-setup"],
+  "actions": [
+    {
+      "id": "blessing",
+      "name": {
+        "en": "Blessing",
+        "it": "Benedizione"
+      },
+      "effect": {
+        "en": "The suit of all cards is Hearts.",
+        "it": "Tutte le carte sono considerate di Cuori."
+      }
+    },
+    {
+      "id": "curse",
+      "name": {
+        "en": "Curse",
+        "it": "Maledizione"
+      },
+      "effect": {
+        "en": "The suit of all cards is Spades.",
+        "it": "Tutte le carte sono considerate di Picche."
+      }
+    },
+    {
+      "id": "ghost-town",
+      "name": {
+        "en": "Ghost Town",
+        "it": "Città Fantasma"
+      },
+      "effect": {
+        "en": "On their turn, eliminated players return as ghosts: they draw 3 cards instead of 2 and can't die; at the end of the turn they're out again.",
+        "it": "Al proprio turno ogni eliminato torna come fantasma: pesca 3 carte invece di 2 e non può morire; a fine turno è eliminato di nuovo."
+      }
+    },
+    {
+      "id": "gold-rush",
+      "name": {
+        "en": "Gold Rush",
+        "it": "Corsa all'oro"
+      },
+      "effect": {
+        "en": "Play goes counterclockwise for one round, starting with the Sheriff; card effects still go clockwise.",
+        "it": "Si gioca un giro in senso antiorario, partendo dallo Sceriffo; gli effetti delle carte restano in senso orario."
+      }
+    },
+    {
+      "id": "hangover",
+      "name": {
+        "en": "Hangover",
+        "it": "Sbornia"
+      },
+      "effect": {
+        "en": "Characters lose their special abilities.",
+        "it": "I personaggi perdono le loro abilità speciali."
+      }
+    },
+    {
+      "id": "high-noon",
+      "name": {
+        "en": "High Noon",
+        "it": "Mezzogiorno di Fuoco"
+      },
+      "effect": {
+        "en": "Final card: each player loses 1 life point at the start of their turn, until the end of the game.",
+        "it": "Carta finale: ogni giocatore perde 1 punto vita all'inizio del proprio turno, fino a fine partita."
+      }
+    },
+    {
+      "id": "shootout",
+      "name": {
+        "en": "Shootout",
+        "it": "Sparatoria"
+      },
+      "effect": {
+        "en": "Each player may play a second BANG! card on their turn.",
+        "it": "Ogni giocatore può giocare una seconda carta BANG! nel proprio turno."
+      }
+    },
+    {
+      "id": "the-daltons",
+      "name": {
+        "en": "The Daltons",
+        "it": "I Dalton"
+      },
+      "effect": {
+        "en": "When it enters play, each player with blue cards in play discards one of them (their choice).",
+        "it": "Quando entra in gioco, chi ha carte blu in gioco ne scarta una a sua scelta."
+      }
+    },
+    {
+      "id": "the-doctor",
+      "name": {
+        "en": "The Doctor",
+        "it": "Il Dottore"
+      },
+      "effect": {
+        "en": "When it enters play, the player(s) with the fewest life points regain 1.",
+        "it": "Quando entra in gioco, il/i giocatore/i con meno punti vita ne recupera 1."
+      }
+    },
+    {
+      "id": "the-reverend",
+      "name": {
+        "en": "The Reverend",
+        "it": "Il Reverendo"
+      },
+      "effect": {
+        "en": "Players can't play Beer cards.",
+        "it": "Non si possono giocare carte Birra."
+      }
+    },
+    {
+      "id": "the-sermon",
+      "name": {
+        "en": "The Sermon",
+        "it": "Sermone"
+      },
+      "effect": {
+        "en": "Players can't use BANG! cards during their own turn.",
+        "it": "Il giocatore non può usare carte BANG! durante il proprio turno."
+      }
+    },
+    {
+      "id": "thirst",
+      "name": {
+        "en": "Thirst",
+        "it": "Sete"
+      },
+      "effect": {
+        "en": "In phase 1 each player draws only their first card.",
+        "it": "Nella fase 1 ogni giocatore pesca solo la prima carta."
+      }
+    },
+    {
+      "id": "train-arrival",
+      "name": {
+        "en": "Train Arrival",
+        "it": "Il Treno"
+      },
+      "effect": {
+        "en": "Each player draws one extra card at the end of phase 1.",
+        "it": "Ogni giocatore pesca una carta extra al termine della fase 1."
+      }
+    }
+  ]
+}

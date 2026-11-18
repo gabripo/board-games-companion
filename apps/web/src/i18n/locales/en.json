@@ -87,7 +87,8 @@
     "expansions": "Expansions",
     "playersN_one": "{{count}} player",
     "playersN_other": "{{count}} players",
-    "base": "base game"
+    "base": "base game",
+    "expansionsHint": "Turn on every expansion you are playing with — any combination works."
   },
   "clip": {
     "title": "Video clip",
@@ -162,7 +163,11 @@
     "steps_other": "{{count}} steps",
     "glossary": "Icons & terms",
     "gameLoop": "How a game flows",
-    "noFlow": "Nothing to show for this session."
+    "noFlow": "Nothing to show for this session.",
+    "jumpTo": "Jump to a section",
+    "showOtherTerms_one": "Show {{count}} term for other sessions",
+    "showOtherTerms_other": "Show {{count}} terms for other sessions",
+    "hideOtherTerms": "Only this session"
   },
   "rules": {
     "title": "Rules",
@@ -189,7 +194,10 @@
     "list": "List",
     "hideOutlines": "Hide hotspots",
     "showOutlines": "Show hotspots",
-    "hint": "Tap a highlighted area to see its rules. Pinch to zoom."
+    "hint": "Tap a highlighted area to see its rules. Pinch to zoom.",
+    "showOther_one": "+{{count}} for other sessions",
+    "showOther_other": "+{{count}} for other sessions",
+    "hideOther": "Only this session"
   },
   "story": {
     "notFound": "Tutorial not found.",
@@ -253,5 +261,10 @@
     "restart": "Start again",
     "reminders": "Reminders",
     "endLoop": "Done: {{condition}}"
+  },
+  "modules": {
+    "showOther_one": "Show {{count}} section for other sessions",
+    "showOther_other": "Show {{count}} sections for other sessions",
+    "hideOther": "Only this session"
   }
 }

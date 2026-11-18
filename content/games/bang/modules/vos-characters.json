@@ -1,0 +1,102 @@
+{
+  "id": "vos-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · The Valley of Shadows",
+    "it": "Personaggi · La Valle delle Ombre"
+  },
+  "conditions": {
+    "expansions": ["valley-of-shadows"]
+  },
+  "ruleRefs": ["vos-overview"],
+  "sections": [
+    {
+      "id": "black-flower",
+      "title": {
+        "en": "Black Flower · 4 ♥",
+        "it": "Black Flower · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn she may use a Clubs card as an extra BANG!.",
+        "it": "Una volta nel turno può usare una carta di Fiori come BANG! extra."
+      }
+    },
+    {
+      "id": "colorado-bill",
+      "title": {
+        "en": "Colorado Bill · 4 ♥",
+        "it": "Colorado Bill · 4 ♥"
+      },
+      "body": {
+        "en": "Each time he plays a BANG!, he draws!: on Spades the shot can't be avoided.",
+        "it": "Ogni volta che gioca un BANG! estrae: con Picche il colpo non può essere evitato."
+      }
+    },
+    {
+      "id": "der-spot-burst-ringer",
+      "title": {
+        "en": "Der Spot · Burst Ringer · 4 ♥",
+        "it": "Der Spot · Burst Ringer · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may use a BANG! card as a Gatling.",
+        "it": "Una volta nel turno può usare una carta BANG! come Gatling."
+      }
+    },
+    {
+      "id": "evelyn-shebang",
+      "title": {
+        "en": "Evelyn Shebang · 4 ♥",
+        "it": "Evelyn Shebang · 4 ♥"
+      },
+      "body": {
+        "en": "She may skip drawing cards: for each card not drawn, she shoots a BANG! at a different target in reach.",
+        "it": "Può rinunciare a pescare: per ogni carta non pescata spara un BANG! a un bersaglio diverso a distanza raggiungibile."
+      }
+    },
+    {
+      "id": "henry-block",
+      "title": {
+        "en": "Henry Block · 4 ♥",
+        "it": "Henry Block · 4 ♥"
+      },
+      "body": {
+        "en": "Anyone who draws or discards one of his cards (hand or in play) is the target of a BANG!.",
+        "it": "Chiunque peschi o scarti una sua carta (in gioco o in mano) è bersaglio di un BANG!."
+      }
+    },
+    {
+      "id": "lemonade-jim",
+      "title": {
+        "en": "Lemonade Jim · 4 ♥",
+        "it": "Lemonade Jim · 4 ♥"
+      },
+      "body": {
+        "en": "Each time another player plays a Beer, he may discard a card to regain 1 life point too.",
+        "it": "Ogni volta che un altro gioca una Birra, può scartare una carta per recuperare anche lui 1 punto vita."
+      }
+    },
+    {
+      "id": "mick-defender",
+      "title": {
+        "en": "Mick Defender · 4 ♥",
+        "it": "Mick Defender · 4 ♥"
+      },
+      "body": {
+        "en": "If targeted by a brown card (not BANG!), he may use a Missed! to avoid its effects.",
+        "it": "Se è bersaglio di una carta marrone (non BANG!), può usare un Mancato! per evitarne gli effetti."
+      }
+    },
+    {
+      "id": "tuco-franziskaner",
+      "title": {
+        "en": "Tuco Franziskaner · 5 ♥",
+        "it": "Tuco Franziskaner · 5 ♥"
+      },
+      "body": {
+        "en": "In his draw phase, if he has no blue cards in play, he draws 2 extra cards.",
+        "it": "Nella fase di pesca, se non ha carte blu in gioco, pesca 2 carte extra."
+      }
+    }
+  ]
+}

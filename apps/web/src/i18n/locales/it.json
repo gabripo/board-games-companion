@@ -87,7 +87,8 @@
     "expansions": "Espansioni",
     "playersN_one": "{{count}} giocatore",
     "playersN_other": "{{count}} giocatori",
-    "base": "gioco base"
+    "base": "gioco base",
+    "expansionsHint": "Attiva tutte le espansioni con cui giocate: qualsiasi combinazione va bene."
   },
   "clip": {
     "title": "Video",
@@ -162,7 +163,11 @@
     "steps_other": "{{count}} passi",
     "glossary": "Icone e termini",
     "gameLoop": "Come si svolge la partita",
-    "noFlow": "Niente da mostrare per questa partita."
+    "noFlow": "Niente da mostrare per questa partita.",
+    "jumpTo": "Vai a una sezione",
+    "showOtherTerms_one": "Mostra {{count}} termine per altre sessioni",
+    "showOtherTerms_other": "Mostra {{count}} termini per altre sessioni",
+    "hideOtherTerms": "Solo questa sessione"
   },
   "rules": {
     "title": "Regole",
@@ -189,7 +194,10 @@
     "list": "Elenco",
     "hideOutlines": "Nascondi aree",
     "showOutlines": "Mostra aree",
-    "hint": "Tocca un'area evidenziata per vederne le regole. Pizzica per ingrandire."
+    "hint": "Tocca un'area evidenziata per vederne le regole. Pizzica per ingrandire.",
+    "showOther_one": "+{{count}} per altre sessioni",
+    "showOther_other": "+{{count}} per altre sessioni",
+    "hideOther": "Solo questa sessione"
   },
   "story": {
     "notFound": "Tutorial non trovato.",
@@ -253,5 +261,10 @@
     "restart": "Ricomincia",
     "reminders": "Promemoria",
     "endLoop": "Fatto: {{condition}}"
+  },
+  "modules": {
+    "showOther_one": "Mostra {{count}} sezione per altre sessioni",
+    "showOther_other": "Mostra {{count}} sezioni per altre sessioni",
+    "hideOther": "Solo questa sessione"
   }
 }

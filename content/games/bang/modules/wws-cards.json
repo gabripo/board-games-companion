@@ -1,0 +1,124 @@
+{
+  "id": "wws-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · Wild West Show",
+    "it": "Carte · Wild West Show"
+  },
+  "conditions": {
+    "expansions": ["wild-west-show"]
+  },
+  "ruleRefs": ["wws-setup"],
+  "actions": [
+    {
+      "id": "bone-orchard",
+      "name": {
+        "en": "Bone Orchard",
+        "it": "Camposanto"
+      },
+      "effect": {
+        "en": "At the start of their turn, all eliminated players return with 1 life point; deal their roles at random from those of the eliminated.",
+        "it": "All'inizio del proprio turno gli eliminati tornano in gioco con 1 punto vita; i loro ruoli si ridistribuiscono a caso fra loro."
+      }
+    },
+    {
+      "id": "darling-valentine",
+      "name": {
+        "en": "Darling Valentine",
+        "it": "Darling Valentine"
+      },
+      "effect": {
+        "en": "At the start of their turn, each player discards their hand and draws as many cards.",
+        "it": "All'inizio del proprio turno ognuno scarta la mano e pesca altrettante carte."
+      }
+    },
+    {
+      "id": "dorothy-rage",
+      "name": {
+        "en": "Dorothy Rage",
+        "it": "Dorothy Rage"
+      },
+      "effect": {
+        "en": "On their turn, each player can force another player to play one of their cards.",
+        "it": "Nel proprio turno ognuno può obbligare un altro giocatore a giocare una sua carta."
+      }
+    },
+    {
+      "id": "gag",
+      "name": {
+        "en": "Gag",
+        "it": "Bavaglio"
+      },
+      "effect": {
+        "en": "Players may not talk (they can gesture or mumble); whoever talks loses 1 life point.",
+        "it": "I giocatori non possono parlare (ma gesticolare e mugugnare sì); chi parla perde 1 punto vita."
+      }
+    },
+    {
+      "id": "helena-zontero",
+      "name": {
+        "en": "Helena Zontero",
+        "it": "Helena Zontero"
+      },
+      "effect": {
+        "en": "When it comes into play, draw!: on Hearts or Diamonds, shuffle all active roles except the Sheriff and deal them at random.",
+        "it": "Quando entra in gioco, estrai: con Cuori o Quadri rimescola i ruoli attivi (tranne lo Sceriffo) e ridistribuiscili."
+      }
+    },
+    {
+      "id": "lady-rose-of-texas",
+      "name": {
+        "en": "Lady Rose of Texas",
+        "it": "Lady Rosa del Texas"
+      },
+      "effect": {
+        "en": "On their turn, each player can swap places with the player on their right, who skips their next turn.",
+        "it": "Nel proprio turno ognuno può scambiarsi di posto con chi ha a destra, che salta il prossimo turno."
+      }
+    },
+    {
+      "id": "miss-susanna",
+      "name": {
+        "en": "Miss Susanna",
+        "it": "Miss Susanna"
+      },
+      "effect": {
+        "en": "Each player must play at least 3 cards on their turn, or lose 1 life point.",
+        "it": "Nel proprio turno ognuno deve giocare almeno 3 carte, altrimenti perde 1 punto vita."
+      }
+    },
+    {
+      "id": "sacagaway",
+      "name": {
+        "en": "Sacagaway",
+        "it": "Sacagaway"
+      },
+      "effect": {
+        "en": "All players play with their hands revealed (not their roles).",
+        "it": "Tutti giocano a carte scoperte (tranne il ruolo)."
+      }
+    },
+    {
+      "id": "showdown",
+      "name": {
+        "en": "Showdown",
+        "it": "Regolamento di Conti"
+      },
+      "effect": {
+        "en": "All cards may be played as BANG!; all BANG! cards may be played as Missed!.",
+        "it": "Tutte le carte possono essere giocate come BANG!; le carte BANG! come Mancato!."
+      }
+    },
+    {
+      "id": "wild-west-show",
+      "name": {
+        "en": "Wild West Show",
+        "it": "Wild West Show"
+      },
+      "effect": {
+        "en": "Final card: every player's goal becomes \"be the last one in play\".",
+        "it": "Carta finale: l'obiettivo di ogni giocatore diventa \"rimani l'ultimo in gioco\"."
+      }
+    }
+  ]
+}

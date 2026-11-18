@@ -1,0 +1,179 @@
+{
+  "id": "dc-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Dodge City",
+    "it": "Personaggi · Dodge City"
+  },
+  "conditions": {
+    "expansions": ["dodge-city"]
+  },
+  "ruleRefs": ["dc-overview"],
+  "sections": [
+    {
+      "id": "apache-kid",
+      "title": {
+        "en": "Apache Kid · 3 ♥",
+        "it": "Apache Kid · 3 ♥"
+      },
+      "body": {
+        "en": "Cards of Diamonds played by other players don't affect him (not during a Duel).",
+        "it": "Le carte di Quadri giocate dagli altri non hanno effetto su di lui (tranne nel Duello)."
+      }
+    },
+    {
+      "id": "belle-star",
+      "title": {
+        "en": "Belle Star · 4 ♥",
+        "it": "Belle Star · 4 ♥"
+      },
+      "body": {
+        "en": "During her turn, cards in play in front of the other players (blue and green) have no effect.",
+        "it": "Nel suo turno, le carte in gioco davanti agli altri (blu e verdi) non hanno effetto."
+      }
+    },
+    {
+      "id": "bill-noface",
+      "title": {
+        "en": "Bill Noface · 4 ♥",
+        "it": "Bill Noface · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he draws 1 card plus 1 for each life point he has lost.",
+        "it": "Nella fase 1 pesca 1 carta più 1 per ogni punto vita perso."
+      }
+    },
+    {
+      "id": "chuck-wengam",
+      "title": {
+        "en": "Chuck Wengam · 4 ♥",
+        "it": "Chuck Wengam · 4 ♥"
+      },
+      "body": {
+        "en": "On his turn he may lose 1 life point (not his last) to draw 2 cards, even several times.",
+        "it": "Nel suo turno può perdere 1 punto vita (non l'ultimo) per pescare 2 carte, anche più volte."
+      }
+    },
+    {
+      "id": "doc-holyday",
+      "title": {
+        "en": "Doc Holyday · 4 ♥",
+        "it": "Doc Holyday · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may discard 2 cards for a BANG! within reach; it doesn't count as his BANG!.",
+        "it": "Una volta per turno può scartare 2 carte per un BANG! a distanza raggiungibile; non conta come il suo BANG!."
+      }
+    },
+    {
+      "id": "elena-fuente",
+      "title": {
+        "en": "Elena Fuente · 3 ♥",
+        "it": "Elena Fuente · 3 ♥"
+      },
+      "body": {
+        "en": "She can use any card in her hand as a Missed!.",
+        "it": "Può usare qualsiasi carta in mano come Mancato!."
+      }
+    },
+    {
+      "id": "greg-digger",
+      "title": {
+        "en": "Greg Digger · 4 ♥",
+        "it": "Greg Digger · 4 ♥"
+      },
+      "body": {
+        "en": "Each time another character is eliminated, he regains 2 life points.",
+        "it": "Ogni volta che un altro personaggio è eliminato, recupera 2 punti vita."
+      }
+    },
+    {
+      "id": "herb-hunter",
+      "title": {
+        "en": "Herb Hunter · 4 ♥",
+        "it": "Herb Hunter · 4 ♥"
+      },
+      "body": {
+        "en": "Each time another character is eliminated, he draws 2 extra cards.",
+        "it": "Ogni volta che un altro personaggio è eliminato, pesca 2 carte in più."
+      }
+    },
+    {
+      "id": "jose-delgado",
+      "title": {
+        "en": "José Delgado · 4 ♥",
+        "it": "José Delgado · 4 ♥"
+      },
+      "body": {
+        "en": "Twice per turn he may discard a blue card from his hand to draw 2 cards.",
+        "it": "Due volte per turno può scartare una carta blu dalla mano per pescare 2 carte."
+      }
+    },
+    {
+      "id": "molly-stark",
+      "title": {
+        "en": "Molly Stark · 4 ♥",
+        "it": "Molly Stark · 4 ♥"
+      },
+      "body": {
+        "en": "Each time she plays or voluntarily discards a Missed!, Beer or BANG! out of turn, she draws a card.",
+        "it": "Ogni volta che fuori turno gioca o scarta volontariamente un Mancato!, una Birra o un BANG!, pesca una carta."
+      }
+    },
+    {
+      "id": "pat-brennan",
+      "title": {
+        "en": "Pat Brennan · 4 ♥",
+        "it": "Pat Brennan · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he may draw just one card from in play (any player) instead of 2 from the deck.",
+        "it": "Nella fase 1 può pescare una sola carta in gioco (di qualsiasi giocatore) invece di 2 dal mazzo."
+      }
+    },
+    {
+      "id": "pixie-pete",
+      "title": {
+        "en": "Pixie Pete · 3 ♥",
+        "it": "Pixie Pete · 3 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he draws 3 cards instead of 2.",
+        "it": "Nella fase 1 pesca 3 carte invece di 2."
+      }
+    },
+    {
+      "id": "sean-mallory",
+      "title": {
+        "en": "Sean Mallory · 3 ♥",
+        "it": "Sean Mallory · 3 ♥"
+      },
+      "body": {
+        "en": "In phase 3 he can keep up to 10 cards.",
+        "it": "Nella fase 3 può tenere fino a 10 carte."
+      }
+    },
+    {
+      "id": "tequila-joe",
+      "title": {
+        "en": "Tequila Joe · 4 ♥",
+        "it": "Tequila Joe · 4 ♥"
+      },
+      "body": {
+        "en": "Each Beer he plays gives him 2 life points instead of 1.",
+        "it": "Ogni Birra che gioca gli fa recuperare 2 punti vita invece di 1."
+      }
+    },
+    {
+      "id": "vera-custer",
+      "title": {
+        "en": "Vera Custer · 3 ♥",
+        "it": "Vera Custer · 3 ♥"
+      },
+      "body": {
+        "en": "At the start of her turn she copies another living character's ability until her next turn.",
+        "it": "A inizio turno copia l'abilità di un altro personaggio in gioco fino al suo turno successivo."
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "gr-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Gold Rush",
+    "it": "Personaggi · Gold Rush"
+  },
+  "conditions": {
+    "expansions": ["gold-rush"]
+  },
+  "ruleRefs": ["gr-setup"],
+  "sections": [
+    {
+      "id": "don-bell",
+      "title": {
+        "en": "Don Bell · 4 ♥",
+        "it": "Don Bell · 4 ♥"
+      },
+      "body": {
+        "en": "At the end of his turn he draws!: on Hearts or Diamonds he plays an extra turn.",
+        "it": "Alla fine del turno estrae: con Cuori o Quadri gioca un turno extra."
+      }
+    },
+    {
+      "id": "dutch-will",
+      "title": {
+        "en": "Dutch Will · 4 ♥",
+        "it": "Dutch Will · 4 ♥"
+      },
+      "body": {
+        "en": "He draws 2 cards, discards 1 and takes a gold nugget.",
+        "it": "Pesca 2 carte, ne scarta 1 e prende 1 pepita."
+      }
+    },
+    {
+      "id": "jacky-murieta",
+      "title": {
+        "en": "Jacky Murieta · 4 ♥",
+        "it": "Jacky Murieta · 4 ♥"
+      },
+      "body": {
+        "en": "On his turn he may pay 2 nuggets to shoot an extra BANG! (no card needed).",
+        "it": "Nel suo turno può pagare 2 pepite per sparare un BANG! extra (senza carta)."
+      }
+    },
+    {
+      "id": "josh-mccloud",
+      "title": {
+        "en": "Josh McCloud · 4 ♥",
+        "it": "Josh McCloud · 4 ♥"
+      },
+      "body": {
+        "en": "He may pay 2 nuggets to take the top equipment of the deck.",
+        "it": "Può pagare 2 pepite per prendere il primo equipaggiamento del mazzetto."
+      }
+    },
+    {
+      "id": "madam-yto",
+      "title": {
+        "en": "Madam Yto · 4 ♥",
+        "it": "Madam Yto · 4 ♥"
+      },
+      "body": {
+        "en": "Each time a Beer is played, she draws a card.",
+        "it": "Ogni volta che viene giocata una Birra, pesca una carta."
+      }
+    },
+    {
+      "id": "pretty-luzena",
+      "title": {
+        "en": "Pretty Luzena · 4 ♥",
+        "it": "Pretty Luzena · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn she may buy one equipment for 1 nugget less.",
+        "it": "Una volta per turno può comprare un equipaggiamento pagando 1 pepita in meno."
+      }
+    },
+    {
+      "id": "raddie-snake",
+      "title": {
+        "en": "Raddie Snake · 4 ♥",
+        "it": "Raddie Snake · 4 ♥"
+      },
+      "body": {
+        "en": "On his turn he may discard 1 nugget to draw a card, up to twice.",
+        "it": "Nel suo turno può scartare 1 pepita per pescare una carta, fino a 2 volte."
+      }
+    },
+    {
+      "id": "simeon-picos",
+      "title": {
+        "en": "Simeon Picos · 4 ♥",
+        "it": "Simeon Picos · 4 ♥"
+      },
+      "body": {
+        "en": "Each time he loses 1 life point, he takes a gold nugget.",
+        "it": "Ogni volta che perde 1 punto vita, prende 1 pepita."
+      }
+    }
+  ]
+}

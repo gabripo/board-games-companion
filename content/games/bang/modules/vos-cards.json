@@ -1,0 +1,183 @@
+{
+  "id": "vos-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · The Valley of Shadows",
+    "it": "Carte · La Valle delle Ombre"
+  },
+  "conditions": {
+    "expansions": ["valley-of-shadows"]
+  },
+  "ruleRefs": ["vos-overview"],
+  "actions": [
+    {
+      "id": "bounty",
+      "name": {
+        "en": "Bounty",
+        "it": "Taglia"
+      },
+      "effect": {
+        "en": "Blue · play on anyone: whoever hits that player with a BANG! card draws a card.",
+        "it": "Blu · giocala su chiunque: chi colpisce quel giocatore con una carta BANG! pesca una carta."
+      }
+    },
+    {
+      "id": "ghost",
+      "name": {
+        "en": "Ghost",
+        "it": "Fantasma"
+      },
+      "effect": {
+        "en": "Blue · play on an eliminated player: they're back in the game but can't gain or lose life points.",
+        "it": "Blu · giocala su un eliminato: torna in gioco ma non può guadagnare né perdere punti vita."
+      },
+      "limit": {
+        "en": "×2 in the box",
+        "it": "×2 nella scatola"
+      }
+    },
+    {
+      "id": "lemat",
+      "name": {
+        "en": "LeMat",
+        "it": "LeMat"
+      },
+      "effect": {
+        "en": "Blue weapon (reach 1): on your turn, use any card in hand as a BANG!.",
+        "it": "Arma blu (gittata 1): nel tuo turno usa qualsiasi carta in mano come BANG!."
+      }
+    },
+    {
+      "id": "rattlesnake",
+      "name": {
+        "en": "Rattlesnake",
+        "it": "Serpente a Sonagli"
+      },
+      "effect": {
+        "en": "Blue · play on anyone: at the start of their turn they draw!; on Spades they lose 1 life point.",
+        "it": "Blu · giocala su chiunque: a inizio turno estrae; con Picche perde 1 punto vita."
+      }
+    },
+    {
+      "id": "shotgun",
+      "name": {
+        "en": "Shotgun",
+        "it": "Shotgun"
+      },
+      "effect": {
+        "en": "Blue weapon (reach 1): each time you hit a player, they discard a card of their choice from hand.",
+        "it": "Arma blu (gittata 1): ogni volta che colpisci un giocatore, scarta una carta a sua scelta dalla mano."
+      }
+    },
+    {
+      "id": "aim",
+      "name": {
+        "en": "Aim",
+        "it": "Mira"
+      },
+      "effect": {
+        "en": "Play with a BANG! card: if the target is hit, they lose 2 life points.",
+        "it": "Giocala assieme a un BANG!: se il bersaglio è colpito perde 2 punti vita."
+      }
+    },
+    {
+      "id": "backfire",
+      "name": {
+        "en": "Backfire",
+        "it": "Ritorno di Fiamma"
+      },
+      "effect": {
+        "en": "Counts as a Missed!; the player who shot is the target of a BANG!.",
+        "it": "Vale un Mancato!; chi ha sparato è bersaglio di un BANG!."
+      }
+    },
+    {
+      "id": "bandidos",
+      "name": {
+        "en": "Bandidos",
+        "it": "Bandidos"
+      },
+      "effect": {
+        "en": "Each player chooses: discard 2 cards from hand (1 if they have only 1) or lose 1 life point.",
+        "it": "Ogni giocatore sceglie se scartare 2 carte dalla mano (1 se ne ha solo 1) o perdere 1 punto vita."
+      }
+    },
+    {
+      "id": "escape",
+      "name": {
+        "en": "Escape",
+        "it": "Fuga"
+      },
+      "effect": {
+        "en": "Out of turn: avoid the effects of a brown card (not BANG!) that targets you.",
+        "it": "Fuori turno: evita gli effetti di una carta marrone (non BANG!) di cui sei bersaglio."
+      }
+    },
+    {
+      "id": "fanning",
+      "name": {
+        "en": "Fanning",
+        "it": "Sventagliata"
+      },
+      "effect": {
+        "en": "Counts as your one BANG! for the turn; also targets a player at distance 1 from the first target.",
+        "it": "Conta come l'unico BANG! del turno; colpisce anche un giocatore a distanza 1 dal primo bersaglio."
+      }
+    },
+    {
+      "id": "last-call",
+      "name": {
+        "en": "Last Call",
+        "it": "Ultimo Giro"
+      },
+      "effect": {
+        "en": "Regain 1 life point (works with 2 players left, never out of turn).",
+        "it": "Recuperi 1 punto vita (funziona anche in 2, mai fuori turno)."
+      }
+    },
+    {
+      "id": "poker",
+      "name": {
+        "en": "Poker",
+        "it": "Poker"
+      },
+      "effect": {
+        "en": "All others discard a card at the same time; if no Ace, you draw up to 2 of them.",
+        "it": "Tutti gli altri scartano una carta insieme; se non c'è alcun Asso, ne peschi fino a 2."
+      }
+    },
+    {
+      "id": "saved",
+      "name": {
+        "en": "Saved!",
+        "it": "Salvo!"
+      },
+      "effect": {
+        "en": "Out of turn: prevent another player losing 1 life point; if they survive, draw 2 from their hand or the deck.",
+        "it": "Fuori turno: previeni la perdita di 1 punto vita di un altro; se sopravvive, pesca 2 carte dalla sua mano o dal mazzo."
+      }
+    },
+    {
+      "id": "tomahawk",
+      "name": {
+        "en": "Tomahawk",
+        "it": "Tomahawk"
+      },
+      "effect": {
+        "en": "A BANG! at distance up to 2 (not a BANG! card).",
+        "it": "Un BANG! fino a distanza 2 (non è una carta BANG!)."
+      }
+    },
+    {
+      "id": "tornado",
+      "name": {
+        "en": "Tornado",
+        "it": "Tornado"
+      },
+      "effect": {
+        "en": "Everyone discards a card from hand (if possible), then draws 2.",
+        "it": "Tutti scartano una carta dalla mano (se possibile), poi pescano 2 carte."
+      }
+    }
+  ]
+}

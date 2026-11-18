@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "bang",
   "meta": {
     "title": {
@@ -16,8 +16,8 @@
     "interaction": "hidden-traitor",
     "mechanics": ["hidden-roles", "hand-management", "take-that", "deduction"],
     "playerCount": {
-      "min": 4,
-      "max": 7,
+      "min": 3,
+      "max": 8,
       "best": [7]
     },
     "playtimeMinutes": {
@@ -77,6 +77,190 @@
       "lang": "en",
       "official": false,
       "url": "https://officialgamerules.org/game-rules/bang/"
+    },
+    {
+      "id": "dc-rules",
+      "type": "pdf",
+      "title": "BANG! Dodge City rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "dc-faq",
+      "type": "pdf",
+      "title": "BANG! Dodge City F.A.Q. (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-3",
+      "type": "web",
+      "title": "dV Giochi — card list (Dodge City)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=3&lang=en"
+    },
+    {
+      "id": "hn-rules",
+      "type": "pdf",
+      "title": "BANG! High Noon & A Fistful of Cards rules",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "hn-faq",
+      "type": "pdf",
+      "title": "BANG! High Noon F.A.Q. (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-5",
+      "type": "web",
+      "title": "dV Giochi — card list (High Noon)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=5&lang=en"
+    },
+    {
+      "id": "wws-rules",
+      "type": "pdf",
+      "title": "BANG! Wild West Show rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "wws-faq",
+      "type": "pdf",
+      "title": "BANG! Wild West Show F.A.Q. (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-6",
+      "type": "web",
+      "title": "dV Giochi — card list (Wild West Show)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=6&lang=en"
+    },
+    {
+      "id": "gr-rules",
+      "type": "pdf",
+      "title": "BANG! Gold Rush rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "gr-faq",
+      "type": "pdf",
+      "title": "BANG! Gold Rush F.A.Q. (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-4",
+      "type": "web",
+      "title": "dV Giochi — card list (Gold Rush)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=4&lang=en"
+    },
+    {
+      "id": "vos-rules",
+      "type": "pdf",
+      "title": "BANG! The Valley of Shadows rules (EN/IT)",
+      "lang": "other",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-7",
+      "type": "web",
+      "title": "dV Giochi — card list (The Valley of Shadows)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=7&lang=en"
+    },
+    {
+      "id": "ad-rules",
+      "type": "pdf",
+      "title": "BANG! Armed & Dangerous rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-17",
+      "type": "web",
+      "title": "dV Giochi — card list (Armed & Dangerous)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=17&lang=en"
+    },
+    {
+      "id": "tgtr-rules",
+      "type": "pdf",
+      "title": "BANG! The Great Train Robbery rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-20",
+      "type": "web",
+      "title": "dV Giochi — card list (The Great Train Robbery)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=20&lang=en"
+    },
+    {
+      "id": "legends-rules",
+      "type": "pdf",
+      "title": "BANG! Legends rules (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "cards-23",
+      "type": "web",
+      "title": "dV Giochi — card list (Legends)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=23&lang=en"
+    },
+    {
+      "id": "cards-25",
+      "type": "web",
+      "title": "dV Giochi — card list (Most Wanted)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=25&lang=en"
+    },
+    {
+      "id": "cards-21",
+      "type": "web",
+      "title": "dV Giochi — BANG! Expansion Pack card list",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=21&lang=en"
+    },
+    {
+      "id": "cards-22",
+      "type": "web",
+      "title": "dV Giochi — BANG! Dynamite Box card list",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=22&lang=en"
     }
   ],
   "components": [
@@ -197,9 +381,132 @@
         "en": "Remove every playing card marked with the book symbol before shuffling.",
         "it": "Prima di mescolare, togli dal mazzo tutte le carte con il simbolo del libro."
       }
+    },
+    {
+      "id": "shadow-gunslingers",
+      "kind": "variant",
+      "name": {
+        "en": "Shadow-gunslingers (Gold Rush)",
+        "it": "Pistoleri fantasma (Gold Rush)"
+      },
+      "description": {
+        "en": "Eliminated players come back on each of their turns as shadows with 0 life points.",
+        "it": "Gli eliminati tornano a ogni loro turno come ombre con 0 punti vita."
+      }
     }
   ],
-  "expansions": [],
+  "expansions": [
+    {
+      "id": "dodge-city",
+      "name": {
+        "en": "Dodge City",
+        "it": "Dodge City"
+      },
+      "description": {
+        "en": "15 characters, 40 cards with the new green-bordered cards, and rules for 3 and 8 players.",
+        "it": "15 personaggi, 40 carte con le nuove carte a bordo verde, e regole per 3 e 8 giocatori."
+      }
+    },
+    {
+      "id": "high-noon",
+      "name": {
+        "en": "High Noon",
+        "it": "High Noon (Mezzogiorno di Fuoco)"
+      },
+      "description": {
+        "en": "13 event cards: each round a new card changes the rules for everyone. Also in the Dodge City box.",
+        "it": "13 carte evento: a ogni giro una nuova carta cambia le regole per tutti. Inclusa anche nella scatola di Dodge City."
+      }
+    },
+    {
+      "id": "fistful-of-cards",
+      "name": {
+        "en": "A Fistful of Cards",
+        "it": "A Fistful of Cards (Per un Pugno di Carte)"
+      },
+      "description": {
+        "en": "15 event cards played like High Noon (the two decks can be mixed).",
+        "it": "15 carte evento che si giocano come High Noon (i due mazzi si possono mescolare)."
+      }
+    },
+    {
+      "id": "wild-west-show",
+      "name": {
+        "en": "Wild West Show",
+        "it": "Wild West Show"
+      },
+      "description": {
+        "en": "8 characters and 10 show cards that change the rules whenever a Stagecoach or Wells Fargo is played.",
+        "it": "8 personaggi e 10 carte spettacolo che cambiano le regole ogni volta che si gioca una Diligenza o una Wells Fargo."
+      }
+    },
+    {
+      "id": "gold-rush",
+      "name": {
+        "en": "Gold Rush",
+        "it": "Gold Rush"
+      },
+      "description": {
+        "en": "Earn gold nuggets for every wound you inflict and spend them on 24 equipment cards. Also adds 8 characters and the shadow-gunslinger variant.",
+        "it": "Guadagni pepite per ogni ferita inflitta e le spendi in 24 carte equipaggiamento. Aggiunge anche 8 personaggi e la variante dei pistoleri fantasma."
+      }
+    },
+    {
+      "id": "valley-of-shadows",
+      "name": {
+        "en": "The Valley of Shadows",
+        "it": "La Valle delle Ombre"
+      },
+      "description": {
+        "en": "8 characters and 16 playing cards, including Ghosts that bring eliminated players back.",
+        "it": "8 personaggi e 16 carte da gioco, tra cui i Fantasmi che riportano in gioco gli eliminati."
+      }
+    },
+    {
+      "id": "armed-dangerous",
+      "name": {
+        "en": "Armed & Dangerous",
+        "it": "Armed & Dangerous (Armati e pericolosi)"
+      },
+      "description": {
+        "en": "Load tokens power orange Dangerous cards and upgrade brown cards. 8 characters, 28 cards.",
+        "it": "I segnalini carica attivano le carte arancioni Dangerous e potenziano le carte marroni. 8 personaggi, 28 carte."
+      }
+    },
+    {
+      "id": "great-train-robbery",
+      "name": {
+        "en": "The Great Train Robbery",
+        "it": "The Great Train Robbery"
+      },
+      "description": {
+        "en": "A train crosses the stations: pay a station's cost to take powerful railcars. 8 characters, 16 cards.",
+        "it": "Un treno attraversa le stazioni: paga il costo di una stazione per prendere vagoni potenti. 8 personaggi, 16 carte."
+      }
+    },
+    {
+      "id": "legends",
+      "name": {
+        "en": "Legends",
+        "it": "Legends"
+      },
+      "description": {
+        "en": "16 legendary versions of the base characters, Feat cards and Fame tokens: complete feats to become a Legend.",
+        "it": "16 versioni leggendarie dei personaggi base, carte Impresa e segnalini Fama: compi imprese per diventare Leggenda."
+      }
+    },
+    {
+      "id": "most-wanted",
+      "name": {
+        "en": "Most Wanted",
+        "it": "Most Wanted"
+      },
+      "description": {
+        "en": "Promo pack: 5 characters, 2 extra High Noon-style events (Handcuffs, New Identity) and blank cards.",
+        "it": "Pacchetto promo: 5 personaggi, 2 eventi in stile High Noon (Manette, Nuova identità) e carte bianche."
+      }
+    }
+  ],
   "topics": [
     {
       "id": "roles",
@@ -290,6 +597,76 @@
       "name": {
         "en": "Characters",
         "it": "Personaggi"
+      }
+    },
+    {
+      "id": "exp-dc",
+      "name": {
+        "en": "Expansion · Dodge City",
+        "it": "Espansione · Dodge City"
+      }
+    },
+    {
+      "id": "exp-hn",
+      "name": {
+        "en": "Expansion · High Noon",
+        "it": "Espansione · High Noon (Mezzogiorno di Fuoco)"
+      }
+    },
+    {
+      "id": "exp-foc",
+      "name": {
+        "en": "Expansion · A Fistful of Cards",
+        "it": "Espansione · A Fistful of Cards (Per un Pugno di Carte)"
+      }
+    },
+    {
+      "id": "exp-wws",
+      "name": {
+        "en": "Expansion · Wild West Show",
+        "it": "Espansione · Wild West Show"
+      }
+    },
+    {
+      "id": "exp-gr",
+      "name": {
+        "en": "Expansion · Gold Rush",
+        "it": "Espansione · Gold Rush"
+      }
+    },
+    {
+      "id": "exp-vos",
+      "name": {
+        "en": "Expansion · The Valley of Shadows",
+        "it": "Espansione · La Valle delle Ombre"
+      }
+    },
+    {
+      "id": "exp-ad",
+      "name": {
+        "en": "Expansion · Armed & Dangerous",
+        "it": "Espansione · Armed & Dangerous (Armati e pericolosi)"
+      }
+    },
+    {
+      "id": "exp-tgtr",
+      "name": {
+        "en": "Expansion · The Great Train Robbery",
+        "it": "Espansione · The Great Train Robbery"
+      }
+    },
+    {
+      "id": "exp-leg",
+      "name": {
+        "en": "Expansion · Legends",
+        "it": "Espansione · Legends"
+      }
+    },
+    {
+      "id": "exp-mw",
+      "name": {
+        "en": "Expansion · Most Wanted",
+        "it": "Espansione · Most Wanted"
       }
     }
   ],
@@ -916,6 +1293,336 @@
       "icon": {
         "sceneId": "playing-cards",
         "hotspotId": "winchester"
+      }
+    },
+    {
+      "id": "green-card",
+      "term": {
+        "en": "Green-bordered card",
+        "it": "Carta a bordo verde"
+      },
+      "definition": {
+        "en": "Played in front of you, used later by discarding it (not the same turn).",
+        "it": "Si gioca davanti a te e si usa in seguito scartandola (non nello stesso turno)."
+      },
+      "aliases": {
+        "en": ["Carta a bordo verde"],
+        "it": ["Green-bordered card"]
+      },
+      "icon": {
+        "sceneId": "exp-dodge-city",
+        "hotspotId": "bible"
+      },
+      "ruleRefs": ["dc-green-cards"],
+      "conditions": {
+        "expansions": ["dodge-city"]
+      }
+    },
+    {
+      "id": "discard-another",
+      "term": {
+        "en": "\"Discard another card\" symbol",
+        "it": "Simbolo \"scarta un'altra carta\""
+      },
+      "definition": {
+        "en": "Discard one more card from your hand to get the effect.",
+        "it": "Scarta un'altra carta dalla mano per ottenere l'effetto."
+      },
+      "aliases": {
+        "en": ["Simbolo \"scarta un'altra carta\""],
+        "it": ["\"Discard another card\" symbol"]
+      },
+      "icon": {
+        "sceneId": "exp-dodge-city",
+        "hotspotId": "whisky"
+      },
+      "ruleRefs": ["dc-discard-another"],
+      "conditions": {
+        "expansions": ["dodge-city"]
+      }
+    },
+    {
+      "id": "event-card",
+      "term": {
+        "en": "Event card",
+        "it": "Carta evento"
+      },
+      "definition": {
+        "en": "High Noon / A Fistful of Cards card revealed by the Sheriff; it changes the rules until covered.",
+        "it": "Carta di High Noon / A Fistful of Cards rivelata dallo Sceriffo; cambia le regole finché non viene coperta."
+      },
+      "aliases": {
+        "en": ["Carta evento"],
+        "it": ["Event card"]
+      },
+      "icon": {
+        "sceneId": "exp-high-noon",
+        "hotspotId": "high-noon"
+      },
+      "ruleRefs": ["hn-reveal"],
+      "conditions": {
+        "expansions": ["high-noon", "fistful-of-cards", "most-wanted"]
+      }
+    },
+    {
+      "id": "show-card",
+      "term": {
+        "en": "Show card",
+        "it": "Carta spettacolo"
+      },
+      "definition": {
+        "en": "Wild West Show card revealed when a Stagecoach or Wells Fargo is played.",
+        "it": "Carta Wild West Show rivelata quando si gioca una Diligenza o una Wells Fargo."
+      },
+      "aliases": {
+        "en": ["Carta spettacolo"],
+        "it": ["Show card"]
+      },
+      "icon": {
+        "sceneId": "exp-wild-west-show",
+        "hotspotId": "wild-west-show"
+      },
+      "ruleRefs": ["wws-trigger"],
+      "conditions": {
+        "expansions": ["wild-west-show"]
+      }
+    },
+    {
+      "id": "gold-nugget",
+      "term": {
+        "en": "Gold nugget",
+        "it": "Pepita"
+      },
+      "definition": {
+        "en": "Earned for each wound you cause; spent on equipment.",
+        "it": "Si guadagna per ogni ferita inflitta; si spende in equipaggiamento."
+      },
+      "aliases": {
+        "en": ["Pepita"],
+        "it": ["Gold nugget"]
+      },
+      "ruleRefs": ["gr-earn", "gr-buy"],
+      "conditions": {
+        "expansions": ["gold-rush"]
+      }
+    },
+    {
+      "id": "equipment",
+      "term": {
+        "en": "Equipment",
+        "it": "Equipaggiamento"
+      },
+      "definition": {
+        "en": "Gold Rush cards bought with nuggets: brown = one-shot, black = permanent.",
+        "it": "Carte di Gold Rush comprate con le pepite: marroni = uso singolo, nere = permanenti."
+      },
+      "aliases": {
+        "en": ["Equipaggiamento"],
+        "it": ["Equipment"]
+      },
+      "icon": {
+        "sceneId": "exp-gold-rush",
+        "hotspotId": "pickaxe"
+      },
+      "ruleRefs": ["gr-buy"],
+      "conditions": {
+        "expansions": ["gold-rush"]
+      }
+    },
+    {
+      "id": "shadow-gunslinger",
+      "term": {
+        "en": "Shadow-gunslinger",
+        "it": "Pistolero fantasma"
+      },
+      "definition": {
+        "en": "Eliminated player who returns on each of their turns with 0 life points.",
+        "it": "Giocatore eliminato che rientra a ogni suo turno con 0 punti vita."
+      },
+      "aliases": {
+        "en": ["Pistolero fantasma"],
+        "it": ["Shadow-gunslinger"]
+      },
+      "ruleRefs": ["gr-shadow"],
+      "conditions": {
+        "expansions": ["gold-rush"],
+        "variants": ["shadow-gunslingers"]
+      }
+    },
+    {
+      "id": "ghost",
+      "term": {
+        "en": "Ghost",
+        "it": "Fantasma"
+      },
+      "definition": {
+        "en": "An eliminated player back in play with no life points.",
+        "it": "Un eliminato tornato in gioco senza punti vita."
+      },
+      "aliases": {
+        "en": ["Fantasma"],
+        "it": ["Ghost"]
+      },
+      "icon": {
+        "sceneId": "exp-valley-of-shadows",
+        "hotspotId": "ghost"
+      },
+      "ruleRefs": ["vos-ghost"],
+      "conditions": {
+        "expansions": ["valley-of-shadows"]
+      }
+    },
+    {
+      "id": "load-token",
+      "term": {
+        "en": "Load token",
+        "it": "Segnalino carica"
+      },
+      "definition": {
+        "en": "Fuel for Dangerous cards, some characters and upgrades; max 4 per card or character.",
+        "it": "Serve alle carte Dangerous, ad alcuni personaggi e ai potenziamenti; massimo 4 per carta o personaggio."
+      },
+      "aliases": {
+        "en": ["Segnalino carica"],
+        "it": ["Load token"]
+      },
+      "ruleRefs": ["ad-dangerous", "ad-reload"],
+      "conditions": {
+        "expansions": ["armed-dangerous"]
+      }
+    },
+    {
+      "id": "dangerous-card",
+      "term": {
+        "en": "Dangerous card",
+        "it": "Carta Dangerous"
+      },
+      "definition": {
+        "en": "Orange-bordered object or weapon that spends load tokens.",
+        "it": "Oggetto o arma a bordo arancione che consuma segnalini carica."
+      },
+      "aliases": {
+        "en": ["Carta Dangerous"],
+        "it": ["Dangerous card"]
+      },
+      "icon": {
+        "sceneId": "exp-armed-dangerous",
+        "hotspotId": "bomb"
+      },
+      "ruleRefs": ["ad-dangerous"],
+      "conditions": {
+        "expansions": ["armed-dangerous"]
+      }
+    },
+    {
+      "id": "station",
+      "term": {
+        "en": "Station",
+        "it": "Stazione"
+      },
+      "definition": {
+        "en": "Tile in the train line; its cost is what you discard to take the paired Railcar.",
+        "it": "Tessera della linea; il suo costo è ciò che scarti per prendere il vagone abbinato."
+      },
+      "aliases": {
+        "en": ["Stazione"],
+        "it": ["Station"]
+      },
+      "icon": {
+        "sceneId": "exp-great-train-robbery",
+        "hotspotId": "boom-town"
+      },
+      "ruleRefs": ["tgtr-take"],
+      "conditions": {
+        "expansions": ["great-train-robbery"]
+      }
+    },
+    {
+      "id": "railcar",
+      "term": {
+        "en": "Railcar",
+        "it": "Vagone"
+      },
+      "definition": {
+        "en": "Train card taken from a Station; works like a blue card.",
+        "it": "Carta del treno presa da una stazione; funziona come una carta blu."
+      },
+      "aliases": {
+        "en": ["Vagone"],
+        "it": ["Railcar"]
+      },
+      "icon": {
+        "sceneId": "exp-great-train-robbery",
+        "hotspotId": "caboose"
+      },
+      "ruleRefs": ["tgtr-railcars"],
+      "conditions": {
+        "expansions": ["great-train-robbery"]
+      }
+    },
+    {
+      "id": "end-of-line",
+      "term": {
+        "en": "End of the Line",
+        "it": "Capolinea"
+      },
+      "definition": {
+        "en": "When the Locomotive passes the last Station: its effect triggers and a new train is formed.",
+        "it": "Quando la locomotiva supera l'ultima stazione: si applica il suo effetto e si forma un nuovo treno."
+      },
+      "aliases": {
+        "en": ["Capolinea"],
+        "it": ["End of the Line"]
+      },
+      "icon": {
+        "sceneId": "exp-great-train-robbery",
+        "hotspotId": "ironhorse"
+      },
+      "ruleRefs": ["tgtr-end-of-line"],
+      "conditions": {
+        "expansions": ["great-train-robbery"]
+      }
+    },
+    {
+      "id": "feat",
+      "term": {
+        "en": "Feat",
+        "it": "Impresa"
+      },
+      "definition": {
+        "en": "Legends card: do what it shows to earn fame.",
+        "it": "Carta di Legends: fai ciò che mostra per guadagnare fama."
+      },
+      "aliases": {
+        "en": ["Impresa"],
+        "it": ["Feat"]
+      },
+      "icon": {
+        "sceneId": "exp-legends",
+        "hotspotId": "feat-borderlands"
+      },
+      "ruleRefs": ["leg-perform", "leg-boast"],
+      "conditions": {
+        "expansions": ["legends"]
+      }
+    },
+    {
+      "id": "fame-token",
+      "term": {
+        "en": "Fame token",
+        "it": "Segnalino Fama"
+      },
+      "definition": {
+        "en": "Placed on Feats you perform or boast about; place them all to become a Legend.",
+        "it": "Si mette sulle Imprese compiute o millantate; piazzali tutti per diventare Leggenda."
+      },
+      "aliases": {
+        "en": ["Segnalino Fama"],
+        "it": ["Fame token"]
+      },
+      "ruleRefs": ["leg-perform", "leg-legend"],
+      "conditions": {
+        "expansions": ["legends"]
       }
     }
   ]

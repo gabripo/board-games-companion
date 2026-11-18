@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { Citation, Id, LocalizedString, SceneRef, YouTubeVideoId } from "./primitives";
+import { Citation, Conditions, Id, LocalizedString, SceneRef, YouTubeVideoId } from "./primitives";
 
 export const TurnModel = z.enum([
   "sequential",
@@ -130,6 +130,8 @@ export const Component = z.strictObject({
   quantity: z.int().positive().optional(),
   description: LocalizedString.optional(),
   sceneRefs: z.array(SceneRef).optional(),
+  /** E.g. components that only come with an expansion. */
+  conditions: Conditions.optional(),
 });
 export type Component = z.infer<typeof Component>;
 
@@ -144,6 +146,8 @@ export type Variant = z.infer<typeof Variant>;
 export const Expansion = z.strictObject({
   id: Id,
   name: LocalizedString,
+  /** One-line summary of what the expansion adds (shown in the session picker). */
+  description: LocalizedString.optional(),
 });
 export type Expansion = z.infer<typeof Expansion>;
 
@@ -167,6 +171,7 @@ export const GlossaryEntry = z.strictObject({
   /** Icon = crop of a hotspot in a scene. */
   icon: SceneRef.optional(),
   ruleRefs: z.array(Id).optional(),
+  conditions: Conditions.optional(),
 });
 export type GlossaryEntry = z.infer<typeof GlossaryEntry>;
 

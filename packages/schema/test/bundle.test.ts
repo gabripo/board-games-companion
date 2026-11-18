@@ -48,7 +48,7 @@ describe("loadGameDir()", () => {
     await writeFile(join(dir, "game.json"), JSON.stringify(game));
     const r = await loadGameDir(dir);
     expect(r.issues.filter((i) => i.severity === "error")).toEqual([]);
-    expect(r.guide?.schemaVersion).toBe(2);
+    expect(r.guide?.schemaVersion).toBe(3);
     expect(r.guide?.topics).toHaveLength(4);
   });
 

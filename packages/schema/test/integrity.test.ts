@@ -114,9 +114,9 @@ describe("conditions", () => {
 
   it("unknown variant or expansion", () => {
     const g = clone(sequentialGame);
-    g.rules[2]!.conditions = { variants: ["solo"], expansions: ["river"] };
+    g.rules[2]!.conditions = { variants: ["solo"], expansions: ["lake"] };
     expectError(g, "rules[2].conditions.variants[0]", /unknown variant "solo"/);
-    expectError(g, "rules[2].conditions.expansions[0]", /unknown expansion "river"/);
+    expectError(g, "rules[2].conditions.expansions[0]", /unknown expansion "lake"/);
   });
 });
 
@@ -250,5 +250,23 @@ describe("topics", () => {
     const warnings = warningsOf(g).join("\n");
     expect(warnings).toMatch(/topics\[4\]: topic "endgame" is not used by any rule/);
     expect(warnings).toMatch(/topics\[4\]\.name: topic "endgame" is not translated/);
+  });
+});
+
+describe("conditions on components, glossary, modules and scenes (v3)", () => {
+  it("accepts an expansion-only component and glossary entry", () => {
+    expect(errorsOf(clone(sequentialGame))).toEqual([]);
+  });
+
+  it("flags unknown expansions and out-of-range player counts", () => {
+    const g = clone(sequentialGame);
+    g.components[1]!.conditions = { expansions: ["lake"] };
+    g.glossary[0]!.conditions = { playerCount: [9] };
+    g.modules[0]!.conditions = { expansions: ["lake"] };
+    g.scenes[0]!.conditions = { variants: ["solo"] };
+    expectError(g, "components[1].conditions.expansions[0]", /unknown expansion "lake"/);
+    expectError(g, "glossary[0].conditions.playerCount[0]", /outside the game's 2–5/);
+    expectError(g, "modules[0].conditions.expansions[0]", /unknown expansion "lake"/);
+    expectError(g, "scenes[0].conditions.variants[0]", /unknown variant "solo"/);
   });
 });

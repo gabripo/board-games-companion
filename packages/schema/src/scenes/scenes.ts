@@ -67,6 +67,7 @@ export const Scene = z.strictObject({
   }),
   hotspots: z.array(Hotspot),
   annotations: z.array(Annotation).optional(),
+  conditions: Conditions.optional(),
 });
 export type Scene = z.infer<typeof Scene>;
 

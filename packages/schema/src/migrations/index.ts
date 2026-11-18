@@ -34,6 +34,12 @@ const MIGRATIONS: Migration[] = [
       return { ...doc, topics };
     },
   },
+  {
+    // v3: optional `conditions` on components, glossary entries, modules and scenes, and an
+    // optional expansion description. Purely additive, so v2 documents are already valid.
+    from: 2,
+    migrate: (doc) => doc,
+  },
 ];
 
 export class UnsupportedSchemaVersionError extends Error {}

@@ -1,0 +1,190 @@
+{
+  "id": "leg-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Legends",
+    "it": "Personaggi · Legends"
+  },
+  "conditions": {
+    "expansions": ["legends"]
+  },
+  "ruleRefs": ["leg-setup"],
+  "sections": [
+    {
+      "id": "bart-cassidy",
+      "title": {
+        "en": "Bart Cassidy · 4 ♥",
+        "it": "Bart Cassidy · 4 ♥"
+      },
+      "body": {
+        "en": "If you are hit, draw 2 cards.",
+        "it": "Se vieni ferito, peschi 2 carte."
+      }
+    },
+    {
+      "id": "black-jack",
+      "title": {
+        "en": "Black Jack · 4 ♥",
+        "it": "Black Jack · 4 ♥"
+      },
+      "body": {
+        "en": "You may flip cards until their sum is over 21, then draw them all (J/Q/K = 10, A = 11).",
+        "it": "Puoi scoprire carte finché la somma non supera 21, poi le peschi tutte (J/Q/K = 10, A = 11)."
+      }
+    },
+    {
+      "id": "calamity-janet",
+      "title": {
+        "en": "Calamity Janet · 4 ♥",
+        "it": "Calamity Janet · 4 ♥"
+      },
+      "body": {
+        "en": "Each of your cards counts as a BANG! or a Missed!.",
+        "it": "Ogni tua carta vale come BANG! o Mancato!."
+      }
+    },
+    {
+      "id": "el-gringo",
+      "title": {
+        "en": "El Gringo · 3 ♥",
+        "it": "El Gringo · 3 ♥"
+      },
+      "body": {
+        "en": "If you are hit by a player, draw 1 card from their hand and the card that hit you.",
+        "it": "Se vieni ferito da un giocatore, peschi una carta dalla sua mano e la carta che ti ha ferito."
+      }
+    },
+    {
+      "id": "jesse-jones",
+      "title": {
+        "en": "Jesse Jones · 4 ♥",
+        "it": "Jesse Jones · 4 ♥"
+      },
+      "body": {
+        "en": "Look at any player's hand and draw 1 card from it, then 1 from the deck.",
+        "it": "Guarda la mano di un giocatore, pescane una, poi pescane un'altra dal mazzo."
+      }
+    },
+    {
+      "id": "jourdonnais",
+      "title": {
+        "en": "Jourdonnais · 4 ♥",
+        "it": "Jourdonnais · 4 ♥"
+      },
+      "body": {
+        "en": "If you are the target of a brown card you may draw!: J, Q, K, A = ignore the card.",
+        "it": "Se sei bersaglio di una carta marrone puoi estrarre: J, Q, K, A = ignora la carta."
+      }
+    },
+    {
+      "id": "kit-carlson",
+      "title": {
+        "en": "Kit Carlson · 4 ♥",
+        "it": "Kit Carlson · 4 ♥"
+      },
+      "body": {
+        "en": "Draw 3 cards; you may give 1 of them to another player.",
+        "it": "Peschi 3 carte; puoi darne 1 a un altro giocatore."
+      }
+    },
+    {
+      "id": "lucky-duke",
+      "title": {
+        "en": "Lucky Duke · 4 ♥",
+        "it": "Lucky Duke · 4 ♥"
+      },
+      "body": {
+        "en": "When a card requires a draw!, you flip 2 and choose 1; on your turn you then draw it.",
+        "it": "Se una carta fa estrarre, scopri tu 2 carte e scegli quella da usare; se è il tuo turno la peschi."
+      }
+    },
+    {
+      "id": "paul-regret",
+      "title": {
+        "en": "Paul Regret · 3 ♥",
+        "it": "Paul Regret · 3 ♥"
+      },
+      "body": {
+        "en": "Others see you at +1; to BANG! you, a player must discard an extra card from hand.",
+        "it": "Gli altri ti vedono a +1; per giocarti un BANG! contro occorre scartare una carta in più dalla mano."
+      }
+    },
+    {
+      "id": "pedro-ramirez",
+      "title": {
+        "en": "Pedro Ramirez · 4 ♥",
+        "it": "Pedro Ramirez · 4 ♥"
+      },
+      "body": {
+        "en": "Draw 2 cards plus the top card of the discard pile.",
+        "it": "Peschi 2 carte più quella in cima agli scarti."
+      }
+    },
+    {
+      "id": "rose-doolan",
+      "title": {
+        "en": "Rose Doolan · 4 ♥",
+        "it": "Rose Doolan · 4 ♥"
+      },
+      "body": {
+        "en": "You see everyone at distance 1; once per turn discard one of your blue cards (hand or play) as a Panic!.",
+        "it": "Vedi tutti a distanza 1; una volta nel turno puoi scartare una tua carta blu (in mano o in gioco) come Panico!."
+      }
+    },
+    {
+      "id": "sid-ketchum",
+      "title": {
+        "en": "Sid Ketchum · 4 ♥",
+        "it": "Sid Ketchum · 4 ♥"
+      },
+      "body": {
+        "en": "Discard 2 cards to regain 1 life point; once per turn, when you regain a life point, you may shoot a free BANG!.",
+        "it": "Scarta 2 carte per recuperare 1 punto vita; una volta nel turno, se recuperi un punto vita, puoi sparare un BANG! gratis."
+      }
+    },
+    {
+      "id": "slab-the-killer",
+      "title": {
+        "en": "Slab the Killer · 4 ♥",
+        "it": "Slab the Killer · 4 ♥"
+      },
+      "body": {
+        "en": "Your BANG! can't be cancelled; when you claim a Feat you may remove even a player's last life point.",
+        "it": "I tuoi BANG! non possono essere annullati; se rivendichi un'Impresa puoi togliere anche l'ultimo punto vita."
+      }
+    },
+    {
+      "id": "suzy-lafayette",
+      "title": {
+        "en": "Suzy Lafayette · 4 ♥",
+        "it": "Suzy Lafayette · 4 ♥"
+      },
+      "body": {
+        "en": "With fewer than 2 cards in hand, draw until you have 2.",
+        "it": "Se rimani con meno di 2 carte in mano, peschi fino a tornare a 2."
+      }
+    },
+    {
+      "id": "vulture-sam",
+      "title": {
+        "en": "Vulture Sam · 4 ♥",
+        "it": "Vulture Sam · 4 ♥"
+      },
+      "body": {
+        "en": "Take all cards of each eliminated player; if you are eliminated, stay in play with 4 life points on your normal side.",
+        "it": "Prendi tutte le carte di ogni eliminato; se vieni eliminato resti in gioco con 4 punti vita, ma torni sul lato normale."
+      }
+    },
+    {
+      "id": "willy-the-kid",
+      "title": {
+        "en": "Willy the Kid · 4 ♥",
+        "it": "Willy the Kid · 4 ♥"
+      },
+      "body": {
+        "en": "Play any number of BANG! cards; instead of claiming a Feat you may shoot a free BANG!.",
+        "it": "Puoi giocare quante carte BANG! vuoi; invece di rivendicare un'Impresa puoi sparare un BANG! gratis."
+      }
+    }
+  ]
+}

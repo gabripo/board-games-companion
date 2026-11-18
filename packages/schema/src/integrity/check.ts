@@ -124,12 +124,14 @@ export function checkIntegrity(g: GameGuide): IntegrityIssue[] {
 
   // ── components / glossary ───────────────────────────────────────────────
   for (const [i, c] of g.components.entries()) {
+    checkConditions(c.conditions, ["components", i, "conditions"]);
     for (const [j, ref] of (c.sceneRefs ?? []).entries()) {
       checkSceneRef(ref, ["components", i, "sceneRefs", j]);
     }
   }
   for (const [i, entry] of g.glossary.entries()) {
     checkSceneRef(entry.icon, ["glossary", i, "icon"]);
+    checkConditions(entry.conditions, ["glossary", i, "conditions"]);
     checkRuleRefs(entry.ruleRefs, ["glossary", i, "ruleRefs"]);
   }
 
@@ -255,6 +257,7 @@ export function checkIntegrity(g: GameGuide): IntegrityIssue[] {
 
   // ── scenes ──────────────────────────────────────────────────────────────
   for (const [i, scene] of g.scenes.entries()) {
+    checkConditions(scene.conditions, ["scenes", i, "conditions"]);
     for (const [j, h] of scene.hotspots.entries()) {
       checkRuleRefs(h.ruleRefs, ["scenes", i, "hotspots", j, "ruleRefs"]);
       checkClip(h.clip, ["scenes", i, "hotspots", j, "clip"]);

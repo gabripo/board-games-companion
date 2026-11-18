@@ -16,7 +16,7 @@ import { FlowNode } from "./flow/flow";
 import { Module } from "./modules/modules";
 import { Scene, Walkthrough } from "./scenes/scenes";
 
-export const CURRENT_SCHEMA_VERSION = 2;
+export const CURRENT_SCHEMA_VERSION = 3;
 
 // ── per-file schemas (content/games/<id>/…) ────────────────────────────────
 

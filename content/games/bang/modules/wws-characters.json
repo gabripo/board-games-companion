@@ -1,0 +1,102 @@
+{
+  "id": "wws-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Wild West Show",
+    "it": "Personaggi · Wild West Show"
+  },
+  "conditions": {
+    "expansions": ["wild-west-show"]
+  },
+  "ruleRefs": ["wws-setup"],
+  "sections": [
+    {
+      "id": "big-spencer",
+      "title": {
+        "en": "Big Spencer · 9 ♥",
+        "it": "Big Spencer · 9 ♥"
+      },
+      "body": {
+        "en": "He starts with 5 cards. He can't play Missed!.",
+        "it": "Inizia con 5 carte. Non può giocare Mancato!."
+      }
+    },
+    {
+      "id": "flint-westwood",
+      "title": {
+        "en": "Flint Westwood · 4 ♥",
+        "it": "Flint Westwood · 4 ♥"
+      },
+      "body": {
+        "en": "Once on his turn he may trade one card from his hand for 2 random cards from another player's hand.",
+        "it": "Una volta nel suo turno può scambiare una carta dalla mano con 2 carte a caso dalla mano di un altro."
+      }
+    },
+    {
+      "id": "gary-looter",
+      "title": {
+        "en": "Gary Looter · 5 ♥",
+        "it": "Gary Looter · 5 ♥"
+      },
+      "body": {
+        "en": "He takes all excess cards the other players discard at the end of their turn.",
+        "it": "Pesca tutte le carte in eccesso scartate dagli altri a fine turno."
+      }
+    },
+    {
+      "id": "greygory-deck",
+      "title": {
+        "en": "Greygory Deck · 4 ♥",
+        "it": "Greygory Deck · 4 ♥"
+      },
+      "body": {
+        "en": "At the start of his turn he may draw 2 base-game characters at random and has both abilities.",
+        "it": "All'inizio del turno può pescare 2 personaggi del gioco base a caso e ne ha entrambe le abilità."
+      }
+    },
+    {
+      "id": "john-pain",
+      "title": {
+        "en": "John Pain · 4 ♥",
+        "it": "John Pain · 4 ♥"
+      },
+      "body": {
+        "en": "With fewer than 6 cards in hand, whenever any player draws!, he takes the drawn card.",
+        "it": "Se ha meno di 6 carte in mano, quando un giocatore estrae aggiunge alla mano la carta estratta."
+      }
+    },
+    {
+      "id": "lee-van-kliff",
+      "title": {
+        "en": "Lee Van Kliff · 4 ♥",
+        "it": "Lee Van Kliff · 4 ♥"
+      },
+      "body": {
+        "en": "On his turn he may discard a BANG! to repeat the effect of a brown card he just played.",
+        "it": "Nel suo turno può scartare un BANG! per ripetere l'effetto di una carta marrone appena giocata."
+      }
+    },
+    {
+      "id": "teren-kill",
+      "title": {
+        "en": "Teren Kill · 3 ♥",
+        "it": "Teren Kill · 3 ♥"
+      },
+      "body": {
+        "en": "Each time he would be eliminated, draw!: if not Spades he stays at 1 life point and draws a card.",
+        "it": "Ogni volta che sarebbe eliminato estrae: se non è Picche resta a 1 punto vita e pesca una carta."
+      }
+    },
+    {
+      "id": "youl-grinner",
+      "title": {
+        "en": "Youl Grinner · 4 ♥",
+        "it": "Youl Grinner · 4 ♥"
+      },
+      "body": {
+        "en": "Before he draws, each player with more cards in hand than him gives him one of their choice.",
+        "it": "Prima che peschi, chi ha più carte in mano di lui deve dargliene una a scelta."
+      }
+    }
+  ]
+}

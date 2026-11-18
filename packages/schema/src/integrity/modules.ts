@@ -14,6 +14,7 @@ export interface ModuleCheckContext {
 export function checkModule(m: Module, path: Path, ctx: ModuleCheckContext): void {
   const { issues } = ctx;
   ctx.checkRuleRefs(m.ruleRefs, [...path, "ruleRefs"]);
+  ctx.checkConditions(m.conditions, [...path, "conditions"]);
 
   switch (m.kind) {
     case "dice": {

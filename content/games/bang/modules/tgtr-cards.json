@@ -1,0 +1,517 @@
+{
+  "id": "tgtr-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · The Great Train Robbery",
+    "it": "Carte · The Great Train Robbery"
+  },
+  "conditions": {
+    "expansions": ["great-train-robbery"]
+  },
+  "ruleRefs": ["tgtr-setup"],
+  "actions": [
+    {
+      "id": "boom-town",
+      "name": {
+        "en": "Boom Town",
+        "it": "Boom Town"
+      },
+      "effect": {
+        "en": "Station · cost: discard a BANG! card.",
+        "it": "Stazione · costo: scarta una carta BANG!."
+      }
+    },
+    {
+      "id": "catico",
+      "name": {
+        "en": "Catico",
+        "it": "Catico"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Cat Balou or a Panic!.",
+        "it": "Stazione · costo: scarta un Cat Balou o un Panico!."
+      }
+    },
+    {
+      "id": "creepy-creek",
+      "name": {
+        "en": "Creepy Creek",
+        "it": "Creepy Creek"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Spades card.",
+        "it": "Stazione · costo: scarta una carta di Picche."
+      }
+    },
+    {
+      "id": "crowns-hole",
+      "name": {
+        "en": "Crown's Hole",
+        "it": "Crown's Hole"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Beer.",
+        "it": "Stazione · costo: scarta una Birra."
+      }
+    },
+    {
+      "id": "deathwood",
+      "name": {
+        "en": "Deathwood",
+        "it": "Deathwood"
+      },
+      "effect": {
+        "en": "Station · cost: discard a blue-bordered card.",
+        "it": "Stazione · costo: scarta una carta a bordo blu."
+      }
+    },
+    {
+      "id": "dodgeville",
+      "name": {
+        "en": "Dodgeville",
+        "it": "Dodgeville"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Missed!.",
+        "it": "Stazione · costo: scarta un Mancato!."
+      }
+    },
+    {
+      "id": "fort-wroth",
+      "name": {
+        "en": "Fort Wroth",
+        "it": "Fort Wroth"
+      },
+      "effect": {
+        "en": "Station · cost: discard a card valued 10, J, Q, K or A.",
+        "it": "Stazione · costo: scarta una carta di valore 10, J, Q, K o A."
+      }
+    },
+    {
+      "id": "frisco",
+      "name": {
+        "en": "Frisco",
+        "it": "Frisco"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Clubs card.",
+        "it": "Stazione · costo: scarta una carta di Fiori."
+      }
+    },
+    {
+      "id": "miners-oath",
+      "name": {
+        "en": "Miner's Oath",
+        "it": "Miner's Oath"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Diamonds card.",
+        "it": "Stazione · costo: scarta una carta di Quadri."
+      }
+    },
+    {
+      "id": "san-tafe",
+      "name": {
+        "en": "San Tafe",
+        "it": "San Tafe"
+      },
+      "effect": {
+        "en": "Station · cost: discard a Hearts card.",
+        "it": "Stazione · costo: scarta una carta di Cuori."
+      }
+    },
+    {
+      "id": "tombrock",
+      "name": {
+        "en": "Tombrock",
+        "it": "Tombrock"
+      },
+      "effect": {
+        "en": "Station · cost: lose 1 life point (not your last).",
+        "it": "Stazione · costo: perdi 1 punto vita (non l'ultimo)."
+      }
+    },
+    {
+      "id": "virginia-town",
+      "name": {
+        "en": "Virginia Town",
+        "it": "Virginia Town"
+      },
+      "effect": {
+        "en": "Station · cost: discard any two cards.",
+        "it": "Stazione · costo: scarta due carte qualsiasi."
+      }
+    },
+    {
+      "id": "yooma",
+      "name": {
+        "en": "Yooma",
+        "it": "Yooma"
+      },
+      "effect": {
+        "en": "Station · cost: discard a card valued 2 to 9.",
+        "it": "Stazione · costo: scarta una carta di valore da 2 a 9."
+      }
+    },
+    {
+      "id": "leland",
+      "name": {
+        "en": "Leland (locomotive)",
+        "it": "Leland (locomotiva)"
+      },
+      "effect": {
+        "en": "At the End of the Line: the effect of a General Store, starting with the current player.",
+        "it": "Al capolinea: l'effetto di un Emporio, partendo da chi è di turno."
+      }
+    },
+    {
+      "id": "ironhorse",
+      "name": {
+        "en": "Ironhorse (locomotive)",
+        "it": "Ironhorse (locomotiva)"
+      },
+      "effect": {
+        "en": "At the End of the Line: every player is the target of a BANG! (not caused by any player).",
+        "it": "Al capolinea: ogni giocatore è bersaglio di un BANG! (non causato da alcun giocatore)."
+      }
+    },
+    {
+      "id": "baggage-car",
+      "name": {
+        "en": "Baggage Car",
+        "it": "Baggage Car"
+      },
+      "effect": {
+        "en": "Railcar · discard it for a Missed!, Panic!, Cat Balou or an extra BANG!.",
+        "it": "Vagone · scartalo per ottenere un Mancato!, Panico!, Cat Balou o un BANG! extra."
+      }
+    },
+    {
+      "id": "caboose",
+      "name": {
+        "en": "Caboose",
+        "it": "Caboose"
+      },
+      "effect": {
+        "en": "Railcar · you may discard another of your blue cards (a railcar too) as a Missed!.",
+        "it": "Vagone · puoi scartare un'altra tua carta blu (anche un vagone) come Mancato!."
+      }
+    },
+    {
+      "id": "cattle-truck",
+      "name": {
+        "en": "Cattle Truck",
+        "it": "Cattle Truck"
+      },
+      "effect": {
+        "en": "Railcar · discard it to look at the top 3 discards and draw 1.",
+        "it": "Vagone · scartalo per guardare le prime 3 carte degli scarti e pescarne 1."
+      }
+    },
+    {
+      "id": "circus-wagon",
+      "name": {
+        "en": "Circus Wagon",
+        "it": "Circus Wagon"
+      },
+      "effect": {
+        "en": "Railcar · discard it: every other player discards one of their cards in play.",
+        "it": "Vagone · scartalo: ogni altro giocatore scarta una carta che ha in gioco."
+      }
+    },
+    {
+      "id": "coal-hopper",
+      "name": {
+        "en": "Coal Hopper",
+        "it": "Coal Hopper"
+      },
+      "effect": {
+        "en": "Railcar · discard it to draw a card and discard a railcar in play in front of any player.",
+        "it": "Vagone · scartalo per pescare una carta e scartare un vagone in gioco davanti a un giocatore."
+      }
+    },
+    {
+      "id": "dining-car",
+      "name": {
+        "en": "Dining Car",
+        "it": "Dining Car"
+      },
+      "effect": {
+        "en": "Railcar · at the start of your turn draw!: on Hearts regain 1 life point.",
+        "it": "Vagone · a inizio turno estrai: con Cuori recuperi 1 punto vita."
+      }
+    },
+    {
+      "id": "express-car",
+      "name": {
+        "en": "Express Car",
+        "it": "Express Car"
+      },
+      "effect": {
+        "en": "Railcar · discard it: your turn ends, discard your hand, then play another turn.",
+        "it": "Vagone · scartalo: il tuo turno termina, scarti la mano e giochi un altro turno."
+      }
+    },
+    {
+      "id": "ghost-car",
+      "name": {
+        "en": "Ghost Car",
+        "it": "Ghost Car"
+      },
+      "effect": {
+        "en": "Railcar · play on anyone except the Sheriff: if eliminated they stay in play, but can't gain or lose life.",
+        "it": "Vagone · giocalo su chiunque tranne lo Sceriffo: se eliminato resta in gioco ma non guadagna né perde punti vita."
+      }
+    },
+    {
+      "id": "lounge-car",
+      "name": {
+        "en": "Lounge Car",
+        "it": "Lounge Car"
+      },
+      "effect": {
+        "en": "Railcar · discard it to draw 2 railcars: one in front of you, one in front of another player.",
+        "it": "Vagone · scartalo per pescare 2 vagoni: uno davanti a te, uno davanti a un altro giocatore."
+      }
+    },
+    {
+      "id": "lumber-flatcar",
+      "name": {
+        "en": "Lumber Flatcar",
+        "it": "Lumber Flatcar"
+      },
+      "effect": {
+        "en": "Railcar · play on anyone: they see all other players at distance +1.",
+        "it": "Vagone · giocalo su chiunque: vede tutti gli altri a distanza +1."
+      }
+    },
+    {
+      "id": "mail-car",
+      "name": {
+        "en": "Mail Car",
+        "it": "Mail Car"
+      },
+      "effect": {
+        "en": "Railcar · discard it to draw 3 cards and give 1 to another player.",
+        "it": "Vagone · scartalo per pescare 3 carte e darne 1 a un altro giocatore."
+      }
+    },
+    {
+      "id": "observation-car",
+      "name": {
+        "en": "Observation Car",
+        "it": "Observation Car"
+      },
+      "effect": {
+        "en": "Railcar · you see others at −1; others see you at +1.",
+        "it": "Vagone · vedi gli altri a −1; gli altri ti vedono a +1."
+      }
+    },
+    {
+      "id": "passenger-car",
+      "name": {
+        "en": "Passenger Car",
+        "it": "Passenger Car"
+      },
+      "effect": {
+        "en": "Railcar · discard it to draw a card (hand or in play) from any other player.",
+        "it": "Vagone · scartalo per pescare una carta (in mano o in gioco) da un altro giocatore."
+      }
+    },
+    {
+      "id": "prisoner-car",
+      "name": {
+        "en": "Prisoner Car",
+        "it": "Prisoner Car"
+      },
+      "effect": {
+        "en": "Railcar · Duel and Indians! played by others have no effect on you.",
+        "it": "Vagone · Duello e Indiani! giocati dagli altri non hanno effetto su di te."
+      }
+    },
+    {
+      "id": "private-car",
+      "name": {
+        "en": "Private Car",
+        "it": "Private Car"
+      },
+      "effect": {
+        "en": "Railcar · while your hand is empty you can't be the target of BANG! cards.",
+        "it": "Vagone · se non hai carte in mano non puoi essere bersaglio di carte BANG!."
+      }
+    },
+    {
+      "id": "sleeper-car",
+      "name": {
+        "en": "Sleeper Car",
+        "it": "Sleeper Car"
+      },
+      "effect": {
+        "en": "Railcar · once per turn, discard another of your blue cards (a railcar too) as an extra BANG!.",
+        "it": "Vagone · una volta per turno scarta un'altra tua carta blu (anche un vagone) come BANG! extra."
+      }
+    },
+    {
+      "id": "dragoon",
+      "name": {
+        "en": "Dragoon",
+        "it": "Dragoon"
+      },
+      "effect": {
+        "en": "Blue weapon, reach 2: you may play one extra BANG! on your turn.",
+        "it": "Arma blu, gittata 2: puoi giocare un BANG! extra nel tuo turno."
+      }
+    },
+    {
+      "id": "map",
+      "name": {
+        "en": "Map",
+        "it": "Mappa"
+      },
+      "effect": {
+        "en": "Blue · on your turn, before drawing, look at the top 2 cards of the deck: you may discard 1.",
+        "it": "Blu · nel tuo turno, prima di pescare, guarda le prime 2 carte del mazzo: puoi scartarne 1."
+      }
+    },
+    {
+      "id": "refund",
+      "name": {
+        "en": "Refund",
+        "it": "Rimborso"
+      },
+      "effect": {
+        "en": "Blue · when another player draws or discards one of your other cards, draw a card.",
+        "it": "Blu · quando un altro pesca o scarta una tua carta (tranne questa), pesca una carta."
+      }
+    },
+    {
+      "id": "strongbox",
+      "name": {
+        "en": "Strongbox",
+        "it": "Cassaforte"
+      },
+      "effect": {
+        "en": "Blue · at the end of your turn, draw a card.",
+        "it": "Blu · alla fine del tuo turno pesca una carta."
+      }
+    },
+    {
+      "id": "cactus",
+      "name": {
+        "en": "Cactus",
+        "it": "Cactus"
+      },
+      "effect": {
+        "en": "Counts as a Missed!; then draw!: on Hearts or Diamonds regain 1 life point.",
+        "it": "Vale un Mancato!; poi estrai: con Cuori o Quadri recuperi 1 punto vita."
+      }
+    },
+    {
+      "id": "evaded",
+      "name": {
+        "en": "Evaded!",
+        "it": "Per un Pelo!"
+      },
+      "effect": {
+        "en": "Counts as a Missed!; draw the card you just dodged.",
+        "it": "Vale un Mancato!; pesca la carta che hai evitato."
+      }
+    },
+    {
+      "id": "full-steam",
+      "name": {
+        "en": "Full Steam",
+        "it": "A Tutto Vapore"
+      },
+      "effect": {
+        "en": "Send the train to the End of the Line; double or cancel the locomotive's effect.",
+        "it": "Manda il treno al capolinea; raddoppia o annulla l'effetto della locomotiva."
+      }
+    },
+    {
+      "id": "knife-revolver",
+      "name": {
+        "en": "Knife Revolver",
+        "it": "Knife Revolver"
+      },
+      "effect": {
+        "en": "Counts as your BANG! for the turn; draw!: J, Q, K, A = take it back into your hand.",
+        "it": "Conta come il BANG! del turno; estrai: J, Q, K, A = riprendi in mano la carta."
+      }
+    },
+    {
+      "id": "money-bag",
+      "name": {
+        "en": "Money Bag",
+        "it": "Sacco di Soldi"
+      },
+      "effect": {
+        "en": "If the top card of the discard pile is brown, copy its effect.",
+        "it": "Se la carta in cima agli scarti è a bordo marrone, copiane l'effetto."
+      }
+    },
+    {
+      "id": "most-wanted-card",
+      "name": {
+        "en": "Most Wanted",
+        "it": "Most Wanted"
+      },
+      "effect": {
+        "en": "Each player draws!: on Spades that player loses 1 life point.",
+        "it": "Ogni giocatore estrae: con Picche perde 1 punto vita."
+      }
+    },
+    {
+      "id": "next-stop",
+      "name": {
+        "en": "Next Stop",
+        "it": "Prossima Fermata"
+      },
+      "effect": {
+        "en": "Advance the train 1 station.",
+        "it": "Fai avanzare il treno di 1 stazione."
+      },
+      "limit": {
+        "en": "×2 in the box",
+        "it": "×2 nella scatola"
+      }
+    },
+    {
+      "id": "switch",
+      "name": {
+        "en": "Switch",
+        "it": "Scambio"
+      },
+      "effect": {
+        "en": "Swap one of your cards in play with another card in play.",
+        "it": "Scambia una tua carta in gioco con un'altra carta in gioco."
+      }
+    },
+    {
+      "id": "train-robbery",
+      "name": {
+        "en": "Train Robbery",
+        "it": "Rapina al Treno"
+      },
+      "effect": {
+        "en": "Counts as your BANG! for the turn; for each card in play the target discards it or is the target of a BANG!.",
+        "it": "Conta come il BANG! del turno; per ogni carta in gioco il bersaglio la scarta o è colpito da un BANG!."
+      },
+      "limit": {
+        "en": "×2 in the box",
+        "it": "×2 nella scatola"
+      }
+    },
+    {
+      "id": "water-tower",
+      "name": {
+        "en": "Water Tower",
+        "it": "Serbatoio"
+      },
+      "effect": {
+        "en": "Take a railcar of your choice from the train for free.",
+        "it": "Prendi gratis un vagone a scelta dal treno."
+      }
+    }
+  ]
+}

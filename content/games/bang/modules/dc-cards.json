@@ -1,0 +1,264 @@
+{
+  "id": "dc-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · Dodge City",
+    "it": "Carte · Dodge City"
+  },
+  "conditions": {
+    "expansions": ["dodge-city"]
+  },
+  "ruleRefs": ["dc-overview"],
+  "actions": [
+    {
+      "id": "binocular",
+      "name": {
+        "en": "Binocular",
+        "it": "Binocolo"
+      },
+      "effect": {
+        "en": "Blue: you see the other players at distance −1.",
+        "it": "Blu: vedi gli altri giocatori a distanza −1."
+      }
+    },
+    {
+      "id": "hideout",
+      "name": {
+        "en": "Hideout",
+        "it": "Riparo"
+      },
+      "effect": {
+        "en": "Blue: the other players see you at distance +1.",
+        "it": "Blu: gli altri giocatori ti vedono a distanza +1."
+      }
+    },
+    {
+      "id": "brawl",
+      "name": {
+        "en": "Brawl",
+        "it": "Rissa"
+      },
+      "effect": {
+        "en": "Discard another card: every other player discards a card of your choice (hand or in play).",
+        "it": "Scarta un'altra carta: ogni altro giocatore scarta una carta a tua scelta (in mano o in gioco)."
+      }
+    },
+    {
+      "id": "dodge",
+      "name": {
+        "en": "Dodge",
+        "it": "Schivata"
+      },
+      "effect": {
+        "en": "Counts as a Missed!, then draw a card.",
+        "it": "Vale un Mancato!, poi pesca una carta."
+      },
+      "limit": {
+        "en": "×2 in the box",
+        "it": "×2 nella scatola"
+      }
+    },
+    {
+      "id": "punch",
+      "name": {
+        "en": "Punch",
+        "it": "Pugno"
+      },
+      "effect": {
+        "en": "A BANG! at distance 1 (not a BANG! card).",
+        "it": "Un BANG! a distanza 1 (non è una carta BANG!)."
+      }
+    },
+    {
+      "id": "rag-time",
+      "name": {
+        "en": "Rag Time",
+        "it": "Rag Time"
+      },
+      "effect": {
+        "en": "Discard another card: draw a card from any player, at any distance.",
+        "it": "Scarta un'altra carta: pesca una carta da un giocatore qualsiasi, a qualsiasi distanza."
+      }
+    },
+    {
+      "id": "springfield",
+      "name": {
+        "en": "Springfield",
+        "it": "Springfield"
+      },
+      "effect": {
+        "en": "Discard another card: a BANG! at any distance (not a BANG! card).",
+        "it": "Scarta un'altra carta: un BANG! a qualsiasi distanza (non è una carta BANG!)."
+      }
+    },
+    {
+      "id": "tequila",
+      "name": {
+        "en": "Tequila",
+        "it": "Tequila"
+      },
+      "effect": {
+        "en": "Discard another card: any player (you too) regains 1 life point.",
+        "it": "Scarta un'altra carta: un giocatore a scelta (anche tu) recupera 1 punto vita."
+      }
+    },
+    {
+      "id": "whisky",
+      "name": {
+        "en": "Whisky",
+        "it": "Whisky"
+      },
+      "effect": {
+        "en": "Discard another card: regain 2 life points.",
+        "it": "Scarta un'altra carta: recuperi 2 punti vita."
+      }
+    },
+    {
+      "id": "bible",
+      "name": {
+        "en": "Bible",
+        "it": "Bibbia"
+      },
+      "effect": {
+        "en": "Green: counts as a Missed!, then draw a card.",
+        "it": "Verde: vale un Mancato!, poi pesca una carta."
+      }
+    },
+    {
+      "id": "buffalo-rifle",
+      "name": {
+        "en": "Buffalo Rifle",
+        "it": "Fucile da Caccia"
+      },
+      "effect": {
+        "en": "Green: a BANG! at any distance.",
+        "it": "Verde: un BANG! a qualsiasi distanza."
+      }
+    },
+    {
+      "id": "can-can",
+      "name": {
+        "en": "Can Can",
+        "it": "Can Can"
+      },
+      "effect": {
+        "en": "Green: any player discards a card (like Cat Balou), at any distance.",
+        "it": "Verde: un giocatore qualsiasi scarta una carta (come Cat Balou), a qualsiasi distanza."
+      }
+    },
+    {
+      "id": "canteen",
+      "name": {
+        "en": "Canteen",
+        "it": "Borraccia"
+      },
+      "effect": {
+        "en": "Green: regain 1 life point.",
+        "it": "Verde: recuperi 1 punto vita."
+      }
+    },
+    {
+      "id": "conestoga",
+      "name": {
+        "en": "Conestoga",
+        "it": "Conestoga"
+      },
+      "effect": {
+        "en": "Green: draw a card from any player, at any distance.",
+        "it": "Verde: pesca una carta da un giocatore qualsiasi, a qualsiasi distanza."
+      }
+    },
+    {
+      "id": "derringer",
+      "name": {
+        "en": "Derringer",
+        "it": "Derringer"
+      },
+      "effect": {
+        "en": "Green: a BANG! at distance 1, then draw a card.",
+        "it": "Verde: un BANG! a distanza 1, poi pesca una carta."
+      }
+    },
+    {
+      "id": "howitzer",
+      "name": {
+        "en": "Howitzer",
+        "it": "Howitzer"
+      },
+      "effect": {
+        "en": "Green: a BANG! at every other player (like Gatling).",
+        "it": "Verde: un BANG! a tutti gli altri giocatori (come la Gatling)."
+      }
+    },
+    {
+      "id": "iron-plate",
+      "name": {
+        "en": "Iron Plate",
+        "it": "Placca di Ferro"
+      },
+      "effect": {
+        "en": "Green: counts as a Missed!.",
+        "it": "Verde: vale un Mancato!."
+      },
+      "limit": {
+        "en": "×2 in the box",
+        "it": "×2 nella scatola"
+      }
+    },
+    {
+      "id": "knife",
+      "name": {
+        "en": "Knife",
+        "it": "Pugnale"
+      },
+      "effect": {
+        "en": "Green: a BANG! at distance 1.",
+        "it": "Verde: un BANG! a distanza 1."
+      }
+    },
+    {
+      "id": "pepperbox",
+      "name": {
+        "en": "Pepperbox",
+        "it": "Pepperbox"
+      },
+      "effect": {
+        "en": "Green: a BANG! at reachable distance.",
+        "it": "Verde: un BANG! a distanza raggiungibile."
+      }
+    },
+    {
+      "id": "pony-express",
+      "name": {
+        "en": "Pony Express",
+        "it": "Pony Express"
+      },
+      "effect": {
+        "en": "Green: draw 3 cards.",
+        "it": "Verde: pesca 3 carte."
+      }
+    },
+    {
+      "id": "sombrero",
+      "name": {
+        "en": "Sombrero",
+        "it": "Sombrero"
+      },
+      "effect": {
+        "en": "Green: counts as a Missed!.",
+        "it": "Verde: vale un Mancato!."
+      }
+    },
+    {
+      "id": "ten-gallon-hat",
+      "name": {
+        "en": "Ten Gallon Hat",
+        "it": "Cappello"
+      },
+      "effect": {
+        "en": "Green: counts as a Missed!.",
+        "it": "Verde: vale un Mancato!."
+      }
+    }
+  ]
+}

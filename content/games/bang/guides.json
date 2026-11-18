@@ -486,6 +486,125 @@
         }
       ],
       "ruleRefs": ["game-end"]
+    },
+    {
+      "id": "dc-vera-vulture",
+      "question": {
+        "en": "Vera Custer copies Vulture Sam and a player dies. Who gets the cards?",
+        "it": "Vera Custer copia Vulture Sam e un giocatore muore. A chi vanno le carte?"
+      },
+      "answer": {
+        "en": "They split them one at a time, starting with whichever of the two is next clockwise from the eliminated player.",
+        "it": "Se le dividono una alla volta, partendo da chi dei due è il successivo in senso orario rispetto all'eliminato."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "dc-faq",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["dc-overview"]
+    },
+    {
+      "id": "dc-doc-range",
+      "question": {
+        "en": "How far can Doc Holyday shoot with his ability?",
+        "it": "Fin dove può sparare Doc Holyday con la sua abilità?"
+      },
+      "answer": {
+        "en": "Any reachable distance.",
+        "it": "A qualsiasi distanza raggiungibile."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "dc-faq",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["dc-overview"]
+    },
+    {
+      "id": "hn-ghost-sheriff",
+      "question": {
+        "en": "Ghost Town: a ghost kills the Sheriff. Who wins?",
+        "it": "Città Fantasma: un fantasma uccide lo Sceriffo. Chi vince?"
+      },
+      "answer": {
+        "en": "The ghost counts as in play during their turn: if it's an Outlaw or Deputy, the Outlaws win; if it's the Renegade, they win only if no one else is alive.",
+        "it": "Il fantasma conta come in gioco nel suo turno: se è Fuorilegge o Vice vincono i Fuorilegge; se è il Rinnegato vince solo se non resta nessun altro vivo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "hn-faq",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["hn-reveal"]
+    },
+    {
+      "id": "hn-calamity-sermon",
+      "question": {
+        "en": "Can Calamity Janet use Missed! as BANG! during The Sermon?",
+        "it": "Calamity Janet può usare i Mancato! come BANG! durante il Sermone?"
+      },
+      "answer": {
+        "en": "No — played as BANG! they are real BANG! cards.",
+        "it": "No: giocati come BANG! sono vere carte BANG!."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "hn-faq",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["hn-reveal"]
+    },
+    {
+      "id": "wws-teren-beer",
+      "question": {
+        "en": "Teren Kill takes a fatal shot with a Beer in hand. What can he do?",
+        "it": "Teren Kill subisce un colpo fatale con una Birra in mano. Cosa può fare?"
+      },
+      "answer": {
+        "en": "Either play the Beer (stays at 1, no card) or draw! with his ability: if not Spades he stays at 1 and draws a card — but then he can't use the Beer.",
+        "it": "O gioca la Birra (resta a 1, senza carta) o estrae con l'abilità: se non è Picche resta a 1 e pesca, ma poi non può usare la Birra."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "wws-faq",
+          "page": 1
+        },
+        {
+          "kind": "page",
+          "sourceId": "wws-faq",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["wws-setup"]
+    },
+    {
+      "id": "wws-lady-rose",
+      "question": {
+        "en": "How many times in a row can Lady Rose of Texas be used?",
+        "it": "Quante volte di fila si può usare Lady Rosa del Texas?"
+      },
+      "answer": {
+        "en": "Suggested house limit: no more times in a row than players still alive, to avoid endless loops.",
+        "it": "Limite consigliato: non più volte di fila del numero di giocatori ancora vivi, per evitare cicli infiniti."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "wws-faq",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["wws-trigger"]
     }
   ]
 }

@@ -2,6 +2,7 @@ import type { Hotspot, Scene } from "@bgc/schema";
 import { useEffect, useState } from "react";
 import { useGame } from "../game/GameProvider";
 import { RuleCard } from "../game/RuleCard";
+import { useSessionFilter } from "../game/useSessionFilter";
 import { useL, useTranslation } from "../i18n";
 import { BottomSheet } from "../ui/BottomSheet";
 import { Button, Chip, EmptyState, SegmentedControl } from "../ui/primitives";
@@ -76,17 +77,22 @@ export function BoardTab(props: {
     setFocusHotspot(props.focusHotspot);
   }, [props.focusScene, props.focusHotspot]);
 
-  const scene = guide.scenes.find((s) => s.id === sceneId) ?? guide.scenes[0];
+  const scenes = useSessionFilter(guide.scenes, (s) => s.id === sceneId);
+  const scene =
+    guide.scenes.find((s) => s.id === sceneId) ??
+    guide.scenes.find((s) => scenes.isApplicable(s)) ??
+    guide.scenes[0];
   if (!scene) return <EmptyState icon="board" title={t("board.empty")} />;
 
   return (
     <div className="space-y-3 p-4">
       {guide.scenes.length > 1 && (
         <div className="flex gap-1.5 overflow-x-auto pb-1">
-          {guide.scenes.map((s) => (
+          {scenes.items.map((s) => (
             <Chip
               key={s.id}
               tone={s.id === scene.id ? "accent" : "neutral"}
+              className={scenes.isApplicable(s) ? "" : "border-dashed"}
               onClick={() => {
                 setSceneId(s.id);
                 setFocusHotspot(undefined);
@@ -95,6 +101,13 @@ export function BoardTab(props: {
               {L(s.title)}
             </Chip>
           ))}
+          {scenes.hiddenCount > 0 && (
+            <Chip icon="eye" onClick={scenes.toggle}>
+              {scenes.showAll
+                ? t("board.hideOther")
+                : t("board.showOther", { count: scenes.hiddenCount })}
+            </Chip>
+          )}
         </div>
       )}
       <div className="flex flex-wrap items-center gap-2">

@@ -1405,5 +1405,5948 @@
         "ruleRefs": ["role-goals"]
       }
     ]
+  },
+  {
+    "id": "exp-dodge-city",
+    "title": {
+      "en": "Dodge City",
+      "it": "Dodge City"
+    },
+    "image": {
+      "src": "images/exp-dodge-city.webp",
+      "width": 1632,
+      "height": 1748,
+      "alt": {
+        "en": "The cards of Dodge City",
+        "it": "Le carte di Dodge City"
+      }
+    },
+    "conditions": {
+      "expansions": ["dodge-city"]
+    },
+    "hotspots": [
+      {
+        "id": "barrel",
+        "label": {
+          "en": "Barrel",
+          "it": "Barile"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["barrel", "dc-overview"]
+      },
+      {
+        "id": "binocular",
+        "label": {
+          "en": "Binocular",
+          "it": "Binocolo"
+        },
+        "description": {
+          "en": "Blue: you see the other players at distance −1.",
+          "it": "Blu: vedi gli altri giocatori a distanza −1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "dynamite",
+        "label": {
+          "en": "Dynamite",
+          "it": "Dinamite"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dynamite", "dc-overview"]
+      },
+      {
+        "id": "hideout",
+        "label": {
+          "en": "Hideout",
+          "it": "Riparo"
+        },
+        "description": {
+          "en": "Blue: the other players see you at distance +1.",
+          "it": "Blu: gli altri giocatori ti vedono a distanza +1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "mustang",
+        "label": {
+          "en": "Mustang",
+          "it": "Mustang"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["mustang", "dc-overview"]
+      },
+      {
+        "id": "remington",
+        "label": {
+          "en": "Remington",
+          "it": "Remington"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["weapon-range", "dc-overview"]
+      },
+      {
+        "id": "rev-carabine",
+        "label": {
+          "en": "Rev. Carabine",
+          "it": "Rev. Carabine"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["weapon-range", "dc-overview"]
+      },
+      {
+        "id": "bang",
+        "label": {
+          "en": "BANG!",
+          "it": "BANG!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card (×4).",
+          "it": "Copia extra della carta del gioco base (×4)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["bang-card", "dc-overview"]
+      },
+      {
+        "id": "beer",
+        "label": {
+          "en": "Beer",
+          "it": "Birra"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card (×2).",
+          "it": "Copia extra della carta del gioco base (×2)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["beer", "dc-overview"]
+      },
+      {
+        "id": "brawl",
+        "label": {
+          "en": "Brawl",
+          "it": "Rissa"
+        },
+        "description": {
+          "en": "Discard another card: every other player discards a card of your choice (hand or in play).",
+          "it": "Scarta un'altra carta: ogni altro giocatore scarta una carta a tua scelta (in mano o in gioco)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "cat-balou",
+        "label": {
+          "en": "Cat Balou",
+          "it": "Cat Balou"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["cat-balou", "dc-overview"]
+      },
+      {
+        "id": "dodge",
+        "label": {
+          "en": "Dodge",
+          "it": "Schivata"
+        },
+        "description": {
+          "en": "Counts as a Missed!, then draw a card. (×2)",
+          "it": "Vale un Mancato!, poi pesca una carta. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "general-store",
+        "label": {
+          "en": "General Store",
+          "it": "Emporio"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["general-store", "dc-overview"]
+      },
+      {
+        "id": "indians",
+        "label": {
+          "en": "Indians!",
+          "it": "Indiani!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["indians", "dc-overview"]
+      },
+      {
+        "id": "missed",
+        "label": {
+          "en": "Missed!",
+          "it": "Mancato!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["missed", "dc-overview"]
+      },
+      {
+        "id": "panic",
+        "label": {
+          "en": "Panic!",
+          "it": "Panico!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["panic", "dc-overview"]
+      },
+      {
+        "id": "punch",
+        "label": {
+          "en": "Punch",
+          "it": "Pugno"
+        },
+        "description": {
+          "en": "A BANG! at distance 1 (not a BANG! card).",
+          "it": "Un BANG! a distanza 1 (non è una carta BANG!)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "rag-time",
+        "label": {
+          "en": "Rag Time",
+          "it": "Rag Time"
+        },
+        "description": {
+          "en": "Discard another card: draw a card from any player, at any distance.",
+          "it": "Scarta un'altra carta: pesca una carta da un giocatore qualsiasi, a qualsiasi distanza."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "springfield",
+        "label": {
+          "en": "Springfield",
+          "it": "Springfield"
+        },
+        "description": {
+          "en": "Discard another card: a BANG! at any distance (not a BANG! card).",
+          "it": "Scarta un'altra carta: un BANG! a qualsiasi distanza (non è una carta BANG!)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "tequila",
+        "label": {
+          "en": "Tequila",
+          "it": "Tequila"
+        },
+        "description": {
+          "en": "Discard another card: any player (you too) regains 1 life point.",
+          "it": "Scarta un'altra carta: un giocatore a scelta (anche tu) recupera 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "whisky",
+        "label": {
+          "en": "Whisky",
+          "it": "Whisky"
+        },
+        "description": {
+          "en": "Discard another card: regain 2 life points.",
+          "it": "Scarta un'altra carta: recuperi 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "bible",
+        "label": {
+          "en": "Bible",
+          "it": "Bibbia"
+        },
+        "description": {
+          "en": "Green: counts as a Missed!, then draw a card.",
+          "it": "Verde: vale un Mancato!, poi pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "buffalo-rifle",
+        "label": {
+          "en": "Buffalo Rifle",
+          "it": "Fucile da Caccia"
+        },
+        "description": {
+          "en": "Green: a BANG! at any distance.",
+          "it": "Verde: un BANG! a qualsiasi distanza."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "can-can",
+        "label": {
+          "en": "Can Can",
+          "it": "Can Can"
+        },
+        "description": {
+          "en": "Green: any player discards a card (like Cat Balou), at any distance.",
+          "it": "Verde: un giocatore qualsiasi scarta una carta (come Cat Balou), a qualsiasi distanza."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "canteen",
+        "label": {
+          "en": "Canteen",
+          "it": "Borraccia"
+        },
+        "description": {
+          "en": "Green: regain 1 life point.",
+          "it": "Verde: recuperi 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "conestoga",
+        "label": {
+          "en": "Conestoga",
+          "it": "Conestoga"
+        },
+        "description": {
+          "en": "Green: draw a card from any player, at any distance.",
+          "it": "Verde: pesca una carta da un giocatore qualsiasi, a qualsiasi distanza."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "derringer",
+        "label": {
+          "en": "Derringer",
+          "it": "Derringer"
+        },
+        "description": {
+          "en": "Green: a BANG! at distance 1, then draw a card.",
+          "it": "Verde: un BANG! a distanza 1, poi pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "howitzer",
+        "label": {
+          "en": "Howitzer",
+          "it": "Howitzer"
+        },
+        "description": {
+          "en": "Green: a BANG! at every other player (like Gatling).",
+          "it": "Verde: un BANG! a tutti gli altri giocatori (come la Gatling)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "iron-plate",
+        "label": {
+          "en": "Iron Plate",
+          "it": "Placca di Ferro"
+        },
+        "description": {
+          "en": "Green: counts as a Missed!. (×2)",
+          "it": "Verde: vale un Mancato!. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "knife",
+        "label": {
+          "en": "Knife",
+          "it": "Pugnale"
+        },
+        "description": {
+          "en": "Green: a BANG! at distance 1.",
+          "it": "Verde: un BANG! a distanza 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "pepperbox",
+        "label": {
+          "en": "Pepperbox",
+          "it": "Pepperbox"
+        },
+        "description": {
+          "en": "Green: a BANG! at reachable distance.",
+          "it": "Verde: un BANG! a distanza raggiungibile."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "pony-express",
+        "label": {
+          "en": "Pony Express",
+          "it": "Pony Express"
+        },
+        "description": {
+          "en": "Green: draw 3 cards.",
+          "it": "Verde: pesca 3 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "sombrero",
+        "label": {
+          "en": "Sombrero",
+          "it": "Sombrero"
+        },
+        "description": {
+          "en": "Green: counts as a Missed!.",
+          "it": "Verde: vale un Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "ten-gallon-hat",
+        "label": {
+          "en": "Ten Gallon Hat",
+          "it": "Cappello"
+        },
+        "description": {
+          "en": "Green: counts as a Missed!.",
+          "it": "Verde: vale un Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "apache-kid",
+        "label": {
+          "en": "Apache Kid · 3 ♥",
+          "it": "Apache Kid · 3 ♥"
+        },
+        "description": {
+          "en": "Cards of Diamonds played by other players don't affect him (not during a Duel).",
+          "it": "Le carte di Quadri giocate dagli altri non hanno effetto su di lui (tranne nel Duello)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "belle-star",
+        "label": {
+          "en": "Belle Star · 4 ♥",
+          "it": "Belle Star · 4 ♥"
+        },
+        "description": {
+          "en": "During her turn, cards in play in front of the other players (blue and green) have no effect.",
+          "it": "Nel suo turno, le carte in gioco davanti agli altri (blu e verdi) non hanno effetto."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "bill-noface",
+        "label": {
+          "en": "Bill Noface · 4 ♥",
+          "it": "Bill Noface · 4 ♥"
+        },
+        "description": {
+          "en": "In phase 1 he draws 1 card plus 1 for each life point he has lost.",
+          "it": "Nella fase 1 pesca 1 carta più 1 per ogni punto vita perso."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "chuck-wengam",
+        "label": {
+          "en": "Chuck Wengam · 4 ♥",
+          "it": "Chuck Wengam · 4 ♥"
+        },
+        "description": {
+          "en": "On his turn he may lose 1 life point (not his last) to draw 2 cards, even several times.",
+          "it": "Nel suo turno può perdere 1 punto vita (non l'ultimo) per pescare 2 carte, anche più volte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "doc-holyday",
+        "label": {
+          "en": "Doc Holyday · 4 ♥",
+          "it": "Doc Holyday · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may discard 2 cards for a BANG! within reach; it doesn't count as his BANG!.",
+          "it": "Una volta per turno può scartare 2 carte per un BANG! a distanza raggiungibile; non conta come il suo BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "elena-fuente",
+        "label": {
+          "en": "Elena Fuente · 3 ♥",
+          "it": "Elena Fuente · 3 ♥"
+        },
+        "description": {
+          "en": "She can use any card in her hand as a Missed!.",
+          "it": "Può usare qualsiasi carta in mano come Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "greg-digger",
+        "label": {
+          "en": "Greg Digger · 4 ♥",
+          "it": "Greg Digger · 4 ♥"
+        },
+        "description": {
+          "en": "Each time another character is eliminated, he regains 2 life points.",
+          "it": "Ogni volta che un altro personaggio è eliminato, recupera 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "herb-hunter",
+        "label": {
+          "en": "Herb Hunter · 4 ♥",
+          "it": "Herb Hunter · 4 ♥"
+        },
+        "description": {
+          "en": "Each time another character is eliminated, he draws 2 extra cards.",
+          "it": "Ogni volta che un altro personaggio è eliminato, pesca 2 carte in più."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "jose-delgado",
+        "label": {
+          "en": "José Delgado · 4 ♥",
+          "it": "José Delgado · 4 ♥"
+        },
+        "description": {
+          "en": "Twice per turn he may discard a blue card from his hand to draw 2 cards.",
+          "it": "Due volte per turno può scartare una carta blu dalla mano per pescare 2 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "molly-stark",
+        "label": {
+          "en": "Molly Stark · 4 ♥",
+          "it": "Molly Stark · 4 ♥"
+        },
+        "description": {
+          "en": "Each time she plays or voluntarily discards a Missed!, Beer or BANG! out of turn, she draws a card.",
+          "it": "Ogni volta che fuori turno gioca o scarta volontariamente un Mancato!, una Birra o un BANG!, pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "pat-brennan",
+        "label": {
+          "en": "Pat Brennan · 4 ♥",
+          "it": "Pat Brennan · 4 ♥"
+        },
+        "description": {
+          "en": "In phase 1 he may draw just one card from in play (any player) instead of 2 from the deck.",
+          "it": "Nella fase 1 può pescare una sola carta in gioco (di qualsiasi giocatore) invece di 2 dal mazzo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "pixie-pete",
+        "label": {
+          "en": "Pixie Pete · 3 ♥",
+          "it": "Pixie Pete · 3 ♥"
+        },
+        "description": {
+          "en": "In phase 1 he draws 3 cards instead of 2.",
+          "it": "Nella fase 1 pesca 3 carte invece di 2."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "sean-mallory",
+        "label": {
+          "en": "Sean Mallory · 3 ♥",
+          "it": "Sean Mallory · 3 ♥"
+        },
+        "description": {
+          "en": "In phase 3 he can keep up to 10 cards.",
+          "it": "Nella fase 3 può tenere fino a 10 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "tequila-joe",
+        "label": {
+          "en": "Tequila Joe · 4 ♥",
+          "it": "Tequila Joe · 4 ♥"
+        },
+        "description": {
+          "en": "Each Beer he plays gives him 2 life points instead of 1.",
+          "it": "Ogni Birra che gioca gli fa recuperare 2 punti vita invece di 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "vera-custer",
+        "label": {
+          "en": "Vera Custer · 3 ♥",
+          "it": "Vera Custer · 3 ♥"
+        },
+        "description": {
+          "en": "At the start of her turn she copies another living character's ability until her next turn.",
+          "it": "A inizio turno copia l'abilità di un altro personaggio in gioco fino al suo turno successivo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "dc-overview"]
+      },
+      {
+        "id": "role-sheriff",
+        "label": {
+          "en": "Sheriff",
+          "it": "Sceriffo"
+        },
+        "description": {
+          "en": "Role (8-player set).",
+          "it": "Ruolo (set da 8 giocatori)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "role-deputy",
+        "label": {
+          "en": "Deputy",
+          "it": "Vice"
+        },
+        "description": {
+          "en": "Role (8-player set: 2 Deputies).",
+          "it": "Ruolo (set da 8 giocatori: 2 Vice)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "role-outlaw",
+        "label": {
+          "en": "Outlaw",
+          "it": "Fuorilegge"
+        },
+        "description": {
+          "en": "Role (8-player set: 3 Outlaws).",
+          "it": "Ruolo (set da 8 giocatori: 3 Fuorilegge)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      },
+      {
+        "id": "role-renegade",
+        "label": {
+          "en": "Renegade",
+          "it": "Rinnegato"
+        },
+        "description": {
+          "en": "Role (8-player set: 2 Renegades, each playing alone).",
+          "it": "Ruolo (set da 8 giocatori: 2 Rinnegati, ognuno per sé)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["dc-overview"]
+      }
+    ]
+  },
+  {
+    "id": "exp-high-noon",
+    "title": {
+      "en": "High Noon",
+      "it": "High Noon (Mezzogiorno di Fuoco)"
+    },
+    "image": {
+      "src": "images/exp-high-noon.webp",
+      "width": 928,
+      "height": 923,
+      "alt": {
+        "en": "The cards of High Noon",
+        "it": "Le carte di High Noon (Mezzogiorno di Fuoco)"
+      }
+    },
+    "conditions": {
+      "expansions": ["high-noon"]
+    },
+    "hotspots": [
+      {
+        "id": "blessing",
+        "label": {
+          "en": "Blessing",
+          "it": "Benedizione"
+        },
+        "description": {
+          "en": "The suit of all cards is Hearts.",
+          "it": "Tutte le carte sono considerate di Cuori."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "curse",
+        "label": {
+          "en": "Curse",
+          "it": "Maledizione"
+        },
+        "description": {
+          "en": "The suit of all cards is Spades.",
+          "it": "Tutte le carte sono considerate di Picche."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "ghost-town",
+        "label": {
+          "en": "Ghost Town",
+          "it": "Città Fantasma"
+        },
+        "description": {
+          "en": "On their turn, eliminated players return as ghosts: they draw 3 cards instead of 2 and can't die; at the end of the turn they're out again.",
+          "it": "Al proprio turno ogni eliminato torna come fantasma: pesca 3 carte invece di 2 e non può morire; a fine turno è eliminato di nuovo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "gold-rush",
+        "label": {
+          "en": "Gold Rush",
+          "it": "Corsa all'oro"
+        },
+        "description": {
+          "en": "Play goes counterclockwise for one round, starting with the Sheriff; card effects still go clockwise.",
+          "it": "Si gioca un giro in senso antiorario, partendo dallo Sceriffo; gli effetti delle carte restano in senso orario."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6034,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "hangover",
+        "label": {
+          "en": "Hangover",
+          "it": "Sbornia"
+        },
+        "description": {
+          "en": "Characters lose their special abilities.",
+          "it": "I personaggi perdono le loro abilità speciali."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7931,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "high-noon",
+        "label": {
+          "en": "High Noon",
+          "it": "Mezzogiorno di Fuoco"
+        },
+        "description": {
+          "en": "Final card: each player loses 1 life point at the start of their turn, until the end of the game.",
+          "it": "Carta finale: ogni giocatore perde 1 punto vita all'inizio del proprio turno, fino a fine partita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "shootout",
+        "label": {
+          "en": "Shootout",
+          "it": "Sparatoria"
+        },
+        "description": {
+          "en": "Each player may play a second BANG! card on their turn.",
+          "it": "Ogni giocatore può giocare una seconda carta BANG! nel proprio turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "the-daltons",
+        "label": {
+          "en": "The Daltons",
+          "it": "I Dalton"
+        },
+        "description": {
+          "en": "When it enters play, each player with blue cards in play discards one of them (their choice).",
+          "it": "Quando entra in gioco, chi ha carte blu in gioco ne scarta una a sua scelta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "the-doctor",
+        "label": {
+          "en": "The Doctor",
+          "it": "Il Dottore"
+        },
+        "description": {
+          "en": "When it enters play, the player(s) with the fewest life points regain 1.",
+          "it": "Quando entra in gioco, il/i giocatore/i con meno punti vita ne recupera 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6034,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "the-reverend",
+        "label": {
+          "en": "The Reverend",
+          "it": "Il Reverendo"
+        },
+        "description": {
+          "en": "Players can't play Beer cards.",
+          "it": "Non si possono giocare carte Birra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7931,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "the-sermon",
+        "label": {
+          "en": "The Sermon",
+          "it": "Sermone"
+        },
+        "description": {
+          "en": "Players can't use BANG! cards during their own turn.",
+          "it": "Il giocatore non può usare carte BANG! durante il proprio turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "thirst",
+        "label": {
+          "en": "Thirst",
+          "it": "Sete"
+        },
+        "description": {
+          "en": "In phase 1 each player draws only their first card.",
+          "it": "Nella fase 1 ogni giocatore pesca solo la prima carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      },
+      {
+        "id": "train-arrival",
+        "label": {
+          "en": "Train Arrival",
+          "it": "Il Treno"
+        },
+        "description": {
+          "en": "Each player draws one extra card at the end of phase 1.",
+          "it": "Ogni giocatore pesca una carta extra al termine della fase 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["hn-setup"]
+      }
+    ]
+  },
+  {
+    "id": "exp-fistful-of-cards",
+    "title": {
+      "en": "A Fistful of Cards",
+      "it": "A Fistful of Cards (Per un Pugno di Carte)"
+    },
+    "image": {
+      "src": "images/exp-fistful-of-cards.webp",
+      "width": 928,
+      "height": 923,
+      "alt": {
+        "en": "The cards of A Fistful of Cards",
+        "it": "Le carte di A Fistful of Cards (Per un Pugno di Carte)"
+      }
+    },
+    "conditions": {
+      "expansions": ["fistful-of-cards"]
+    },
+    "hotspots": [
+      {
+        "id": "abandoned-mine",
+        "label": {
+          "en": "Abandoned Mine",
+          "it": "Miniera Abbandonata"
+        },
+        "description": {
+          "en": "In phase 1 draw from the discard pile (from the deck if empty); in phase 3 discard face down onto the deck.",
+          "it": "Nella fase 1 si pesca dagli scarti (dal mazzo se finiscono); nella fase 3 si scarta a faccia in giù sul mazzo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "ambush",
+        "label": {
+          "en": "Ambush",
+          "it": "Agguato"
+        },
+        "description": {
+          "en": "The distance between any two players is 1, modified only by cards in play.",
+          "it": "La distanza fra due giocatori qualunque è 1; è modificata solo dalle carte in gioco."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "blood-brothers",
+        "label": {
+          "en": "Blood Brothers",
+          "it": "Fratelli di Sangue"
+        },
+        "description": {
+          "en": "At the start of their turn, a player may lose 1 life point (not the last) to give 1 to a player of their choice.",
+          "it": "All'inizio del turno, un giocatore può perdere 1 punto vita (non l'ultimo) per farne recuperare 1 a un giocatore a scelta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "dead-man",
+        "label": {
+          "en": "Dead Man",
+          "it": "Dead Man"
+        },
+        "description": {
+          "en": "On their turn, the first player eliminated returns to play with 2 life points and 2 cards.",
+          "it": "Al proprio turno, il primo giocatore eliminato rientra in gioco con 2 punti vita e 2 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6034,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "hard-liquor",
+        "label": {
+          "en": "Hard Liquor",
+          "it": "Liquore Forte"
+        },
+        "description": {
+          "en": "Each player may skip phase 1 to regain 1 life point.",
+          "it": "Ogni giocatore può saltare la fase 1 per recuperare 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7931,
+            "y": 0.0347,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "lasso",
+        "label": {
+          "en": "Lasso",
+          "it": "Lazo"
+        },
+        "description": {
+          "en": "Cards in play in front of players have no effect.",
+          "it": "Le carte in gioco davanti ai giocatori non hanno effetto."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "law-of-the-west",
+        "label": {
+          "en": "Law of the West",
+          "it": "Legge del West"
+        },
+        "description": {
+          "en": "In phase 1 each player shows their second card drawn: if they can, they must play it in phase 2.",
+          "it": "Nella fase 1 ognuno mostra la seconda carta pescata: se può, deve giocarla nella fase 2."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "peyote",
+        "label": {
+          "en": "Peyote",
+          "it": "Peyote"
+        },
+        "description": {
+          "en": "Instead of drawing, guess red or black for the top card: if right, keep it and guess again; if wrong, phase 2 starts.",
+          "it": "Invece di pescare, indovina rosso o nero per la carta in cima: se indovini la tieni e riprovi; se sbagli inizia la fase 2."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "ranch",
+        "label": {
+          "en": "Ranch",
+          "it": "Ranch"
+        },
+        "description": {
+          "en": "At the end of phase 1, each player may once discard any number of cards to draw as many.",
+          "it": "Al termine della fase 1, ognuno può una volta scartare quante carte vuole e pescarne altrettante."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6034,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "ricochet",
+        "label": {
+          "en": "Ricochet",
+          "it": "Rimbalzo"
+        },
+        "description": {
+          "en": "Players may discard BANG! cards against cards in play: each is discarded unless its owner plays a Missed!.",
+          "it": "Si possono scartare carte BANG! contro carte in gioco: ognuna è scartata se il proprietario non gioca un Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7931,
+            "y": 0.3109,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "russian-roulette",
+        "label": {
+          "en": "Russian Roulette",
+          "it": "Roulette Russa"
+        },
+        "description": {
+          "en": "When it enters play, starting with the Sheriff each player discards a Missed!, until one can't: they lose 2 life points.",
+          "it": "Quando entra in gioco, partendo dallo Sceriffo ognuno scarta un Mancato!, finché uno non lo fa: perde 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0345,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "sniper",
+        "label": {
+          "en": "Sniper",
+          "it": "Cecchino"
+        },
+        "description": {
+          "en": "On their turn a player may discard 2 BANG! cards together at one player: it counts as a BANG! but needs 2 Missed! to cancel.",
+          "it": "Nel proprio turno si possono scartare 2 BANG! insieme contro un giocatore: vale un BANG! ma servono 2 Mancato! per annullarlo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2241,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "the-judge",
+        "label": {
+          "en": "The Judge",
+          "it": "Il Giudice"
+        },
+        "description": {
+          "en": "Players can't play cards in front of themselves or anyone else.",
+          "it": "Non si possono giocare carte davanti a sé o agli altri."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4138,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "vendetta",
+        "label": {
+          "en": "Vendetta",
+          "it": "Vendetta"
+        },
+        "description": {
+          "en": "At the end of their turn each player draws!: on a Heart they play another turn (without drawing again).",
+          "it": "Alla fine del turno ognuno estrae: con Cuori gioca un altro turno (senza estrarre di nuovo)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6034,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      },
+      {
+        "id": "a-fistful-of-cards",
+        "label": {
+          "en": "A Fistful of Cards",
+          "it": "Per un Pugno di Carte"
+        },
+        "description": {
+          "en": "Final card: at the start of their turn a player is the target of as many BANG! as cards in their hand.",
+          "it": "Carta finale: all'inizio del turno il giocatore subisce tanti BANG! quante sono le carte che ha in mano."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7931,
+            "y": 0.5872,
+            "w": 0.1724,
+            "h": 0.2589
+          }
+        },
+        "ruleRefs": ["foc-missed-symbol"]
+      }
+    ]
+  },
+  {
+    "id": "exp-wild-west-show",
+    "title": {
+      "en": "Wild West Show",
+      "it": "Wild West Show"
+    },
+    "image": {
+      "src": "images/exp-wild-west-show.webp",
+      "width": 1104,
+      "height": 953,
+      "alt": {
+        "en": "The cards of Wild West Show",
+        "it": "Le carte di Wild West Show"
+      }
+    },
+    "conditions": {
+      "expansions": ["wild-west-show"]
+    },
+    "hotspots": [
+      {
+        "id": "bone-orchard",
+        "label": {
+          "en": "Bone Orchard",
+          "it": "Camposanto"
+        },
+        "description": {
+          "en": "At the start of their turn, all eliminated players return with 1 life point; deal their roles at random from those of the eliminated.",
+          "it": "All'inizio del proprio turno gli eliminati tornano in gioco con 1 punto vita; i loro ruoli si ridistribuiscono a caso fra loro."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "darling-valentine",
+        "label": {
+          "en": "Darling Valentine",
+          "it": "Darling Valentine"
+        },
+        "description": {
+          "en": "At the start of their turn, each player discards their hand and draws as many cards.",
+          "it": "All'inizio del proprio turno ognuno scarta la mano e pesca altrettante carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "dorothy-rage",
+        "label": {
+          "en": "Dorothy Rage",
+          "it": "Dorothy Rage"
+        },
+        "description": {
+          "en": "On their turn, each player can force another player to play one of their cards.",
+          "it": "Nel proprio turno ognuno può obbligare un altro giocatore a giocare una sua carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "gag",
+        "label": {
+          "en": "Gag",
+          "it": "Bavaglio"
+        },
+        "description": {
+          "en": "Players may not talk (they can gesture or mumble); whoever talks loses 1 life point.",
+          "it": "I giocatori non possono parlare (ma gesticolare e mugugnare sì); chi parla perde 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "helena-zontero",
+        "label": {
+          "en": "Helena Zontero",
+          "it": "Helena Zontero"
+        },
+        "description": {
+          "en": "When it comes into play, draw!: on Hearts or Diamonds, shuffle all active roles except the Sheriff and deal them at random.",
+          "it": "Quando entra in gioco, estrai: con Cuori o Quadri rimescola i ruoli attivi (tranne lo Sceriffo) e ridistribuiscili."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "lady-rose-of-texas",
+        "label": {
+          "en": "Lady Rose of Texas",
+          "it": "Lady Rosa del Texas"
+        },
+        "description": {
+          "en": "On their turn, each player can swap places with the player on their right, who skips their next turn.",
+          "it": "Nel proprio turno ognuno può scambiarsi di posto con chi ha a destra, che salta il prossimo turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.0336,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "miss-susanna",
+        "label": {
+          "en": "Miss Susanna",
+          "it": "Miss Susanna"
+        },
+        "description": {
+          "en": "Each player must play at least 3 cards on their turn, or lose 1 life point.",
+          "it": "Nel proprio turno ognuno deve giocare almeno 3 carte, altrimenti perde 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "sacagaway",
+        "label": {
+          "en": "Sacagaway",
+          "it": "Sacagaway"
+        },
+        "description": {
+          "en": "All players play with their hands revealed (not their roles).",
+          "it": "Tutti giocano a carte scoperte (tranne il ruolo)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "showdown",
+        "label": {
+          "en": "Showdown",
+          "it": "Regolamento di Conti"
+        },
+        "description": {
+          "en": "All cards may be played as BANG!; all BANG! cards may be played as Missed!.",
+          "it": "Tutte le carte possono essere giocate come BANG!; le carte BANG! come Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "wild-west-show",
+        "label": {
+          "en": "Wild West Show",
+          "it": "Wild West Show"
+        },
+        "description": {
+          "en": "Final card: every player's goal becomes \"be the last one in play\".",
+          "it": "Carta finale: l'obiettivo di ogni giocatore diventa \"rimani l'ultimo in gioco\"."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["wws-setup"]
+      },
+      {
+        "id": "big-spencer",
+        "label": {
+          "en": "Big Spencer · 9 ♥",
+          "it": "Big Spencer · 9 ♥"
+        },
+        "description": {
+          "en": "He starts with 5 cards. He can't play Missed!.",
+          "it": "Inizia con 5 carte. Non può giocare Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "flint-westwood",
+        "label": {
+          "en": "Flint Westwood · 4 ♥",
+          "it": "Flint Westwood · 4 ♥"
+        },
+        "description": {
+          "en": "Once on his turn he may trade one card from his hand for 2 random cards from another player's hand.",
+          "it": "Una volta nel suo turno può scambiare una carta dalla mano con 2 carte a caso dalla mano di un altro."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.3116,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "gary-looter",
+        "label": {
+          "en": "Gary Looter · 5 ♥",
+          "it": "Gary Looter · 5 ♥"
+        },
+        "description": {
+          "en": "He takes all excess cards the other players discard at the end of their turn.",
+          "it": "Pesca tutte le carte in eccesso scartate dagli altri a fine turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "greygory-deck",
+        "label": {
+          "en": "Greygory Deck · 4 ♥",
+          "it": "Greygory Deck · 4 ♥"
+        },
+        "description": {
+          "en": "At the start of his turn he may draw 2 base-game characters at random and has both abilities.",
+          "it": "All'inizio del turno può pescare 2 personaggi del gioco base a caso e ne ha entrambe le abilità."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "john-pain",
+        "label": {
+          "en": "John Pain · 4 ♥",
+          "it": "John Pain · 4 ♥"
+        },
+        "description": {
+          "en": "With fewer than 6 cards in hand, whenever any player draws!, he takes the drawn card.",
+          "it": "Se ha meno di 6 carte in mano, quando un giocatore estrae aggiunge alla mano la carta estratta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "lee-van-kliff",
+        "label": {
+          "en": "Lee Van Kliff · 4 ♥",
+          "it": "Lee Van Kliff · 4 ♥"
+        },
+        "description": {
+          "en": "On his turn he may discard a BANG! to repeat the effect of a brown card he just played.",
+          "it": "Nel suo turno può scartare un BANG! per ripetere l'effetto di una carta marrone appena giocata."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "teren-kill",
+        "label": {
+          "en": "Teren Kill · 3 ♥",
+          "it": "Teren Kill · 3 ♥"
+        },
+        "description": {
+          "en": "Each time he would be eliminated, draw!: if not Spades he stays at 1 life point and draws a card.",
+          "it": "Ogni volta che sarebbe eliminato estrae: se non è Picche resta a 1 punto vita e pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      },
+      {
+        "id": "youl-grinner",
+        "label": {
+          "en": "Youl Grinner · 4 ♥",
+          "it": "Youl Grinner · 4 ♥"
+        },
+        "description": {
+          "en": "Before he draws, each player with more cards in hand than him gives him one of their choice.",
+          "it": "Prima che peschi, chi ha più carte in mano di lui deve dargliene una a scelta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.5897,
+            "w": 0.1449,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "wws-setup"]
+      }
+    ]
+  },
+  {
+    "id": "exp-gold-rush",
+    "title": {
+      "en": "Gold Rush",
+      "it": "Gold Rush"
+    },
+    "image": {
+      "src": "images/exp-gold-rush.webp",
+      "width": 1104,
+      "height": 1210,
+      "alt": {
+        "en": "The cards of Gold Rush",
+        "it": "Le carte di Gold Rush"
+      }
+    },
+    "conditions": {
+      "expansions": ["gold-rush"]
+    },
+    "hotspots": [
+      {
+        "id": "shot",
+        "label": {
+          "en": "Shot",
+          "it": "Bicchierino"
+        },
+        "description": {
+          "en": "Cost 1 · one-shot: a player of your choice (you too) regains 1 life point. (×3)",
+          "it": "Costo 1 · uso singolo: un giocatore a scelta (anche tu) recupera 1 punto vita. (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "bottle",
+        "label": {
+          "en": "Bottle",
+          "it": "Bottiglia"
+        },
+        "description": {
+          "en": "Cost 2 · one-shot: play it as a Panic!, a Beer or a BANG!. (×3)",
+          "it": "Costo 2 · uso singolo: giocala come Panico!, Birra o BANG!. (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "pardner",
+        "label": {
+          "en": "Pardner",
+          "it": "Complice"
+        },
+        "description": {
+          "en": "Cost 2 · one-shot: play it as a General Store, a Duel or a Cat Balou. (×3)",
+          "it": "Costo 2 · uso singolo: giocalo come Emporio, Duello o Cat Balou. (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "gold-rush-card",
+        "label": {
+          "en": "Gold Rush",
+          "it": "Corsa all'Oro"
+        },
+        "description": {
+          "en": "Cost 5 · one-shot: your turn ends; regain all your life points, then play another turn.",
+          "it": "Costo 5 · uso singolo: il tuo turno termina; recuperi tutti i punti vita, poi giochi un altro turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "rhum",
+        "label": {
+          "en": "Rhum",
+          "it": "Rum"
+        },
+        "description": {
+          "en": "Cost 3 · one-shot: draw! 4 cards and regain 1 life point for each different suit. (×2)",
+          "it": "Costo 3 · uso singolo: estrai 4 carte e recuperi 1 punto vita per ogni seme diverso. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "union-pacific",
+        "label": {
+          "en": "Union Pacific",
+          "it": "Union Pacific"
+        },
+        "description": {
+          "en": "Cost 4 · one-shot: draw 4 cards from the deck.",
+          "it": "Costo 4 · uso singolo: pesca 4 carte dal mazzo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.0264,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "wanted",
+        "label": {
+          "en": "Wanted",
+          "it": "Ricercato"
+        },
+        "description": {
+          "en": "Cost 2 · play on any player: whoever eliminates that player draws 2 cards and takes 1 gold nugget. (×3)",
+          "it": "Costo 2 · giocala su chi vuoi: chi elimina quel giocatore pesca 2 carte e prende 1 pepita. (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "boots",
+        "label": {
+          "en": "Boots",
+          "it": "Stivali"
+        },
+        "description": {
+          "en": "Cost 3 · permanent: each time you lose 1 life point, draw a card.",
+          "it": "Costo 3 · permanente: ogni volta che perdi 1 punto vita, pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "calumet",
+        "label": {
+          "en": "Calumet",
+          "it": "Calumet"
+        },
+        "description": {
+          "en": "Cost 3 · permanent: cards of Diamonds played by others have no effect on you.",
+          "it": "Costo 3 · permanente: le carte di Quadri giocate dagli altri non hanno effetto su di te."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "gold-pan",
+        "label": {
+          "en": "Gold Pan",
+          "it": "Setaccio"
+        },
+        "description": {
+          "en": "Cost 3 · permanent: pay 1 nugget to draw a card, up to twice per turn.",
+          "it": "Costo 3 · permanente: paga 1 pepita per pescare una carta, fino a 2 volte per turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "gun-belt",
+        "label": {
+          "en": "Gun Belt",
+          "it": "Cinturone"
+        },
+        "description": {
+          "en": "Cost 2 · permanent: your hand limit at the end of your turn is 8 cards.",
+          "it": "Costo 2 · permanente: a fine turno puoi tenere fino a 8 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "horseshoe",
+        "label": {
+          "en": "Horseshoe",
+          "it": "Ferro di Cavallo"
+        },
+        "description": {
+          "en": "Cost 2 · permanent: each time you draw!, flip one extra card and choose the result.",
+          "it": "Costo 2 · permanente: ogni volta che estrai, scopri una carta in più e scegli il risultato."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "lucky-charm",
+        "label": {
+          "en": "Lucky Charm",
+          "it": "Talismano"
+        },
+        "description": {
+          "en": "Cost 3 · permanent: each time you lose 1 life point, take a gold nugget.",
+          "it": "Costo 3 · permanente: ogni volta che perdi 1 punto vita, prendi una pepita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "pickaxe",
+        "label": {
+          "en": "Pickaxe",
+          "it": "Piccone"
+        },
+        "description": {
+          "en": "Cost 4 · permanent: draw 1 extra card in phase 1.",
+          "it": "Costo 4 · permanente: pesca una carta in più nella fase 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "rucksack",
+        "label": {
+          "en": "Rucksack",
+          "it": "Zaino"
+        },
+        "description": {
+          "en": "Cost 3 · permanent: pay 2 nuggets to regain 1 life point (also out of turn to save your last one).",
+          "it": "Costo 3 · permanente: paga 2 pepite per recuperare 1 punto vita (anche fuori turno per salvarti)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      },
+      {
+        "id": "don-bell",
+        "label": {
+          "en": "Don Bell · 4 ♥",
+          "it": "Don Bell · 4 ♥"
+        },
+        "description": {
+          "en": "At the end of his turn he draws!: on Hearts or Diamonds he plays an extra turn.",
+          "it": "Alla fine del turno estrae: con Cuori o Quadri gioca un turno extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "dutch-will",
+        "label": {
+          "en": "Dutch Will · 4 ♥",
+          "it": "Dutch Will · 4 ♥"
+        },
+        "description": {
+          "en": "He draws 2 cards, discards 1 and takes a gold nugget.",
+          "it": "Pesca 2 carte, ne scarta 1 e prende 1 pepita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "jacky-murieta",
+        "label": {
+          "en": "Jacky Murieta · 4 ♥",
+          "it": "Jacky Murieta · 4 ♥"
+        },
+        "description": {
+          "en": "On his turn he may pay 2 nuggets to shoot an extra BANG! (no card needed).",
+          "it": "Nel suo turno può pagare 2 pepite per sparare un BANG! extra (senza carta)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.4612,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "josh-mccloud",
+        "label": {
+          "en": "Josh McCloud · 4 ♥",
+          "it": "Josh McCloud · 4 ♥"
+        },
+        "description": {
+          "en": "He may pay 2 nuggets to take the top equipment of the deck.",
+          "it": "Può pagare 2 pepite per prendere il primo equipaggiamento del mazzetto."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "madam-yto",
+        "label": {
+          "en": "Madam Yto · 4 ♥",
+          "it": "Madam Yto · 4 ♥"
+        },
+        "description": {
+          "en": "Each time a Beer is played, she draws a card.",
+          "it": "Ogni volta che viene giocata una Birra, pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "pretty-luzena",
+        "label": {
+          "en": "Pretty Luzena · 4 ♥",
+          "it": "Pretty Luzena · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn she may buy one equipment for 1 nugget less.",
+          "it": "Una volta per turno può comprare un equipaggiamento pagando 1 pepita in meno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "raddie-snake",
+        "label": {
+          "en": "Raddie Snake · 4 ♥",
+          "it": "Raddie Snake · 4 ♥"
+        },
+        "description": {
+          "en": "On his turn he may discard 1 nugget to draw a card, up to twice.",
+          "it": "Nel suo turno può scartare 1 pepita per pescare una carta, fino a 2 volte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "simeon-picos",
+        "label": {
+          "en": "Simeon Picos · 4 ♥",
+          "it": "Simeon Picos · 4 ♥"
+        },
+        "description": {
+          "en": "Each time he loses 1 life point, he takes a gold nugget.",
+          "it": "Ogni volta che perde 1 punto vita, prende 1 pepita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["character-abilities", "gr-setup"]
+      },
+      {
+        "id": "shadow-renegade",
+        "label": {
+          "en": "Shadow Renegade",
+          "it": "Rinnegato Ombra"
+        },
+        "description": {
+          "en": "Role card for the shadow-gunslinger variant: the eliminated Renegade sides with the weaker team.",
+          "it": "Carta ruolo della variante pistoleri fantasma: il Rinnegato eliminato si schiera con la squadra più debole."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.6785,
+            "w": 0.1449,
+            "h": 0.2041
+          }
+        },
+        "ruleRefs": ["gr-setup"]
+      }
+    ]
+  },
+  {
+    "id": "exp-valley-of-shadows",
+    "title": {
+      "en": "The Valley of Shadows",
+      "it": "La Valle delle Ombre"
+    },
+    "image": {
+      "src": "images/exp-valley-of-shadows.webp",
+      "width": 1104,
+      "height": 1218,
+      "alt": {
+        "en": "The cards of The Valley of Shadows",
+        "it": "Le carte di La Valle delle Ombre"
+      }
+    },
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    },
+    "hotspots": [
+      {
+        "id": "bounty",
+        "label": {
+          "en": "Bounty",
+          "it": "Taglia"
+        },
+        "description": {
+          "en": "Blue · play on anyone: whoever hits that player with a BANG! card draws a card.",
+          "it": "Blu · giocala su chiunque: chi colpisce quel giocatore con una carta BANG! pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "ghost",
+        "label": {
+          "en": "Ghost",
+          "it": "Fantasma"
+        },
+        "description": {
+          "en": "Blue · play on an eliminated player: they're back in the game but can't gain or lose life points. (×2)",
+          "it": "Blu · giocala su un eliminato: torna in gioco ma non può guadagnare né perdere punti vita. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "lemat",
+        "label": {
+          "en": "LeMat",
+          "it": "LeMat"
+        },
+        "description": {
+          "en": "Blue weapon (reach 1): on your turn, use any card in hand as a BANG!.",
+          "it": "Arma blu (gittata 1): nel tuo turno usa qualsiasi carta in mano come BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "rattlesnake",
+        "label": {
+          "en": "Rattlesnake",
+          "it": "Serpente a Sonagli"
+        },
+        "description": {
+          "en": "Blue · play on anyone: at the start of their turn they draw!; on Spades they lose 1 life point.",
+          "it": "Blu · giocala su chiunque: a inizio turno estrae; con Picche perde 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "shotgun",
+        "label": {
+          "en": "Shotgun",
+          "it": "Shotgun"
+        },
+        "description": {
+          "en": "Blue weapon (reach 1): each time you hit a player, they discard a card of their choice from hand.",
+          "it": "Arma blu (gittata 1): ogni volta che colpisci un giocatore, scarta una carta a sua scelta dalla mano."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "aim",
+        "label": {
+          "en": "Aim",
+          "it": "Mira"
+        },
+        "description": {
+          "en": "Play with a BANG! card: if the target is hit, they lose 2 life points.",
+          "it": "Giocala assieme a un BANG!: se il bersaglio è colpito perde 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.0263,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "backfire",
+        "label": {
+          "en": "Backfire",
+          "it": "Ritorno di Fiamma"
+        },
+        "description": {
+          "en": "Counts as a Missed!; the player who shot is the target of a BANG!.",
+          "it": "Vale un Mancato!; chi ha sparato è bersaglio di un BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "bandidos",
+        "label": {
+          "en": "Bandidos",
+          "it": "Bandidos"
+        },
+        "description": {
+          "en": "Each player chooses: discard 2 cards from hand (1 if they have only 1) or lose 1 life point.",
+          "it": "Ogni giocatore sceglie se scartare 2 carte dalla mano (1 se ne ha solo 1) o perdere 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "escape",
+        "label": {
+          "en": "Escape",
+          "it": "Fuga"
+        },
+        "description": {
+          "en": "Out of turn: avoid the effects of a brown card (not BANG!) that targets you.",
+          "it": "Fuori turno: evita gli effetti di una carta marrone (non BANG!) di cui sei bersaglio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "fanning",
+        "label": {
+          "en": "Fanning",
+          "it": "Sventagliata"
+        },
+        "description": {
+          "en": "Counts as your one BANG! for the turn; also targets a player at distance 1 from the first target.",
+          "it": "Conta come l'unico BANG! del turno; colpisce anche un giocatore a distanza 1 dal primo bersaglio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "last-call",
+        "label": {
+          "en": "Last Call",
+          "it": "Ultimo Giro"
+        },
+        "description": {
+          "en": "Regain 1 life point (works with 2 players left, never out of turn).",
+          "it": "Recuperi 1 punto vita (funziona anche in 2, mai fuori turno)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "poker",
+        "label": {
+          "en": "Poker",
+          "it": "Poker"
+        },
+        "description": {
+          "en": "All others discard a card at the same time; if no Ace, you draw up to 2 of them.",
+          "it": "Tutti gli altri scartano una carta insieme; se non c'è alcun Asso, ne peschi fino a 2."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.2438,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "saved",
+        "label": {
+          "en": "Saved!",
+          "it": "Salvo!"
+        },
+        "description": {
+          "en": "Out of turn: prevent another player losing 1 life point; if they survive, draw 2 from their hand or the deck.",
+          "it": "Fuori turno: previeni la perdita di 1 punto vita di un altro; se sopravvive, pesca 2 carte dalla sua mano o dal mazzo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "tomahawk",
+        "label": {
+          "en": "Tomahawk",
+          "it": "Tomahawk"
+        },
+        "description": {
+          "en": "A BANG! at distance up to 2 (not a BANG! card).",
+          "it": "Un BANG! fino a distanza 2 (non è una carta BANG!)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "tornado",
+        "label": {
+          "en": "Tornado",
+          "it": "Tornado"
+        },
+        "description": {
+          "en": "Everyone discards a card from hand (if possible), then draws 2.",
+          "it": "Tutti scartano una carta dalla mano (se possibile), poi pescano 2 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["vos-overview"]
+      },
+      {
+        "id": "black-flower",
+        "label": {
+          "en": "Black Flower · 4 ♥",
+          "it": "Black Flower · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn she may use a Clubs card as an extra BANG!.",
+          "it": "Una volta nel turno può usare una carta di Fiori come BANG! extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "colorado-bill",
+        "label": {
+          "en": "Colorado Bill · 4 ♥",
+          "it": "Colorado Bill · 4 ♥"
+        },
+        "description": {
+          "en": "Each time he plays a BANG!, he draws!: on Spades the shot can't be avoided.",
+          "it": "Ogni volta che gioca un BANG! estrae: con Picche il colpo non può essere evitato."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "der-spot-burst-ringer",
+        "label": {
+          "en": "Der Spot · Burst Ringer · 4 ♥",
+          "it": "Der Spot · Burst Ringer · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may use a BANG! card as a Gatling.",
+          "it": "Una volta nel turno può usare una carta BANG! come Gatling."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8261,
+            "y": 0.4614,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "evelyn-shebang",
+        "label": {
+          "en": "Evelyn Shebang · 4 ♥",
+          "it": "Evelyn Shebang · 4 ♥"
+        },
+        "description": {
+          "en": "She may skip drawing cards: for each card not drawn, she shoots a BANG! at a different target in reach.",
+          "it": "Può rinunciare a pescare: per ogni carta non pescata spara un BANG! a un bersaglio diverso a distanza raggiungibile."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.029,
+            "y": 0.679,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "henry-block",
+        "label": {
+          "en": "Henry Block · 4 ♥",
+          "it": "Henry Block · 4 ♥"
+        },
+        "description": {
+          "en": "Anyone who draws or discards one of his cards (hand or in play) is the target of a BANG!.",
+          "it": "Chiunque peschi o scarti una sua carta (in gioco o in mano) è bersaglio di un BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1884,
+            "y": 0.679,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "lemonade-jim",
+        "label": {
+          "en": "Lemonade Jim · 4 ♥",
+          "it": "Lemonade Jim · 4 ♥"
+        },
+        "description": {
+          "en": "Each time another player plays a Beer, he may discard a card to regain 1 life point too.",
+          "it": "Ogni volta che un altro gioca una Birra, può scartare una carta per recuperare anche lui 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3478,
+            "y": 0.679,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "mick-defender",
+        "label": {
+          "en": "Mick Defender · 4 ♥",
+          "it": "Mick Defender · 4 ♥"
+        },
+        "description": {
+          "en": "If targeted by a brown card (not BANG!), he may use a Missed! to avoid its effects.",
+          "it": "Se è bersaglio di una carta marrone (non BANG!), può usare un Mancato! per evitarne gli effetti."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5072,
+            "y": 0.679,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      },
+      {
+        "id": "tuco-franziskaner",
+        "label": {
+          "en": "Tuco Franziskaner · 5 ♥",
+          "it": "Tuco Franziskaner · 5 ♥"
+        },
+        "description": {
+          "en": "In his draw phase, if he has no blue cards in play, he draws 2 extra cards.",
+          "it": "Nella fase di pesca, se non ha carte blu in gioco, pesca 2 carte extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.679,
+            "w": 0.1449,
+            "h": 0.2044
+          }
+        },
+        "ruleRefs": ["character-abilities", "vos-overview"]
+      }
+    ]
+  },
+  {
+    "id": "exp-armed-dangerous",
+    "title": {
+      "en": "Armed & Dangerous",
+      "it": "Armed & Dangerous (Armati e pericolosi)"
+    },
+    "image": {
+      "src": "images/exp-armed-dangerous.webp",
+      "width": 1280,
+      "height": 1483,
+      "alt": {
+        "en": "The cards of Armed & Dangerous",
+        "it": "Le carte di Armed & Dangerous (Armati e pericolosi)"
+      }
+    },
+    "conditions": {
+      "expansions": ["armed-dangerous"]
+    },
+    "hotspots": [
+      {
+        "id": "ace-up-the-sleeve",
+        "label": {
+          "en": "Ace up the Sleeve",
+          "it": "Asso nella Manica"
+        },
+        "description": {
+          "en": "Dangerous object: pay 2 tokens to draw a card.",
+          "it": "Oggetto Dangerous: paga 2 segnalini per pescare una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "bandolier",
+        "label": {
+          "en": "Bandolier",
+          "it": "Bandoliera"
+        },
+        "description": {
+          "en": "Dangerous object: pay 1 token, once per turn, to play one extra BANG! card.",
+          "it": "Oggetto Dangerous: paga 1 segnalino, una volta per turno, per giocare una carta BANG! extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "beer-keg",
+        "label": {
+          "en": "Beer Keg",
+          "it": "Fusto di Birra"
+        },
+        "description": {
+          "en": "Dangerous object: pay 2 tokens to regain 1 life point (not out of turn).",
+          "it": "Oggetto Dangerous: paga 2 segnalini per recuperare 1 punto vita (non fuori turno)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "bell-tower",
+        "label": {
+          "en": "Bell Tower",
+          "it": "Campanile"
+        },
+        "description": {
+          "en": "Dangerous object: pay 1 token to see everyone at distance 1 for the next card you play.",
+          "it": "Oggetto Dangerous: paga 1 segnalino per vedere tutti a distanza 1 per la prossima carta che giochi."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "bomb",
+        "label": {
+          "en": "Bomb",
+          "it": "Bomba"
+        },
+        "description": {
+          "en": "Dangerous · play on anyone: at the start of their turn draw!: Hearts/Diamonds pass it to anyone; Clubs/Spades remove 2 tokens; when empty it explodes for 2 life points.",
+          "it": "Dangerous · giocala su chiunque: a inizio turno estrai: Cuori/Quadri passala a chi vuoi; Fiori/Picche togli 2 segnalini; finiti esplode e toglie 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "crate",
+        "label": {
+          "en": "Crate",
+          "it": "Cassa"
+        },
+        "description": {
+          "en": "Dangerous object: pay 2 tokens for a Missed!.",
+          "it": "Oggetto Dangerous: paga 2 segnalini per un Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "lock-pick",
+        "label": {
+          "en": "Lock Pick",
+          "it": "Grimaldello"
+        },
+        "description": {
+          "en": "Dangerous object: pay 2 tokens to draw a card from any player's hand.",
+          "it": "Oggetto Dangerous: paga 2 segnalini per pescare una carta dalla mano di un giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.0216,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "tumbleweed",
+        "label": {
+          "en": "Tumbleweed",
+          "it": "Cespuglio"
+        },
+        "description": {
+          "en": "Dangerous object: pay 1 token to make any player repeat a draw!.",
+          "it": "Oggetto Dangerous: paga 1 segnalino per ripetere o far ripetere un \"estrarre!\"."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "whip",
+        "label": {
+          "en": "Whip",
+          "it": "Frusta"
+        },
+        "description": {
+          "en": "Dangerous object: pay 2 tokens to discard any card in play.",
+          "it": "Oggetto Dangerous: paga 2 segnalini per scartare una carta in gioco."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "big-fifty",
+        "label": {
+          "en": "Big Fifty",
+          "it": "Big Fifty"
+        },
+        "description": {
+          "en": "Dangerous weapon, reach 6 · 1 token: cancel the target's cards in play and character ability.",
+          "it": "Arma Dangerous, gittata 6 · 1 segnalino: annulla le carte in gioco e l'abilità del bersaglio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "buntline-special",
+        "label": {
+          "en": "Buntline Special",
+          "it": "Buntline Special"
+        },
+        "description": {
+          "en": "Dangerous weapon, reach 2 · 1 token: if the BANG! is cancelled, the target discards a card of their choice.",
+          "it": "Arma Dangerous, gittata 2 · 1 segnalino: se il BANG! è annullato, il bersaglio scarta una carta a scelta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "double-barrel",
+        "label": {
+          "en": "Double Barrel",
+          "it": "Doppia Canna"
+        },
+        "description": {
+          "en": "Dangerous weapon, reach 1 · 1 token: a Diamonds BANG! can't be cancelled.",
+          "it": "Arma Dangerous, gittata 1 · 1 segnalino: un BANG! di Quadri non può essere annullato."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "thunderer",
+        "label": {
+          "en": "Thunderer",
+          "it": "Thunderer"
+        },
+        "description": {
+          "en": "Dangerous weapon, reach 3 · 1 token: take the BANG! card you played back into your hand.",
+          "it": "Arma Dangerous, gittata 3 · 1 segnalino: riprendi in mano la carta BANG! giocata."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "arrow",
+        "label": {
+          "en": "Arrow",
+          "it": "Freccia"
+        },
+        "description": {
+          "en": "A target discards a BANG! from hand or loses 1 life point · upgrade 1 token: one more target.",
+          "it": "Un bersaglio scarta un BANG! dalla mano o perde 1 punto vita · potenziamento 1 segnalino: un bersaglio in più."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.2003,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "caravan",
+        "label": {
+          "en": "Caravan",
+          "it": "Carovana"
+        },
+        "description": {
+          "en": "Draw 2 cards · upgrade 2 tokens: draw 1 more.",
+          "it": "Pesca 2 carte · potenziamento 2 segnalini: ne peschi 1 in più."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "a-little-nip",
+        "label": {
+          "en": "A Little Nip",
+          "it": "Cicchetto"
+        },
+        "description": {
+          "en": "Regain 1 life point · upgrade 3 tokens: 1 more (repeatable). Not out of turn.",
+          "it": "Recuperi 1 punto vita · potenziamento 3 segnalini: 1 in più (ripetibile). Non fuori turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "quick-shot",
+        "label": {
+          "en": "Quick Shot",
+          "it": "Colpo Rapido"
+        },
+        "description": {
+          "en": "A BANG! (not a BANG! card) · upgrade 1 token: shoot one more different player.",
+          "it": "Un BANG! (non è una carta BANG!) · potenziamento 1 segnalino: colpisci un altro giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "flintlock",
+        "label": {
+          "en": "Flintlock",
+          "it": "Flintlock"
+        },
+        "description": {
+          "en": "A BANG! (not a BANG! card) · upgrade 2 tokens: if cancelled, take this card back.",
+          "it": "Un BANG! (non è una carta BANG!) · potenziamento 2 segnalini: se annullato, riprendi questa carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "duck",
+        "label": {
+          "en": "Duck!",
+          "it": "Giù la Testa!"
+        },
+        "description": {
+          "en": "Counts as a Missed! · upgrade 2 tokens: take this card back into your hand.",
+          "it": "Vale un Mancato! · potenziamento 2 segnalini: riprendi in mano questa carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "squaw",
+        "label": {
+          "en": "Squaw",
+          "it": "Squaw"
+        },
+        "description": {
+          "en": "Discard any card in play · upgrade 2 tokens: add it to your hand instead.",
+          "it": "Scarta una carta in gioco · potenziamento 2 segnalini: aggiungila invece alla tua mano."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "reloading",
+        "label": {
+          "en": "Reloading",
+          "it": "Ricarica"
+        },
+        "description": {
+          "en": "Add 3 load tokens to your cards and/or your character.",
+          "it": "Aggiungi 3 segnalini sulle tue carte e/o sul tuo personaggio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.379,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "rust",
+        "label": {
+          "en": "Rust",
+          "it": "Ruggine"
+        },
+        "description": {
+          "en": "Every other player moves 1 token from their character and from each Dangerous card to your character.",
+          "it": "Gli altri spostano 1 segnalino dal personaggio e da ogni carta Dangerous sul tuo personaggio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["ad-overview"]
+      },
+      {
+        "id": "bang",
+        "label": {
+          "en": "BANG!",
+          "it": "BANG!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card (×4).",
+          "it": "Copia extra della carta del gioco base (×4)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["bang-card", "ad-overview"]
+      },
+      {
+        "id": "cat-balou",
+        "label": {
+          "en": "Cat Balou",
+          "it": "Cat Balou"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["cat-balou", "ad-overview"]
+      },
+      {
+        "id": "missed",
+        "label": {
+          "en": "Missed!",
+          "it": "Mancato!"
+        },
+        "description": {
+          "en": "Extra copy of the base-game card.",
+          "it": "Copia extra della carta del gioco base."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["missed", "ad-overview"]
+      },
+      {
+        "id": "al-preacher",
+        "label": {
+          "en": "Al Preacher · 4 ♥",
+          "it": "Al Preacher · 4 ♥"
+        },
+        "description": {
+          "en": "If another player plays a blue or orange card, he may pay 2 tokens to draw a card.",
+          "it": "Se un altro gioca una carta blu o arancione, può pagare 2 segnalini per pescare una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "bass-greeves",
+        "label": {
+          "en": "Bass Greeves · 4 ♥",
+          "it": "Bass Greeves · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may discard a card from hand to add 2 tokens to one of his cards.",
+          "it": "Una volta per turno può scartare una carta dalla mano per aggiungere 2 segnalini a una sua carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "bloody-mary",
+        "label": {
+          "en": "Bloody Mary · 4 ♥",
+          "it": "Bloody Mary · 4 ♥"
+        },
+        "description": {
+          "en": "Each time one of her BANG! cards is cancelled, she draws a card.",
+          "it": "Ogni volta che una sua carta BANG! è annullata, pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.5577,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "frankie-canton",
+        "label": {
+          "en": "Frankie Canton · 4 ♥",
+          "it": "Frankie Canton · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may take 1 token from any card and put it on his character.",
+          "it": "Una volta per turno può prendere 1 segnalino da qualunque carta e metterlo sul personaggio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.7363,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "julie-cutter",
+        "label": {
+          "en": "Julie Cutter · 4 ♥",
+          "it": "Julie Cutter · 4 ♥"
+        },
+        "description": {
+          "en": "Each time a player makes her lose at least 1 life point, she draws!: on Hearts/Diamonds that player is the target of a BANG!.",
+          "it": "Ogni volta che un giocatore le fa perdere almeno 1 punto vita estrae: con Cuori/Quadri quel giocatore è bersaglio di un BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.7363,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "mexicali-kid",
+        "label": {
+          "en": "Mexicali Kid · 4 ♥",
+          "it": "Mexicali Kid · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may pay 2 tokens to shoot an extra BANG! (no card needed).",
+          "it": "Una volta per turno può pagare 2 segnalini per sparare un BANG! extra (senza carta)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.7363,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "ms-abigail",
+        "label": {
+          "en": "Ms. Abigail · 4 ♥",
+          "it": "Ms. Abigail · 4 ♥"
+        },
+        "description": {
+          "en": "She may ignore brown cards valued J, Q, K or A if she is the only target.",
+          "it": "Può ignorare le carte marroni di valore J, Q, K o A se è l'unico bersaglio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.7363,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      },
+      {
+        "id": "red-ringo",
+        "label": {
+          "en": "Red Ringo · 4 ♥",
+          "it": "Red Ringo · 4 ♥"
+        },
+        "description": {
+          "en": "He starts with 4 tokens; once per turn he may move up to 2 of them onto his cards.",
+          "it": "Inizia con 4 segnalini; una volta nel turno può spostarne fino a 2 sulle sue carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.7363,
+            "w": 0.125,
+            "h": 0.1679
+          }
+        },
+        "ruleRefs": ["character-abilities", "ad-overview"]
+      }
+    ]
+  },
+  {
+    "id": "exp-great-train-robbery",
+    "title": {
+      "en": "The Great Train Robbery",
+      "it": "The Great Train Robbery"
+    },
+    "image": {
+      "src": "images/exp-great-train-robbery.webp",
+      "width": 1632,
+      "height": 1748,
+      "alt": {
+        "en": "The cards of The Great Train Robbery",
+        "it": "Le carte di The Great Train Robbery"
+      }
+    },
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    },
+    "hotspots": [
+      {
+        "id": "boom-town",
+        "label": {
+          "en": "Boom Town",
+          "it": "Boom Town"
+        },
+        "description": {
+          "en": "Station · cost: discard a BANG! card.",
+          "it": "Stazione · costo: scarta una carta BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "catico",
+        "label": {
+          "en": "Catico",
+          "it": "Catico"
+        },
+        "description": {
+          "en": "Station · cost: discard a Cat Balou or a Panic!.",
+          "it": "Stazione · costo: scarta un Cat Balou o un Panico!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "creepy-creek",
+        "label": {
+          "en": "Creepy Creek",
+          "it": "Creepy Creek"
+        },
+        "description": {
+          "en": "Station · cost: discard a Spades card.",
+          "it": "Stazione · costo: scarta una carta di Picche."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "crowns-hole",
+        "label": {
+          "en": "Crown's Hole",
+          "it": "Crown's Hole"
+        },
+        "description": {
+          "en": "Station · cost: discard a Beer.",
+          "it": "Stazione · costo: scarta una Birra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "deathwood",
+        "label": {
+          "en": "Deathwood",
+          "it": "Deathwood"
+        },
+        "description": {
+          "en": "Station · cost: discard a blue-bordered card.",
+          "it": "Stazione · costo: scarta una carta a bordo blu."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "dodgeville",
+        "label": {
+          "en": "Dodgeville",
+          "it": "Dodgeville"
+        },
+        "description": {
+          "en": "Station · cost: discard a Missed!.",
+          "it": "Stazione · costo: scarta un Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "fort-wroth",
+        "label": {
+          "en": "Fort Wroth",
+          "it": "Fort Wroth"
+        },
+        "description": {
+          "en": "Station · cost: discard a card valued 10, J, Q, K or A.",
+          "it": "Stazione · costo: scarta una carta di valore 10, J, Q, K o A."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "frisco",
+        "label": {
+          "en": "Frisco",
+          "it": "Frisco"
+        },
+        "description": {
+          "en": "Station · cost: discard a Clubs card.",
+          "it": "Stazione · costo: scarta una carta di Fiori."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "miners-oath",
+        "label": {
+          "en": "Miner's Oath",
+          "it": "Miner's Oath"
+        },
+        "description": {
+          "en": "Station · cost: discard a Diamonds card.",
+          "it": "Stazione · costo: scarta una carta di Quadri."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.0183,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "san-tafe",
+        "label": {
+          "en": "San Tafe",
+          "it": "San Tafe"
+        },
+        "description": {
+          "en": "Station · cost: discard a Hearts card.",
+          "it": "Stazione · costo: scarta una carta di Cuori."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "tombrock",
+        "label": {
+          "en": "Tombrock",
+          "it": "Tombrock"
+        },
+        "description": {
+          "en": "Station · cost: lose 1 life point (not your last).",
+          "it": "Stazione · costo: perdi 1 punto vita (non l'ultimo)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "virginia-town",
+        "label": {
+          "en": "Virginia Town",
+          "it": "Virginia Town"
+        },
+        "description": {
+          "en": "Station · cost: discard any two cards.",
+          "it": "Stazione · costo: scarta due carte qualsiasi."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "yooma",
+        "label": {
+          "en": "Yooma",
+          "it": "Yooma"
+        },
+        "description": {
+          "en": "Station · cost: discard a card valued 2 to 9.",
+          "it": "Stazione · costo: scarta una carta di valore da 2 a 9."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "leland",
+        "label": {
+          "en": "Leland (locomotive)",
+          "it": "Leland (locomotiva)"
+        },
+        "description": {
+          "en": "At the End of the Line: the effect of a General Store, starting with the current player.",
+          "it": "Al capolinea: l'effetto di un Emporio, partendo da chi è di turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "ironhorse",
+        "label": {
+          "en": "Ironhorse (locomotive)",
+          "it": "Ironhorse (locomotiva)"
+        },
+        "description": {
+          "en": "At the End of the Line: every player is the target of a BANG! (not caused by any player).",
+          "it": "Al capolinea: ogni giocatore è bersaglio di un BANG! (non causato da alcun giocatore)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "baggage-car",
+        "label": {
+          "en": "Baggage Car",
+          "it": "Baggage Car"
+        },
+        "description": {
+          "en": "Railcar · discard it for a Missed!, Panic!, Cat Balou or an extra BANG!.",
+          "it": "Vagone · scartalo per ottenere un Mancato!, Panico!, Cat Balou o un BANG! extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "caboose",
+        "label": {
+          "en": "Caboose",
+          "it": "Caboose"
+        },
+        "description": {
+          "en": "Railcar · you may discard another of your blue cards (a railcar too) as a Missed!.",
+          "it": "Vagone · puoi scartare un'altra tua carta blu (anche un vagone) come Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "cattle-truck",
+        "label": {
+          "en": "Cattle Truck",
+          "it": "Cattle Truck"
+        },
+        "description": {
+          "en": "Railcar · discard it to look at the top 3 discards and draw 1.",
+          "it": "Vagone · scartalo per guardare le prime 3 carte degli scarti e pescarne 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.1699,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "circus-wagon",
+        "label": {
+          "en": "Circus Wagon",
+          "it": "Circus Wagon"
+        },
+        "description": {
+          "en": "Railcar · discard it: every other player discards one of their cards in play.",
+          "it": "Vagone · scartalo: ogni altro giocatore scarta una carta che ha in gioco."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "coal-hopper",
+        "label": {
+          "en": "Coal Hopper",
+          "it": "Coal Hopper"
+        },
+        "description": {
+          "en": "Railcar · discard it to draw a card and discard a railcar in play in front of any player.",
+          "it": "Vagone · scartalo per pescare una carta e scartare un vagone in gioco davanti a un giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "dining-car",
+        "label": {
+          "en": "Dining Car",
+          "it": "Dining Car"
+        },
+        "description": {
+          "en": "Railcar · at the start of your turn draw!: on Hearts regain 1 life point.",
+          "it": "Vagone · a inizio turno estrai: con Cuori recuperi 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "express-car",
+        "label": {
+          "en": "Express Car",
+          "it": "Express Car"
+        },
+        "description": {
+          "en": "Railcar · discard it: your turn ends, discard your hand, then play another turn.",
+          "it": "Vagone · scartalo: il tuo turno termina, scarti la mano e giochi un altro turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "ghost-car",
+        "label": {
+          "en": "Ghost Car",
+          "it": "Ghost Car"
+        },
+        "description": {
+          "en": "Railcar · play on anyone except the Sheriff: if eliminated they stay in play, but can't gain or lose life.",
+          "it": "Vagone · giocalo su chiunque tranne lo Sceriffo: se eliminato resta in gioco ma non guadagna né perde punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "lounge-car",
+        "label": {
+          "en": "Lounge Car",
+          "it": "Lounge Car"
+        },
+        "description": {
+          "en": "Railcar · discard it to draw 2 railcars: one in front of you, one in front of another player.",
+          "it": "Vagone · scartalo per pescare 2 vagoni: uno davanti a te, uno davanti a un altro giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "lumber-flatcar",
+        "label": {
+          "en": "Lumber Flatcar",
+          "it": "Lumber Flatcar"
+        },
+        "description": {
+          "en": "Railcar · play on anyone: they see all other players at distance +1.",
+          "it": "Vagone · giocalo su chiunque: vede tutti gli altri a distanza +1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "mail-car",
+        "label": {
+          "en": "Mail Car",
+          "it": "Mail Car"
+        },
+        "description": {
+          "en": "Railcar · discard it to draw 3 cards and give 1 to another player.",
+          "it": "Vagone · scartalo per pescare 3 carte e darne 1 a un altro giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "observation-car",
+        "label": {
+          "en": "Observation Car",
+          "it": "Observation Car"
+        },
+        "description": {
+          "en": "Railcar · you see others at −1; others see you at +1.",
+          "it": "Vagone · vedi gli altri a −1; gli altri ti vedono a +1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.3215,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "passenger-car",
+        "label": {
+          "en": "Passenger Car",
+          "it": "Passenger Car"
+        },
+        "description": {
+          "en": "Railcar · discard it to draw a card (hand or in play) from any other player.",
+          "it": "Vagone · scartalo per pescare una carta (in mano o in gioco) da un altro giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "prisoner-car",
+        "label": {
+          "en": "Prisoner Car",
+          "it": "Prisoner Car"
+        },
+        "description": {
+          "en": "Railcar · Duel and Indians! played by others have no effect on you.",
+          "it": "Vagone · Duello e Indiani! giocati dagli altri non hanno effetto su di te."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "private-car",
+        "label": {
+          "en": "Private Car",
+          "it": "Private Car"
+        },
+        "description": {
+          "en": "Railcar · while your hand is empty you can't be the target of BANG! cards.",
+          "it": "Vagone · se non hai carte in mano non puoi essere bersaglio di carte BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "sleeper-car",
+        "label": {
+          "en": "Sleeper Car",
+          "it": "Sleeper Car"
+        },
+        "description": {
+          "en": "Railcar · once per turn, discard another of your blue cards (a railcar too) as an extra BANG!.",
+          "it": "Vagone · una volta per turno scarta un'altra tua carta blu (anche un vagone) come BANG! extra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "dragoon",
+        "label": {
+          "en": "Dragoon",
+          "it": "Dragoon"
+        },
+        "description": {
+          "en": "Blue weapon, reach 2: you may play one extra BANG! on your turn.",
+          "it": "Arma blu, gittata 2: puoi giocare un BANG! extra nel tuo turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "map",
+        "label": {
+          "en": "Map",
+          "it": "Mappa"
+        },
+        "description": {
+          "en": "Blue · on your turn, before drawing, look at the top 2 cards of the deck: you may discard 1.",
+          "it": "Blu · nel tuo turno, prima di pescare, guarda le prime 2 carte del mazzo: puoi scartarne 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "refund",
+        "label": {
+          "en": "Refund",
+          "it": "Rimborso"
+        },
+        "description": {
+          "en": "Blue · when another player draws or discards one of your other cards, draw a card.",
+          "it": "Blu · quando un altro pesca o scarta una tua carta (tranne questa), pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "strongbox",
+        "label": {
+          "en": "Strongbox",
+          "it": "Cassaforte"
+        },
+        "description": {
+          "en": "Blue · at the end of your turn, draw a card.",
+          "it": "Blu · alla fine del tuo turno pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "cactus",
+        "label": {
+          "en": "Cactus",
+          "it": "Cactus"
+        },
+        "description": {
+          "en": "Counts as a Missed!; then draw!: on Hearts or Diamonds regain 1 life point.",
+          "it": "Vale un Mancato!; poi estrai: con Cuori o Quadri recuperi 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.4731,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "evaded",
+        "label": {
+          "en": "Evaded!",
+          "it": "Per un Pelo!"
+        },
+        "description": {
+          "en": "Counts as a Missed!; draw the card you just dodged.",
+          "it": "Vale un Mancato!; pesca la carta che hai evitato."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "full-steam",
+        "label": {
+          "en": "Full Steam",
+          "it": "A Tutto Vapore"
+        },
+        "description": {
+          "en": "Send the train to the End of the Line; double or cancel the locomotive's effect.",
+          "it": "Manda il treno al capolinea; raddoppia o annulla l'effetto della locomotiva."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "knife-revolver",
+        "label": {
+          "en": "Knife Revolver",
+          "it": "Knife Revolver"
+        },
+        "description": {
+          "en": "Counts as your BANG! for the turn; draw!: J, Q, K, A = take it back into your hand.",
+          "it": "Conta come il BANG! del turno; estrai: J, Q, K, A = riprendi in mano la carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "money-bag",
+        "label": {
+          "en": "Money Bag",
+          "it": "Sacco di Soldi"
+        },
+        "description": {
+          "en": "If the top card of the discard pile is brown, copy its effect.",
+          "it": "Se la carta in cima agli scarti è a bordo marrone, copiane l'effetto."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "most-wanted-card",
+        "label": {
+          "en": "Most Wanted",
+          "it": "Most Wanted"
+        },
+        "description": {
+          "en": "Each player draws!: on Spades that player loses 1 life point.",
+          "it": "Ogni giocatore estrae: con Picche perde 1 punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "next-stop",
+        "label": {
+          "en": "Next Stop",
+          "it": "Prossima Fermata"
+        },
+        "description": {
+          "en": "Advance the train 1 station. (×2)",
+          "it": "Fai avanzare il treno di 1 stazione. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "switch",
+        "label": {
+          "en": "Switch",
+          "it": "Scambio"
+        },
+        "description": {
+          "en": "Swap one of your cards in play with another card in play.",
+          "it": "Scambia una tua carta in gioco con un'altra carta in gioco."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "train-robbery",
+        "label": {
+          "en": "Train Robbery",
+          "it": "Rapina al Treno"
+        },
+        "description": {
+          "en": "Counts as your BANG! for the turn; for each card in play the target discards it or is the target of a BANG!. (×2)",
+          "it": "Conta come il BANG! del turno; per ogni carta in gioco il bersaglio la scarta o è colpito da un BANG!. (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "water-tower",
+        "label": {
+          "en": "Water Tower",
+          "it": "Serbatoio"
+        },
+        "description": {
+          "en": "Take a railcar of your choice from the train for free.",
+          "it": "Prendi gratis un vagone a scelta dal treno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8824,
+            "y": 0.6247,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["tgtr-setup"]
+      },
+      {
+        "id": "benny-brawler",
+        "label": {
+          "en": "Benny Brawler · 4 ♥",
+          "it": "Benny Brawler · 4 ♥"
+        },
+        "description": {
+          "en": "On his turn he may take any number of railcars (paying each).",
+          "it": "Nel suo turno può prendere un qualunque numero di vagoni (pagandoli)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0196,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "evan-babbit",
+        "label": {
+          "en": "Evan Babbit · 4 ♥",
+          "it": "Evan Babbit · 4 ♥"
+        },
+        "description": {
+          "en": "When targeted by a BANG!, he may discard a card of the same suit to divert it to a player at distance 1.",
+          "it": "Se è bersaglio di un BANG! può scartare una carta dello stesso seme per deviarlo a un giocatore a distanza 1."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1275,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "jimmy-texas",
+        "label": {
+          "en": "Jimmy Texas · 4 ♥",
+          "it": "Jimmy Texas · 4 ♥"
+        },
+        "description": {
+          "en": "At the end of his turn he draws a card.",
+          "it": "Alla fine del suo turno pesca una carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2353,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "manuelita",
+        "label": {
+          "en": "Manuelita · 4 ♥",
+          "it": "Manuelita · 4 ♥"
+        },
+        "description": {
+          "en": "Each time the train reaches the End of the Line, she draws 2 cards.",
+          "it": "Ogni volta che il treno arriva al capolinea, pesca 2 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3431,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "sancho",
+        "label": {
+          "en": "Sancho · 4 ♥",
+          "it": "Sancho · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may take a railcar of his choice for free.",
+          "it": "Una volta nel turno può prendere gratis un vagone a scelta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.451,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "shade-oconnor",
+        "label": {
+          "en": "Shade O'Connor · 4 ♥",
+          "it": "Shade O'Connor · 4 ♥"
+        },
+        "description": {
+          "en": "Each time the train advances outside his turn, he may discard a card to draw one.",
+          "it": "Ogni volta che il treno avanza fuori dal suo turno, può scartare una carta per pescarne un'altra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5588,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "sgt-blaze",
+        "label": {
+          "en": "Sgt. Blaze · 4 ♥",
+          "it": "Sgt. Blaze · 4 ♥"
+        },
+        "description": {
+          "en": "When his card or effect targets several players, he may exempt one.",
+          "it": "Quando una sua carta o effetto colpisce più giocatori, può escluderne uno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6667,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      },
+      {
+        "id": "zippy-roy",
+        "label": {
+          "en": "Zippy Roy · 3 ♥",
+          "it": "Zippy Roy · 3 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may advance the train 1 station.",
+          "it": "Una volta nel turno può far avanzare il treno di 1 stazione."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7745,
+            "y": 0.7763,
+            "w": 0.098,
+            "h": 0.1424
+          }
+        },
+        "ruleRefs": ["character-abilities", "tgtr-setup"]
+      }
+    ]
+  },
+  {
+    "id": "exp-legends",
+    "title": {
+      "en": "Legends",
+      "it": "Legends"
+    },
+    "image": {
+      "src": "images/exp-legends.webp",
+      "width": 1280,
+      "height": 1703,
+      "alt": {
+        "en": "The cards of Legends",
+        "it": "Le carte di Legends"
+      }
+    },
+    "conditions": {
+      "expansions": ["legends"]
+    },
+    "hotspots": [
+      {
+        "id": "bart-cassidy",
+        "label": {
+          "en": "Bart Cassidy · 4 ♥",
+          "it": "Bart Cassidy · 4 ♥"
+        },
+        "description": {
+          "en": "If you are hit, draw 2 cards.",
+          "it": "Se vieni ferito, peschi 2 carte."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "black-jack",
+        "label": {
+          "en": "Black Jack · 4 ♥",
+          "it": "Black Jack · 4 ♥"
+        },
+        "description": {
+          "en": "You may flip cards until their sum is over 21, then draw them all (J/Q/K = 10, A = 11).",
+          "it": "Puoi scoprire carte finché la somma non supera 21, poi le peschi tutte (J/Q/K = 10, A = 11)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "calamity-janet",
+        "label": {
+          "en": "Calamity Janet · 4 ♥",
+          "it": "Calamity Janet · 4 ♥"
+        },
+        "description": {
+          "en": "Each of your cards counts as a BANG! or a Missed!.",
+          "it": "Ogni tua carta vale come BANG! o Mancato!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "el-gringo",
+        "label": {
+          "en": "El Gringo · 3 ♥",
+          "it": "El Gringo · 3 ♥"
+        },
+        "description": {
+          "en": "If you are hit by a player, draw 1 card from their hand and the card that hit you.",
+          "it": "Se vieni ferito da un giocatore, peschi una carta dalla sua mano e la carta che ti ha ferito."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "jesse-jones",
+        "label": {
+          "en": "Jesse Jones · 4 ♥",
+          "it": "Jesse Jones · 4 ♥"
+        },
+        "description": {
+          "en": "Look at any player's hand and draw 1 card from it, then 1 from the deck.",
+          "it": "Guarda la mano di un giocatore, pescane una, poi pescane un'altra dal mazzo."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "jourdonnais",
+        "label": {
+          "en": "Jourdonnais · 4 ♥",
+          "it": "Jourdonnais · 4 ♥"
+        },
+        "description": {
+          "en": "If you are the target of a brown card you may draw!: J, Q, K, A = ignore the card.",
+          "it": "Se sei bersaglio di una carta marrone puoi estrarre: J, Q, K, A = ignora la carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "kit-carlson",
+        "label": {
+          "en": "Kit Carlson · 4 ♥",
+          "it": "Kit Carlson · 4 ♥"
+        },
+        "description": {
+          "en": "Draw 3 cards; you may give 1 of them to another player.",
+          "it": "Peschi 3 carte; puoi darne 1 a un altro giocatore."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.0188,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "lucky-duke",
+        "label": {
+          "en": "Lucky Duke · 4 ♥",
+          "it": "Lucky Duke · 4 ♥"
+        },
+        "description": {
+          "en": "When a card requires a draw!, you flip 2 and choose 1; on your turn you then draw it.",
+          "it": "Se una carta fa estrarre, scopri tu 2 carte e scegli quella da usare; se è il tuo turno la peschi."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "paul-regret",
+        "label": {
+          "en": "Paul Regret · 3 ♥",
+          "it": "Paul Regret · 3 ♥"
+        },
+        "description": {
+          "en": "Others see you at +1; to BANG! you, a player must discard an extra card from hand.",
+          "it": "Gli altri ti vedono a +1; per giocarti un BANG! contro occorre scartare una carta in più dalla mano."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "pedro-ramirez",
+        "label": {
+          "en": "Pedro Ramirez · 4 ♥",
+          "it": "Pedro Ramirez · 4 ♥"
+        },
+        "description": {
+          "en": "Draw 2 cards plus the top card of the discard pile.",
+          "it": "Peschi 2 carte più quella in cima agli scarti."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "rose-doolan",
+        "label": {
+          "en": "Rose Doolan · 4 ♥",
+          "it": "Rose Doolan · 4 ♥"
+        },
+        "description": {
+          "en": "You see everyone at distance 1; once per turn discard one of your blue cards (hand or play) as a Panic!.",
+          "it": "Vedi tutti a distanza 1; una volta nel turno puoi scartare una tua carta blu (in mano o in gioco) come Panico!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "sid-ketchum",
+        "label": {
+          "en": "Sid Ketchum · 4 ♥",
+          "it": "Sid Ketchum · 4 ♥"
+        },
+        "description": {
+          "en": "Discard 2 cards to regain 1 life point; once per turn, when you regain a life point, you may shoot a free BANG!.",
+          "it": "Scarta 2 carte per recuperare 1 punto vita; una volta nel turno, se recuperi un punto vita, puoi sparare un BANG! gratis."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "slab-the-killer",
+        "label": {
+          "en": "Slab the Killer · 4 ♥",
+          "it": "Slab the Killer · 4 ♥"
+        },
+        "description": {
+          "en": "Your BANG! can't be cancelled; when you claim a Feat you may remove even a player's last life point.",
+          "it": "I tuoi BANG! non possono essere annullati; se rivendichi un'Impresa puoi togliere anche l'ultimo punto vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "suzy-lafayette",
+        "label": {
+          "en": "Suzy Lafayette · 4 ♥",
+          "it": "Suzy Lafayette · 4 ♥"
+        },
+        "description": {
+          "en": "With fewer than 2 cards in hand, draw until you have 2.",
+          "it": "Se rimani con meno di 2 carte in mano, peschi fino a tornare a 2."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.2002,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "vulture-sam",
+        "label": {
+          "en": "Vulture Sam · 4 ♥",
+          "it": "Vulture Sam · 4 ♥"
+        },
+        "description": {
+          "en": "Take all cards of each eliminated player; if you are eliminated, stay in play with 4 life points on your normal side.",
+          "it": "Prendi tutte le carte di ogni eliminato; se vieni eliminato resti in gioco con 4 punti vita, ma torni sul lato normale."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "willy-the-kid",
+        "label": {
+          "en": "Willy the Kid · 4 ♥",
+          "it": "Willy the Kid · 4 ♥"
+        },
+        "description": {
+          "en": "Play any number of BANG! cards; instead of claiming a Feat you may shoot a free BANG!.",
+          "it": "Puoi giocare quante carte BANG! vuoi; invece di rivendicare un'Impresa puoi sparare un BANG! gratis."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["character-abilities", "leg-setup"]
+      },
+      {
+        "id": "feat-315-to-yooma",
+        "label": {
+          "en": "3:15 to Yooma",
+          "it": "Il treno per Yooma"
+        },
+        "description": {
+          "en": "Feat: do or make another player do a draw! (even at the start of your turn).",
+          "it": "Impresa: attiva o fai attivare un \"estrarre!\" (anche a inizio turno)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-a-quick-death",
+        "label": {
+          "en": "A Quick Death",
+          "it": "Una morte veloce"
+        },
+        "description": {
+          "en": "Feat: hit a player at full life with a BANG! card.",
+          "it": "Impresa: ferisci con una carta BANG! un giocatore al massimo dei punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-a-thousand-ways",
+        "label": {
+          "en": "A Thousand Ways to Die",
+          "it": "Mille modi per morire"
+        },
+        "description": {
+          "en": "Feat: show a Missed! and another card of the same suit from your hand.",
+          "it": "Impresa: mostra dalla mano un Mancato! e una carta dello stesso seme."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-borderlands",
+        "label": {
+          "en": "Borderlands",
+          "it": "La frontiera"
+        },
+        "description": {
+          "en": "Feat: discard your entire hand (even 0 cards).",
+          "it": "Impresa: scarta la tua mano (anche se è di zero carte)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-bottleneck",
+        "label": {
+          "en": "Bottleneck",
+          "it": "Il collo di bottiglia"
+        },
+        "description": {
+          "en": "Feat: discard a Beer.",
+          "it": "Impresa: scarta una Birra."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.3817,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-fifty-guns",
+        "label": {
+          "en": "Fifty Guns",
+          "it": "Cinquanta pistole"
+        },
+        "description": {
+          "en": "Feat: take or discard a weapon.",
+          "it": "Impresa: prendi o scarta un'arma."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-few-cards-more",
+        "label": {
+          "en": "For a Few Cards More",
+          "it": "Per qualche carta in più"
+        },
+        "description": {
+          "en": "Feat: discard at least 1 excess card at the end of your turn.",
+          "it": "Impresa: scarta almeno una carta in eccesso a fine turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-good-company",
+        "label": {
+          "en": "Good Company",
+          "it": "In buona compagnia"
+        },
+        "description": {
+          "en": "Feat: discard a card, then play a card with the same name (or vice versa).",
+          "it": "Impresa: scarta una carta, poi gioca una carta con lo stesso nome (o viceversa)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-old-west-gang",
+        "label": {
+          "en": "Old West Gang",
+          "it": "Gang del vecchio West"
+        },
+        "description": {
+          "en": "Feat: hit 2 or more players in the same turn.",
+          "it": "Impresa: ferisci 2 o più giocatori nello stesso turno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-scrugs-ballad",
+        "label": {
+          "en": "Scrugs Ballad",
+          "it": "La ballata di Scrugs"
+        },
+        "description": {
+          "en": "Feat: lose a Duel.",
+          "it": "Impresa: perdi un Duello."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.575,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-chuck-a-luck",
+        "label": {
+          "en": "The Chuck-a-Luck",
+          "it": "Il Mulino d'Oro"
+        },
+        "description": {
+          "en": "Feat: discard a BANG! card.",
+          "it": "Impresa: scarta una carta BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7125,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-last-hero",
+        "label": {
+          "en": "The Last Hero",
+          "it": "L'ultimo eroe"
+        },
+        "description": {
+          "en": "Feat: discard a blue card in play.",
+          "it": "Impresa: scarta una carta blu in gioco."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.85,
+            "y": 0.5631,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-man-with-no-name",
+        "label": {
+          "en": "The Man with No Name",
+          "it": "L'uomo senza nome"
+        },
+        "description": {
+          "en": "Feat: lose 1 life point (not your last).",
+          "it": "Impresa: perdi un punto vita (non l'ultimo)."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.025,
+            "y": 0.7446,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-oregon-trail",
+        "label": {
+          "en": "The Oregon Trail",
+          "it": "La pista dell'Oregon"
+        },
+        "description": {
+          "en": "Feat: in your draw phase, don't draw the first card.",
+          "it": "Impresa: durante la fase di pesca rinuncia alla prima carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1625,
+            "y": 0.7446,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-wilhelm-scream",
+        "label": {
+          "en": "Wilhelm Scream",
+          "it": "L'urlo di Wilhelm"
+        },
+        "description": {
+          "en": "Feat: play a BANG! card at distance 2 or more.",
+          "it": "Impresa: gioca una carta BANG! a distanza 2 o più."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3,
+            "y": 0.7446,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      },
+      {
+        "id": "feat-wounded-pride",
+        "label": {
+          "en": "Wounded Pride",
+          "it": "Ferito nell'orgoglio"
+        },
+        "description": {
+          "en": "Feat: another player makes one of your BANG! cards miss.",
+          "it": "Impresa: un altro giocatore manca una tua carta BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4375,
+            "y": 0.7446,
+            "w": 0.125,
+            "h": 0.172
+          }
+        },
+        "ruleRefs": ["leg-setup"]
+      }
+    ]
+  },
+  {
+    "id": "exp-most-wanted",
+    "title": {
+      "en": "Most Wanted",
+      "it": "Most Wanted"
+    },
+    "image": {
+      "src": "images/exp-most-wanted.webp",
+      "width": 752,
+      "height": 953,
+      "alt": {
+        "en": "The cards of Most Wanted",
+        "it": "Le carte di Most Wanted"
+      }
+    },
+    "conditions": {
+      "expansions": ["most-wanted"]
+    },
+    "hotspots": [
+      {
+        "id": "annie-versary",
+        "label": {
+          "en": "Annie Versary · 4 ♥",
+          "it": "Annie Versary · 4 ♥"
+        },
+        "description": {
+          "en": "She may use any card as a BANG!.",
+          "it": "Può giocare una carta qualunque come se fosse una carta BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0426,
+            "y": 0.0336,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "mw-overview"]
+      },
+      {
+        "id": "claus-the-saint",
+        "label": {
+          "en": "Claus \"The Saint\" · 3 ♥",
+          "it": "Claus \"The Saint\" · 3 ♥"
+        },
+        "description": {
+          "en": "He draws one card more than the number of players, keeps 2 and gives 1 to each player.",
+          "it": "Pesca tante carte quanti sono i giocatori più una; ne tiene due e ne dà una ad ognuno."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2766,
+            "y": 0.0336,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "mw-overview"]
+      },
+      {
+        "id": "emiliano",
+        "label": {
+          "en": "Emiliano · 4 ♥",
+          "it": "Emiliano · 4 ♥"
+        },
+        "description": {
+          "en": "When his BANG! is Missed!, he draws that Missed!; when he misses a BANG!, he draws that BANG!.",
+          "it": "Quando un suo BANG! viene Mancato!, pesca quel Mancato!; quando manca un BANG!, pesca quel BANG!."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5106,
+            "y": 0.0336,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "mw-overview"]
+      },
+      {
+        "id": "johnny-kisch",
+        "label": {
+          "en": "Johnny Kisch · 4 ♥",
+          "it": "Johnny Kisch · 4 ♥"
+        },
+        "description": {
+          "en": "When he puts a card in play, all other cards in play with the same name are discarded.",
+          "it": "Quando mette una carta in gioco, tutte le altre carte in gioco con lo stesso nome sono scartate."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7447,
+            "y": 0.0336,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "mw-overview"]
+      },
+      {
+        "id": "uncle-will",
+        "label": {
+          "en": "Uncle Will · 4 ♥",
+          "it": "Uncle Will · 4 ♥"
+        },
+        "description": {
+          "en": "Once per turn he may play any card from hand as a General Store.",
+          "it": "Una volta per turno può giocare una carta qualsiasi dalla mano come un Emporio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0426,
+            "y": 0.3116,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["character-abilities", "mw-overview"]
+      },
+      {
+        "id": "handcuffs",
+        "label": {
+          "en": "Handcuffs",
+          "it": "Manette"
+        },
+        "description": {
+          "en": "Event (High Noon deck): after drawing in phase 1, the player names a suit and can only play that suit this turn.",
+          "it": "Evento (mazzo High Noon): dopo aver pescato nella fase 1, il giocatore dichiara un seme e nel turno può giocare solo carte di quel seme."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2766,
+            "y": 0.3116,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["mw-overview"]
+      },
+      {
+        "id": "new-identity",
+        "label": {
+          "en": "New Identity",
+          "it": "Nuova identità"
+        },
+        "description": {
+          "en": "Event (High Noon deck): at the start of their turn each player may switch to the character used to track life, restarting at 2 life points.",
+          "it": "Evento (mazzo High Noon): a inizio turno ognuno può passare al personaggio usato per i punti vita, ripartendo da 2 punti vita."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5106,
+            "y": 0.3116,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["mw-overview"]
+      },
+      {
+        "id": "blank-card",
+        "label": {
+          "en": "Blank card",
+          "it": "Carta bianca"
+        },
+        "description": {
+          "en": "Write your own card.",
+          "it": "Scrivi la tua carta."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7447,
+            "y": 0.3116,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["mw-overview"]
+      },
+      {
+        "id": "blank-character",
+        "label": {
+          "en": "Blank character card",
+          "it": "Carta bianca personaggio"
+        },
+        "description": {
+          "en": "Write your own character.",
+          "it": "Scrivi il tuo personaggio."
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0426,
+            "y": 0.5897,
+            "w": 0.2128,
+            "h": 0.2613
+          }
+        },
+        "ruleRefs": ["mw-overview"]
+      }
+    ]
   }
 ]

@@ -1,0 +1,69 @@
+{
+  "id": "mw-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · Most Wanted",
+    "it": "Personaggi · Most Wanted"
+  },
+  "conditions": {
+    "expansions": ["most-wanted"]
+  },
+  "ruleRefs": ["mw-overview"],
+  "sections": [
+    {
+      "id": "annie-versary",
+      "title": {
+        "en": "Annie Versary · 4 ♥",
+        "it": "Annie Versary · 4 ♥"
+      },
+      "body": {
+        "en": "She may use any card as a BANG!.",
+        "it": "Può giocare una carta qualunque come se fosse una carta BANG!."
+      }
+    },
+    {
+      "id": "claus-the-saint",
+      "title": {
+        "en": "Claus \"The Saint\" · 3 ♥",
+        "it": "Claus \"The Saint\" · 3 ♥"
+      },
+      "body": {
+        "en": "He draws one card more than the number of players, keeps 2 and gives 1 to each player.",
+        "it": "Pesca tante carte quanti sono i giocatori più una; ne tiene due e ne dà una ad ognuno."
+      }
+    },
+    {
+      "id": "emiliano",
+      "title": {
+        "en": "Emiliano · 4 ♥",
+        "it": "Emiliano · 4 ♥"
+      },
+      "body": {
+        "en": "When his BANG! is Missed!, he draws that Missed!; when he misses a BANG!, he draws that BANG!.",
+        "it": "Quando un suo BANG! viene Mancato!, pesca quel Mancato!; quando manca un BANG!, pesca quel BANG!."
+      }
+    },
+    {
+      "id": "johnny-kisch",
+      "title": {
+        "en": "Johnny Kisch · 4 ♥",
+        "it": "Johnny Kisch · 4 ♥"
+      },
+      "body": {
+        "en": "When he puts a card in play, all other cards in play with the same name are discarded.",
+        "it": "Quando mette una carta in gioco, tutte le altre carte in gioco con lo stesso nome sono scartate."
+      }
+    },
+    {
+      "id": "uncle-will",
+      "title": {
+        "en": "Uncle Will · 4 ♥",
+        "it": "Uncle Will · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may play any card from hand as a General Store.",
+        "it": "Una volta per turno può giocare una carta qualsiasi dalla mano come un Emporio."
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "mw-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · Most Wanted",
+    "it": "Carte · Most Wanted"
+  },
+  "conditions": {
+    "expansions": ["most-wanted"]
+  },
+  "ruleRefs": ["mw-overview"],
+  "actions": [
+    {
+      "id": "handcuffs",
+      "name": {
+        "en": "Handcuffs",
+        "it": "Manette"
+      },
+      "effect": {
+        "en": "Event (High Noon deck): after drawing in phase 1, the player names a suit and can only play that suit this turn.",
+        "it": "Evento (mazzo High Noon): dopo aver pescato nella fase 1, il giocatore dichiara un seme e nel turno può giocare solo carte di quel seme."
+      }
+    },
+    {
+      "id": "new-identity",
+      "name": {
+        "en": "New Identity",
+        "it": "Nuova identità"
+      },
+      "effect": {
+        "en": "Event (High Noon deck): at the start of their turn each player may switch to the character used to track life, restarting at 2 life points.",
+        "it": "Evento (mazzo High Noon): a inizio turno ognuno può passare al personaggio usato per i punti vita, ripartendo da 2 punti vita."
+      }
+    },
+    {
+      "id": "blank-card",
+      "name": {
+        "en": "Blank card",
+        "it": "Carta bianca"
+      },
+      "effect": {
+        "en": "Write your own card.",
+        "it": "Scrivi la tua carta."
+      }
+    },
+    {
+      "id": "blank-character",
+      "name": {
+        "en": "Blank character card",
+        "it": "Carta bianca personaggio"
+      },
+      "effect": {
+        "en": "Write your own character.",
+        "it": "Scrivi il tuo personaggio."
+      }
+    }
+  ]
+}

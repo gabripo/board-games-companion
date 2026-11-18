@@ -1,0 +1,102 @@
+{
+  "id": "tgtr-characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters · The Great Train Robbery",
+    "it": "Personaggi · The Great Train Robbery"
+  },
+  "conditions": {
+    "expansions": ["great-train-robbery"]
+  },
+  "ruleRefs": ["tgtr-setup"],
+  "sections": [
+    {
+      "id": "benny-brawler",
+      "title": {
+        "en": "Benny Brawler · 4 ♥",
+        "it": "Benny Brawler · 4 ♥"
+      },
+      "body": {
+        "en": "On his turn he may take any number of railcars (paying each).",
+        "it": "Nel suo turno può prendere un qualunque numero di vagoni (pagandoli)."
+      }
+    },
+    {
+      "id": "evan-babbit",
+      "title": {
+        "en": "Evan Babbit · 4 ♥",
+        "it": "Evan Babbit · 4 ♥"
+      },
+      "body": {
+        "en": "When targeted by a BANG!, he may discard a card of the same suit to divert it to a player at distance 1.",
+        "it": "Se è bersaglio di un BANG! può scartare una carta dello stesso seme per deviarlo a un giocatore a distanza 1."
+      }
+    },
+    {
+      "id": "jimmy-texas",
+      "title": {
+        "en": "Jimmy Texas · 4 ♥",
+        "it": "Jimmy Texas · 4 ♥"
+      },
+      "body": {
+        "en": "At the end of his turn he draws a card.",
+        "it": "Alla fine del suo turno pesca una carta."
+      }
+    },
+    {
+      "id": "manuelita",
+      "title": {
+        "en": "Manuelita · 4 ♥",
+        "it": "Manuelita · 4 ♥"
+      },
+      "body": {
+        "en": "Each time the train reaches the End of the Line, she draws 2 cards.",
+        "it": "Ogni volta che il treno arriva al capolinea, pesca 2 carte."
+      }
+    },
+    {
+      "id": "sancho",
+      "title": {
+        "en": "Sancho · 4 ♥",
+        "it": "Sancho · 4 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may take a railcar of his choice for free.",
+        "it": "Una volta nel turno può prendere gratis un vagone a scelta."
+      }
+    },
+    {
+      "id": "shade-oconnor",
+      "title": {
+        "en": "Shade O'Connor · 4 ♥",
+        "it": "Shade O'Connor · 4 ♥"
+      },
+      "body": {
+        "en": "Each time the train advances outside his turn, he may discard a card to draw one.",
+        "it": "Ogni volta che il treno avanza fuori dal suo turno, può scartare una carta per pescarne un'altra."
+      }
+    },
+    {
+      "id": "sgt-blaze",
+      "title": {
+        "en": "Sgt. Blaze · 4 ♥",
+        "it": "Sgt. Blaze · 4 ♥"
+      },
+      "body": {
+        "en": "When his card or effect targets several players, he may exempt one.",
+        "it": "Quando una sua carta o effetto colpisce più giocatori, può escluderne uno."
+      }
+    },
+    {
+      "id": "zippy-roy",
+      "title": {
+        "en": "Zippy Roy · 3 ♥",
+        "it": "Zippy Roy · 3 ♥"
+      },
+      "body": {
+        "en": "Once per turn he may advance the train 1 station.",
+        "it": "Una volta nel turno può far avanzare il treno di 1 stazione."
+      }
+    }
+  ]
+}

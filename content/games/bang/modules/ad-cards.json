@@ -1,0 +1,256 @@
+{
+  "id": "ad-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · Armed & Dangerous",
+    "it": "Carte · Armed & Dangerous (Armati e pericolosi)"
+  },
+  "conditions": {
+    "expansions": ["armed-dangerous"]
+  },
+  "ruleRefs": ["ad-overview"],
+  "actions": [
+    {
+      "id": "ace-up-the-sleeve",
+      "name": {
+        "en": "Ace up the Sleeve",
+        "it": "Asso nella Manica"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 2 tokens to draw a card.",
+        "it": "Oggetto Dangerous: paga 2 segnalini per pescare una carta."
+      }
+    },
+    {
+      "id": "bandolier",
+      "name": {
+        "en": "Bandolier",
+        "it": "Bandoliera"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 1 token, once per turn, to play one extra BANG! card.",
+        "it": "Oggetto Dangerous: paga 1 segnalino, una volta per turno, per giocare una carta BANG! extra."
+      }
+    },
+    {
+      "id": "beer-keg",
+      "name": {
+        "en": "Beer Keg",
+        "it": "Fusto di Birra"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 2 tokens to regain 1 life point (not out of turn).",
+        "it": "Oggetto Dangerous: paga 2 segnalini per recuperare 1 punto vita (non fuori turno)."
+      }
+    },
+    {
+      "id": "bell-tower",
+      "name": {
+        "en": "Bell Tower",
+        "it": "Campanile"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 1 token to see everyone at distance 1 for the next card you play.",
+        "it": "Oggetto Dangerous: paga 1 segnalino per vedere tutti a distanza 1 per la prossima carta che giochi."
+      }
+    },
+    {
+      "id": "bomb",
+      "name": {
+        "en": "Bomb",
+        "it": "Bomba"
+      },
+      "effect": {
+        "en": "Dangerous · play on anyone: at the start of their turn draw!: Hearts/Diamonds pass it to anyone; Clubs/Spades remove 2 tokens; when empty it explodes for 2 life points.",
+        "it": "Dangerous · giocala su chiunque: a inizio turno estrai: Cuori/Quadri passala a chi vuoi; Fiori/Picche togli 2 segnalini; finiti esplode e toglie 2 punti vita."
+      }
+    },
+    {
+      "id": "crate",
+      "name": {
+        "en": "Crate",
+        "it": "Cassa"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 2 tokens for a Missed!.",
+        "it": "Oggetto Dangerous: paga 2 segnalini per un Mancato!."
+      }
+    },
+    {
+      "id": "lock-pick",
+      "name": {
+        "en": "Lock Pick",
+        "it": "Grimaldello"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 2 tokens to draw a card from any player's hand.",
+        "it": "Oggetto Dangerous: paga 2 segnalini per pescare una carta dalla mano di un giocatore."
+      }
+    },
+    {
+      "id": "tumbleweed",
+      "name": {
+        "en": "Tumbleweed",
+        "it": "Cespuglio"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 1 token to make any player repeat a draw!.",
+        "it": "Oggetto Dangerous: paga 1 segnalino per ripetere o far ripetere un \"estrarre!\"."
+      }
+    },
+    {
+      "id": "whip",
+      "name": {
+        "en": "Whip",
+        "it": "Frusta"
+      },
+      "effect": {
+        "en": "Dangerous object: pay 2 tokens to discard any card in play.",
+        "it": "Oggetto Dangerous: paga 2 segnalini per scartare una carta in gioco."
+      }
+    },
+    {
+      "id": "big-fifty",
+      "name": {
+        "en": "Big Fifty",
+        "it": "Big Fifty"
+      },
+      "effect": {
+        "en": "Dangerous weapon, reach 6 · 1 token: cancel the target's cards in play and character ability.",
+        "it": "Arma Dangerous, gittata 6 · 1 segnalino: annulla le carte in gioco e l'abilità del bersaglio."
+      }
+    },
+    {
+      "id": "buntline-special",
+      "name": {
+        "en": "Buntline Special",
+        "it": "Buntline Special"
+      },
+      "effect": {
+        "en": "Dangerous weapon, reach 2 · 1 token: if the BANG! is cancelled, the target discards a card of their choice.",
+        "it": "Arma Dangerous, gittata 2 · 1 segnalino: se il BANG! è annullato, il bersaglio scarta una carta a scelta."
+      }
+    },
+    {
+      "id": "double-barrel",
+      "name": {
+        "en": "Double Barrel",
+        "it": "Doppia Canna"
+      },
+      "effect": {
+        "en": "Dangerous weapon, reach 1 · 1 token: a Diamonds BANG! can't be cancelled.",
+        "it": "Arma Dangerous, gittata 1 · 1 segnalino: un BANG! di Quadri non può essere annullato."
+      }
+    },
+    {
+      "id": "thunderer",
+      "name": {
+        "en": "Thunderer",
+        "it": "Thunderer"
+      },
+      "effect": {
+        "en": "Dangerous weapon, reach 3 · 1 token: take the BANG! card you played back into your hand.",
+        "it": "Arma Dangerous, gittata 3 · 1 segnalino: riprendi in mano la carta BANG! giocata."
+      }
+    },
+    {
+      "id": "arrow",
+      "name": {
+        "en": "Arrow",
+        "it": "Freccia"
+      },
+      "effect": {
+        "en": "A target discards a BANG! from hand or loses 1 life point · upgrade 1 token: one more target.",
+        "it": "Un bersaglio scarta un BANG! dalla mano o perde 1 punto vita · potenziamento 1 segnalino: un bersaglio in più."
+      }
+    },
+    {
+      "id": "caravan",
+      "name": {
+        "en": "Caravan",
+        "it": "Carovana"
+      },
+      "effect": {
+        "en": "Draw 2 cards · upgrade 2 tokens: draw 1 more.",
+        "it": "Pesca 2 carte · potenziamento 2 segnalini: ne peschi 1 in più."
+      }
+    },
+    {
+      "id": "a-little-nip",
+      "name": {
+        "en": "A Little Nip",
+        "it": "Cicchetto"
+      },
+      "effect": {
+        "en": "Regain 1 life point · upgrade 3 tokens: 1 more (repeatable). Not out of turn.",
+        "it": "Recuperi 1 punto vita · potenziamento 3 segnalini: 1 in più (ripetibile). Non fuori turno."
+      }
+    },
+    {
+      "id": "quick-shot",
+      "name": {
+        "en": "Quick Shot",
+        "it": "Colpo Rapido"
+      },
+      "effect": {
+        "en": "A BANG! (not a BANG! card) · upgrade 1 token: shoot one more different player.",
+        "it": "Un BANG! (non è una carta BANG!) · potenziamento 1 segnalino: colpisci un altro giocatore."
+      }
+    },
+    {
+      "id": "flintlock",
+      "name": {
+        "en": "Flintlock",
+        "it": "Flintlock"
+      },
+      "effect": {
+        "en": "A BANG! (not a BANG! card) · upgrade 2 tokens: if cancelled, take this card back.",
+        "it": "Un BANG! (non è una carta BANG!) · potenziamento 2 segnalini: se annullato, riprendi questa carta."
+      }
+    },
+    {
+      "id": "duck",
+      "name": {
+        "en": "Duck!",
+        "it": "Giù la Testa!"
+      },
+      "effect": {
+        "en": "Counts as a Missed! · upgrade 2 tokens: take this card back into your hand.",
+        "it": "Vale un Mancato! · potenziamento 2 segnalini: riprendi in mano questa carta."
+      }
+    },
+    {
+      "id": "squaw",
+      "name": {
+        "en": "Squaw",
+        "it": "Squaw"
+      },
+      "effect": {
+        "en": "Discard any card in play · upgrade 2 tokens: add it to your hand instead.",
+        "it": "Scarta una carta in gioco · potenziamento 2 segnalini: aggiungila invece alla tua mano."
+      }
+    },
+    {
+      "id": "reloading",
+      "name": {
+        "en": "Reloading",
+        "it": "Ricarica"
+      },
+      "effect": {
+        "en": "Add 3 load tokens to your cards and/or your character.",
+        "it": "Aggiungi 3 segnalini sulle tue carte e/o sul tuo personaggio."
+      }
+    },
+    {
+      "id": "rust",
+      "name": {
+        "en": "Rust",
+        "it": "Ruggine"
+      },
+      "effect": {
+        "en": "Every other player moves 1 token from their character and from each Dangerous card to your character.",
+        "it": "Gli altri spostano 1 segnalino dal personaggio e da ogni carta Dangerous sul tuo personaggio."
+      }
+    }
+  ]
+}

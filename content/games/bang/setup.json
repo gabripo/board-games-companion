@@ -174,6 +174,140 @@
         "sceneId": "table",
         "hotspotId": "draw-pile"
       }
+    },
+    {
+      "id": "roles-3p",
+      "areaId": "players",
+      "text": {
+        "en": "3 players (Dodge City): take Deputy, Outlaw and Renegade and deal them face up.",
+        "it": "3 giocatori (Dodge City): prendi Vice, Fuorilegge e Rinnegato e distribuiscili scoperti."
+      },
+      "conditions": {
+        "playerCount": [3],
+        "expansions": ["dodge-city"]
+      },
+      "ruleRefs": ["dc-3-players"]
+    },
+    {
+      "id": "roles-8p",
+      "areaId": "players",
+      "text": {
+        "en": "8 players (Dodge City): use the 8 Dodge City roles: 1 Sheriff, 2 Deputies, 3 Outlaws, 2 Renegades.",
+        "it": "8 giocatori (Dodge City): usa gli 8 ruoli di Dodge City: 1 Sceriffo, 2 Vice, 3 Fuorilegge, 2 Rinnegati."
+      },
+      "conditions": {
+        "playerCount": [8],
+        "expansions": ["dodge-city"]
+      },
+      "ruleRefs": ["dc-8-players"]
+    },
+    {
+      "id": "dc-shuffle",
+      "areaId": "center",
+      "text": {
+        "en": "Dodge City: shuffle its 15 characters with the others and its 40 cards into the deck.",
+        "it": "Dodge City: mescola i suoi 15 personaggi con gli altri e le sue 40 carte nel mazzo."
+      },
+      "conditions": {
+        "expansions": ["dodge-city"]
+      },
+      "ruleRefs": ["dc-overview"]
+    },
+    {
+      "id": "hn-deck",
+      "areaId": "center",
+      "text": {
+        "en": "High Noon / A Fistful of Cards: the Sheriff builds the event stack (final card last) face up next to them.",
+        "it": "High Noon / A Fistful of Cards: lo Sceriffo prepara il mazzetto evento (carta finale per ultima) scoperto accanto a sé."
+      },
+      "conditions": {
+        "expansions": ["high-noon", "fistful-of-cards"]
+      },
+      "ruleRefs": ["hn-setup", "hn-combined"]
+    },
+    {
+      "id": "mw-events",
+      "areaId": "center",
+      "text": {
+        "en": "Most Wanted: add Handcuffs and New Identity to the High Noon event cards; shuffle the 5 characters in.",
+        "it": "Most Wanted: aggiungi Manette e Nuova identità alle carte evento di High Noon; mescola i 5 personaggi."
+      },
+      "conditions": {
+        "expansions": ["most-wanted"]
+      },
+      "ruleRefs": ["mw-overview"]
+    },
+    {
+      "id": "wws-pile",
+      "areaId": "center",
+      "text": {
+        "en": "Wild West Show: show pile in the middle (Wild West Show at the bottom); shuffle in the 8 characters.",
+        "it": "Wild West Show: mazzetto spettacolo al centro (Wild West Show in fondo); mescola gli 8 personaggi."
+      },
+      "conditions": {
+        "expansions": ["wild-west-show"]
+      },
+      "ruleRefs": ["wws-setup"]
+    },
+    {
+      "id": "gr-equipment",
+      "areaId": "center",
+      "text": {
+        "en": "Gold Rush: equipment deck apart with 3 face up; gold nugget heap; shuffle in the 8 characters.",
+        "it": "Gold Rush: mazzetto equipaggiamenti a parte con 3 scoperti; riserva di pepite; mescola gli 8 personaggi."
+      },
+      "conditions": {
+        "expansions": ["gold-rush"]
+      },
+      "ruleRefs": ["gr-setup"]
+    },
+    {
+      "id": "vos-shuffle",
+      "areaId": "center",
+      "text": {
+        "en": "The Valley of Shadows: shuffle in its 8 characters and 16 cards.",
+        "it": "La Valle delle Ombre: mescola i suoi 8 personaggi e le 16 carte."
+      },
+      "conditions": {
+        "expansions": ["valley-of-shadows"]
+      },
+      "ruleRefs": ["vos-overview"]
+    },
+    {
+      "id": "ad-tokens",
+      "areaId": "center",
+      "text": {
+        "en": "Armed & Dangerous: shuffle in its 8 characters and 28 cards; load tokens in a common supply.",
+        "it": "Armed & Dangerous: mescola i suoi 8 personaggi e le 28 carte; segnalini carica in una riserva comune."
+      },
+      "conditions": {
+        "expansions": ["armed-dangerous"]
+      },
+      "ruleRefs": ["ad-overview"]
+    },
+    {
+      "id": "tgtr-train",
+      "areaId": "center",
+      "text": {
+        "en": "Great Train Robbery: lay out one Station per player, the Locomotive under the first and 3 Railcars; shuffle in characters and cards.",
+        "it": "Great Train Robbery: disponi una stazione per giocatore, la locomotiva sotto la prima e 3 vagoni; mescola personaggi e carte."
+      },
+      "conditions": {
+        "expansions": ["great-train-robbery"]
+      },
+      "ruleRefs": ["tgtr-setup"]
+    },
+    {
+      "id": "leg-setup",
+      "areaId": "players",
+      "text": {
+        "en": "Legends: legendary characters instead of the base ones, 5 Fame tokens each, 4 starting cards (5 for players 6 and 7), 1 Feat revealed.",
+        "it": "Legends: personaggi leggendari al posto di quelli base, 5 segnalini Fama a testa, 4 carte iniziali (5 per il sesto e settimo), 1 Impresa rivelata."
+      },
+      "conditions": {
+        "expansions": ["legends"]
+      },
+      "ruleRefs": ["leg-setup"]
     }
   ]
 }

@@ -116,6 +116,66 @@
       ]
     },
     {
+      "id": "event-card",
+      "kind": "step",
+      "title": {
+        "en": "Sheriff: reveal the next event card",
+        "it": "Sceriffo: rivela la prossima carta evento"
+      },
+      "description": {
+        "en": "Only on the Sheriff's turns, from their second turn on.",
+        "it": "Solo nei turni dello Sceriffo, dal suo secondo turno."
+      },
+      "conditions": {
+        "expansions": ["high-noon", "fistful-of-cards", "most-wanted"]
+      },
+      "ruleRefs": ["hn-reveal"]
+    },
+    {
+      "id": "tgtr-train-advances",
+      "kind": "step",
+      "title": {
+        "en": "Sheriff: advance the train 1 Station",
+        "it": "Sceriffo: fai avanzare il treno di 1 stazione"
+      },
+      "description": {
+        "en": "Only at the start of the Sheriff's turns. Past the last Station → End of the Line.",
+        "it": "Solo all'inizio dei turni dello Sceriffo. Oltre l'ultima stazione → capolinea."
+      },
+      "conditions": {
+        "expansions": ["great-train-robbery"]
+      },
+      "ruleRefs": ["tgtr-advance", "tgtr-end-of-line"]
+    },
+    {
+      "id": "wws-show",
+      "kind": "trigger",
+      "title": {
+        "en": "Show time",
+        "it": "Si va in scena"
+      },
+      "when": {
+        "en": "Someone plays a Stagecoach or Wells Fargo",
+        "it": "Qualcuno gioca una Diligenza o una Wells Fargo"
+      },
+      "actor": "each-player",
+      "conditions": {
+        "expansions": ["wild-west-show"]
+      },
+      "ruleRefs": ["wws-trigger"],
+      "children": [
+        {
+          "id": "wws-reveal",
+          "kind": "step",
+          "title": {
+            "en": "Reveal the next show card",
+            "it": "Rivela la prossima carta spettacolo"
+          },
+          "ruleRefs": ["wws-trigger"]
+        }
+      ]
+    },
+    {
       "id": "check-dynamite",
       "kind": "choice",
       "title": {
@@ -290,6 +350,86 @@
                 "sceneId": "player-area",
                 "hotspotId": "in-play"
               }
+            },
+            {
+              "id": "dc-use-green",
+              "kind": "step",
+              "title": {
+                "en": "Use a green card in play",
+                "it": "Usa una carta verde in gioco"
+              },
+              "description": {
+                "en": "Discard it for its effect — not the turn you played it.",
+                "it": "Scartala per l'effetto, ma non nel turno in cui l'hai giocata."
+              },
+              "conditions": {
+                "expansions": ["dodge-city"]
+              },
+              "ruleRefs": ["dc-green-cards"]
+            },
+            {
+              "id": "gr-equipment",
+              "kind": "step",
+              "title": {
+                "en": "Buy or force-discard equipment",
+                "it": "Compra o fai scartare equipaggiamento"
+              },
+              "description": {
+                "en": "Pay nuggets: the cost to buy, cost +1 to make someone discard it. Or play a Beer for a nugget.",
+                "it": "Paga pepite: il costo per comprare, costo +1 per farlo scartare. Oppure gioca una Birra per una pepita."
+              },
+              "conditions": {
+                "expansions": ["gold-rush"]
+              },
+              "ruleRefs": ["gr-buy", "gr-force-discard", "gr-beer-nugget"]
+            },
+            {
+              "id": "ad-use-dangerous",
+              "kind": "step",
+              "title": {
+                "en": "Use a Dangerous card",
+                "it": "Usa una carta Dangerous"
+              },
+              "description": {
+                "en": "Pay its load tokens; discard it when empty.",
+                "it": "Paga i suoi segnalini; scartala quando finiscono."
+              },
+              "conditions": {
+                "expansions": ["armed-dangerous"]
+              },
+              "ruleRefs": ["ad-dangerous", "ad-upgrade"]
+            },
+            {
+              "id": "tgtr-take-railcar",
+              "kind": "step",
+              "title": {
+                "en": "Take a Railcar (once per turn)",
+                "it": "Prendi un vagone (una volta per turno)"
+              },
+              "description": {
+                "en": "Optionally advance the train 1 Station first, then pay a Station's cost.",
+                "it": "Se vuoi, prima fai avanzare il treno di 1 stazione, poi paga il costo di una stazione."
+              },
+              "conditions": {
+                "expansions": ["great-train-robbery"]
+              },
+              "ruleRefs": ["tgtr-take"]
+            },
+            {
+              "id": "leg-perform-feat",
+              "kind": "step",
+              "title": {
+                "en": "Perform (or claim) a Feat",
+                "it": "Compi (o rivendica) un'Impresa"
+              },
+              "description": {
+                "en": "Do what a revealed Feat shows; put 2 Fame tokens on it.",
+                "it": "Fai ciò che mostra un'Impresa rivelata; mettici 2 segnalini Fama."
+              },
+              "conditions": {
+                "expansions": ["legends"]
+              },
+              "ruleRefs": ["leg-perform", "leg-legend"]
             }
           ]
         }
@@ -311,6 +451,30 @@
         "sceneId": "player-area",
         "hotspotId": "hand"
       }
+    },
+    {
+      "id": "ad-reload-discard",
+      "kind": "step",
+      "title": {
+        "en": "Excess cards discarded: +1 load token each",
+        "it": "Carte in eccesso scartate: +1 segnalino ciascuna"
+      },
+      "conditions": {
+        "expansions": ["armed-dangerous"]
+      },
+      "ruleRefs": ["ad-reload"]
+    },
+    {
+      "id": "leg-boast",
+      "kind": "step",
+      "title": {
+        "en": "No Feat this turn? Boast about one",
+        "it": "Nessuna Impresa nel turno? Millantane una"
+      },
+      "conditions": {
+        "expansions": ["legends"]
+      },
+      "ruleRefs": ["leg-boast"]
     }
   ]
 }

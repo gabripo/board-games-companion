@@ -1,0 +1,190 @@
+{
+  "id": "leg-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · Legends",
+    "it": "Carte · Legends"
+  },
+  "conditions": {
+    "expansions": ["legends"]
+  },
+  "ruleRefs": ["leg-setup"],
+  "actions": [
+    {
+      "id": "feat-315-to-yooma",
+      "name": {
+        "en": "3:15 to Yooma",
+        "it": "Il treno per Yooma"
+      },
+      "effect": {
+        "en": "Feat: do or make another player do a draw! (even at the start of your turn).",
+        "it": "Impresa: attiva o fai attivare un \"estrarre!\" (anche a inizio turno)."
+      }
+    },
+    {
+      "id": "feat-a-quick-death",
+      "name": {
+        "en": "A Quick Death",
+        "it": "Una morte veloce"
+      },
+      "effect": {
+        "en": "Feat: hit a player at full life with a BANG! card.",
+        "it": "Impresa: ferisci con una carta BANG! un giocatore al massimo dei punti vita."
+      }
+    },
+    {
+      "id": "feat-a-thousand-ways",
+      "name": {
+        "en": "A Thousand Ways to Die",
+        "it": "Mille modi per morire"
+      },
+      "effect": {
+        "en": "Feat: show a Missed! and another card of the same suit from your hand.",
+        "it": "Impresa: mostra dalla mano un Mancato! e una carta dello stesso seme."
+      }
+    },
+    {
+      "id": "feat-borderlands",
+      "name": {
+        "en": "Borderlands",
+        "it": "La frontiera"
+      },
+      "effect": {
+        "en": "Feat: discard your entire hand (even 0 cards).",
+        "it": "Impresa: scarta la tua mano (anche se è di zero carte)."
+      }
+    },
+    {
+      "id": "feat-bottleneck",
+      "name": {
+        "en": "Bottleneck",
+        "it": "Il collo di bottiglia"
+      },
+      "effect": {
+        "en": "Feat: discard a Beer.",
+        "it": "Impresa: scarta una Birra."
+      }
+    },
+    {
+      "id": "feat-fifty-guns",
+      "name": {
+        "en": "Fifty Guns",
+        "it": "Cinquanta pistole"
+      },
+      "effect": {
+        "en": "Feat: take or discard a weapon.",
+        "it": "Impresa: prendi o scarta un'arma."
+      }
+    },
+    {
+      "id": "feat-few-cards-more",
+      "name": {
+        "en": "For a Few Cards More",
+        "it": "Per qualche carta in più"
+      },
+      "effect": {
+        "en": "Feat: discard at least 1 excess card at the end of your turn.",
+        "it": "Impresa: scarta almeno una carta in eccesso a fine turno."
+      }
+    },
+    {
+      "id": "feat-good-company",
+      "name": {
+        "en": "Good Company",
+        "it": "In buona compagnia"
+      },
+      "effect": {
+        "en": "Feat: discard a card, then play a card with the same name (or vice versa).",
+        "it": "Impresa: scarta una carta, poi gioca una carta con lo stesso nome (o viceversa)."
+      }
+    },
+    {
+      "id": "feat-old-west-gang",
+      "name": {
+        "en": "Old West Gang",
+        "it": "Gang del vecchio West"
+      },
+      "effect": {
+        "en": "Feat: hit 2 or more players in the same turn.",
+        "it": "Impresa: ferisci 2 o più giocatori nello stesso turno."
+      }
+    },
+    {
+      "id": "feat-scrugs-ballad",
+      "name": {
+        "en": "Scrugs Ballad",
+        "it": "La ballata di Scrugs"
+      },
+      "effect": {
+        "en": "Feat: lose a Duel.",
+        "it": "Impresa: perdi un Duello."
+      }
+    },
+    {
+      "id": "feat-chuck-a-luck",
+      "name": {
+        "en": "The Chuck-a-Luck",
+        "it": "Il Mulino d'Oro"
+      },
+      "effect": {
+        "en": "Feat: discard a BANG! card.",
+        "it": "Impresa: scarta una carta BANG!."
+      }
+    },
+    {
+      "id": "feat-last-hero",
+      "name": {
+        "en": "The Last Hero",
+        "it": "L'ultimo eroe"
+      },
+      "effect": {
+        "en": "Feat: discard a blue card in play.",
+        "it": "Impresa: scarta una carta blu in gioco."
+      }
+    },
+    {
+      "id": "feat-man-with-no-name",
+      "name": {
+        "en": "The Man with No Name",
+        "it": "L'uomo senza nome"
+      },
+      "effect": {
+        "en": "Feat: lose 1 life point (not your last).",
+        "it": "Impresa: perdi un punto vita (non l'ultimo)."
+      }
+    },
+    {
+      "id": "feat-oregon-trail",
+      "name": {
+        "en": "The Oregon Trail",
+        "it": "La pista dell'Oregon"
+      },
+      "effect": {
+        "en": "Feat: in your draw phase, don't draw the first card.",
+        "it": "Impresa: durante la fase di pesca rinuncia alla prima carta."
+      }
+    },
+    {
+      "id": "feat-wilhelm-scream",
+      "name": {
+        "en": "Wilhelm Scream",
+        "it": "L'urlo di Wilhelm"
+      },
+      "effect": {
+        "en": "Feat: play a BANG! card at distance 2 or more.",
+        "it": "Impresa: gioca una carta BANG! a distanza 2 o più."
+      }
+    },
+    {
+      "id": "feat-wounded-pride",
+      "name": {
+        "en": "Wounded Pride",
+        "it": "Ferito nell'orgoglio"
+      },
+      "effect": {
+        "en": "Feat: another player makes one of your BANG! cards miss.",
+        "it": "Impresa: un altro giocatore manca una tua carta BANG!."
+      }
+    }
+  ]
+}

@@ -62,7 +62,7 @@ const GUIDES = (goal: string, goalIt: string): GameGuide["guides"] => ({
 
 // ── 1. sequential turns: tile placement ────────────────────────────────────
 export const sequentialGame: GameGuide = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: "tile-trek",
   meta: { title: L("Tile Trek", "Sentiero di Tessere"), year: 2024 },
   classification: {
@@ -76,6 +76,13 @@ export const sequentialGame: GameGuide = {
   sources: SOURCES,
   components: [
     { id: "start-tile", type: "tile", name: L("Start tile", "Tessera iniziale"), quantity: 1 },
+    {
+      id: "river-tiles",
+      type: "tile",
+      name: L("River tiles", "Tessere fiume"),
+      quantity: 12,
+      conditions: { expansions: ["river"] },
+    },
     { id: "land-tiles", type: "tile", name: L("Land tiles", "Tessere terreno"), quantity: 71 },
     {
       id: "followers",
@@ -96,8 +103,20 @@ export const sequentialGame: GameGuide = {
       ),
     },
   ],
-  expansions: [],
+  expansions: [
+    {
+      id: "river",
+      name: L("The River", "Il Fiume"),
+      description: L("Adds river tiles.", "Aggiunge le tessere fiume."),
+    },
+  ],
   glossary: [
+    {
+      id: "river-tile",
+      term: L("River tile", "Tessera fiume"),
+      definition: L("A tile with a river edge.", "Una tessera con un lato fiume."),
+      conditions: { expansions: ["river"] },
+    },
     {
       id: "feature",
       term: L("Feature", "Elemento"),
@@ -317,7 +336,7 @@ export const sequentialGame: GameGuide = {
 
 // ── 2. simultaneous: card drafting ─────────────────────────────────────────
 export const simultaneousGame: GameGuide = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: "card-feast",
   meta: { title: L("Card Feast", "Banchetto di Carte") },
   classification: {
@@ -419,7 +438,7 @@ export const simultaneousGame: GameGuide = {
 
 // ── 3. real-time co-op ─────────────────────────────────────────────────────
 export const realTimeGame: GameGuide = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: "panic-kitchen",
   meta: { title: L("Panic Kitchen", "Cucina nel Panico") },
   classification: {
@@ -484,7 +503,7 @@ export const realTimeGame: GameGuide = {
 const d6Faces = [1, 2, 3, 4, 5, 6].map((v) => ({ id: `f${v}`, value: v }));
 
 export const diceGame: GameGuide = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: "dice-harbor",
   meta: { title: L("Dice Harbor", "Porto dei Dadi") },
   classification: {
@@ -691,7 +710,7 @@ export const diceGame: GameGuide = {
 
 // ── 5. trick-taking ────────────────────────────────────────────────────────
 export const trickTakingGame: GameGuide = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: "trump-tide",
   meta: { title: L("Trump Tide", "Marea di Briscole") },
   classification: {

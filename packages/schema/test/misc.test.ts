@@ -70,7 +70,7 @@ describe("v1 → v2 migration (translated topics)", () => {
     const r = parseGuide(v1());
     expect(r.ok).toBe(true);
     if (!r.ok) return;
-    expect(r.guide.schemaVersion).toBe(2);
+    expect(r.guide.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
     expect(r.guide.topics.map((t) => t.id).sort()).toEqual(["followers", "setup", "tiles", "turn"]);
     expect(r.guide.topics.find((t) => t.id === "tiles")?.name).toEqual({
       en: "Tiles",
@@ -82,5 +82,16 @@ describe("v1 → v2 migration (translated topics)", () => {
   it("keeps explicitly declared topics", () => {
     const doc = { ...v1(), topics: clone(sequentialGame).topics };
     expect((migrateToCurrent(doc) as { topics: unknown }).topics).toEqual(sequentialGame.topics);
+  });
+});
+
+describe("v2 → v3 migration (conditions on more content)", () => {
+  it("accepts a v2 guide unchanged apart from the version", () => {
+    const v2 = { ...clone(sequentialGame), schemaVersion: 2 };
+    for (const c of v2.components) delete c.conditions;
+    for (const e of v2.glossary) delete e.conditions;
+    const r = parseGuide(v2);
+    expect(r.ok).toBe(true);
+    if (r.ok) expect(r.guide.schemaVersion).toBe(3);
   });
 });

@@ -10,6 +10,8 @@ const moduleBase = {
   id: Id,
   title: LocalizedString.optional(),
   ruleRefs: z.array(Id).optional(),
+  /** Whole module only applies to some sessions (e.g. an expansion's cards). */
+  conditions: Conditions.optional(),
 };
 
 // ── dice ────────────────────────────────────────────────────────────────────

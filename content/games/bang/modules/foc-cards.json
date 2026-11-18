@@ -1,0 +1,179 @@
+{
+  "id": "foc-cards",
+  "kind": "actions",
+  "title": {
+    "en": "Cards · A Fistful of Cards",
+    "it": "Carte · A Fistful of Cards (Per un Pugno di Carte)"
+  },
+  "conditions": {
+    "expansions": ["fistful-of-cards"]
+  },
+  "ruleRefs": ["foc-missed-symbol"],
+  "actions": [
+    {
+      "id": "abandoned-mine",
+      "name": {
+        "en": "Abandoned Mine",
+        "it": "Miniera Abbandonata"
+      },
+      "effect": {
+        "en": "In phase 1 draw from the discard pile (from the deck if empty); in phase 3 discard face down onto the deck.",
+        "it": "Nella fase 1 si pesca dagli scarti (dal mazzo se finiscono); nella fase 3 si scarta a faccia in giù sul mazzo."
+      }
+    },
+    {
+      "id": "ambush",
+      "name": {
+        "en": "Ambush",
+        "it": "Agguato"
+      },
+      "effect": {
+        "en": "The distance between any two players is 1, modified only by cards in play.",
+        "it": "La distanza fra due giocatori qualunque è 1; è modificata solo dalle carte in gioco."
+      }
+    },
+    {
+      "id": "blood-brothers",
+      "name": {
+        "en": "Blood Brothers",
+        "it": "Fratelli di Sangue"
+      },
+      "effect": {
+        "en": "At the start of their turn, a player may lose 1 life point (not the last) to give 1 to a player of their choice.",
+        "it": "All'inizio del turno, un giocatore può perdere 1 punto vita (non l'ultimo) per farne recuperare 1 a un giocatore a scelta."
+      }
+    },
+    {
+      "id": "dead-man",
+      "name": {
+        "en": "Dead Man",
+        "it": "Dead Man"
+      },
+      "effect": {
+        "en": "On their turn, the first player eliminated returns to play with 2 life points and 2 cards.",
+        "it": "Al proprio turno, il primo giocatore eliminato rientra in gioco con 2 punti vita e 2 carte."
+      }
+    },
+    {
+      "id": "hard-liquor",
+      "name": {
+        "en": "Hard Liquor",
+        "it": "Liquore Forte"
+      },
+      "effect": {
+        "en": "Each player may skip phase 1 to regain 1 life point.",
+        "it": "Ogni giocatore può saltare la fase 1 per recuperare 1 punto vita."
+      }
+    },
+    {
+      "id": "lasso",
+      "name": {
+        "en": "Lasso",
+        "it": "Lazo"
+      },
+      "effect": {
+        "en": "Cards in play in front of players have no effect.",
+        "it": "Le carte in gioco davanti ai giocatori non hanno effetto."
+      }
+    },
+    {
+      "id": "law-of-the-west",
+      "name": {
+        "en": "Law of the West",
+        "it": "Legge del West"
+      },
+      "effect": {
+        "en": "In phase 1 each player shows their second card drawn: if they can, they must play it in phase 2.",
+        "it": "Nella fase 1 ognuno mostra la seconda carta pescata: se può, deve giocarla nella fase 2."
+      }
+    },
+    {
+      "id": "peyote",
+      "name": {
+        "en": "Peyote",
+        "it": "Peyote"
+      },
+      "effect": {
+        "en": "Instead of drawing, guess red or black for the top card: if right, keep it and guess again; if wrong, phase 2 starts.",
+        "it": "Invece di pescare, indovina rosso o nero per la carta in cima: se indovini la tieni e riprovi; se sbagli inizia la fase 2."
+      }
+    },
+    {
+      "id": "ranch",
+      "name": {
+        "en": "Ranch",
+        "it": "Ranch"
+      },
+      "effect": {
+        "en": "At the end of phase 1, each player may once discard any number of cards to draw as many.",
+        "it": "Al termine della fase 1, ognuno può una volta scartare quante carte vuole e pescarne altrettante."
+      }
+    },
+    {
+      "id": "ricochet",
+      "name": {
+        "en": "Ricochet",
+        "it": "Rimbalzo"
+      },
+      "effect": {
+        "en": "Players may discard BANG! cards against cards in play: each is discarded unless its owner plays a Missed!.",
+        "it": "Si possono scartare carte BANG! contro carte in gioco: ognuna è scartata se il proprietario non gioca un Mancato!."
+      }
+    },
+    {
+      "id": "russian-roulette",
+      "name": {
+        "en": "Russian Roulette",
+        "it": "Roulette Russa"
+      },
+      "effect": {
+        "en": "When it enters play, starting with the Sheriff each player discards a Missed!, until one can't: they lose 2 life points.",
+        "it": "Quando entra in gioco, partendo dallo Sceriffo ognuno scarta un Mancato!, finché uno non lo fa: perde 2 punti vita."
+      }
+    },
+    {
+      "id": "sniper",
+      "name": {
+        "en": "Sniper",
+        "it": "Cecchino"
+      },
+      "effect": {
+        "en": "On their turn a player may discard 2 BANG! cards together at one player: it counts as a BANG! but needs 2 Missed! to cancel.",
+        "it": "Nel proprio turno si possono scartare 2 BANG! insieme contro un giocatore: vale un BANG! ma servono 2 Mancato! per annullarlo."
+      }
+    },
+    {
+      "id": "the-judge",
+      "name": {
+        "en": "The Judge",
+        "it": "Il Giudice"
+      },
+      "effect": {
+        "en": "Players can't play cards in front of themselves or anyone else.",
+        "it": "Non si possono giocare carte davanti a sé o agli altri."
+      }
+    },
+    {
+      "id": "vendetta",
+      "name": {
+        "en": "Vendetta",
+        "it": "Vendetta"
+      },
+      "effect": {
+        "en": "At the end of their turn each player draws!: on a Heart they play another turn (without drawing again).",
+        "it": "Alla fine del turno ognuno estrae: con Cuori gioca un altro turno (senza estrarre di nuovo)."
+      }
+    },
+    {
+      "id": "a-fistful-of-cards",
+      "name": {
+        "en": "A Fistful of Cards",
+        "it": "Per un Pugno di Carte"
+      },
+      "effect": {
+        "en": "Final card: at the start of their turn a player is the target of as many BANG! as cards in their hand.",
+        "it": "Carta finale: all'inizio del turno il giocatore subisce tanti BANG! quante sono le carte che ha in mano."
+      }
+    }
+  ]
+}

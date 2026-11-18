@@ -88,7 +88,8 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 - **Scenes**: any image (board, player board, card, dice) + normalized 0–1 hotspots
   - annotations. Walkthroughs are scripted paths over flow nodes + scenes, with a
     per-step `focus` rect and optional "Try it" check.
-- **Conditions** `{playerCount?, variants?, expansions?}` filter rules/setup/flow at runtime.
+- **Conditions** `{playerCount?, variants?, expansions?}` filter rules, setup, flow, components, glossary,
+  modules and scenes at runtime (schema v3); filtered items stay one tap away in the UI.
 
 ### Adding a new mechanic
 

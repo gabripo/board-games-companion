@@ -113,13 +113,18 @@ export function SessionSheet(props: { open: boolean; onClose: () => void }) {
         {guide.expansions.length > 0 && (
           <section className="space-y-2">
             <h3 className="font-semibold">{t("session.expansions")}</h3>
+            <p className="text-sm text-muted">{t("session.expansionsHint")}</p>
             {guide.expansions.map((e) => (
-              <Toggle
-                key={e.id}
-                label={L(e.name)}
-                on={session.expansions.includes(e.id)}
-                onChange={(on) => update({ expansions: toggle(session.expansions, e.id, on) })}
-              />
+              <div key={e.id}>
+                <Toggle
+                  label={L(e.name)}
+                  on={session.expansions.includes(e.id)}
+                  onChange={(on) => update({ expansions: toggle(session.expansions, e.id, on) })}
+                />
+                {e.description && (
+                  <p className="mt-1 px-1 text-sm text-muted">{L(e.description)}</p>
+                )}
+              </div>
             ))}
           </section>
         )}

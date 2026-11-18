@@ -1589,5 +1589,1088 @@
         }
       }
     ]
+  },
+  {
+    "id": "expansion-boxes",
+    "topics": ["setup"],
+    "summary": {
+      "en": "Expansions can be combined freely. The Expansion Pack bundles High Noon, A Fistful of Cards, Wild West Show and The Valley of Shadows; the Dynamite Box collects 8 expansions.",
+      "it": "Le espansioni si possono combinare liberamente. L'Expansion Pack raccoglie High Noon, A Fistful of Cards, Wild West Show e La Valle delle Ombre; la Dynamite Box raccoglie 8 espansioni."
+    },
+    "citations": [
+      {
+        "kind": "url",
+        "sourceId": "cards-21"
+      },
+      {
+        "kind": "url",
+        "sourceId": "cards-22"
+      },
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "three-eight-players",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "Playing with 3 or 8 players needs the Dodge City expansion.",
+      "it": "Per giocare in 3 o in 8 serve l'espansione Dodge City."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [3, 8]
+    }
+  },
+  {
+    "id": "dc-overview",
+    "topics": ["exp-dc", "setup", "characters"],
+    "summary": {
+      "en": "Shuffle the 15 new characters with the base ones and the 40 new playing cards into the deck.",
+      "it": "Mescola i 15 nuovi personaggi con quelli base e le 40 nuove carte nel mazzo."
+    },
+    "detail": {
+      "en": "The base rules stay the same, with green-bordered cards and the \"discard another card\" symbol added.",
+      "it": "Le regole base restano le stesse, con l'aggiunta delle carte a bordo verde e del simbolo \"scarta un'altra carta\"."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-green-cards",
+    "topics": ["exp-dc", "in-play"],
+    "summary": {
+      "en": "Green-bordered cards are played face up in front of you like blue cards; to use one, discard it — but never on the turn you played it.",
+      "it": "Le carte a bordo verde si giocano scoperte davanti a te come le blu; per usarle le scarti, ma mai nel turno in cui le hai giocate."
+    },
+    "detail": {
+      "en": "Only green cards with a Missed! symbol can be used out of turn. Cat Balou, Panic! and similar remove them; a green card taken into your hand must be played again and wait a turn.",
+      "it": "Solo le carte verdi con il simbolo Mancato! si usano fuori turno. Cat Balou, Panico! e simili le rimuovono; una carta verde presa in mano va rigiocata e deve attendere un turno."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    },
+    "appliesTo": {
+      "flowNodes": ["dc-use-green"]
+    }
+  },
+  {
+    "id": "dc-discard-another",
+    "topics": ["exp-dc", "action-cards"],
+    "summary": {
+      "en": "Cards with the \"discard another card\" symbol need you to discard one more card of your choice from your hand to get the effect.",
+      "it": "Le carte con il simbolo \"scarta un'altra carta\" richiedono di scartare dalla mano anche un'altra carta a scelta per ottenere l'effetto."
+    },
+    "detail": {
+      "en": "E.g. Brawl, Rag Time, Springfield, Tequila, Whisky.",
+      "it": "Ad es. Rissa, Rag Time, Springfield, Tequila, Whisky."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-only-beer-saves",
+    "topics": ["exp-dc", "life"],
+    "summary": {
+      "en": "Out of turn, only a Beer can save you from your last life point — not Whisky, Tequila, Canteen or Saloon.",
+      "it": "Fuori turno solo la Birra ti salva dall'ultimo punto vita: non Whisky, Tequila, Borraccia o Saloon."
+    },
+    "detail": {
+      "en": "Those cards still work on your turn with only 2 players left (they aren't Beer).",
+      "it": "Nel tuo turno funzionano anche se restano 2 giocatori (non sono Birra)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "dc-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-two-dynamites",
+    "topics": ["exp-dc", "draw-check"],
+    "summary": {
+      "en": "With two Dynamites, pass yours to the first player on your left who doesn't already have one.",
+      "it": "Con due Dinamiti, passa la tua al primo giocatore alla tua sinistra che non ne ha già una."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "dc-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-same-name",
+    "topics": ["exp-dc", "in-play", "distance"],
+    "summary": {
+      "en": "Mustang and Hideout, or Scope and Binocular, can be in play together (different names); two Iron Plates can't.",
+      "it": "Mustang e Riparo, o Mirino e Binocolo, possono stare in gioco insieme (nomi diversi); due Placche di Ferro no."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-bang-symbol",
+    "topics": ["exp-dc", "shooting"],
+    "summary": {
+      "en": "Barrel works against every card with a BANG! symbol; Slab the Killer's double Missed! only applies to real BANG! cards.",
+      "it": "Il Barile funziona contro ogni carta con il simbolo BANG!; il doppio Mancato! di Slab the Killer vale solo per le vere carte BANG!."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-8-players",
+    "topics": ["exp-dc", "roles"],
+    "summary": {
+      "en": "8 players: 1 Sheriff, 2 Deputies, 3 Outlaws, 2 Renegades. Each Renegade plays alone and wins only as the last one alive.",
+      "it": "8 giocatori: 1 Sceriffo, 2 Vice, 3 Fuorilegge, 2 Rinnegati. Ogni Rinnegato gioca da solo e vince solo se resta l'ultimo in vita."
+    },
+    "detail": {
+      "en": "If the Sheriff faces the two Renegades at the end and dies first, the Outlaws win.",
+      "it": "Se alla fine lo Sceriffo affronta i due Rinnegati e muore per primo, vincono i Fuorilegge."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [8],
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "dc-3-players",
+    "topics": ["exp-dc", "roles", "victory"],
+    "summary": {
+      "en": "3 players: deal Deputy, Outlaw and Renegade face up. Deputy must kill the Renegade, Renegade the Outlaw, Outlaw the Deputy; the Deputy starts.",
+      "it": "3 giocatori: dai Vice, Fuorilegge e Rinnegato scoperti. Il Vice deve uccidere il Rinnegato, il Rinnegato il Fuorilegge, il Fuorilegge il Vice; inizia il Vice."
+    },
+    "detail": {
+      "en": "You win only if you deal the final hit to your target; otherwise both survivors aim to be the last one standing. Every kill draws 3 cards; Jail can go on anyone; Beer is useless with 2 left.",
+      "it": "Vinci solo se dai il colpo finale al tuo bersaglio; altrimenti i due sopravvissuti puntano a restare l'ultimo in piedi. Ogni uccisione fa pescare 3 carte; la Prigione si gioca su chiunque; la Birra è inutile in 2."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "dc-rules",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [3],
+      "expansions": ["dodge-city"]
+    }
+  },
+  {
+    "id": "hn-setup",
+    "topics": ["exp-hn", "setup"],
+    "summary": {
+      "en": "The Sheriff sets aside the final card (High Noon or A Fistful of Cards), shuffles the other event cards face down, puts the final card on top, then flips the stack face up next to them.",
+      "it": "Lo Sceriffo mette da parte la carta finale (High Noon o A Fistful of Cards), mescola coperte le altre carte evento, mette sopra la carta finale e poi gira il mazzetto scoperto accanto a sé."
+    },
+    "detail": {
+      "en": "So the final card ends up as the last card of the stack.",
+      "it": "Così la carta finale diventa l'ultima del mazzetto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "hn-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["high-noon", "fistful-of-cards"]
+    }
+  },
+  {
+    "id": "hn-reveal",
+    "topics": ["exp-hn", "turn"],
+    "summary": {
+      "en": "From their second turn on, before taking their turn, the Sheriff reveals the next event card and reads it aloud; its effect applies to everyone until it is covered by the next one.",
+      "it": "Dal suo secondo turno, prima di giocare, lo Sceriffo rivela la carta evento successiva e la legge ad alta voce; il suo effetto vale per tutti finché non viene coperta dalla successiva."
+    },
+    "detail": {
+      "en": "The final card (High Noon / A Fistful of Cards) stays in effect until the end of the game. \"At the start of the turn\" means before any other action.",
+      "it": "La carta finale (Mezzogiorno di Fuoco / Per un Pugno di Carte) resta in gioco fino a fine partita. \"All'inizio del turno\" significa prima di ogni altra azione."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "hn-rules",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "hn-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["high-noon", "fistful-of-cards", "most-wanted"]
+    },
+    "appliesTo": {
+      "flowNodes": ["event-card"]
+    }
+  },
+  {
+    "id": "hn-combined",
+    "topics": ["exp-hn", "setup"],
+    "summary": {
+      "en": "Using both decks: set aside both final cards, shuffle the rest together and draw 12 at random (more for a longer game); put one of the two final cards, chosen at random, on top.",
+      "it": "Usando entrambi i mazzi: metti da parte le due carte finali, mescola le altre e pescane 12 a caso (di più per una partita più lunga); mettine sopra una delle due finali, scelta a caso."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "hn-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["high-noon", "fistful-of-cards"]
+    }
+  },
+  {
+    "id": "foc-missed-symbol",
+    "topics": ["exp-foc", "shooting"],
+    "summary": {
+      "en": "For Ricochet and Russian Roulette, any card with a Missed! symbol can be used.",
+      "it": "Per Rimbalzo e Roulette Russa si può usare qualsiasi carta con il simbolo Mancato!."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "hn-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["fistful-of-cards"]
+    }
+  },
+  {
+    "id": "hn-sermon-duel",
+    "topics": ["exp-hn", "action-cards"],
+    "summary": {
+      "en": "With The Sermon in play you can't use BANG! cards in your own Duel — you lose it if your opponent answers.",
+      "it": "Con il Sermone in gioco non puoi usare carte BANG! nel tuo Duello: perdi se l'avversario risponde."
+    },
+    "detail": {
+      "en": "The Reverend blocks Beer but not Saloon.",
+      "it": "Il Reverendo blocca la Birra ma non il Saloon."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "hn-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["high-noon"]
+    }
+  },
+  {
+    "id": "wws-setup",
+    "topics": ["exp-wws", "setup"],
+    "summary": {
+      "en": "Set aside the Wild West Show card, shuffle the other show cards face down, put Wild West Show at the bottom and place the pile in the middle of the table. Add the 8 characters.",
+      "it": "Metti da parte la carta Wild West Show, mescola coperte le altre carte spettacolo, metti Wild West Show in fondo e poni il mazzetto al centro. Aggiungi gli 8 personaggi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "wws-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["wild-west-show"]
+    }
+  },
+  {
+    "id": "wws-trigger",
+    "topics": ["exp-wws", "action-cards"],
+    "summary": {
+      "en": "Whenever you play a Stagecoach or Wells Fargo, take the show pile, reveal its top card and read it: that effect applies until the next Stagecoach or Wells Fargo replaces it.",
+      "it": "Quando giochi una Diligenza o una Wells Fargo, prendi il mazzetto spettacolo, rivela la prima carta e leggila: l'effetto vale finché la prossima Diligenza o Wells Fargo non la sostituisce."
+    },
+    "detail": {
+      "en": "Once revealed, Wild West Show stays in play until the end of the game.",
+      "it": "Una volta rivelata, Wild West Show resta in gioco fino a fine partita."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "wws-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["wild-west-show"]
+    },
+    "appliesTo": {
+      "flowNodes": ["wws-show"]
+    }
+  },
+  {
+    "id": "wws-final",
+    "topics": ["exp-wws", "victory"],
+    "summary": {
+      "en": "Wild West Show: everyone now plays to be the last one in play. Roles stay (no Jail on the Sheriff, the Outlaw reward still applies); the game goes on if the Sheriff dies; victory is individual.",
+      "it": "Wild West Show: ora tutti giocano per restare l'ultimo in gioco. I ruoli restano (niente Prigione sullo Sceriffo, la taglia dei Fuorilegge vale); la partita continua se muore lo Sceriffo; la vittoria è individuale."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "wws-rules",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "wws-faq",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["wild-west-show"]
+    }
+  },
+  {
+    "id": "wws-dorothy",
+    "topics": ["exp-wws", "action-cards"],
+    "summary": {
+      "en": "Dorothy Rage: describe the full action (card and target) before knowing if they have it; if they don't, they show their hand to everyone.",
+      "it": "Dorothy Rage: descrivi l'azione completa (carta e bersaglio) prima di sapere se ce l'hanno; se non ce l'hanno, mostrano la mano a tutti."
+    },
+    "detail": {
+      "en": "The forced player plays it as if it were their turn (their distances), but you choose the target.",
+      "it": "Il giocatore la gioca come se fosse il suo turno (con le sue distanze), ma il bersaglio lo scegli tu."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "wws-rules",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "wws-faq",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "wws-faq",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["wild-west-show"]
+    }
+  },
+  {
+    "id": "gr-setup",
+    "topics": ["exp-gr", "setup"],
+    "summary": {
+      "en": "Shuffle the 24 equipment cards in a separate deck and turn the top 3 face up in a row. Put the gold nuggets in a heap: everyone starts with none. Add the 8 characters.",
+      "it": "Mescola le 24 carte equipaggiamento in un mazzo a parte e scopri le prime 3 in fila. Metti le pepite in una riserva: si parte senza. Aggiungi gli 8 personaggi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"]
+    }
+  },
+  {
+    "id": "gr-earn",
+    "topics": ["exp-gr", "life"],
+    "summary": {
+      "en": "Each time you make another player lose a life point (any way), take 1 gold nugget — one per wound.",
+      "it": "Ogni volta che fai perdere un punto vita a un altro giocatore (in qualsiasi modo), prendi 1 pepita, una per ferita."
+    },
+    "detail": {
+      "en": "E.g. a Gatling that wounds 3 players earns 3 nuggets.",
+      "it": "Ad es. una Gatling che ferisce 3 giocatori fa guadagnare 3 pepite."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"]
+    }
+  },
+  {
+    "id": "gr-buy",
+    "topics": ["exp-gr", "turn"],
+    "summary": {
+      "en": "In phase 2 you may buy face-up equipment by paying its cost in nuggets. Brown (one-shot) equipment takes effect at once and goes to the bottom of the equipment deck; black equipment stays in front of you.",
+      "it": "Nella fase 2 puoi comprare equipaggiamenti scoperti pagandone il costo in pepite. Quelli marroni (uso singolo) hanno effetto subito e vanno in fondo al mazzetto; quelli neri restano davanti a te."
+    },
+    "detail": {
+      "en": "Each bought card is replaced at once. No limit on how many you buy, but no two with the same name.",
+      "it": "Ogni carta comprata viene subito rimpiazzata. Nessun limite agli acquisti, ma mai due con lo stesso nome."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"]
+    },
+    "appliesTo": {
+      "flowNodes": ["gr-equipment"]
+    }
+  },
+  {
+    "id": "gr-force-discard",
+    "topics": ["exp-gr", "in-play"],
+    "summary": {
+      "en": "Also in phase 2: pay an equipment's cost +1 nugget to force another player to discard it.",
+      "it": "Sempre nella fase 2: paga il costo di un equipaggiamento +1 pepita per obbligare un altro giocatore a scartarlo."
+    },
+    "detail": {
+      "en": "Equipment can't be targeted by Panic!, Cat Balou or abilities; it's discarded when its owner is eliminated (Vulture Sam doesn't get it).",
+      "it": "L'equipaggiamento non può essere bersaglio di Panico!, Cat Balou o abilità; viene scartato quando il proprietario è eliminato (Vulture Sam non lo prende)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"]
+    },
+    "appliesTo": {
+      "flowNodes": ["gr-equipment"]
+    }
+  },
+  {
+    "id": "gr-beer-nugget",
+    "topics": ["exp-gr", "life"],
+    "summary": {
+      "en": "On your turn you can play a Beer to take 1 gold nugget instead of regaining a life point (not Saloon or similar).",
+      "it": "Nel tuo turno puoi giocare una Birra per prendere 1 pepita invece di recuperare un punto vita (non Saloon o simili)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"]
+    }
+  },
+  {
+    "id": "gr-shadow",
+    "topics": ["exp-gr", "elimination"],
+    "summary": {
+      "en": "Shadow-gunslingers: when eliminated you are out only temporarily. On each of your turns you return with 0 life points, draw 2, play normally (you can't gain or lose life) and leave again, discarding everything.",
+      "it": "Pistoleri fantasma: quando sei eliminato esci solo temporaneamente. A ogni tuo turno rientri con 0 punti vita, peschi 2, giochi normalmente (non guadagni né perdi vita) ed esci di nuovo scartando tutto."
+    },
+    "detail": {
+      "en": "Out of your turn you don't count for distance or effects; you keep your nuggets. The eliminated Renegade becomes a shadow-Renegade and each turn joins the side with more face-up roles (Outlaws on a tie).",
+      "it": "Fuori dal tuo turno non conti per distanze o effetti; tieni le pepite. Il Rinnegato eliminato diventa Rinnegato ombra e a ogni turno si schiera con la parte che ha più ruoli scoperti (Fuorilegge in caso di parità)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "gr-rules",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["gold-rush"],
+      "variants": ["shadow-gunslingers"]
+    }
+  },
+  {
+    "id": "vos-overview",
+    "topics": ["exp-vos", "setup", "characters"],
+    "summary": {
+      "en": "Shuffle the 8 new characters and 16 new playing cards in with the base game.",
+      "it": "Mescola gli 8 nuovi personaggi e le 16 nuove carte con il gioco base."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "vos-rules",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    }
+  },
+  {
+    "id": "vos-real-cards",
+    "topics": ["exp-vos", "shooting"],
+    "summary": {
+      "en": "When an effect needs a BANG! or Missed! card, use a real one or a card that counts as one (LeMat, Calamity Janet…), not Gatling or Fanning.",
+      "it": "Quando un effetto richiede una carta BANG! o Mancato!, usane una vera o una che vale come tale (LeMat, Calamity Janet…), non Gatling o Sventagliata."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "vos-rules",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    }
+  },
+  {
+    "id": "vos-ghost",
+    "topics": ["exp-vos", "elimination"],
+    "summary": {
+      "en": "A Ghost is in play for all purposes but has no life points: discard your whole hand at the end of your turn. If the Ghost card is removed, the player leaves again.",
+      "it": "Un Fantasma è in gioco a tutti gli effetti ma senza punti vita: a fine turno scarta tutta la mano. Se la carta Fantasma viene tolta, esce di nuovo dal gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "vos-rules",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    }
+  },
+  {
+    "id": "vos-check-order",
+    "topics": ["exp-vos", "draw-check"],
+    "summary": {
+      "en": "Start-of-turn checks go Dynamite → Jail → Rattlesnake. Rattlesnake stays in play after it bites.",
+      "it": "I controlli di inizio turno vanno Dinamite → Prigione → Serpente a Sonagli. Il Serpente resta in gioco dopo aver morso."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "vos-rules",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    },
+    "appliesTo": {
+      "flowNodes": ["check-dynamite", "check-jail"]
+    }
+  },
+  {
+    "id": "vos-fanning",
+    "topics": ["exp-vos", "shooting"],
+    "summary": {
+      "en": "Fanning counts as your one BANG! for the turn; the second shot is mandatory and fired even if the first is cancelled.",
+      "it": "La Sventagliata conta come l'unico BANG! del turno; il secondo colpo è obbligatorio e parte anche se il primo è annullato."
+    },
+    "detail": {
+      "en": "LeMat: the card you use counts as a BANG!, so still only one per turn. Tomahawk reaches distance 2 (also 1).",
+      "it": "LeMat: la carta usata vale come BANG!, quindi comunque una sola per turno. Il Tomahawk arriva a distanza 2 (anche 1)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "vos-rules",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["valley-of-shadows"]
+    }
+  },
+  {
+    "id": "ad-overview",
+    "topics": ["exp-ad", "setup"],
+    "summary": {
+      "en": "Shuffle the 8 characters and 28 cards in; keep the load tokens in a common supply.",
+      "it": "Mescola gli 8 personaggi e le 28 carte; tieni i segnalini carica in una riserva comune."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "ad-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["armed-dangerous"]
+    }
+  },
+  {
+    "id": "ad-dangerous",
+    "topics": ["exp-ad", "in-play"],
+    "summary": {
+      "en": "Orange Dangerous cards work like blue cards. When you play one, put 3 load tokens on it; to use it, pay the tokens shown. When it runs out of tokens, discard it.",
+      "it": "Le carte arancioni Dangerous funzionano come le blu. Quando ne giochi una, mettici 3 segnalini; per usarla paga i segnalini indicati. Quando li finisce, scartala."
+    },
+    "detail": {
+      "en": "A card or character can hold at most 4 tokens. Dangerous weapons replace your weapon; their special only triggers with real BANG! cards. If Panic! takes a Dangerous card, its tokens return to the supply.",
+      "it": "Una carta o un personaggio tiene al massimo 4 segnalini. Le armi Dangerous sostituiscono la tua arma; il loro effetto speciale vale solo con vere carte BANG!. Se un Panico! prende una carta Dangerous, i segnalini tornano nella riserva."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "ad-rules",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "ad-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["armed-dangerous"]
+    },
+    "appliesTo": {
+      "flowNodes": ["ad-use-dangerous"]
+    }
+  },
+  {
+    "id": "ad-reload",
+    "topics": ["exp-ad", "turn"],
+    "summary": {
+      "en": "Gain load tokens two ways: +1 each time you play a blue card (even on another player), and +1 for each card you must discard in phase 3 — on your Dangerous cards or your character.",
+      "it": "Guadagni segnalini in due modi: +1 ogni volta che giochi una carta blu (anche su un altro giocatore) e +1 per ogni carta che devi scartare nella fase 3, sulle tue carte Dangerous o sul personaggio."
+    },
+    "detail": {
+      "en": "Tokens added in phase 3 can't be used that turn.",
+      "it": "I segnalini aggiunti nella fase 3 non si usano in quel turno."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "ad-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["armed-dangerous"]
+    },
+    "appliesTo": {
+      "flowNodes": ["ad-reload-discard"]
+    }
+  },
+  {
+    "id": "ad-upgrade",
+    "topics": ["exp-ad", "action-cards"],
+    "summary": {
+      "en": "Upgradable brown cards: when you play one you may spend the tokens shown (from your Dangerous cards or character) for a stronger effect — decide before resolving it.",
+      "it": "Carte marroni potenziabili: quando ne giochi una puoi spendere i segnalini indicati (dalle tue carte Dangerous o dal personaggio) per un effetto più forte; decidi prima di risolverla."
+    },
+    "detail": {
+      "en": "E.g. A Little Nip: +1 life, plus 1 more for every 3 tokens spent.",
+      "it": "Ad es. Cicchetto: +1 punto vita, più 1 ogni 3 segnalini spesi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "ad-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["armed-dangerous"]
+    }
+  },
+  {
+    "id": "tgtr-setup",
+    "topics": ["exp-tgtr", "setup"],
+    "summary": {
+      "en": "Shuffle the Railcars face down. Turn over as many Stations as players in a line; put the Locomotive (random side) under the first Station with 3 Railcars behind it. Add the 8 characters and 16 cards.",
+      "it": "Mescola i vagoni coperti. Scopri in fila tante stazioni quanti sono i giocatori; metti la locomotiva (lato a caso) sotto la prima stazione con 3 vagoni dietro. Aggiungi gli 8 personaggi e le 16 carte."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    }
+  },
+  {
+    "id": "tgtr-advance",
+    "topics": ["exp-tgtr", "turn"],
+    "summary": {
+      "en": "At the start of each of the Sheriff's turns, the Locomotive advances one Station, pulling the Railcars.",
+      "it": "All'inizio di ogni turno dello Sceriffo la locomotiva avanza di una stazione, trascinando i vagoni."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    },
+    "appliesTo": {
+      "flowNodes": ["tgtr-train-advances"]
+    }
+  },
+  {
+    "id": "tgtr-take",
+    "topics": ["exp-tgtr", "turn"],
+    "summary": {
+      "en": "Once per turn you may pay a Station's cost (discarding exactly what it shows) to take the Railcar paired with it. Before that you may advance the train 1 Station for free — then you must take one.",
+      "it": "Una volta per turno puoi pagare il costo di una stazione (scartando esattamente ciò che mostra) per prendere il vagone abbinato. Prima puoi far avanzare gratis il treno di 1 stazione, ma poi devi prenderne uno."
+    },
+    "detail": {
+      "en": "You can never take the Locomotive.",
+      "it": "Non puoi mai prendere la locomotiva."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    },
+    "appliesTo": {
+      "flowNodes": ["tgtr-take-railcar"]
+    }
+  },
+  {
+    "id": "tgtr-railcars",
+    "topics": ["exp-tgtr", "in-play"],
+    "summary": {
+      "en": "Railcars are treated as blue cards (Panic!, Cat Balou… work on them) but never go into your hand; discarded Railcars go under the Railcar deck.",
+      "it": "I vagoni valgono come carte blu (Panico!, Cat Balou… funzionano) ma non vanno mai in mano; quelli scartati vanno in fondo al mazzo dei vagoni."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    }
+  },
+  {
+    "id": "tgtr-end-of-line",
+    "topics": ["exp-tgtr", "action-cards"],
+    "summary": {
+      "en": "When the Locomotive passes the last Station it reaches the End of the Line: apply its effect (Ironhorse: a BANG! at everyone; Leland: a General Store), then reshuffle Stations and Railcars into a new train and flip the Locomotive.",
+      "it": "Quando la locomotiva supera l'ultima stazione arriva al capolinea: applica il suo effetto (Ironhorse: un BANG! a tutti; Leland: un Emporio), poi rimescola stazioni e vagoni per un nuovo treno e gira la locomotiva."
+    },
+    "detail": {
+      "en": "If everyone is eliminated at once by Ironhorse, the Outlaws win.",
+      "it": "Se Ironhorse elimina tutti insieme, vincono i Fuorilegge."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "tgtr-rules",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["great-train-robbery"]
+    }
+  },
+  {
+    "id": "leg-setup",
+    "topics": ["exp-leg", "setup", "characters"],
+    "summary": {
+      "en": "Deal each player a legendary character (normal side up) instead of base characters, plus 5 Fame tokens of one color. Everyone starts with 4 cards (5 for the 6th and 7th players). Reveal 1 Feat.",
+      "it": "Dai a ogni giocatore un personaggio leggendario (lato normale) al posto di quelli base, più 5 segnalini Fama di un colore. Tutti partono con 4 carte (5 per il sesto e settimo giocatore). Rivela 1 Impresa."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["legends"]
+    }
+  },
+  {
+    "id": "leg-perform",
+    "topics": ["exp-leg", "turn"],
+    "summary": {
+      "en": "On your turn (after drawing) you may perform a revealed Feat by doing what it shows: put 2 Fame tokens on it. Each revealed Feat can be performed or boasted about only once.",
+      "it": "Nel tuo turno (dopo la pesca) puoi compiere un'Impresa rivelata facendo ciò che mostra: mettici 2 segnalini Fama. Ogni Impresa si compie o si millanta una sola volta."
+    },
+    "detail": {
+      "en": "Feats with the crossroad symbol let you do the action freely (e.g. discard a Beer).",
+      "it": "Le Imprese con il simbolo del crocevia ti permettono di fare l'azione liberamente (es. scartare una Birra)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["legends"]
+    },
+    "appliesTo": {
+      "flowNodes": ["leg-perform-feat"]
+    }
+  },
+  {
+    "id": "leg-boast",
+    "topics": ["exp-leg", "turn"],
+    "summary": {
+      "en": "If you didn't perform a Feat, at the end of your turn you may boast: reveal a new Feat (with more than 4 revealed, discard the one with most tokens) and put 1 Fame token on any Feat without yours.",
+      "it": "Se non hai compiuto un'Impresa, a fine turno puoi millantarne una: rivela una nuova Impresa (se sono più di 4, scarta quella con più segnalini) e metti 1 segnalino Fama su un'Impresa senza tuoi segnalini."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["legends"]
+    },
+    "appliesTo": {
+      "flowNodes": ["leg-boast"]
+    }
+  },
+  {
+    "id": "leg-legend",
+    "topics": ["exp-leg", "characters"],
+    "summary": {
+      "en": "Once you have placed all your Fame tokens you become a Legend (flip to the legend side). Legends claim Feats instead: complete one to make any other Legend lose 1 life point (not their last), ignoring distance.",
+      "it": "Quando hai piazzato tutti i segnalini Fama diventi Leggenda (giri sul lato leggendario). Le Leggende rivendicano le Imprese: completane una per far perdere 1 punto vita (non l'ultimo) a un'altra Leggenda, a qualsiasi distanza."
+    },
+    "detail": {
+      "en": "The claimed Feat is discarded and replaced.",
+      "it": "L'Impresa rivendicata si scarta e si rimpiazza."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 2
+      }
+    ],
+    "confidence": "medium",
+    "conditions": {
+      "expansions": ["legends"]
+    }
+  },
+  {
+    "id": "leg-other",
+    "topics": ["exp-leg", "life"],
+    "summary": {
+      "en": "With exactly 1 life point you may keep 2 cards. In Jail choose: the usual Draw!, or discard a Heart from your hand to leave Jail and play your turn.",
+      "it": "Con 1 solo punto vita puoi tenere 2 carte. In Prigione scegli: l'estrazione normale o scartare un Cuori dalla mano per uscire e giocare il turno."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "legends-rules",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "expansions": ["legends"]
+    }
+  },
+  {
+    "id": "mw-overview",
+    "topics": ["exp-mw", "characters"],
+    "summary": {
+      "en": "Most Wanted adds 5 characters, two event cards for the High Noon deck (Handcuffs, New Identity) and blank cards for your own ideas.",
+      "it": "Most Wanted aggiunge 5 personaggi, due carte evento per il mazzo High Noon (Manette, Nuova identità) e carte bianche per le tue idee."
+    },
+    "detail": {
+      "en": "With New Identity everyone knows each player's second character card.",
+      "it": "Con Nuova identità tutti conoscono la seconda carta personaggio di ognuno."
+    },
+    "citations": [
+      {
+        "kind": "url",
+        "sourceId": "cards-25"
+      },
+      {
+        "kind": "page",
+        "sourceId": "hn-faq",
+        "page": 2
+      }
+    ],
+    "confidence": "medium",
+    "conditions": {
+      "expansions": ["most-wanted"]
+    }
   }
 ]
