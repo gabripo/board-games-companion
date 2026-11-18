@@ -112,7 +112,8 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 ## Media & legal rules
 
 - Never download YouTube videos or extract frames. Clips = IFrame embed with `start`/`end`/`lang`.
-- Images: own photos or rulebook page renders (private use only).
+- Images: own photos, rulebook page renders, or official publisher card/component images
+  (private use only). Keep the raw downloads in `sources/<game>/`; commit only the composed WebP scenes.
 - Do not commit rulebook PDFs or long verbatim rule text; paraphrase + cite page.
 - API keys only in `.env` (gitignored): `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`.
 

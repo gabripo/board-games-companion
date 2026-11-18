@@ -1,0 +1,1593 @@
+[
+  {
+    "id": "role-goals",
+    "topics": ["roles", "victory"],
+    "summary": {
+      "en": "Sheriff and Deputies hunt the Outlaws and the Renegade; Outlaws want the Sheriff dead; the Renegade wants to be the last one standing.",
+      "it": "Sceriffo e Vice danno la caccia a Fuorilegge e Rinnegato; i Fuorilegge vogliono morto lo Sceriffo; il Rinnegato vuole restare l'ultimo in gioco."
+    },
+    "detail": {
+      "en": "Outlaws have no scruples about shooting each other for the reward. Deputies protect the Sheriff at all costs.",
+      "it": "I Fuorilegge non si fanno scrupoli a eliminarsi tra loro per la taglia. I Vice proteggono lo Sceriffo a ogni costo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "roles-4p",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "4 players: 1 Sheriff, 1 Renegade, 2 Outlaws.",
+      "it": "4 giocatori: 1 Sceriffo, 1 Rinnegato, 2 Fuorilegge."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [4]
+    },
+    "appliesTo": {
+      "components": ["role-cards"]
+    }
+  },
+  {
+    "id": "roles-5p",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "5 players: 1 Sheriff, 1 Renegade, 2 Outlaws, 1 Deputy.",
+      "it": "5 giocatori: 1 Sceriffo, 1 Rinnegato, 2 Fuorilegge, 1 Vice."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [5]
+    },
+    "appliesTo": {
+      "components": ["role-cards"]
+    }
+  },
+  {
+    "id": "roles-6p",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "6 players: 1 Sheriff, 1 Renegade, 3 Outlaws, 1 Deputy.",
+      "it": "6 giocatori: 1 Sceriffo, 1 Rinnegato, 3 Fuorilegge, 1 Vice."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [6]
+    },
+    "appliesTo": {
+      "components": ["role-cards"]
+    }
+  },
+  {
+    "id": "roles-7p",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "7 players: 1 Sheriff, 1 Renegade, 3 Outlaws, 2 Deputies.",
+      "it": "7 giocatori: 1 Sceriffo, 1 Rinnegato, 3 Fuorilegge, 2 Vice."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "playerCount": [7]
+    },
+    "appliesTo": {
+      "components": ["role-cards"]
+    }
+  },
+  {
+    "id": "sheriff-revealed",
+    "topics": ["roles", "setup"],
+    "summary": {
+      "en": "Roles are dealt face down. Only the Sheriff turns theirs face up; everyone else keeps their role secret.",
+      "it": "I ruoli si distribuiscono coperti. Solo lo Sceriffo scopre il proprio; gli altri lo tengono segreto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["role-cards"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "role"
+      }
+    ]
+  },
+  {
+    "id": "characters-dealt",
+    "topics": ["characters", "setup"],
+    "summary": {
+      "en": "Each player gets a random character face up, announces its name and ability, and takes as many bullets as it shows.",
+      "it": "Ogni giocatore riceve un personaggio scoperto a caso, ne annuncia nome e abilità e prende tante pallottole quante ne sono indicate."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["character-cards", "bullets"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "character"
+      }
+    ]
+  },
+  {
+    "id": "sheriff-extra-life",
+    "topics": ["roles", "life", "setup"],
+    "summary": {
+      "en": "The Sheriff plays with one extra bullet (3 → 4, 4 → 5).",
+      "it": "Lo Sceriffo gioca con una pallottola in più (3 → 4, 4 → 5)."
+    },
+    "detail": {
+      "en": "This counts for every effect: hand limit, maximum life for Beer and Saloon, and so on.",
+      "it": "Vale a tutti gli effetti: limite di carte in mano, massimo di punti vita per Birra e Saloon, e così via."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "starting-hand",
+    "topics": ["setup"],
+    "summary": {
+      "en": "Shuffle the playing cards and deal each player as many cards as their bullets. The rest is the draw pile.",
+      "it": "Mescola le carte da gioco e dai a ciascuno tante carte quante sono le sue pallottole. Il resto è il mazzo da cui pescare."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["playing-cards"]
+    }
+  },
+  {
+    "id": "simplified-deck",
+    "topics": ["setup"],
+    "summary": {
+      "en": "First games: remove every playing card with the book symbol before shuffling.",
+      "it": "Prime partite: togli dal mazzo tutte le carte con il simbolo del libro prima di mescolare."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "conditions": {
+      "variants": ["simplified"]
+    }
+  },
+  {
+    "id": "life-points",
+    "topics": ["life"],
+    "summary": {
+      "en": "Bullets are your life points: how many hits you can take before you are eliminated.",
+      "it": "Le pallottole sono i tuoi punti vita: quanti colpi puoi subire prima di essere eliminato."
+    },
+    "detail": {
+      "en": "You can never go above your starting amount.",
+      "it": "Non puoi mai superare il numero di punti vita iniziali."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["bullets"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "life"
+      }
+    ]
+  },
+  {
+    "id": "next-game",
+    "topics": ["setup", "characters"],
+    "summary": {
+      "en": "Playing several games in a row: survivors may keep their character; eliminated players draw a new one. You may rotate the Sheriff role.",
+      "it": "Più partite di seguito: chi è sopravvissuto può tenere il personaggio, gli eliminati ne pescano uno nuovo. Si può far girare il ruolo di Sceriffo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "turn-phases",
+    "topics": ["turn"],
+    "summary": {
+      "en": "The Sheriff starts; turns go clockwise. Each turn: 1) draw two cards, 2) play any number of cards, 3) discard down to your hand limit.",
+      "it": "Inizia lo Sceriffo; si gioca in senso orario. Ogni turno: 1) pesca due carte, 2) gioca carte, 3) scarta le carte in eccesso."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["turn"]
+    }
+  },
+  {
+    "id": "draw-two",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Phase 1: draw the top two cards. When the draw pile runs out, shuffle the discard pile into a new one.",
+      "it": "Fase 1: pesca le prime due carte del mazzo. Quando il mazzo finisce, rimischia gli scarti per formarne uno nuovo."
+    },
+    "detail": {
+      "en": "Black Jack, Jesse Jones, Kit Carlson and Pedro Ramirez change how they draw.",
+      "it": "Black Jack, Jesse Jones, Kit Carlson e Pedro Ramirez pescano in modo diverso."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["phase-draw"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "draw-pile"
+      }
+    ]
+  },
+  {
+    "id": "play-cards",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Phase 2: play as many cards as you like — or none. You may only play cards on your own turn, except Missed! and Beer.",
+      "it": "Fase 2: gioca quante carte vuoi, anche nessuna. Puoi giocare carte solo nel tuo turno, tranne Mancato! e Birra."
+    },
+    "detail": {
+      "en": "Three limits: one BANG! card per turn, no two cards with the same name in front of you, one weapon in play.",
+      "it": "Tre limiti: una sola carta BANG! per turno, mai due carte con lo stesso nome davanti a te, una sola arma in gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["phase-play"]
+    }
+  },
+  {
+    "id": "one-at-a-time",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Wait for a card to finish all its effects before playing the next one.",
+      "it": "Prima di giocare una carta aspetta che la precedente abbia esaurito tutti i suoi effetti."
+    },
+    "detail": {
+      "en": "E.g. you can't play Panic! while players are still picking from a General Store.",
+      "it": "Ad es. non puoi giocare Panico! mentre i giocatori stanno ancora scegliendo dall'Emporio."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["phase-play"]
+    }
+  },
+  {
+    "id": "hand-limit",
+    "topics": ["turn", "life"],
+    "summary": {
+      "en": "Phase 3: at the end of your turn you may hold at most as many cards as your current life points; discard the excess.",
+      "it": "Fase 3: a fine turno puoi tenere in mano al massimo tante carte quanti sono i tuoi punti vita attuali; scarta le altre."
+    },
+    "detail": {
+      "en": "Lose life and your hand limit shrinks with it.",
+      "it": "Se perdi punti vita, si riduce anche il limite di carte in mano."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["phase-discard"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "hand"
+      }
+    ],
+    "conflicts": [
+      {
+        "claim": {
+          "en": "You discard down to 7 cards at the end of your turn.",
+          "it": "A fine turno scarti fino ad avere 7 carte."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "The official rulebook sets the hand limit to your current life points, not 7.",
+          "it": "Il regolamento ufficiale fissa il limite ai tuoi punti vita attuali, non a 7."
+        }
+      }
+    ]
+  },
+  {
+    "id": "no-voluntary-discard",
+    "topics": ["turn", "in-play"],
+    "summary": {
+      "en": "You can't discard cards voluntarily — neither from your hand nor from in play.",
+      "it": "Non puoi scartare carte volontariamente, né dalla mano né da quelle in gioco."
+    },
+    "detail": {
+      "en": "Exceptions: the end-of-turn discard, replacing a weapon, and Sid Ketchum's ability.",
+      "it": "Eccezioni: lo scarto di fine turno, la sostituzione di un'arma e l'abilità di Sid Ketchum."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "table-talk",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Talking, bluffing and accusing are encouraged — but you can't ask others about playing specific cards.",
+      "it": "Parlare, bluffare e accusare è parte del gioco, ma non puoi chiedere agli altri se giocare certe carte."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "roles-untouchable",
+    "topics": ["roles", "characters"],
+    "summary": {
+      "en": "Role and character cards are never affected by any card (you can't steal or discard them).",
+      "it": "Le carte ruolo e personaggio non sono mai influenzate da altre carte (non si possono rubare né scartare)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "brown-blue",
+    "topics": ["in-play"],
+    "summary": {
+      "en": "Brown-bordered cards: play, apply the effect, discard. Blue-bordered cards: place face up in front of you; they work until removed.",
+      "it": "Carte a bordo marrone: giocale, applica l'effetto e scartale. Carte a bordo blu: mettile scoperte davanti a te; funzionano finché non vengono rimosse."
+    },
+    "detail": {
+      "en": "Jail is the exception: it goes in front of another player.",
+      "it": "Fa eccezione la Prigione, che va davanti a un altro giocatore."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "in-play"
+      }
+    ]
+  },
+  {
+    "id": "no-duplicates",
+    "topics": ["in-play"],
+    "summary": {
+      "en": "You can't have two cards with the same name in play in front of you.",
+      "it": "Non puoi avere in gioco davanti a te due carte con lo stesso nome."
+    },
+    "detail": {
+      "en": "E.g. a second Barrel can't be played while you have one.",
+      "it": "Ad es. non puoi giocare un secondo Barile se ne hai già uno."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "in-play"
+      }
+    ]
+  },
+  {
+    "id": "steal-or-discard-choice",
+    "topics": ["action-cards", "in-play"],
+    "summary": {
+      "en": "When a card makes you take or discard a card from a player, choose: a random card from their hand, or a card of your choice from those in play in front of them.",
+      "it": "Quando una carta ti fa prendere o scartare una carta di un giocatore, scegli: una carta a caso dalla sua mano, oppure una a tua scelta fra quelle che ha in gioco."
+    },
+    "detail": {
+      "en": "Cards you take go into your hand.",
+      "it": "Le carte prese vanno nella tua mano."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "distance",
+    "topics": ["distance"],
+    "summary": {
+      "en": "Distance = the fewest seats between two players, counting clockwise or counterclockwise. Your neighbours are at distance 1.",
+      "it": "Distanza = il numero minimo di posti tra due giocatori, contando in senso orario o antiorario. I tuoi vicini sono a distanza 1."
+    },
+    "detail": {
+      "en": "Eliminated players no longer count, so players get closer as the game goes on.",
+      "it": "I giocatori eliminati non contano più, quindi gli altri si avvicinano col procedere della partita."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "table"
+      }
+    ],
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Distance is the number of players seated between you and the target.",
+          "it": "La distanza è il numero di giocatori seduti tra te e il bersaglio."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "Per the rulebook your neighbours are at distance 1 (not 0): count seats, not the players in between.",
+          "it": "Per il regolamento i tuoi vicini sono a distanza 1 (non 0): conta i posti, non i giocatori in mezzo."
+        }
+      }
+    ]
+  },
+  {
+    "id": "colt-45",
+    "topics": ["weapons", "distance"],
+    "summary": {
+      "en": "Without a weapon card you shoot with the Colt .45 printed on your board: reach 1. You can never lose it.",
+      "it": "Senza carte arma spari con la Colt .45 disegnata sulla plancia: gittata 1. Non puoi mai perderla."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["player-boards"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "weapon"
+      }
+    ]
+  },
+  {
+    "id": "weapon-range",
+    "topics": ["weapons", "distance"],
+    "summary": {
+      "en": "A weapon's sight number is the farthest distance your BANG! cards can reach: Volcanic 1, Schofield 2, Remington 3, Rev. Carabine 4, Winchester 5.",
+      "it": "Il numero nel mirino dell'arma è la distanza massima raggiungibile dalle tue carte BANG!: Volcanic 1, Schofield 2, Remington 3, Rev. Carabine 4, Winchester 5."
+    },
+    "detail": {
+      "en": "Weapons don't change distances — they only set how far you can shoot. Weapons can be stolen or discarded like any card in play.",
+      "it": "Le armi non cambiano la distanza, indicano solo fin dove puoi sparare. Possono essere rubate o fatte scartare come ogni carta in gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "weapon"
+      }
+    ]
+  },
+  {
+    "id": "one-weapon",
+    "topics": ["weapons", "in-play"],
+    "summary": {
+      "en": "Only one weapon in play: playing a new one discards the old one.",
+      "it": "Una sola arma in gioco: se ne giochi una nuova, scarti la precedente."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "weapon"
+      }
+    ]
+  },
+  {
+    "id": "volcanic",
+    "topics": ["weapons", "shooting"],
+    "summary": {
+      "en": "With a Volcanic you may play any number of BANG! cards on your turn, at the same or different targets — all at distance 1.",
+      "it": "Con la Volcanic puoi giocare quante carte BANG! vuoi nel tuo turno, contro lo stesso bersaglio o diversi, ma solo a distanza 1."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mustang",
+    "topics": ["distance", "in-play"],
+    "summary": {
+      "en": "Mustang: other players see you at distance +1. You still see them at the normal distance.",
+      "it": "Mustang: gli altri ti vedono a distanza +1. Tu continui a vederli alla distanza normale."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 8
+      }
+    ],
+    "confidence": "high",
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Mustang increases your shooting range.",
+          "it": "Il Mustang aumenta la tua gittata."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "The rulebook says the opposite: Mustang makes you harder to reach; it doesn't help you reach others.",
+          "it": "Il regolamento dice il contrario: il Mustang ti rende più difficile da raggiungere, non ti aiuta a raggiungere gli altri."
+        }
+      }
+    ]
+  },
+  {
+    "id": "scope",
+    "topics": ["distance", "in-play"],
+    "summary": {
+      "en": "Scope: you see every other player at distance −1 (never below 1). Others still see you at the normal distance.",
+      "it": "Mirino: vedi tutti gli altri a distanza −1 (mai sotto 1). Gli altri continuano a vederti alla distanza normale."
+    },
+    "detail": {
+      "en": "Mustang and Scope stack: they cancel each other out.",
+      "it": "Mustang e Mirino si combinano: si annullano a vicenda."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bang-card",
+    "topics": ["shooting"],
+    "summary": {
+      "en": "BANG!: pick a target, check their distance from you and that your weapon reaches it. The target loses 1 life unless they cancel the shot.",
+      "it": "BANG!: scegli un bersaglio, verifica la sua distanza da te e che la tua arma la raggiunga. Il bersaglio perde 1 punto vita se non annulla il colpo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["play-bang"]
+    }
+  },
+  {
+    "id": "one-bang-per-turn",
+    "topics": ["shooting", "turn"],
+    "summary": {
+      "en": "You may play only one BANG! card per turn. Other cards that shoot (Gatling) and BANG! cards discarded in a Duel or for Indians! don't count.",
+      "it": "Puoi giocare una sola carta BANG! per turno. Le altre carte che sparano (Gatling) e i BANG! scartati in un Duello o contro gli Indiani! non contano."
+    },
+    "detail": {
+      "en": "Exceptions: a Volcanic in play, or Willy the Kid.",
+      "it": "Eccezioni: una Volcanic in gioco, oppure Willy the Kid."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["play-bang"]
+    }
+  },
+  {
+    "id": "missed",
+    "topics": ["shooting"],
+    "summary": {
+      "en": "When a BANG! hits you, you may immediately play a Missed! — even outside your turn — to cancel it. Otherwise lose 1 life.",
+      "it": "Quando un BANG! ti colpisce puoi giocare subito un Mancato!, anche fuori dal tuo turno, per annullarlo. Altrimenti perdi 1 punto vita."
+    },
+    "detail": {
+      "en": "You can only cancel shots aimed at you. The BANG! card is discarded even when cancelled.",
+      "it": "Puoi annullare solo i colpi diretti a te. La carta BANG! si scarta comunque, anche se annullata."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["shot-missed"]
+    }
+  },
+  {
+    "id": "losing-life",
+    "topics": ["life"],
+    "summary": {
+      "en": "Each life point lost = put one bullet in the pile in the middle of the table. At zero you are eliminated unless you play a Beer at once.",
+      "it": "Ogni punto vita perso = metti una pallottola nella riserva al centro del tavolo. A zero sei eliminato, a meno che tu non giochi subito una Birra."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["shot-hit"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "player-area",
+        "hotspotId": "life"
+      }
+    ]
+  },
+  {
+    "id": "beer",
+    "topics": ["life"],
+    "summary": {
+      "en": "Beer: regain 1 life (never above your starting amount, only for yourself). Play it on your turn, or out of turn only when a hit would take your last life point.",
+      "it": "Birra: recuperi 1 punto vita (mai oltre quelli iniziali, solo per te). Giocala nel tuo turno, oppure fuori turno solo quando un colpo ti toglierebbe l'ultimo punto vita."
+    },
+    "detail": {
+      "en": "With only 2 players left, Beer has no effect. You may play several Beers to survive a big hit (e.g. Dynamite). Beer at full life is allowed but does nothing.",
+      "it": "Se restano solo 2 giocatori la Birra non ha effetto. Puoi giocare più Birre per sopravvivere a un colpo pesante (es. Dinamite). Giocarla a vita piena è permesso ma inutile."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["last-life-beer"]
+    }
+  },
+  {
+    "id": "saloon",
+    "topics": ["life", "action-cards"],
+    "summary": {
+      "en": "Saloon: every player still in the game — you included — regains 1 life. Only during your turn's play phase.",
+      "it": "Saloon: tutti i giocatori ancora in gioco, te compreso, recuperano 1 punto vita. Solo nella fase di gioco del tuo turno."
+    },
+    "detail": {
+      "en": "It is not a Beer: you can't use it to survive your last life point, but it still works with 2 players left.",
+      "it": "Non è una Birra: non puoi usarlo per salvarti dall'ultimo punto vita, però funziona anche se restano 2 giocatori."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Saloon heals every player except the one who played it.",
+          "it": "Il Saloon cura tutti tranne chi lo gioca."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "The rulebook: all players in play regain 1 life, including whoever played it.",
+          "it": "Il regolamento: tutti i giocatori in gioco recuperano 1 punto vita, compreso chi lo gioca."
+        }
+      }
+    ]
+  },
+  {
+    "id": "stagecoach-wells-fargo",
+    "topics": ["action-cards"],
+    "summary": {
+      "en": "Stagecoach: draw 2 cards from the deck. Wells Fargo: draw 3.",
+      "it": "Diligenza: pesca 2 carte dal mazzo. Wells Fargo: pescane 3."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 7
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "general-store",
+    "topics": ["action-cards"],
+    "summary": {
+      "en": "General Store: reveal as many cards from the deck as players still in the game. Starting with you and going clockwise, each player takes one into their hand.",
+      "it": "Emporio: scopri dal mazzo tante carte quanti sono i giocatori ancora in gioco. Partendo da te in senso orario, ognuno ne prende una in mano."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 7
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "panic",
+    "topics": ["action-cards", "distance"],
+    "summary": {
+      "en": "Panic!: take a card from a player at distance 1. Only Mustang and Scope (and similar abilities) change this distance — weapons don't.",
+      "it": "Panico!: prendi una carta da un giocatore a distanza 1. Solo Mustang e Mirino (e abilità simili) cambiano questa distanza, le armi no."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cat-balou",
+    "topics": ["action-cards"],
+    "summary": {
+      "en": "Cat Balou: force any player, at any distance, to discard a card — random from their hand, or one you choose from in play.",
+      "it": "Cat Balou: fai scartare una carta a qualsiasi giocatore, a qualsiasi distanza: a caso dalla mano o a tua scelta fra quelle in gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Cat Balou discards a card from another player's hand.",
+          "it": "Cat Balou fa scartare una carta dalla mano di un altro giocatore."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "The rulebook also lets you pick a card in play (e.g. their weapon, Barrel or Dynamite).",
+          "it": "Il regolamento permette anche di scegliere una carta in gioco (es. arma, Barile o Dinamite)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "gatling",
+    "topics": ["action-cards", "shooting"],
+    "summary": {
+      "en": "Gatling: shoots a BANG! at every other player, at any distance. It is not a BANG! card — you may still play your one BANG! that turn.",
+      "it": "Gatling: spara un BANG! a tutti gli altri giocatori, a qualsiasi distanza. Non è una carta BANG!: puoi comunque giocare il tuo BANG! in quel turno."
+    },
+    "detail": {
+      "en": "Each target can cancel it with a Missed! or Barrel.",
+      "it": "Ogni bersaglio può annullarlo con Mancato! o Barile."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "indians",
+    "topics": ["action-cards", "shooting"],
+    "summary": {
+      "en": "Indians!: every other player either discards a BANG! card or loses 1 life. Missed! and Barrel don't work against it.",
+      "it": "Indiani!: ogni altro giocatore sceglie se scartare una carta BANG! o perdere 1 punto vita. Mancato! e Barile non funzionano."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 8
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "duel",
+    "topics": ["action-cards", "shooting"],
+    "summary": {
+      "en": "Duel: challenge any player at any distance. Starting with them, you alternate discarding BANG! cards; the first who doesn't loses 1 life.",
+      "it": "Duello: sfida qualsiasi giocatore a qualsiasi distanza. Partendo da lui, scartate a turno carte BANG!; il primo che non lo fa perde 1 punto vita."
+    },
+    "detail": {
+      "en": "No Missed! or Barrel in a Duel. Duel isn't a BANG! card, and BANG! cards discarded in it don't count toward your one-per-turn limit.",
+      "it": "Nel Duello non valgono Mancato! né Barile. Il Duello non è una carta BANG! e i BANG! scartati non contano per il limite di uno per turno."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "draw-check",
+    "topics": ["draw-check"],
+    "summary": {
+      "en": "Draw!: flip the top card of the deck, discard it and look at its suit and value (bottom-left). If it matches the card's condition, the effect happens.",
+      "it": "Estrarre!: scopri la prima carta del mazzo, scartala e guardane seme e valore (in basso a sinistra). Se corrisponde alla condizione della carta, si ha l'effetto."
+    },
+    "detail": {
+      "en": "Value ranges include both ends; order is 2–10, J, Q, K, A. The flipped card itself never has any other effect.",
+      "it": "Gli intervalli comprendono gli estremi; l'ordine è 2–10, J, Q, K, A. La carta scoperta non ha mai altri effetti."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 8
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "draw-pile"
+      }
+    ]
+  },
+  {
+    "id": "barrel",
+    "topics": ["draw-check", "shooting", "in-play"],
+    "summary": {
+      "en": "Barrel: when a BANG! targets you, you may Draw!. On a Heart you are Missed!. If it fails, you can still play a Missed! card.",
+      "it": "Barile: quando sei bersaglio di un BANG! puoi estrarre. Con Cuori sei Mancato!. Se fallisce puoi ancora giocare un Mancato!."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["shot-barrel"]
+    }
+  },
+  {
+    "id": "jail",
+    "topics": ["draw-check", "in-play"],
+    "summary": {
+      "en": "Jail: play it in front of any other player except the Sheriff. At the start of their turn they Draw!: on a Heart they escape and play normally; otherwise they skip the turn. Either way Jail is discarded.",
+      "it": "Prigione: giocala davanti a qualsiasi altro giocatore tranne lo Sceriffo. A inizio turno estrae: con Cuori evade e gioca normalmente, altrimenti salta il turno. In entrambi i casi la Prigione si scarta."
+    },
+    "detail": {
+      "en": "A jailed player can still be shot and can still play Missed! and Beer when needed.",
+      "it": "Chi è in prigione resta un bersaglio e può comunque giocare Mancato! e Birra se necessario."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 9
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["check-jail"]
+    }
+  },
+  {
+    "id": "dynamite",
+    "topics": ["draw-check", "in-play"],
+    "summary": {
+      "en": "Dynamite: play it in front of yourself. At the start of your next turn, Draw!: on a 2–9 of Spades it explodes — discard it and lose 3 life. Otherwise pass it to the player on your left.",
+      "it": "Dinamite: giocala davanti a te. All'inizio del tuo turno successivo estrai: con un 2–9 di Picche esplode, scartala e perdi 3 punti vita. Altrimenti passala al giocatore alla tua sinistra."
+    },
+    "detail": {
+      "en": "It keeps travelling until it explodes or is taken/discarded by Panic! or Cat Balou. Dynamite damage is not caused by any player.",
+      "it": "Continua a girare finché esplode o viene presa/scartata con Panico! o Cat Balou. I danni della Dinamite non sono causati da alcun giocatore."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["check-dynamite"]
+    },
+    "conflicts": [
+      {
+        "claim": {
+          "en": "When Dynamite explodes it can damage all players.",
+          "it": "Quando la Dinamite esplode può danneggiare tutti i giocatori."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "Only the player holding it loses 3 life points.",
+          "it": "Solo il giocatore che ce l'ha davanti perde 3 punti vita."
+        }
+      }
+    ]
+  },
+  {
+    "id": "dynamite-before-jail",
+    "topics": ["draw-check"],
+    "summary": {
+      "en": "Holding both Dynamite and Jail? Check the Dynamite first.",
+      "it": "Hai sia Dinamite sia Prigione? Controlla prima la Dinamite."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["check-dynamite", "check-jail"]
+    }
+  },
+  {
+    "id": "elimination",
+    "topics": ["elimination"],
+    "summary": {
+      "en": "When you lose your last life point (and don't save yourself with Beer) you are out: reveal your role and discard all cards in hand and in play.",
+      "it": "Quando perdi l'ultimo punto vita (e non ti salvi con una Birra) sei eliminato: mostra il tuo ruolo e scarta tutte le carte in mano e in gioco."
+    },
+    "detail": {
+      "en": "The eliminated player chooses the order of the discarded cards.",
+      "it": "Il giocatore eliminato sceglie l'ordine delle carte scartate."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["eliminated"]
+    }
+  },
+  {
+    "id": "outlaw-reward",
+    "topics": ["elimination", "roles"],
+    "summary": {
+      "en": "Whoever eliminates an Outlaw — even another Outlaw — draws 3 cards from the deck as a reward.",
+      "it": "Chi elimina un Fuorilegge, anche se è un altro Fuorilegge, pesca subito 3 carte dal mazzo come ricompensa."
+    },
+    "detail": {
+      "en": "The killer is the player who played the card that caused it (also for Gatling and Indians!). Dynamite kills give no reward.",
+      "it": "Il responsabile è chi ha giocato la carta che ha causato l'eliminazione (anche con Gatling e Indiani!). Le morti da Dinamite non danno ricompensa."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "faq-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["eliminated"]
+    }
+  },
+  {
+    "id": "sheriff-kills-deputy",
+    "topics": ["elimination", "roles"],
+    "summary": {
+      "en": "If the Sheriff eliminates a Deputy, the Sheriff discards all cards in hand and in play.",
+      "it": "Se lo Sceriffo elimina un Vice, lo Sceriffo scarta tutte le carte che ha in mano e in gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["eliminated"]
+    }
+  },
+  {
+    "id": "game-end",
+    "topics": ["victory"],
+    "summary": {
+      "en": "The game ends when the Sheriff dies (the Renegade wins if they are the only one left alive, otherwise the Outlaws win) or when all Outlaws and the Renegade are dead (Sheriff and Deputies win).",
+      "it": "La partita finisce quando muore lo Sceriffo (vince il Rinnegato se è l'unico rimasto vivo, altrimenti i Fuorilegge) o quando sono morti tutti i Fuorilegge e il Rinnegato (vincono Sceriffo e Vice)."
+    },
+    "detail": {
+      "en": "Outlaws win even if they are all dead, as long as the Sheriff dies before the Renegade is the last survivor. If only the Outlaws are dead, the game goes on against the Renegade.",
+      "it": "I Fuorilegge vincono anche se sono tutti morti, purché lo Sceriffo muoia senza che il Rinnegato sia l'unico sopravvissuto. Se sono morti solo i Fuorilegge, la partita continua contro il Rinnegato."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["game-end"]
+    },
+    "conflicts": [
+      {
+        "claim": {
+          "en": "The Renegade wins by eliminating the Sheriff and all the Outlaws.",
+          "it": "Il Rinnegato vince eliminando lo Sceriffo e tutti i Fuorilegge."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "Every other player must be dead too (Deputies included), and the Sheriff must be the last to fall.",
+          "it": "Devono essere morti anche tutti gli altri (Vice compresi), e lo Sceriffo deve cadere per ultimo."
+        }
+      }
+    ]
+  },
+  {
+    "id": "character-abilities",
+    "topics": ["characters"],
+    "summary": {
+      "en": "Every character has a unique ability and 3 or 4 life points. Abilities that copy a card (Jourdonnais = Barrel, Paul Regret = Mustang, Rose Doolan = Scope) stack with the real card.",
+      "it": "Ogni personaggio ha un'abilità unica e 3 o 4 punti vita. Le abilità che replicano una carta (Jourdonnais = Barile, Paul Regret = Mustang, Rose Doolan = Mirino) si sommano alla carta vera."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 10
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "modules": ["characters"]
+    },
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Bart Cassidy draws cards to replace the ones that are discarded.",
+          "it": "Bart Cassidy pesca carte per rimpiazzare quelle scartate."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "officialgamerules"
+        },
+        "resolution": {
+          "en": "Bart Cassidy draws one card from the deck each time he loses a life point.",
+          "it": "Bart Cassidy pesca una carta dal mazzo ogni volta che perde un punto vita."
+        }
+      }
+    ]
+  }
+]

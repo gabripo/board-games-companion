@@ -1,0 +1,922 @@
+{
+  "schemaVersion": 2,
+  "id": "bang",
+  "meta": {
+    "title": {
+      "en": "BANG!",
+      "it": "BANG!"
+    },
+    "publisher": "dV Giochi",
+    "year": 2002,
+    "designers": ["Emiliano Sciarra"],
+    "bggId": 3955
+  },
+  "classification": {
+    "turnModel": "sequential",
+    "interaction": "hidden-traitor",
+    "mechanics": ["hidden-roles", "hand-management", "take-that", "deduction"],
+    "playerCount": {
+      "min": 4,
+      "max": 7,
+      "best": [7]
+    },
+    "playtimeMinutes": {
+      "min": 20,
+      "max": 40
+    },
+    "complexity": 1.6,
+    "minAge": 8
+  },
+  "sources": [
+    {
+      "id": "rulebook-en",
+      "type": "pdf",
+      "title": "BANG! rules (English, 4th edition)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en",
+      "edition": "4th edition"
+    },
+    {
+      "id": "rulebook-it",
+      "type": "pdf",
+      "title": "BANG! regolamento (italiano, quarta edizione)",
+      "lang": "it",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php",
+      "edition": "Quarta edizione"
+    },
+    {
+      "id": "faq-en",
+      "type": "pdf",
+      "title": "BANG! F.A.Q. (English)",
+      "lang": "en",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/download.php?lang=en"
+    },
+    {
+      "id": "dv-card-list",
+      "type": "web",
+      "title": "dV Giochi — BANG! card list",
+      "lang": "it",
+      "official": true,
+      "url": "https://bang.dvgiochi.com/cardslist.php?id=1"
+    },
+    {
+      "id": "bgg",
+      "type": "web",
+      "title": "BoardGameGeek — BANG!",
+      "lang": "en",
+      "official": false,
+      "url": "https://boardgamegeek.com/boardgame/3955/bang"
+    },
+    {
+      "id": "officialgamerules",
+      "type": "web",
+      "title": "Official Game Rules — Bang! (third-party summary)",
+      "lang": "en",
+      "official": false,
+      "url": "https://officialgamerules.org/game-rules/bang/"
+    }
+  ],
+  "components": [
+    {
+      "id": "role-cards",
+      "type": "card",
+      "name": {
+        "en": "Role cards",
+        "it": "Carte ruolo"
+      },
+      "quantity": 7,
+      "description": {
+        "en": "1 Sheriff, 2 Deputies, 3 Outlaws, 1 Renegade.",
+        "it": "1 Sceriffo, 2 Vice, 3 Fuorilegge, 1 Rinnegato."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "roles"
+        }
+      ]
+    },
+    {
+      "id": "character-cards",
+      "type": "card",
+      "name": {
+        "en": "Character cards",
+        "it": "Carte personaggio"
+      },
+      "quantity": 16,
+      "description": {
+        "en": "Each shows a special ability and the starting life points (bullets).",
+        "it": "Ognuna riporta un'abilità speciale e i punti vita iniziali (pallottole)."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "characters"
+        }
+      ]
+    },
+    {
+      "id": "playing-cards",
+      "type": "card",
+      "name": {
+        "en": "Playing cards",
+        "it": "Carte da gioco"
+      },
+      "quantity": 80,
+      "description": {
+        "en": "Brown-bordered cards are played and discarded; blue-bordered cards stay in play in front of you.",
+        "it": "Le carte a bordo marrone si giocano e si scartano; quelle a bordo blu restano in gioco davanti a te."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "playing-cards"
+        },
+        {
+          "sceneId": "card-anatomy"
+        }
+      ]
+    },
+    {
+      "id": "summary-cards",
+      "type": "card",
+      "name": {
+        "en": "Summary cards",
+        "it": "Carte riassuntive"
+      },
+      "quantity": 7
+    },
+    {
+      "id": "player-boards",
+      "type": "player-board",
+      "name": {
+        "en": "Playing boards",
+        "it": "Plance"
+      },
+      "quantity": 7,
+      "description": {
+        "en": "Holds your role, character, weapon and bullets. The Colt .45 is printed on it.",
+        "it": "Contiene ruolo, personaggio, arma e pallottole. Vi è disegnata la Colt .45."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "player-area",
+          "hotspotId": "weapon"
+        }
+      ]
+    },
+    {
+      "id": "bullets",
+      "type": "token",
+      "name": {
+        "en": "Bullets",
+        "it": "Pallottole"
+      },
+      "quantity": 30,
+      "description": {
+        "en": "Your life points.",
+        "it": "I tuoi punti vita."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "player-area",
+          "hotspotId": "life"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "simplified",
+      "kind": "beginner",
+      "name": {
+        "en": "Simplified deck (first games)",
+        "it": "Mazzo semplificato (prime partite)"
+      },
+      "description": {
+        "en": "Remove every playing card marked with the book symbol before shuffling.",
+        "it": "Prima di mescolare, togli dal mazzo tutte le carte con il simbolo del libro."
+      }
+    }
+  ],
+  "expansions": [],
+  "topics": [
+    {
+      "id": "roles",
+      "name": {
+        "en": "Roles",
+        "it": "Ruoli"
+      }
+    },
+    {
+      "id": "setup",
+      "name": {
+        "en": "Setup",
+        "it": "Preparazione"
+      }
+    },
+    {
+      "id": "turn",
+      "name": {
+        "en": "Turn",
+        "it": "Turno"
+      }
+    },
+    {
+      "id": "distance",
+      "name": {
+        "en": "Distance",
+        "it": "Distanza"
+      }
+    },
+    {
+      "id": "weapons",
+      "name": {
+        "en": "Weapons",
+        "it": "Armi"
+      }
+    },
+    {
+      "id": "shooting",
+      "name": {
+        "en": "Shooting",
+        "it": "Sparatorie"
+      }
+    },
+    {
+      "id": "life",
+      "name": {
+        "en": "Life points",
+        "it": "Punti vita"
+      }
+    },
+    {
+      "id": "in-play",
+      "name": {
+        "en": "Cards in play",
+        "it": "Carte in gioco"
+      }
+    },
+    {
+      "id": "draw-check",
+      "name": {
+        "en": "Draw!",
+        "it": "Estrarre!"
+      }
+    },
+    {
+      "id": "action-cards",
+      "name": {
+        "en": "Action cards",
+        "it": "Carte azione"
+      }
+    },
+    {
+      "id": "elimination",
+      "name": {
+        "en": "Elimination",
+        "it": "Eliminazione"
+      }
+    },
+    {
+      "id": "victory",
+      "name": {
+        "en": "Winning",
+        "it": "Vittoria"
+      }
+    },
+    {
+      "id": "characters",
+      "name": {
+        "en": "Characters",
+        "it": "Personaggi"
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "id": "sheriff",
+      "term": {
+        "en": "Sheriff",
+        "it": "Sceriffo"
+      },
+      "definition": {
+        "en": "The only public role. Wins with the Deputies when all Outlaws and the Renegade are dead.",
+        "it": "L'unico ruolo palese. Vince con i Vice quando Fuorilegge e Rinnegato sono tutti eliminati."
+      },
+      "aliases": {
+        "en": ["Sceriffo"],
+        "it": ["Sheriff"]
+      },
+      "icon": {
+        "sceneId": "roles",
+        "hotspotId": "sheriff"
+      },
+      "ruleRefs": ["role-goals", "sheriff-revealed"]
+    },
+    {
+      "id": "deputy",
+      "term": {
+        "en": "Deputy",
+        "it": "Vice"
+      },
+      "definition": {
+        "en": "Secretly helps the Sheriff and shares the Sheriff's goal.",
+        "it": "Aiuta in segreto lo Sceriffo e ne condivide l'obiettivo."
+      },
+      "aliases": {
+        "en": ["Vice"],
+        "it": ["Deputy"]
+      },
+      "ruleRefs": ["role-goals"],
+      "icon": {
+        "sceneId": "roles",
+        "hotspotId": "deputy"
+      }
+    },
+    {
+      "id": "outlaw",
+      "term": {
+        "en": "Outlaw",
+        "it": "Fuorilegge"
+      },
+      "definition": {
+        "en": "Wins if the Sheriff dies. Whoever kills an Outlaw draws 3 cards.",
+        "it": "Vince se lo Sceriffo muore. Chi elimina un Fuorilegge pesca 3 carte."
+      },
+      "aliases": {
+        "en": ["Fuorilegge"],
+        "it": ["Outlaw"]
+      },
+      "ruleRefs": ["role-goals", "outlaw-reward"],
+      "icon": {
+        "sceneId": "roles",
+        "hotspotId": "outlaw"
+      }
+    },
+    {
+      "id": "renegade",
+      "term": {
+        "en": "Renegade",
+        "it": "Rinnegato"
+      },
+      "definition": {
+        "en": "Wants to be the last character alive — the Sheriff must die last.",
+        "it": "Vuole restare l'ultimo personaggio in gioco: lo Sceriffo deve morire per ultimo."
+      },
+      "aliases": {
+        "en": ["Rinnegato"],
+        "it": ["Renegade"]
+      },
+      "ruleRefs": ["role-goals", "game-end"],
+      "icon": {
+        "sceneId": "roles",
+        "hotspotId": "renegade"
+      }
+    },
+    {
+      "id": "life-points",
+      "term": {
+        "en": "Life points (bullets)",
+        "it": "Punti vita (pallottole)"
+      },
+      "definition": {
+        "en": "How many hits you can take; also your hand limit at the end of your turn.",
+        "it": "Quanti colpi puoi subire; sono anche il limite di carte in mano a fine turno."
+      },
+      "aliases": {
+        "en": ["Punti vita (pallottole)"],
+        "it": ["Life points (bullets)"]
+      },
+      "icon": {
+        "sceneId": "player-area",
+        "hotspotId": "life"
+      },
+      "ruleRefs": ["life-points", "hand-limit"]
+    },
+    {
+      "id": "distance",
+      "term": {
+        "en": "Distance",
+        "it": "Distanza"
+      },
+      "definition": {
+        "en": "Fewest seats between two players, counting either way round. Neighbours are at 1.",
+        "it": "Numero minimo di posti tra due giocatori, contando in un senso o nell'altro. I vicini sono a 1."
+      },
+      "aliases": {
+        "en": ["Distanza"],
+        "it": ["Distance"]
+      },
+      "ruleRefs": ["distance"]
+    },
+    {
+      "id": "reach",
+      "term": {
+        "en": "Reachable distance (range)",
+        "it": "Distanza raggiungibile (gittata)"
+      },
+      "definition": {
+        "en": "The number in your weapon's sight: how far your BANG! cards can reach.",
+        "it": "Il numero nel mirino della tua arma: fin dove arrivano le tue carte BANG!."
+      },
+      "aliases": {
+        "en": ["Distanza raggiungibile (gittata)"],
+        "it": ["Reachable distance (range)"]
+      },
+      "icon": {
+        "sceneId": "player-area",
+        "hotspotId": "weapon"
+      },
+      "ruleRefs": ["weapon-range"]
+    },
+    {
+      "id": "draw-check",
+      "term": {
+        "en": "Draw!",
+        "it": "Estrarre!"
+      },
+      "definition": {
+        "en": "Flip the top card of the deck, discard it and check its suit/value against the card that asked for it.",
+        "it": "Scopri la prima carta del mazzo, scartala e controlla seme/valore rispetto alla carta che lo richiede."
+      },
+      "aliases": {
+        "en": ["Estrarre!"],
+        "it": ["Draw!"]
+      },
+      "ruleRefs": ["draw-check"],
+      "icon": {
+        "sceneId": "card-anatomy",
+        "hotspotId": "suit-value"
+      }
+    },
+    {
+      "id": "in-play",
+      "term": {
+        "en": "In play",
+        "it": "In gioco"
+      },
+      "definition": {
+        "en": "Blue cards face up in front of a player. Not the cards in hand.",
+        "it": "Le carte blu scoperte davanti a un giocatore. Non le carte in mano."
+      },
+      "aliases": {
+        "en": ["In gioco"],
+        "it": ["In play"]
+      },
+      "icon": {
+        "sceneId": "player-area",
+        "hotspotId": "in-play"
+      },
+      "ruleRefs": ["brown-blue"]
+    },
+    {
+      "id": "brown-card",
+      "term": {
+        "en": "Brown-bordered card",
+        "it": "Carta a bordo marrone"
+      },
+      "definition": {
+        "en": "Play it, apply the effect, discard it.",
+        "it": "Si gioca, se ne applica l'effetto e si scarta."
+      },
+      "aliases": {
+        "en": ["Carta a bordo marrone"],
+        "it": ["Brown-bordered card"]
+      },
+      "ruleRefs": ["brown-blue"],
+      "icon": {
+        "sceneId": "card-anatomy",
+        "hotspotId": "brown-card"
+      }
+    },
+    {
+      "id": "blue-card",
+      "term": {
+        "en": "Blue-bordered card",
+        "it": "Carta a bordo blu"
+      },
+      "definition": {
+        "en": "Weapons and other objects: they stay in play until removed.",
+        "it": "Armi e altri oggetti: restano in gioco finché non vengono rimossi."
+      },
+      "aliases": {
+        "en": ["Carta a bordo blu"],
+        "it": ["Blue-bordered card"]
+      },
+      "ruleRefs": ["brown-blue"],
+      "icon": {
+        "sceneId": "card-anatomy",
+        "hotspotId": "blue-card"
+      }
+    },
+    {
+      "id": "bang",
+      "term": {
+        "en": "BANG!",
+        "it": "BANG!"
+      },
+      "definition": {
+        "en": "Shoot one player within reach: they lose 1 life unless they cancel it. Only one per turn.",
+        "it": "Spara a un giocatore a distanza raggiungibile: perde 1 punto vita se non annulla. Solo una per turno."
+      },
+      "ruleRefs": ["bang-card", "one-bang-per-turn"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "bang"
+      }
+    },
+    {
+      "id": "missed",
+      "term": {
+        "en": "Missed!",
+        "it": "Mancato!"
+      },
+      "definition": {
+        "en": "Cancels a BANG! aimed at you, even outside your turn.",
+        "it": "Annulla un BANG! diretto a te, anche fuori dal tuo turno."
+      },
+      "aliases": {
+        "en": ["Mancato!"],
+        "it": ["Missed!"]
+      },
+      "ruleRefs": ["missed"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "missed"
+      }
+    },
+    {
+      "id": "beer",
+      "term": {
+        "en": "Beer",
+        "it": "Birra"
+      },
+      "definition": {
+        "en": "Regain 1 life. Out of turn only to survive a lethal hit. Useless with 2 players left.",
+        "it": "Recuperi 1 punto vita. Fuori turno solo per salvarti da un colpo fatale. Inutile se restano 2 giocatori."
+      },
+      "aliases": {
+        "en": ["Birra"],
+        "it": ["Beer"]
+      },
+      "ruleRefs": ["beer"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "beer"
+      }
+    },
+    {
+      "id": "saloon",
+      "term": {
+        "en": "Saloon",
+        "it": "Saloon"
+      },
+      "definition": {
+        "en": "Every living player, you included, regains 1 life. Only on your turn.",
+        "it": "Tutti i giocatori in gioco, te compreso, recuperano 1 punto vita. Solo nel tuo turno."
+      },
+      "ruleRefs": ["saloon"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "saloon"
+      }
+    },
+    {
+      "id": "stagecoach",
+      "term": {
+        "en": "Stagecoach",
+        "it": "Diligenza"
+      },
+      "definition": {
+        "en": "Draw 2 cards from the deck.",
+        "it": "Pesca 2 carte dal mazzo."
+      },
+      "aliases": {
+        "en": ["Diligenza"],
+        "it": ["Stagecoach"]
+      },
+      "ruleRefs": ["stagecoach-wells-fargo"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "stagecoach"
+      }
+    },
+    {
+      "id": "wells-fargo",
+      "term": {
+        "en": "Wells Fargo",
+        "it": "Wells Fargo"
+      },
+      "definition": {
+        "en": "Draw 3 cards from the deck.",
+        "it": "Pesca 3 carte dal mazzo."
+      },
+      "ruleRefs": ["stagecoach-wells-fargo"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "wells-fargo"
+      }
+    },
+    {
+      "id": "general-store",
+      "term": {
+        "en": "General Store",
+        "it": "Emporio"
+      },
+      "definition": {
+        "en": "Reveal one card per living player; starting with you, each picks one.",
+        "it": "Scopri una carta per ogni giocatore in gioco; partendo da te, ognuno ne sceglie una."
+      },
+      "aliases": {
+        "en": ["Emporio"],
+        "it": ["General Store"]
+      },
+      "ruleRefs": ["general-store"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "general-store"
+      }
+    },
+    {
+      "id": "panic",
+      "term": {
+        "en": "Panic!",
+        "it": "Panico!"
+      },
+      "definition": {
+        "en": "Take a card from a player at distance 1 (random from hand, or chosen from in play).",
+        "it": "Prendi una carta da un giocatore a distanza 1 (a caso dalla mano o a scelta fra quelle in gioco)."
+      },
+      "aliases": {
+        "en": ["Panico!"],
+        "it": ["Panic!"]
+      },
+      "ruleRefs": ["panic"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "panic"
+      }
+    },
+    {
+      "id": "cat-balou",
+      "term": {
+        "en": "Cat Balou",
+        "it": "Cat Balou"
+      },
+      "definition": {
+        "en": "Make any player discard a card (random from hand, or chosen from in play), any distance.",
+        "it": "Fai scartare una carta a qualsiasi giocatore (a caso dalla mano o a scelta fra quelle in gioco), a qualsiasi distanza."
+      },
+      "ruleRefs": ["cat-balou"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "cat-balou"
+      }
+    },
+    {
+      "id": "gatling",
+      "term": {
+        "en": "Gatling",
+        "it": "Gatling"
+      },
+      "definition": {
+        "en": "A BANG! at every other player, any distance. Not a BANG! card.",
+        "it": "Un BANG! a tutti gli altri giocatori, a qualsiasi distanza. Non è una carta BANG!."
+      },
+      "ruleRefs": ["gatling"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "gatling"
+      }
+    },
+    {
+      "id": "indians",
+      "term": {
+        "en": "Indians!",
+        "it": "Indiani!"
+      },
+      "definition": {
+        "en": "Every other player discards a BANG! or loses 1 life. Missed! and Barrel don't help.",
+        "it": "Ogni altro giocatore scarta un BANG! o perde 1 punto vita. Mancato! e Barile non servono."
+      },
+      "aliases": {
+        "en": ["Indiani!"],
+        "it": ["Indians!"]
+      },
+      "ruleRefs": ["indians"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "indians"
+      }
+    },
+    {
+      "id": "duel",
+      "term": {
+        "en": "Duel",
+        "it": "Duello"
+      },
+      "definition": {
+        "en": "You and a target alternate discarding BANG! cards; the first who can't (or won't) loses 1 life.",
+        "it": "Tu e il bersaglio scartate a turno carte BANG!; il primo che non lo fa perde 1 punto vita."
+      },
+      "aliases": {
+        "en": ["Duello"],
+        "it": ["Duel"]
+      },
+      "ruleRefs": ["duel"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "duel"
+      }
+    },
+    {
+      "id": "barrel",
+      "term": {
+        "en": "Barrel",
+        "it": "Barile"
+      },
+      "definition": {
+        "en": "When targeted by a BANG!, Draw!: a Heart means Missed!.",
+        "it": "Quando sei bersaglio di un BANG!, estrai: con Cuori sei Mancato!."
+      },
+      "aliases": {
+        "en": ["Barile"],
+        "it": ["Barrel"]
+      },
+      "ruleRefs": ["barrel"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "barrel"
+      }
+    },
+    {
+      "id": "scope",
+      "term": {
+        "en": "Scope",
+        "it": "Mirino"
+      },
+      "definition": {
+        "en": "You see every other player at distance −1 (minimum 1).",
+        "it": "Vedi tutti gli altri a distanza −1 (minimo 1)."
+      },
+      "aliases": {
+        "en": ["Mirino"],
+        "it": ["Scope"]
+      },
+      "ruleRefs": ["scope"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "scope"
+      }
+    },
+    {
+      "id": "mustang",
+      "term": {
+        "en": "Mustang",
+        "it": "Mustang"
+      },
+      "definition": {
+        "en": "Other players see you at distance +1.",
+        "it": "Gli altri ti vedono a distanza +1."
+      },
+      "ruleRefs": ["mustang"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "mustang"
+      }
+    },
+    {
+      "id": "jail",
+      "term": {
+        "en": "Jail",
+        "it": "Prigione"
+      },
+      "definition": {
+        "en": "Played on another player (not the Sheriff): at the start of their turn they Draw! — Heart escapes, otherwise they skip the turn.",
+        "it": "Si gioca su un altro giocatore (non lo Sceriffo): a inizio turno estrae — con Cuori evade, altrimenti salta il turno."
+      },
+      "aliases": {
+        "en": ["Prigione"],
+        "it": ["Jail"]
+      },
+      "ruleRefs": ["jail"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "jail"
+      }
+    },
+    {
+      "id": "dynamite",
+      "term": {
+        "en": "Dynamite",
+        "it": "Dinamite"
+      },
+      "definition": {
+        "en": "Passes left each turn; explodes on a 2–9 of Spades for 3 damage.",
+        "it": "Passa a sinistra ogni turno; esplode con un 2–9 di Picche e toglie 3 punti vita."
+      },
+      "aliases": {
+        "en": ["Dinamite"],
+        "it": ["Dynamite"]
+      },
+      "ruleRefs": ["dynamite"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "dynamite"
+      }
+    },
+    {
+      "id": "colt-45",
+      "term": {
+        "en": "Colt .45",
+        "it": "Colt .45"
+      },
+      "definition": {
+        "en": "Your default weapon printed on the board: reach 1. You can never lose it.",
+        "it": "L'arma base disegnata sulla plancia: gittata 1. Non puoi mai perderla."
+      },
+      "ruleRefs": ["colt-45"]
+    },
+    {
+      "id": "volcanic",
+      "term": {
+        "en": "Volcanic",
+        "it": "Volcanic"
+      },
+      "definition": {
+        "en": "Weapon, reach 1: play any number of BANG! cards per turn.",
+        "it": "Arma, gittata 1: puoi giocare quante carte BANG! vuoi per turno."
+      },
+      "ruleRefs": ["volcanic"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "volcanic"
+      }
+    },
+    {
+      "id": "schofield",
+      "term": {
+        "en": "Schofield",
+        "it": "Schofield"
+      },
+      "definition": {
+        "en": "Weapon, reach 2.",
+        "it": "Arma, gittata 2."
+      },
+      "ruleRefs": ["weapon-range"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "schofield"
+      }
+    },
+    {
+      "id": "remington",
+      "term": {
+        "en": "Remington",
+        "it": "Remington"
+      },
+      "definition": {
+        "en": "Weapon, reach 3.",
+        "it": "Arma, gittata 3."
+      },
+      "ruleRefs": ["weapon-range"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "remington"
+      }
+    },
+    {
+      "id": "rev-carabine",
+      "term": {
+        "en": "Rev. Carabine",
+        "it": "Rev. Carabine"
+      },
+      "definition": {
+        "en": "Weapon, reach 4.",
+        "it": "Arma, gittata 4."
+      },
+      "ruleRefs": ["weapon-range"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "rev-carabine"
+      }
+    },
+    {
+      "id": "winchester",
+      "term": {
+        "en": "Winchester",
+        "it": "Winchester"
+      },
+      "definition": {
+        "en": "Weapon, reach 5.",
+        "it": "Arma, gittata 5."
+      },
+      "ruleRefs": ["weapon-range"],
+      "icon": {
+        "sceneId": "playing-cards",
+        "hotspotId": "winchester"
+      }
+    }
+  ]
+}

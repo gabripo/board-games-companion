@@ -1,0 +1,179 @@
+{
+  "areas": [
+    {
+      "id": "players",
+      "name": {
+        "en": "Each player",
+        "it": "Ogni giocatore"
+      }
+    },
+    {
+      "id": "center",
+      "name": {
+        "en": "Table center",
+        "it": "Centro del tavolo"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "boards",
+      "areaId": "players",
+      "text": {
+        "en": "Each player takes a playing board and places it in front of them.",
+        "it": "Ogni giocatore prende una plancia e la mette davanti a sé."
+      },
+      "components": ["player-boards"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "weapon"
+      }
+    },
+    {
+      "id": "roles-4p",
+      "areaId": "players",
+      "text": {
+        "en": "Take 1 Sheriff, 1 Renegade and 2 Outlaws.",
+        "it": "Prendi 1 Sceriffo, 1 Rinnegato e 2 Fuorilegge."
+      },
+      "components": ["role-cards"],
+      "conditions": {
+        "playerCount": [4]
+      },
+      "ruleRefs": ["roles-4p"]
+    },
+    {
+      "id": "roles-5p",
+      "areaId": "players",
+      "text": {
+        "en": "Take 1 Sheriff, 1 Renegade, 2 Outlaws and 1 Deputy.",
+        "it": "Prendi 1 Sceriffo, 1 Rinnegato, 2 Fuorilegge e 1 Vice."
+      },
+      "components": ["role-cards"],
+      "conditions": {
+        "playerCount": [5]
+      },
+      "ruleRefs": ["roles-5p"]
+    },
+    {
+      "id": "roles-6p",
+      "areaId": "players",
+      "text": {
+        "en": "Take 1 Sheriff, 1 Renegade, 3 Outlaws and 1 Deputy.",
+        "it": "Prendi 1 Sceriffo, 1 Rinnegato, 3 Fuorilegge e 1 Vice."
+      },
+      "components": ["role-cards"],
+      "conditions": {
+        "playerCount": [6]
+      },
+      "ruleRefs": ["roles-6p"]
+    },
+    {
+      "id": "roles-7p",
+      "areaId": "players",
+      "text": {
+        "en": "Take 1 Sheriff, 1 Renegade, 3 Outlaws and 2 Deputies.",
+        "it": "Prendi 1 Sceriffo, 1 Rinnegato, 3 Fuorilegge e 2 Vice."
+      },
+      "components": ["role-cards"],
+      "conditions": {
+        "playerCount": [7]
+      },
+      "ruleRefs": ["roles-7p"]
+    },
+    {
+      "id": "deal-roles",
+      "areaId": "players",
+      "text": {
+        "en": "Shuffle the roles and deal one face down to each player. The Sheriff turns theirs face up; everyone else looks at theirs and keeps it secret.",
+        "it": "Mescola i ruoli e danne uno coperto a ciascuno. Lo Sceriffo lo scopre; gli altri lo guardano e lo tengono segreto."
+      },
+      "components": ["role-cards"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "role"
+      },
+      "ruleRefs": ["sheriff-revealed"]
+    },
+    {
+      "id": "deal-characters",
+      "areaId": "players",
+      "text": {
+        "en": "Shuffle the characters and deal one face up to each player. Everyone reads out their character's name and ability and takes that many bullets.",
+        "it": "Mescola i personaggi e danne uno scoperto a ciascuno. Ognuno legge nome e abilità del proprio personaggio e prende altrettante pallottole."
+      },
+      "components": ["character-cards", "bullets"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "character"
+      },
+      "ruleRefs": ["characters-dealt", "life-points"]
+    },
+    {
+      "id": "sheriff-bullet",
+      "areaId": "players",
+      "text": {
+        "en": "The Sheriff takes one extra bullet.",
+        "it": "Lo Sceriffo prende una pallottola in più."
+      },
+      "components": ["bullets"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "life"
+      },
+      "ruleRefs": ["sheriff-extra-life"]
+    },
+    {
+      "id": "box-leftovers",
+      "areaId": "center",
+      "text": {
+        "en": "Put unused roles, boards and characters back in the box; keep the other bullets in a pile in the middle.",
+        "it": "Rimetti nella scatola ruoli, plance e personaggi non usati; le altre pallottole fanno da riserva al centro."
+      },
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "bullet-pile"
+      }
+    },
+    {
+      "id": "simplified",
+      "areaId": "center",
+      "text": {
+        "en": "Simplified deck: remove all cards with the book symbol.",
+        "it": "Mazzo semplificato: togli tutte le carte con il simbolo del libro."
+      },
+      "components": ["playing-cards"],
+      "conditions": {
+        "variants": ["simplified"]
+      },
+      "ruleRefs": ["simplified-deck"]
+    },
+    {
+      "id": "deal-hands",
+      "areaId": "center",
+      "text": {
+        "en": "Shuffle the playing cards and deal each player as many cards as their bullets, face down.",
+        "it": "Mescola le carte da gioco e dai a ciascuno tante carte coperte quante sono le sue pallottole."
+      },
+      "components": ["playing-cards"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "hand"
+      },
+      "ruleRefs": ["starting-hand"]
+    },
+    {
+      "id": "draw-pile",
+      "areaId": "center",
+      "text": {
+        "en": "Put the remaining cards face down in the middle as the draw pile, leaving room for the discard pile.",
+        "it": "Metti le carte rimanenti coperte al centro come mazzo, lasciando spazio per gli scarti."
+      },
+      "components": ["playing-cards"],
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "draw-pile"
+      }
+    }
+  ]
+}

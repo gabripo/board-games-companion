@@ -1,0 +1,203 @@
+{
+  "id": "characters",
+  "kind": "sections",
+  "title": {
+    "en": "Characters",
+    "it": "Personaggi"
+  },
+  "ruleRefs": ["character-abilities"],
+  "sections": [
+    {
+      "id": "bart-cassidy",
+      "title": {
+        "en": "Bart Cassidy · 4 ♥",
+        "it": "Bart Cassidy · 4 ♥"
+      },
+      "body": {
+        "en": "Each time he loses a life point, he draws a card from the deck.",
+        "it": "Ogni volta che perde un punto vita pesca una carta dal mazzo."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "black-jack",
+      "title": {
+        "en": "Black Jack · 4 ♥",
+        "it": "Black Jack · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he shows his second card: on a Heart or Diamond he draws one more (without showing it).",
+        "it": "Nella fase 1 mostra la seconda carta pescata: se è Cuori o Quadri ne pesca un'altra (senza mostrarla)."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "calamity-janet",
+      "title": {
+        "en": "Calamity Janet · 4 ♥",
+        "it": "Calamity Janet · 4 ♥"
+      },
+      "body": {
+        "en": "Uses BANG! cards as Missed! and vice versa. A Missed! played as BANG! still counts as her one BANG! for the turn.",
+        "it": "Usa i BANG! come Mancato! e viceversa. Un Mancato! usato come BANG! conta come il suo unico BANG! del turno."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "el-gringo",
+      "title": {
+        "en": "El Gringo · 3 ♥",
+        "it": "El Gringo · 3 ♥"
+      },
+      "body": {
+        "en": "Each time a card played by another player costs him a life point, he draws a random card from that player's hand (one per life point). Not for Dynamite.",
+        "it": "Ogni volta che perde un punto vita per una carta giocata da un altro, pesca una carta a caso dalla sua mano (una per punto vita). Non con la Dinamite."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "jesse-jones",
+      "title": {
+        "en": "Jesse Jones · 4 ♥",
+        "it": "Jesse Jones · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he may draw his first card at random from another player's hand; the second comes from the deck.",
+        "it": "Nella fase 1 può pescare la prima carta a caso dalla mano di un altro giocatore; la seconda dal mazzo."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "jourdonnais",
+      "title": {
+        "en": "Jourdonnais · 4 ♥",
+        "it": "Jourdonnais · 4 ♥"
+      },
+      "body": {
+        "en": "Always has a built-in Barrel; with a real Barrel he gets two Draw! attempts.",
+        "it": "Ha sempre un Barile incorporato; con un Barile vero può estrarre due volte."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "kit-carlson",
+      "title": {
+        "en": "Kit Carlson · 4 ♥",
+        "it": "Kit Carlson · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he looks at the top 3 cards, keeps 2 and puts the other back on top face down.",
+        "it": "Nella fase 1 guarda le prime 3 carte del mazzo, ne tiene 2 e rimette l'altra coperta in cima."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "lucky-duke",
+      "title": {
+        "en": "Lucky Duke · 4 ♥",
+        "it": "Lucky Duke · 4 ♥"
+      },
+      "body": {
+        "en": "Whenever he must Draw!, he flips two cards and chooses the result; both are discarded.",
+        "it": "Quando deve estrarre scopre due carte e sceglie il risultato; le scarta entrambe."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "paul-regret",
+      "title": {
+        "en": "Paul Regret · 3 ♥",
+        "it": "Paul Regret · 3 ♥"
+      },
+      "body": {
+        "en": "Always has a built-in Mustang (others see him at +1); stacks with a real Mustang.",
+        "it": "Ha sempre un Mustang incorporato (gli altri lo vedono a +1); si somma a un Mustang vero."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "pedro-ramirez",
+      "title": {
+        "en": "Pedro Ramirez · 4 ♥",
+        "it": "Pedro Ramirez · 4 ♥"
+      },
+      "body": {
+        "en": "In phase 1 he may take his first card from the top of the discard pile; the second comes from the deck.",
+        "it": "Nella fase 1 può prendere la prima carta dalla cima degli scarti; la seconda dal mazzo."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "rose-doolan",
+      "title": {
+        "en": "Rose Doolan · 4 ♥",
+        "it": "Rose Doolan · 4 ♥"
+      },
+      "body": {
+        "en": "Always has a built-in Scope (sees others at −1); stacks with a real Scope.",
+        "it": "Ha sempre un Mirino incorporato (vede gli altri a −1); si somma a un Mirino vero."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "sid-ketchum",
+      "title": {
+        "en": "Sid Ketchum · 4 ♥",
+        "it": "Sid Ketchum · 4 ♥"
+      },
+      "body": {
+        "en": "At any time — even out of turn — he may discard 2 cards to regain 1 life, as often as he likes.",
+        "it": "In qualsiasi momento, anche fuori turno, può scartare 2 carte per recuperare 1 punto vita, anche più volte."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "slab-the-killer",
+      "title": {
+        "en": "Slab the Killer · 4 ♥",
+        "it": "Slab the Killer · 4 ♥"
+      },
+      "body": {
+        "en": "His BANG! cards need 2 Missed! to cancel; a successful Barrel counts as one. Gatling is not affected.",
+        "it": "Per annullare i suoi BANG! servono 2 Mancato!; un Barile riuscito vale uno. La Gatling non è interessata."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "suzy-lafayette",
+      "title": {
+        "en": "Suzy Lafayette · 4 ♥",
+        "it": "Suzy Lafayette · 4 ♥"
+      },
+      "body": {
+        "en": "As soon as she has no cards in hand, she draws one (after the current card resolves).",
+        "it": "Appena resta senza carte in mano ne pesca una (dopo che la carta in corso si è risolta)."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "vulture-sam",
+      "title": {
+        "en": "Vulture Sam · 4 ♥",
+        "it": "Vulture Sam · 4 ♥"
+      },
+      "body": {
+        "en": "When any character is eliminated, he takes all their cards in hand and in play into his hand.",
+        "it": "Quando un personaggio viene eliminato, prende in mano tutte le sue carte in mano e in gioco."
+      },
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "willy-the-kid",
+      "title": {
+        "en": "Willy the Kid · 4 ♥",
+        "it": "Willy the Kid · 4 ♥"
+      },
+      "body": {
+        "en": "May play any number of BANG! cards on his turn.",
+        "it": "Può giocare quante carte BANG! vuole nel suo turno."
+      },
+      "ruleRefs": ["character-abilities"]
+    }
+  ]
+}

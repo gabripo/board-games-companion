@@ -1,0 +1,491 @@
+{
+  "overview": {
+    "pitch": {
+      "en": "A Wild West shoot-out with secret roles. Everyone knows who the Sheriff is — nobody knows who is on whose side. Shoot, bluff and survive.",
+      "it": "Una sparatoria nel Far West con ruoli segreti. Tutti sanno chi è lo Sceriffo, nessuno sa chi sta con chi. Spara, bluffa e sopravvivi."
+    },
+    "goal": {
+      "en": "Achieve your secret role's goal: protect the Sheriff, kill the Sheriff, or be the last one standing.",
+      "it": "Raggiungi l'obiettivo del tuo ruolo segreto: proteggere lo Sceriffo, ucciderlo, o restare l'ultimo in piedi."
+    },
+    "howToWin": {
+      "en": "Sheriff + Deputies: all Outlaws and the Renegade dead. Outlaws: the Sheriff dead. Renegade: be the sole survivor.",
+      "it": "Sceriffo + Vice: tutti i Fuorilegge e il Rinnegato morti. Fuorilegge: lo Sceriffo morto. Rinnegato: essere l'unico sopravvissuto."
+    }
+  },
+  "coreLoop": {
+    "en": "Draw 2, play cards (one BANG! per turn) to shoot players within reach, then discard down to your life points. Read the table: who shoots whom reveals their role.",
+    "it": "Pesca 2, gioca carte (un solo BANG! per turno) per sparare a chi è a tiro, poi scarta fino ai tuoi punti vita. Osserva il tavolo: chi spara a chi tradisce il suo ruolo."
+  },
+  "misconceptions": [
+    {
+      "id": "hand-limit-seven",
+      "myth": {
+        "en": "You can keep up to 7 cards.",
+        "it": "Puoi tenere fino a 7 carte."
+      },
+      "rule": {
+        "en": "Your hand limit is your current life points.",
+        "it": "Il limite di carte in mano è pari ai tuoi punti vita attuali."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["hand-limit"]
+    },
+    {
+      "id": "weapon-panic",
+      "myth": {
+        "en": "A long-range weapon lets you Panic! farther away.",
+        "it": "Un'arma a lunga gittata ti fa usare Panico! più lontano."
+      },
+      "rule": {
+        "en": "Weapons only affect BANG! cards. Panic! needs distance 1; only Mustang/Scope effects change it.",
+        "it": "Le armi valgono solo per le carte BANG!. Panico! richiede distanza 1, modificabile solo da Mustang/Mirino."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["panic", "weapon-range"]
+    },
+    {
+      "id": "gatling-is-bang",
+      "myth": {
+        "en": "After a Gatling you can't play a BANG!.",
+        "it": "Dopo una Gatling non puoi giocare un BANG!."
+      },
+      "rule": {
+        "en": "Gatling is not a BANG! card: you can still play your one BANG! that turn.",
+        "it": "La Gatling non è una carta BANG!: puoi comunque giocare il tuo BANG! nel turno."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["gatling", "one-bang-per-turn"]
+    },
+    {
+      "id": "saloon-excludes-you",
+      "myth": {
+        "en": "Saloon heals everyone except you.",
+        "it": "Il Saloon cura tutti tranne te."
+      },
+      "rule": {
+        "en": "Saloon heals every living player, you included.",
+        "it": "Il Saloon cura tutti i giocatori in vita, te compreso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["saloon"]
+    },
+    {
+      "id": "mustang-range",
+      "myth": {
+        "en": "A Mustang lets you shoot farther.",
+        "it": "Il Mustang ti fa sparare più lontano."
+      },
+      "rule": {
+        "en": "Mustang makes others see you farther away. To see others closer you need a Scope.",
+        "it": "Il Mustang fa sì che gli altri ti vedano più lontano. Per vedere gli altri più vicini serve il Mirino."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 8
+        }
+      ],
+      "ruleRefs": ["mustang", "scope"]
+    },
+    {
+      "id": "saloon-save",
+      "myth": {
+        "en": "You can play Saloon to survive your last life point.",
+        "it": "Puoi giocare il Saloon per salvarti dall'ultimo punto vita."
+      },
+      "rule": {
+        "en": "Only Beer works out of turn to save you; Saloon is played only in your play phase.",
+        "it": "Solo la Birra si gioca fuori turno per salvarti; il Saloon si gioca solo nella tua fase di gioco."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 6
+        },
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["beer", "saloon"]
+    },
+    {
+      "id": "voluntary-discard",
+      "myth": {
+        "en": "You can discard a card you don't want (like a useless weapon in play).",
+        "it": "Puoi scartare una carta che non ti serve (come un'arma in gioco inutile)."
+      },
+      "rule": {
+        "en": "You can't discard voluntarily; only the end-of-turn discard, replacing a weapon, or Sid Ketchum's ability.",
+        "it": "Non puoi scartare volontariamente; solo lo scarto di fine turno, la sostituzione di un'arma o l'abilità di Sid Ketchum."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["no-voluntary-discard"]
+    }
+  ],
+  "edgeCases": [
+    {
+      "id": "slab-vs-barrel",
+      "question": {
+        "en": "Slab the Killer shoots me and I have a Barrel. What do I need?",
+        "it": "Slab the Killer mi spara e ho un Barile. Cosa mi serve?"
+      },
+      "answer": {
+        "en": "Draw! once: on a Heart you need just one more Missed!, otherwise two. You can't draw twice with one Barrel.",
+        "it": "Estrai una volta: con Cuori ti basta un altro Mancato!, altrimenti te ne servono due. Con un solo Barile non puoi estrarre due volte."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["barrel"]
+    },
+    {
+      "id": "slab-gatling",
+      "question": {
+        "en": "How many Missed! cancel a Gatling played by Slab the Killer?",
+        "it": "Quanti Mancato! servono contro una Gatling di Slab the Killer?"
+      },
+      "answer": {
+        "en": "Just one — his ability only affects BANG! cards.",
+        "it": "Uno solo: la sua abilità vale solo per le carte BANG!."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["gatling"]
+    },
+    {
+      "id": "outlaw-loses-own-duel",
+      "question": {
+        "en": "An Outlaw plays a Duel, loses and dies. Who gets the 3-card reward?",
+        "it": "Un Fuorilegge gioca un Duello, perde e muore. Chi prende le 3 carte?"
+      },
+      "answer": {
+        "en": "Nobody: the card that killed him was played by the Outlaw himself.",
+        "it": "Nessuno: la carta che lo ha eliminato l'ha giocata lui stesso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["outlaw-reward", "duel"]
+    },
+    {
+      "id": "gatling-kill-credit",
+      "question": {
+        "en": "Who gets credit for a kill by Gatling or Indians!?",
+        "it": "A chi va il merito di un'eliminazione con Gatling o Indiani!?"
+      },
+      "answer": {
+        "en": "The player who played the card — they take any reward or penalty. Dynamite kills belong to no one.",
+        "it": "A chi ha giocato la carta: riceve ricompense o penalità. Le morti da Dinamite non sono di nessuno."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["outlaw-reward", "sheriff-kills-deputy"]
+    },
+    {
+      "id": "bang-after-duel",
+      "question": {
+        "en": "I discarded BANG! cards in a Duel. Can I still play a BANG! this turn?",
+        "it": "Ho scartato carte BANG! in un Duello. Posso ancora giocare un BANG! in questo turno?"
+      },
+      "answer": {
+        "en": "Yes: cards discarded in a Duel are not \"played\".",
+        "it": "Sì: le carte scartate in un Duello non sono \"giocate\"."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["duel", "one-bang-per-turn"]
+    },
+    {
+      "id": "jailed-beer",
+      "question": {
+        "en": "Can a jailed player play a Beer?",
+        "it": "Chi è in Prigione può giocare una Birra?"
+      },
+      "answer": {
+        "en": "Only when losing their last life point.",
+        "it": "Solo quando sta perdendo l'ultimo punto vita."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["jail", "beer"]
+    },
+    {
+      "id": "bart-last-life",
+      "question": {
+        "en": "Do Bart Cassidy or El Gringo draw a card when losing their last life point, hoping for a Beer?",
+        "it": "Bart Cassidy o El Gringo pescano una carta quando perdono l'ultimo punto vita, sperando in una Birra?"
+      },
+      "answer": {
+        "en": "No — without a Beer already in hand they die. If Bart saves himself with a Beer from his hand, he then draws for the lost point.",
+        "it": "No: senza una Birra già in mano muoiono. Se Bart si salva con una Birra dalla mano, poi pesca per il punto perso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["beer", "character-abilities"]
+    },
+    {
+      "id": "bart-dynamite",
+      "question": {
+        "en": "Bart Cassidy survives a Dynamite explosion. How many cards does he draw?",
+        "it": "Bart Cassidy sopravvive alla Dinamite. Quante carte pesca?"
+      },
+      "answer": {
+        "en": "Three — one per life point lost.",
+        "it": "Tre, una per ogni punto vita perso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["dynamite", "character-abilities"]
+    },
+    {
+      "id": "vulture-dynamite",
+      "question": {
+        "en": "Dynamite kills a player. Does Vulture Sam also take the Dynamite?",
+        "it": "La Dinamite elimina un giocatore. Vulture Sam prende anche la Dinamite?"
+      },
+      "answer": {
+        "en": "No — it is discarded as part of the explosion, before Sam collects the cards.",
+        "it": "No: viene scartata durante l'esplosione, prima che Sam raccolga le carte."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["dynamite", "character-abilities"]
+    },
+    {
+      "id": "vulture-sheriff-deputy",
+      "question": {
+        "en": "Vulture Sam is the Sheriff and kills a Deputy. What happens to the cards?",
+        "it": "Vulture Sam è lo Sceriffo ed elimina un Vice. Cosa succede alle carte?"
+      },
+      "answer": {
+        "en": "Sam first takes the Deputy's cards, then discards everything — including those.",
+        "it": "Sam prima prende le carte del Vice, poi scarta tutto, comprese quelle."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["sheriff-kills-deputy", "character-abilities"]
+    },
+    {
+      "id": "el-gringo-duel",
+      "question": {
+        "en": "El Gringo plays a Duel and loses. Does he draw from the winner?",
+        "it": "El Gringo gioca un Duello e perde. Pesca dal vincitore?"
+      },
+      "answer": {
+        "en": "No: the card that hurt him was his own.",
+        "it": "No: la carta che lo ha ferito era la sua."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["duel", "character-abilities"]
+    },
+    {
+      "id": "calamity-duel",
+      "question": {
+        "en": "Can Calamity Janet use Missed! cards as BANG! in a Duel?",
+        "it": "Calamity Janet può usare i Mancato! come BANG! in un Duello?"
+      },
+      "answer": {
+        "en": "Yes.",
+        "it": "Sì."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["duel", "character-abilities"]
+    },
+    {
+      "id": "suzy-duel",
+      "question": {
+        "en": "Suzy Lafayette's last card is a Duel. Does she draw before it ends?",
+        "it": "L'ultima carta di Suzy Lafayette è un Duello. Pesca prima che finisca?"
+      },
+      "answer": {
+        "en": "No — she waits until the Duel is over.",
+        "it": "No: aspetta la fine del Duello."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["duel", "one-at-a-time"]
+    },
+    {
+      "id": "sid-out-of-turn",
+      "question": {
+        "en": "Can Sid Ketchum use his ability outside his turn?",
+        "it": "Sid Ketchum può usare l'abilità fuori dal suo turno?"
+      },
+      "answer": {
+        "en": "Yes, at any time — like a Beer.",
+        "it": "Sì, in qualsiasi momento, come una Birra."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 2
+        }
+      ],
+      "ruleRefs": ["character-abilities"]
+    },
+    {
+      "id": "saloon-eliminated",
+      "question": {
+        "en": "If I'm eliminated, does a Saloon bring me back?",
+        "it": "Se sono eliminato, un Saloon mi riporta in gioco?"
+      },
+      "answer": {
+        "en": "No — it only heals players still alive.",
+        "it": "No: cura solo i giocatori ancora in vita."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "faq-en",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["saloon"]
+    },
+    {
+      "id": "all-outlaws-dead-renegade-alive",
+      "question": {
+        "en": "All Outlaws are dead but the Renegade is alive. Is the game over?",
+        "it": "Tutti i Fuorilegge sono morti ma il Rinnegato è vivo. La partita è finita?"
+      },
+      "answer": {
+        "en": "No — the Renegade now faces the Sheriff and Deputies alone.",
+        "it": "No: ora il Rinnegato affronta da solo Sceriffo e Vice."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 4
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 4
+        }
+      ],
+      "ruleRefs": ["game-end"]
+    }
+  ]
+}

@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "table",
+    "title": {
+      "en": "The table and distance",
+      "it": "Il tavolo e la distanza"
+    },
+    "image": {
+      "src": "images/table.webp",
+      "width": 1400,
+      "height": 1220,
+      "alt": {
+        "en": "Six characters around a table; badges show each player's distance from you (gold, bottom)",
+        "it": "Sei personaggi attorno a un tavolo; i numeri indicano la distanza di ciascuno da te (in oro, in basso)"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "seat-a",
+        "label": {
+          "en": "You",
+          "it": "Tu"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.45,
+            "y": 0.6893,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "Your neighbours are at distance 1; count the shorter way round the table.",
+          "it": "I tuoi vicini sono a distanza 1; conta dal lato più corto del tavolo."
+        },
+        "ruleRefs": ["distance", "colt-45"]
+      },
+      {
+        "id": "seat-b",
+        "label": {
+          "en": "Distance 1 from you",
+          "it": "Distanza 1 da te"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.116,
+            "y": 0.5254,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "1 seat away the shorter way round. Reachable with the Colt .45.",
+          "it": "1 posto dal lato più corto. Raggiungibile con la Colt .45."
+        },
+        "ruleRefs": ["distance", "weapon-range"]
+      },
+      {
+        "id": "seat-c",
+        "label": {
+          "en": "Distance 2 from you",
+          "it": "Distanza 2 da te"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.116,
+            "y": 0.1975,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "2 seats away the shorter way round. You need reach 2 (or a Scope) to shoot here.",
+          "it": "2 posti dal lato più corto. Ti serve gittata 2 (o un Mirino) per sparare qui."
+        },
+        "ruleRefs": ["distance", "weapon-range", "scope"]
+      },
+      {
+        "id": "seat-d",
+        "label": {
+          "en": "Distance 3 from you",
+          "it": "Distanza 3 da te"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.45,
+            "y": 0.0336,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "3 seats away the shorter way round. You need reach 3 (or a Scope) to shoot here.",
+          "it": "3 posti dal lato più corto. Ti serve gittata 3 (o un Mirino) per sparare qui."
+        },
+        "ruleRefs": ["distance", "weapon-range", "scope"]
+      },
+      {
+        "id": "seat-e",
+        "label": {
+          "en": "Distance 2 from you",
+          "it": "Distanza 2 da te"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.784,
+            "y": 0.1975,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "2 seats away the shorter way round. You need reach 2 (or a Scope) to shoot here.",
+          "it": "2 posti dal lato più corto. Ti serve gittata 2 (o un Mirino) per sparare qui."
+        },
+        "ruleRefs": ["distance", "weapon-range", "scope"]
+      },
+      {
+        "id": "seat-f",
+        "label": {
+          "en": "Distance 1 from you",
+          "it": "Distanza 1 da te"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.784,
+            "y": 0.5254,
+            "w": 0.1,
+            "h": 0.1787
+          }
+        },
+        "description": {
+          "en": "1 seat away the shorter way round. Reachable with the Colt .45.",
+          "it": "1 posto dal lato più corto. Raggiungibile con la Colt .45."
+        },
+        "ruleRefs": ["distance", "weapon-range"]
+      },
+      {
+        "id": "draw-pile",
+        "label": {
+          "en": "Draw pile",
+          "it": "Mazzo"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4,
+            "y": 0.3279,
+            "w": 0.0943,
+            "h": 0.1631
+          }
+        },
+        "ruleRefs": ["draw-two", "draw-check"]
+      },
+      {
+        "id": "discard-pile",
+        "label": {
+          "en": "Discard pile",
+          "it": "Pila degli scarti"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5143,
+            "y": 0.3279,
+            "w": 0.0857,
+            "h": 0.1533
+          }
+        },
+        "ruleRefs": ["draw-two", "brown-blue"]
+      },
+      {
+        "id": "bullet-pile",
+        "label": {
+          "en": "Bullet pile",
+          "it": "Riserva di pallottole"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4214,
+            "y": 0.5328,
+            "w": 0.1529,
+            "h": 0.0492
+          }
+        },
+        "ruleRefs": ["losing-life", "beer"]
+      }
+    ]
+  },
+  {
+    "id": "player-area",
+    "title": {
+      "en": "Your area",
+      "it": "La tua area"
+    },
+    "image": {
+      "src": "images/player-area.webp",
+      "width": 1400,
+      "height": 820,
+      "alt": {
+        "en": "A Sheriff's area: blue cards in play, role, character, bullets, weapon and hand",
+        "it": "L'area di uno Sceriffo: carte blu in gioco, ruolo, personaggio, pallottole, arma e mano"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "in-play",
+        "label": {
+          "en": "Blue cards in play",
+          "it": "Carte blu in gioco"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2071,
+            "y": 0.0244,
+            "w": 0.4,
+            "h": 0.328
+          }
+        },
+        "description": {
+          "en": "Barrel, Scope and Mustang: they work until removed.",
+          "it": "Barile, Mirino e Mustang: funzionano finché non vengono rimossi."
+        },
+        "ruleRefs": ["brown-blue", "no-duplicates"]
+      },
+      {
+        "id": "role",
+        "label": {
+          "en": "Role card (Sheriff: face up)",
+          "it": "Carta ruolo (Sceriffo: scoperta)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0429,
+            "y": 0.4146,
+            "w": 0.1429,
+            "h": 0.3793
+          }
+        },
+        "ruleRefs": ["sheriff-revealed", "role-goals"]
+      },
+      {
+        "id": "character",
+        "label": {
+          "en": "Character",
+          "it": "Personaggio"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2143,
+            "y": 0.4146,
+            "w": 0.1429,
+            "h": 0.3793
+          }
+        },
+        "description": {
+          "en": "Bart Cassidy: 4 bullets on the card, 5 as Sheriff.",
+          "it": "Bart Cassidy: 4 pallottole sulla carta, 5 da Sceriffo."
+        },
+        "ruleRefs": ["characters-dealt", "character-abilities"]
+      },
+      {
+        "id": "life",
+        "label": {
+          "en": "Bullets (life points)",
+          "it": "Pallottole (punti vita)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3786,
+            "y": 0.4207,
+            "w": 0.0714,
+            "h": 0.3659
+          }
+        },
+        "description": {
+          "en": "5 = 4 + 1 for the Sheriff. Also your hand limit.",
+          "it": "5 = 4 + 1 per lo Sceriffo. Sono anche il tuo limite di carte in mano."
+        },
+        "ruleRefs": ["life-points", "sheriff-extra-life", "losing-life"]
+      },
+      {
+        "id": "weapon",
+        "label": {
+          "en": "Weapon (replaces the Colt .45)",
+          "it": "Arma (sostituisce la Colt .45)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4857,
+            "y": 0.4146,
+            "w": 0.1429,
+            "h": 0.3793
+          }
+        },
+        "description": {
+          "en": "Schofield: reach 2.",
+          "it": "Schofield: gittata 2."
+        },
+        "ruleRefs": ["colt-45", "weapon-range", "one-weapon"]
+      },
+      {
+        "id": "hand",
+        "label": {
+          "en": "Hand",
+          "it": "Mano"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6786,
+            "y": 0.4268,
+            "w": 0.2786,
+            "h": 0.328
+          }
+        },
+        "description": {
+          "en": "Hidden from the others. At the end of your turn keep at most your life points.",
+          "it": "Nascosta agli altri. A fine turno tienine al massimo quanti i tuoi punti vita."
+        },
+        "ruleRefs": ["hand-limit", "play-cards"]
+      }
+    ]
+  },
+  {
+    "id": "card-anatomy",
+    "title": {
+      "en": "Reading a card",
+      "it": "Leggere una carta"
+    },
+    "image": {
+      "src": "images/card-anatomy.webp",
+      "width": 1180,
+      "height": 900,
+      "alt": {
+        "en": "A BANG! card and a Barrel card, enlarged",
+        "it": "Una carta BANG! e una carta Barile, ingrandite"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "brown-card",
+        "label": {
+          "en": "Brown border: play and discard",
+          "it": "Bordo marrone: gioca e scarta"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0508,
+            "y": 0.0667,
+            "w": 0.4237,
+            "h": 0.8644
+          }
+        },
+        "ruleRefs": ["brown-blue"]
+      },
+      {
+        "id": "card-name",
+        "label": {
+          "en": "Card name",
+          "it": "Nome della carta"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0847,
+            "y": 0.084,
+            "w": 0.3559,
+            "h": 0.1037
+          }
+        },
+        "description": {
+          "en": "Italian-edition name; some cards also print the English name below it.",
+          "it": "Nome dell'edizione italiana; alcune carte riportano sotto anche il nome inglese."
+        },
+        "ruleRefs": ["no-duplicates"]
+      },
+      {
+        "id": "effect-symbols",
+        "label": {
+          "en": "Effect symbols",
+          "it": "Simboli dell'effetto"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0932,
+            "y": 0.6718,
+            "w": 0.339,
+            "h": 0.1383
+          }
+        },
+        "description": {
+          "en": "BANG! symbol (remove 1 life) + sight: a player within reach.",
+          "it": "Simbolo BANG! (togli 1 punto vita) + mirino: un giocatore a distanza raggiungibile."
+        },
+        "ruleRefs": ["bang-card", "weapon-range"]
+      },
+      {
+        "id": "suit-value",
+        "label": {
+          "en": "Suit and value (for Draw!)",
+          "it": "Seme e valore (per Estrarre!)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0508,
+            "y": 0.8187,
+            "w": 0.0847,
+            "h": 0.1037
+          }
+        },
+        "description": {
+          "en": "Only matters when the card is flipped for a Draw!.",
+          "it": "Conta solo quando la carta viene scoperta per un'estrazione."
+        },
+        "ruleRefs": ["draw-check"]
+      },
+      {
+        "id": "blue-card",
+        "label": {
+          "en": "Blue border: stays in play",
+          "it": "Bordo blu: resta in gioco"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5254,
+            "y": 0.0667,
+            "w": 0.4237,
+            "h": 0.8644
+          }
+        },
+        "ruleRefs": ["brown-blue", "no-duplicates"]
+      },
+      {
+        "id": "draw-condition",
+        "label": {
+          "en": "Draw! condition",
+          "it": "Condizione di estrazione"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5678,
+            "y": 0.6891,
+            "w": 0.339,
+            "h": 0.121
+          }
+        },
+        "description": {
+          "en": "Heart = Missed!: flip the top card; a Heart cancels the shot.",
+          "it": "Cuori = Mancato!: scopri la prima carta; con Cuori il colpo è annullato."
+        },
+        "ruleRefs": ["barrel", "draw-check"]
+      }
+    ]
+  },
+  {
+    "id": "playing-cards",
+    "title": {
+      "en": "Playing cards",
+      "it": "Carte da gioco"
+    },
+    "image": {
+      "src": "images/playing-cards.webp",
+      "width": 1400,
+      "height": 1396,
+      "alt": {
+        "en": "The 22 different playing cards of the base game",
+        "it": "Le 22 carte da gioco diverse del gioco base"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "bang",
+        "label": {
+          "en": "BANG!",
+          "it": "BANG!"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0286,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Target within reach loses 1 life unless they cancel. (×25 in the deck)",
+          "it": "Il bersaglio entro gittata perde 1 punto vita se non annulla. (×25 nel mazzo)"
+        },
+        "ruleRefs": ["bang-card", "one-bang-per-turn"]
+      },
+      {
+        "id": "missed",
+        "label": {
+          "en": "Missed!",
+          "it": "Mancato!"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1886,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Cancel a BANG! aimed at you. (×12 in the deck)",
+          "it": "Annulla un BANG! diretto a te. (×12 nel mazzo)"
+        },
+        "ruleRefs": ["missed"]
+      },
+      {
+        "id": "beer",
+        "label": {
+          "en": "Beer",
+          "it": "Birra"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3486,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Regain 1 life (not above your maximum). (×6 in the deck)",
+          "it": "Recuperi 1 punto vita (non oltre il massimo). (×6 nel mazzo)"
+        },
+        "ruleRefs": ["beer"]
+      },
+      {
+        "id": "saloon",
+        "label": {
+          "en": "Saloon",
+          "it": "Saloon"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5086,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Every living player, you included, regains 1 life. (×1 in the deck)",
+          "it": "Tutti i giocatori in vita, te compreso, recuperano 1 punto vita. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["saloon"]
+      },
+      {
+        "id": "stagecoach",
+        "label": {
+          "en": "Stagecoach",
+          "it": "Diligenza"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6686,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Draw 2 cards. (×2 in the deck)",
+          "it": "Pesca 2 carte. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["stagecoach-wells-fargo"]
+      },
+      {
+        "id": "wells-fargo",
+        "label": {
+          "en": "Wells Fargo",
+          "it": "Wells Fargo"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8286,
+            "y": 0.0287,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Draw 3 cards. (×1 in the deck)",
+          "it": "Pesca 3 carte. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["stagecoach-wells-fargo"]
+      },
+      {
+        "id": "general-store",
+        "label": {
+          "en": "General Store",
+          "it": "Emporio"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0286,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Reveal 1 card per living player; each picks one, starting with you. (×2 in the deck)",
+          "it": "Scopri 1 carta per giocatore in vita; ognuno ne sceglie una, partendo da te. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["general-store"]
+      },
+      {
+        "id": "panic",
+        "label": {
+          "en": "Panic!",
+          "it": "Panico!"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1886,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Take a card from a player at distance 1. (×4 in the deck)",
+          "it": "Prendi una carta da un giocatore a distanza 1. (×4 nel mazzo)"
+        },
+        "ruleRefs": ["panic", "steal-or-discard-choice"]
+      },
+      {
+        "id": "cat-balou",
+        "label": {
+          "en": "Cat Balou",
+          "it": "Cat Balou"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3486,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Any player discards a card (hand: random · in play: your pick). (×4 in the deck)",
+          "it": "Un giocatore qualsiasi scarta una carta (mano: a caso · in gioco: a tua scelta). (×4 nel mazzo)"
+        },
+        "ruleRefs": ["cat-balou", "steal-or-discard-choice"]
+      },
+      {
+        "id": "gatling",
+        "label": {
+          "en": "Gatling",
+          "it": "Gatling"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5086,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "A BANG! at every other player. (×1 in the deck)",
+          "it": "Un BANG! a tutti gli altri giocatori. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["gatling"]
+      },
+      {
+        "id": "indians",
+        "label": {
+          "en": "Indians!",
+          "it": "Indiani!"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6686,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Every other player discards a BANG! or loses 1 life. (×2 in the deck)",
+          "it": "Ogni altro giocatore scarta un BANG! o perde 1 punto vita. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["indians"]
+      },
+      {
+        "id": "duel",
+        "label": {
+          "en": "Duel",
+          "it": "Duello"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8286,
+            "y": 0.2686,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Alternate discarding BANG! cards with a target; first to stop loses 1 life. (×3 in the deck)",
+          "it": "Scartate a turno carte BANG! con il bersaglio; il primo che smette perde 1 punto vita. (×3 nel mazzo)"
+        },
+        "ruleRefs": ["duel"]
+      },
+      {
+        "id": "barrel",
+        "label": {
+          "en": "Barrel",
+          "it": "Barile"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0286,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "When shot, Draw!: Heart = Missed!. (×2 in the deck)",
+          "it": "Quando ti sparano, estrai: Cuori = Mancato!. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["barrel"]
+      },
+      {
+        "id": "scope",
+        "label": {
+          "en": "Scope",
+          "it": "Mirino"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1886,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "You see others at distance −1. (×1 in the deck)",
+          "it": "Vedi gli altri a distanza −1. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["scope"]
+      },
+      {
+        "id": "mustang",
+        "label": {
+          "en": "Mustang",
+          "it": "Mustang"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3486,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Others see you at distance +1. (×2 in the deck)",
+          "it": "Gli altri ti vedono a distanza +1. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["mustang"]
+      },
+      {
+        "id": "jail",
+        "label": {
+          "en": "Jail",
+          "it": "Prigione"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5086,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Target Draw!s at turn start: Heart escapes, else skips the turn. (×3 in the deck)",
+          "it": "Il bersaglio estrae a inizio turno: Cuori evade, altrimenti salta il turno. (×3 nel mazzo)"
+        },
+        "ruleRefs": ["jail"]
+      },
+      {
+        "id": "dynamite",
+        "label": {
+          "en": "Dynamite",
+          "it": "Dinamite"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6686,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Draw! each turn: 2–9 of Spades = −3 life, else pass left. (×1 in the deck)",
+          "it": "Estrai a ogni turno: 2–9 di Picche = −3 punti vita, altrimenti passa a sinistra. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["dynamite"]
+      },
+      {
+        "id": "volcanic",
+        "label": {
+          "en": "Volcanic",
+          "it": "Volcanic"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8286,
+            "y": 0.5086,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Weapon, reach 1: unlimited BANG! cards. (×2 in the deck)",
+          "it": "Arma, gittata 1: carte BANG! illimitate. (×2 nel mazzo)"
+        },
+        "ruleRefs": ["volcanic"]
+      },
+      {
+        "id": "schofield",
+        "label": {
+          "en": "Schofield",
+          "it": "Schofield"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0286,
+            "y": 0.7486,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Weapon, reach 2. (×3 in the deck)",
+          "it": "Arma, gittata 2. (×3 nel mazzo)"
+        },
+        "ruleRefs": ["weapon-range"]
+      },
+      {
+        "id": "remington",
+        "label": {
+          "en": "Remington",
+          "it": "Remington"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1886,
+            "y": 0.7486,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Weapon, reach 3. (×1 in the deck)",
+          "it": "Arma, gittata 3. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["weapon-range"]
+      },
+      {
+        "id": "rev-carabine",
+        "label": {
+          "en": "Rev. Carabine",
+          "it": "Rev. Carabine"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3486,
+            "y": 0.7486,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Weapon, reach 4. (×1 in the deck)",
+          "it": "Arma, gittata 4. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["weapon-range"]
+      },
+      {
+        "id": "winchester",
+        "label": {
+          "en": "Winchester",
+          "it": "Winchester"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5086,
+            "y": 0.7486,
+            "w": 0.1429,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Weapon, reach 5. (×1 in the deck)",
+          "it": "Arma, gittata 5. (×1 nel mazzo)"
+        },
+        "ruleRefs": ["weapon-range"]
+      }
+    ]
+  },
+  {
+    "id": "characters",
+    "title": {
+      "en": "Characters",
+      "it": "Personaggi"
+    },
+    "image": {
+      "src": "images/characters.webp",
+      "width": 952,
+      "height": 1396,
+      "alt": {
+        "en": "The 16 character cards",
+        "it": "Le 16 carte personaggio"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "bart-cassidy",
+        "label": {
+          "en": "Bart Cassidy · 4 ♥",
+          "it": "Bart Cassidy · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.042,
+            "y": 0.0287,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Each time he loses a life point, he draws a card from the deck.",
+          "it": "Ogni volta che perde un punto vita pesca una carta dal mazzo."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "black-jack",
+        "label": {
+          "en": "Black Jack · 4 ♥",
+          "it": "Black Jack · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2773,
+            "y": 0.0287,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "In phase 1 he shows his second card: on a Heart or Diamond he draws one more (without showing it).",
+          "it": "Nella fase 1 mostra la seconda carta pescata: se è Cuori o Quadri ne pesca un'altra (senza mostrarla)."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "calamity-janet",
+        "label": {
+          "en": "Calamity Janet · 4 ♥",
+          "it": "Calamity Janet · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5126,
+            "y": 0.0287,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Uses BANG! cards as Missed! and vice versa. A Missed! played as BANG! still counts as her one BANG! for the turn.",
+          "it": "Usa i BANG! come Mancato! e viceversa. Un Mancato! usato come BANG! conta come il suo unico BANG! del turno."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "el-gringo",
+        "label": {
+          "en": "El Gringo · 3 ♥",
+          "it": "El Gringo · 3 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7479,
+            "y": 0.0287,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Each time a card played by another player costs him a life point, he draws a random card from that player's hand (one per life point). Not for Dynamite.",
+          "it": "Ogni volta che perde un punto vita per una carta giocata da un altro, pesca una carta a caso dalla sua mano (una per punto vita). Non con la Dinamite."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "jesse-jones",
+        "label": {
+          "en": "Jesse Jones · 4 ♥",
+          "it": "Jesse Jones · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.042,
+            "y": 0.2686,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "In phase 1 he may draw his first card at random from another player's hand; the second comes from the deck.",
+          "it": "Nella fase 1 può pescare la prima carta a caso dalla mano di un altro giocatore; la seconda dal mazzo."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "jourdonnais",
+        "label": {
+          "en": "Jourdonnais · 4 ♥",
+          "it": "Jourdonnais · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2773,
+            "y": 0.2686,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Always has a built-in Barrel; with a real Barrel he gets two Draw! attempts.",
+          "it": "Ha sempre un Barile incorporato; con un Barile vero può estrarre due volte."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "kit-carlson",
+        "label": {
+          "en": "Kit Carlson · 4 ♥",
+          "it": "Kit Carlson · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5126,
+            "y": 0.2686,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "In phase 1 he looks at the top 3 cards, keeps 2 and puts the other back on top face down.",
+          "it": "Nella fase 1 guarda le prime 3 carte del mazzo, ne tiene 2 e rimette l'altra coperta in cima."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "lucky-duke",
+        "label": {
+          "en": "Lucky Duke · 4 ♥",
+          "it": "Lucky Duke · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7479,
+            "y": 0.2686,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Whenever he must Draw!, he flips two cards and chooses the result; both are discarded.",
+          "it": "Quando deve estrarre scopre due carte e sceglie il risultato; le scarta entrambe."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "paul-regret",
+        "label": {
+          "en": "Paul Regret · 3 ♥",
+          "it": "Paul Regret · 3 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.042,
+            "y": 0.5086,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Always has a built-in Mustang (others see him at +1); stacks with a real Mustang.",
+          "it": "Ha sempre un Mustang incorporato (gli altri lo vedono a +1); si somma a un Mustang vero."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "pedro-ramirez",
+        "label": {
+          "en": "Pedro Ramirez · 4 ♥",
+          "it": "Pedro Ramirez · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2773,
+            "y": 0.5086,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "In phase 1 he may take his first card from the top of the discard pile; the second comes from the deck.",
+          "it": "Nella fase 1 può prendere la prima carta dalla cima degli scarti; la seconda dal mazzo."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "rose-doolan",
+        "label": {
+          "en": "Rose Doolan · 4 ♥",
+          "it": "Rose Doolan · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5126,
+            "y": 0.5086,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "Always has a built-in Scope (sees others at −1); stacks with a real Scope.",
+          "it": "Ha sempre un Mirino incorporato (vede gli altri a −1); si somma a un Mirino vero."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "sid-ketchum",
+        "label": {
+          "en": "Sid Ketchum · 4 ♥",
+          "it": "Sid Ketchum · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7479,
+            "y": 0.5086,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "At any time — even out of turn — he may discard 2 cards to regain 1 life, as often as he likes.",
+          "it": "In qualsiasi momento, anche fuori turno, può scartare 2 carte per recuperare 1 punto vita, anche più volte."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "slab-the-killer",
+        "label": {
+          "en": "Slab the Killer · 4 ♥",
+          "it": "Slab the Killer · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.042,
+            "y": 0.7486,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "His BANG! cards need 2 Missed! to cancel; a successful Barrel counts as one. Gatling is not affected.",
+          "it": "Per annullare i suoi BANG! servono 2 Mancato!; un Barile riuscito vale uno. La Gatling non è interessata."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "suzy-lafayette",
+        "label": {
+          "en": "Suzy Lafayette · 4 ♥",
+          "it": "Suzy Lafayette · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2773,
+            "y": 0.7486,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "As soon as she has no cards in hand, she draws one (after the current card resolves).",
+          "it": "Appena resta senza carte in mano ne pesca una (dopo che la carta in corso si è risolta)."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "vulture-sam",
+        "label": {
+          "en": "Vulture Sam · 4 ♥",
+          "it": "Vulture Sam · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5126,
+            "y": 0.7486,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "When any character is eliminated, he takes all their cards in hand and in play into his hand.",
+          "it": "Quando un personaggio viene eliminato, prende in mano tutte le sue carte in mano e in gioco."
+        },
+        "ruleRefs": ["character-abilities"]
+      },
+      {
+        "id": "willy-the-kid",
+        "label": {
+          "en": "Willy the Kid · 4 ♥",
+          "it": "Willy the Kid · 4 ♥"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7479,
+            "y": 0.7486,
+            "w": 0.2101,
+            "h": 0.2228
+          }
+        },
+        "description": {
+          "en": "May play any number of BANG! cards on his turn.",
+          "it": "Può giocare quante carte BANG! vuole nel suo turno."
+        },
+        "ruleRefs": ["character-abilities"]
+      }
+    ]
+  },
+  {
+    "id": "roles",
+    "title": {
+      "en": "Roles",
+      "it": "Ruoli"
+    },
+    "image": {
+      "src": "images/roles.webp",
+      "width": 952,
+      "height": 391,
+      "alt": {
+        "en": "The four role cards",
+        "it": "Le quattro carte ruolo"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "sheriff",
+        "label": {
+          "en": "Sheriff",
+          "it": "Sceriffo"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.042,
+            "y": 0.1023,
+            "w": 0.2101,
+            "h": 0.7954
+          }
+        },
+        "description": {
+          "en": "The only public role. Wins with the Deputies when all Outlaws and the Renegade are dead.",
+          "it": "L'unico ruolo palese. Vince con i Vice quando Fuorilegge e Rinnegato sono tutti eliminati."
+        },
+        "ruleRefs": ["role-goals", "sheriff-revealed", "sheriff-extra-life"]
+      },
+      {
+        "id": "deputy",
+        "label": {
+          "en": "Deputy",
+          "it": "Vice"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2773,
+            "y": 0.1023,
+            "w": 0.2101,
+            "h": 0.7954
+          }
+        },
+        "description": {
+          "en": "Secretly helps the Sheriff and shares the Sheriff's goal.",
+          "it": "Aiuta in segreto lo Sceriffo e ne condivide l'obiettivo."
+        },
+        "ruleRefs": ["role-goals", "sheriff-kills-deputy"]
+      },
+      {
+        "id": "outlaw",
+        "label": {
+          "en": "Outlaw",
+          "it": "Fuorilegge"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5126,
+            "y": 0.1023,
+            "w": 0.2101,
+            "h": 0.7954
+          }
+        },
+        "description": {
+          "en": "Wins if the Sheriff dies. Whoever kills an Outlaw draws 3 cards.",
+          "it": "Vince se lo Sceriffo muore. Chi elimina un Fuorilegge pesca 3 carte."
+        },
+        "ruleRefs": ["role-goals", "outlaw-reward"]
+      },
+      {
+        "id": "renegade",
+        "label": {
+          "en": "Renegade",
+          "it": "Rinnegato"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7479,
+            "y": 0.1023,
+            "w": 0.2101,
+            "h": 0.7954
+          }
+        },
+        "description": {
+          "en": "Wants to be the last character alive — the Sheriff must die last.",
+          "it": "Vuole restare l'ultimo personaggio in gioco: lo Sceriffo deve morire per ultimo."
+        },
+        "ruleRefs": ["role-goals"]
+      }
+    ]
+  }
+]

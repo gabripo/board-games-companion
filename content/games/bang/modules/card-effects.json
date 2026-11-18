@@ -1,0 +1,330 @@
+{
+  "id": "card-effects",
+  "kind": "actions",
+  "title": {
+    "en": "Card effects",
+    "it": "Effetti delle carte"
+  },
+  "actions": [
+    {
+      "id": "bang",
+      "name": {
+        "en": "BANG!",
+        "it": "BANG!"
+      },
+      "effect": {
+        "en": "Target within reach loses 1 life unless they cancel.",
+        "it": "Il bersaglio entro gittata perde 1 punto vita se non annulla."
+      },
+      "limit": {
+        "en": "1 per turn",
+        "it": "1 per turno"
+      },
+      "ruleRefs": ["bang-card", "one-bang-per-turn"]
+    },
+    {
+      "id": "missed",
+      "name": {
+        "en": "Missed!",
+        "it": "Mancato!"
+      },
+      "effect": {
+        "en": "Cancel a BANG! aimed at you.",
+        "it": "Annulla un BANG! diretto a te."
+      },
+      "limit": {
+        "en": "Also out of turn",
+        "it": "Anche fuori turno"
+      },
+      "ruleRefs": ["missed"]
+    },
+    {
+      "id": "beer",
+      "name": {
+        "en": "Beer",
+        "it": "Birra"
+      },
+      "effect": {
+        "en": "Regain 1 life (not above your maximum).",
+        "it": "Recuperi 1 punto vita (non oltre il massimo)."
+      },
+      "limit": {
+        "en": "Out of turn only vs a lethal hit · useless with 2 players left",
+        "it": "Fuori turno solo contro un colpo fatale · inutile con 2 giocatori"
+      },
+      "ruleRefs": ["beer"]
+    },
+    {
+      "id": "saloon",
+      "name": {
+        "en": "Saloon",
+        "it": "Saloon"
+      },
+      "effect": {
+        "en": "Every living player, you included, regains 1 life.",
+        "it": "Tutti i giocatori in vita, te compreso, recuperano 1 punto vita."
+      },
+      "limit": {
+        "en": "Your turn only",
+        "it": "Solo nel tuo turno"
+      },
+      "ruleRefs": ["saloon"]
+    },
+    {
+      "id": "stagecoach",
+      "name": {
+        "en": "Stagecoach",
+        "it": "Diligenza"
+      },
+      "effect": {
+        "en": "Draw 2 cards.",
+        "it": "Pesca 2 carte."
+      },
+      "ruleRefs": ["stagecoach-wells-fargo"]
+    },
+    {
+      "id": "wells-fargo",
+      "name": {
+        "en": "Wells Fargo",
+        "it": "Wells Fargo"
+      },
+      "effect": {
+        "en": "Draw 3 cards.",
+        "it": "Pesca 3 carte."
+      },
+      "ruleRefs": ["stagecoach-wells-fargo"]
+    },
+    {
+      "id": "general-store",
+      "name": {
+        "en": "General Store",
+        "it": "Emporio"
+      },
+      "effect": {
+        "en": "Reveal 1 card per living player; each picks one, starting with you.",
+        "it": "Scopri 1 carta per giocatore in vita; ognuno ne sceglie una, partendo da te."
+      },
+      "ruleRefs": ["general-store"]
+    },
+    {
+      "id": "panic",
+      "name": {
+        "en": "Panic!",
+        "it": "Panico!"
+      },
+      "effect": {
+        "en": "Take a card from a player at distance 1.",
+        "it": "Prendi una carta da un giocatore a distanza 1."
+      },
+      "limit": {
+        "en": "Distance 1 (weapons don't help)",
+        "it": "Distanza 1 (le armi non contano)"
+      },
+      "ruleRefs": ["panic", "steal-or-discard-choice"]
+    },
+    {
+      "id": "cat-balou",
+      "name": {
+        "en": "Cat Balou",
+        "it": "Cat Balou"
+      },
+      "effect": {
+        "en": "Any player discards a card (hand: random · in play: your pick).",
+        "it": "Un giocatore qualsiasi scarta una carta (mano: a caso · in gioco: a tua scelta)."
+      },
+      "limit": {
+        "en": "Any distance",
+        "it": "Qualsiasi distanza"
+      },
+      "ruleRefs": ["cat-balou", "steal-or-discard-choice"]
+    },
+    {
+      "id": "gatling",
+      "name": {
+        "en": "Gatling",
+        "it": "Gatling"
+      },
+      "effect": {
+        "en": "A BANG! at every other player.",
+        "it": "Un BANG! a tutti gli altri giocatori."
+      },
+      "limit": {
+        "en": "Not a BANG! card",
+        "it": "Non è una carta BANG!"
+      },
+      "ruleRefs": ["gatling"]
+    },
+    {
+      "id": "indians",
+      "name": {
+        "en": "Indians!",
+        "it": "Indiani!"
+      },
+      "effect": {
+        "en": "Every other player discards a BANG! or loses 1 life.",
+        "it": "Ogni altro giocatore scarta un BANG! o perde 1 punto vita."
+      },
+      "limit": {
+        "en": "No Missed! or Barrel",
+        "it": "Niente Mancato! né Barile"
+      },
+      "ruleRefs": ["indians"]
+    },
+    {
+      "id": "duel",
+      "name": {
+        "en": "Duel",
+        "it": "Duello"
+      },
+      "effect": {
+        "en": "Alternate discarding BANG! cards with a target; first to stop loses 1 life.",
+        "it": "Scartate a turno carte BANG! con il bersaglio; il primo che smette perde 1 punto vita."
+      },
+      "limit": {
+        "en": "Any distance · no Missed! or Barrel",
+        "it": "Qualsiasi distanza · niente Mancato! né Barile"
+      },
+      "ruleRefs": ["duel"]
+    },
+    {
+      "id": "barrel",
+      "name": {
+        "en": "Barrel",
+        "it": "Barile"
+      },
+      "effect": {
+        "en": "When shot, Draw!: Heart = Missed!.",
+        "it": "Quando ti sparano, estrai: Cuori = Mancato!."
+      },
+      "limit": {
+        "en": "Blue · stays in play",
+        "it": "Blu · resta in gioco"
+      },
+      "ruleRefs": ["barrel"]
+    },
+    {
+      "id": "scope",
+      "name": {
+        "en": "Scope",
+        "it": "Mirino"
+      },
+      "effect": {
+        "en": "You see others at distance −1.",
+        "it": "Vedi gli altri a distanza −1."
+      },
+      "limit": {
+        "en": "Blue · stays in play",
+        "it": "Blu · resta in gioco"
+      },
+      "ruleRefs": ["scope"]
+    },
+    {
+      "id": "mustang",
+      "name": {
+        "en": "Mustang",
+        "it": "Mustang"
+      },
+      "effect": {
+        "en": "Others see you at distance +1.",
+        "it": "Gli altri ti vedono a distanza +1."
+      },
+      "limit": {
+        "en": "Blue · stays in play",
+        "it": "Blu · resta in gioco"
+      },
+      "ruleRefs": ["mustang"]
+    },
+    {
+      "id": "jail",
+      "name": {
+        "en": "Jail",
+        "it": "Prigione"
+      },
+      "effect": {
+        "en": "Target Draw!s at turn start: Heart escapes, else skips the turn.",
+        "it": "Il bersaglio estrae a inizio turno: Cuori evade, altrimenti salta il turno."
+      },
+      "limit": {
+        "en": "Not on the Sheriff",
+        "it": "Non sullo Sceriffo"
+      },
+      "ruleRefs": ["jail"]
+    },
+    {
+      "id": "dynamite",
+      "name": {
+        "en": "Dynamite",
+        "it": "Dinamite"
+      },
+      "effect": {
+        "en": "Draw! each turn: 2–9 of Spades = −3 life, else pass left.",
+        "it": "Estrai a ogni turno: 2–9 di Picche = −3 punti vita, altrimenti passa a sinistra."
+      },
+      "limit": {
+        "en": "Played in front of yourself",
+        "it": "Si gioca davanti a sé"
+      },
+      "ruleRefs": ["dynamite"]
+    },
+    {
+      "id": "volcanic",
+      "name": {
+        "en": "Volcanic",
+        "it": "Volcanic"
+      },
+      "effect": {
+        "en": "Weapon, reach 1: unlimited BANG! cards.",
+        "it": "Arma, gittata 1: carte BANG! illimitate."
+      },
+      "ruleRefs": ["volcanic"]
+    },
+    {
+      "id": "schofield",
+      "name": {
+        "en": "Schofield",
+        "it": "Schofield"
+      },
+      "effect": {
+        "en": "Weapon, reach 2.",
+        "it": "Arma, gittata 2."
+      },
+      "ruleRefs": ["weapon-range"]
+    },
+    {
+      "id": "remington",
+      "name": {
+        "en": "Remington",
+        "it": "Remington"
+      },
+      "effect": {
+        "en": "Weapon, reach 3.",
+        "it": "Arma, gittata 3."
+      },
+      "ruleRefs": ["weapon-range"]
+    },
+    {
+      "id": "rev-carabine",
+      "name": {
+        "en": "Rev. Carabine",
+        "it": "Rev. Carabine"
+      },
+      "effect": {
+        "en": "Weapon, reach 4.",
+        "it": "Arma, gittata 4."
+      },
+      "ruleRefs": ["weapon-range"]
+    },
+    {
+      "id": "winchester",
+      "name": {
+        "en": "Winchester",
+        "it": "Winchester"
+      },
+      "effect": {
+        "en": "Weapon, reach 5.",
+        "it": "Arma, gittata 5."
+      },
+      "ruleRefs": ["weapon-range"]
+    }
+  ]
+}

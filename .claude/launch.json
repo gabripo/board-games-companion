@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web-games",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["VITE_CONTENT=games", "pnpm", "--filter", "@bgc/web", "dev"],
+      "port": 5173
+    }
+  ]
+}

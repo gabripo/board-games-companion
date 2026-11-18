@@ -1,0 +1,316 @@
+{
+  "id": "turn",
+  "kind": "turnOrder",
+  "order": "clockwise",
+  "title": {
+    "en": "A player's turn",
+    "it": "Turno di un giocatore"
+  },
+  "firstPlayer": {
+    "en": "The Sheriff",
+    "it": "Lo Sceriffo"
+  },
+  "actor": "active-player",
+  "ruleRefs": ["turn-phases"],
+  "children": [
+    {
+      "id": "when-shot",
+      "kind": "trigger",
+      "title": {
+        "en": "You are shot",
+        "it": "Ti sparano"
+      },
+      "when": {
+        "en": "A BANG! (or Gatling) targets you — even outside your turn",
+        "it": "Un BANG! (o una Gatling) ti prende di mira, anche fuori dal tuo turno"
+      },
+      "actor": "each-player",
+      "ruleRefs": ["missed", "barrel"],
+      "children": [
+        {
+          "id": "shot-barrel",
+          "kind": "step",
+          "title": {
+            "en": "Barrel? Draw! — Heart = missed",
+            "it": "Barile? Estrai: Cuori = mancato"
+          },
+          "ruleRefs": ["barrel"]
+        },
+        {
+          "id": "shot-missed",
+          "kind": "step",
+          "title": {
+            "en": "Play a Missed! to cancel",
+            "it": "Gioca un Mancato! per annullare"
+          },
+          "ruleRefs": ["missed"]
+        },
+        {
+          "id": "shot-hit",
+          "kind": "step",
+          "title": {
+            "en": "Otherwise lose 1 life point",
+            "it": "Altrimenti perdi 1 punto vita"
+          },
+          "ruleRefs": ["losing-life"]
+        }
+      ]
+    },
+    {
+      "id": "on-last-life",
+      "kind": "trigger",
+      "title": {
+        "en": "Last life point lost",
+        "it": "Ultimo punto vita perso"
+      },
+      "when": {
+        "en": "A player drops to 0 life points",
+        "it": "Un giocatore scende a 0 punti vita"
+      },
+      "actor": "each-player",
+      "ruleRefs": ["elimination"],
+      "children": [
+        {
+          "id": "last-life-beer",
+          "kind": "step",
+          "title": {
+            "en": "Play a Beer now to survive (not with 2 players left)",
+            "it": "Gioca subito una Birra per salvarti (non se restano 2 giocatori)"
+          },
+          "ruleRefs": ["beer"]
+        },
+        {
+          "id": "eliminated",
+          "kind": "step",
+          "title": {
+            "en": "Out: reveal role, discard everything; rewards and penalties",
+            "it": "Eliminato: mostra il ruolo, scarta tutto; ricompense e penalità"
+          },
+          "ruleRefs": ["elimination", "outlaw-reward", "sheriff-kills-deputy"]
+        }
+      ]
+    },
+    {
+      "id": "game-end",
+      "kind": "trigger",
+      "title": {
+        "en": "End of the game",
+        "it": "Fine della partita"
+      },
+      "when": {
+        "en": "The Sheriff dies, or all Outlaws and the Renegade are dead",
+        "it": "Muore lo Sceriffo, oppure sono morti tutti i Fuorilegge e il Rinnegato"
+      },
+      "actor": "game",
+      "ruleRefs": ["game-end"],
+      "children": [
+        {
+          "id": "declare-winners",
+          "kind": "step",
+          "title": {
+            "en": "Reveal roles and declare the winners",
+            "it": "Rivelate i ruoli e proclamate i vincitori"
+          },
+          "ruleRefs": ["game-end"]
+        }
+      ]
+    },
+    {
+      "id": "check-dynamite",
+      "kind": "choice",
+      "title": {
+        "en": "Dynamite in front of you? Draw!",
+        "it": "Hai la Dinamite? Estrai!"
+      },
+      "description": {
+        "en": "Skip if you don't have Dynamite. Check it before Jail.",
+        "it": "Salta se non hai la Dinamite. Va controllata prima della Prigione."
+      },
+      "pick": {
+        "min": 0,
+        "max": 1
+      },
+      "ruleRefs": ["dynamite", "dynamite-before-jail"],
+      "options": [
+        {
+          "id": "dynamite-explodes",
+          "kind": "step",
+          "title": {
+            "en": "2–9 of Spades: it explodes!",
+            "it": "2–9 di Picche: esplode!"
+          },
+          "description": {
+            "en": "Discard the Dynamite and lose 3 life points (Beer can still save you).",
+            "it": "Scarta la Dinamite e perdi 3 punti vita (la Birra può ancora salvarti)."
+          },
+          "ruleRefs": ["dynamite"]
+        },
+        {
+          "id": "dynamite-passes",
+          "kind": "step",
+          "title": {
+            "en": "Anything else: pass it left",
+            "it": "Altro: passala a sinistra"
+          },
+          "description": {
+            "en": "Put the Dynamite in front of the player on your left.",
+            "it": "Metti la Dinamite davanti al giocatore alla tua sinistra."
+          },
+          "ruleRefs": ["dynamite"]
+        }
+      ]
+    },
+    {
+      "id": "check-jail",
+      "kind": "choice",
+      "title": {
+        "en": "In Jail? Draw!",
+        "it": "In Prigione? Estrai!"
+      },
+      "description": {
+        "en": "Skip if you aren't in Jail. The Jail card is discarded either way.",
+        "it": "Salta se non sei in Prigione. La Prigione si scarta in ogni caso."
+      },
+      "pick": {
+        "min": 0,
+        "max": 1
+      },
+      "ruleRefs": ["jail"],
+      "options": [
+        {
+          "id": "jail-escape",
+          "kind": "step",
+          "title": {
+            "en": "Heart: you escape — play normally",
+            "it": "Cuori: evadi e giochi normalmente"
+          },
+          "ruleRefs": ["jail"]
+        },
+        {
+          "id": "jail-stay",
+          "kind": "step",
+          "title": {
+            "en": "Otherwise: skip this turn",
+            "it": "Altrimenti: salti il turno"
+          },
+          "description": {
+            "en": "Your turn is over — move on to the next player.",
+            "it": "Il tuo turno è finito: tocca al giocatore successivo."
+          },
+          "ruleRefs": ["jail"]
+        }
+      ]
+    },
+    {
+      "id": "phase-draw",
+      "kind": "step",
+      "title": {
+        "en": "1 · Draw two cards",
+        "it": "1 · Pesca due carte"
+      },
+      "description": {
+        "en": "Draw the top two cards of the deck. Black Jack, Jesse Jones, Kit Carlson and Pedro Ramirez draw differently.",
+        "it": "Pesca le prime due carte del mazzo. Black Jack, Jesse Jones, Kit Carlson e Pedro Ramirez pescano in modo diverso."
+      },
+      "ruleRefs": ["draw-two"],
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "draw-pile"
+      }
+    },
+    {
+      "id": "phase-play",
+      "kind": "repeat",
+      "title": {
+        "en": "2 · Play cards",
+        "it": "2 · Gioca carte"
+      },
+      "description": {
+        "en": "Play as many cards as you like, one at a time — or none.",
+        "it": "Gioca quante carte vuoi, una alla volta, anche nessuna."
+      },
+      "until": {
+        "en": "You stop playing cards",
+        "it": "Smetti di giocare carte"
+      },
+      "untilRuleRef": "play-cards",
+      "ruleRefs": ["play-cards", "one-at-a-time"],
+      "children": [
+        {
+          "id": "play-card",
+          "kind": "choice",
+          "title": {
+            "en": "Play a card",
+            "it": "Gioca una carta"
+          },
+          "pick": {
+            "min": 0,
+            "max": 1
+          },
+          "options": [
+            {
+              "id": "play-bang",
+              "kind": "step",
+              "title": {
+                "en": "Shoot: BANG!",
+                "it": "Spara: BANG!"
+              },
+              "description": {
+                "en": "Target within your weapon's reach. Only one BANG! card per turn.",
+                "it": "Bersaglio entro la gittata della tua arma. Una sola carta BANG! per turno."
+              },
+              "ruleRefs": ["bang-card", "one-bang-per-turn", "weapon-range"]
+            },
+            {
+              "id": "play-brown",
+              "kind": "step",
+              "title": {
+                "en": "Play a brown card",
+                "it": "Gioca una carta marrone"
+              },
+              "description": {
+                "en": "Beer, Saloon, Stagecoach, Wells Fargo, General Store, Panic!, Cat Balou, Gatling, Indians!, Duel.",
+                "it": "Birra, Saloon, Diligenza, Wells Fargo, Emporio, Panico!, Cat Balou, Gatling, Indiani!, Duello."
+              },
+              "ruleRefs": ["brown-blue", "steal-or-discard-choice"]
+            },
+            {
+              "id": "play-blue",
+              "kind": "step",
+              "title": {
+                "en": "Put a blue card in play",
+                "it": "Metti in gioco una carta blu"
+              },
+              "description": {
+                "en": "Weapon (replaces your current one), Barrel, Scope, Mustang, Dynamite — or Jail on another player.",
+                "it": "Arma (sostituisce quella attuale), Barile, Mirino, Mustang, Dinamite, oppure Prigione su un altro giocatore."
+              },
+              "ruleRefs": ["brown-blue", "no-duplicates", "one-weapon"],
+              "sceneRef": {
+                "sceneId": "player-area",
+                "hotspotId": "in-play"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-discard",
+      "kind": "step",
+      "title": {
+        "en": "3 · Discard excess cards",
+        "it": "3 · Scarta le carte in eccesso"
+      },
+      "description": {
+        "en": "Keep at most as many cards as your current life points.",
+        "it": "Tieni al massimo tante carte quanti sono i tuoi punti vita attuali."
+      },
+      "ruleRefs": ["hand-limit"],
+      "sceneRef": {
+        "sceneId": "player-area",
+        "hotspotId": "hand"
+      }
+    }
+  ]
+}

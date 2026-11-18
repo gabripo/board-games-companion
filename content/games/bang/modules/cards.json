@@ -1,0 +1,254 @@
+{
+  "id": "cards",
+  "kind": "cards",
+  "title": {
+    "en": "Cards",
+    "it": "Carte"
+  },
+  "decks": [
+    {
+      "id": "playing-cards",
+      "name": {
+        "en": "Playing cards",
+        "it": "Carte da gioco"
+      },
+      "count": 80,
+      "composition": [
+        {
+          "id": "bang",
+          "label": {
+            "en": "BANG!",
+            "it": "BANG!"
+          },
+          "count": 25
+        },
+        {
+          "id": "missed",
+          "label": {
+            "en": "Missed!",
+            "it": "Mancato!"
+          },
+          "count": 12
+        },
+        {
+          "id": "beer",
+          "label": {
+            "en": "Beer",
+            "it": "Birra"
+          },
+          "count": 6
+        },
+        {
+          "id": "panic",
+          "label": {
+            "en": "Panic!",
+            "it": "Panico!"
+          },
+          "count": 4
+        },
+        {
+          "id": "cat-balou",
+          "label": {
+            "en": "Cat Balou",
+            "it": "Cat Balou"
+          },
+          "count": 4
+        },
+        {
+          "id": "duel",
+          "label": {
+            "en": "Duel",
+            "it": "Duello"
+          },
+          "count": 3
+        },
+        {
+          "id": "stagecoach",
+          "label": {
+            "en": "Stagecoach",
+            "it": "Diligenza"
+          },
+          "count": 2
+        },
+        {
+          "id": "general-store",
+          "label": {
+            "en": "General Store",
+            "it": "Emporio"
+          },
+          "count": 2
+        },
+        {
+          "id": "indians",
+          "label": {
+            "en": "Indians!",
+            "it": "Indiani!"
+          },
+          "count": 2
+        },
+        {
+          "id": "wells-fargo",
+          "label": {
+            "en": "Wells Fargo",
+            "it": "Wells Fargo"
+          },
+          "count": 1
+        },
+        {
+          "id": "gatling",
+          "label": {
+            "en": "Gatling",
+            "it": "Gatling"
+          },
+          "count": 1
+        },
+        {
+          "id": "saloon",
+          "label": {
+            "en": "Saloon",
+            "it": "Saloon"
+          },
+          "count": 1
+        },
+        {
+          "id": "jail",
+          "label": {
+            "en": "Jail",
+            "it": "Prigione"
+          },
+          "count": 3
+        },
+        {
+          "id": "barrel",
+          "label": {
+            "en": "Barrel",
+            "it": "Barile"
+          },
+          "count": 2
+        },
+        {
+          "id": "mustang",
+          "label": {
+            "en": "Mustang",
+            "it": "Mustang"
+          },
+          "count": 2
+        },
+        {
+          "id": "scope",
+          "label": {
+            "en": "Scope",
+            "it": "Mirino"
+          },
+          "count": 1
+        },
+        {
+          "id": "dynamite",
+          "label": {
+            "en": "Dynamite",
+            "it": "Dinamite"
+          },
+          "count": 1
+        },
+        {
+          "id": "schofield",
+          "label": {
+            "en": "Schofield",
+            "it": "Schofield"
+          },
+          "count": 3
+        },
+        {
+          "id": "volcanic",
+          "label": {
+            "en": "Volcanic",
+            "it": "Volcanic"
+          },
+          "count": 2
+        },
+        {
+          "id": "remington",
+          "label": {
+            "en": "Remington",
+            "it": "Remington"
+          },
+          "count": 1
+        },
+        {
+          "id": "rev-carabine",
+          "label": {
+            "en": "Rev. Carabine",
+            "it": "Rev. Carabine"
+          },
+          "count": 1
+        },
+        {
+          "id": "winchester",
+          "label": {
+            "en": "Winchester",
+            "it": "Winchester"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "name": {
+        "en": "Roles",
+        "it": "Ruoli"
+      },
+      "count": 7,
+      "composition": [
+        {
+          "id": "sheriff",
+          "label": {
+            "en": "Sheriff",
+            "it": "Sceriffo"
+          },
+          "count": 1
+        },
+        {
+          "id": "deputy",
+          "label": {
+            "en": "Deputy",
+            "it": "Vice"
+          },
+          "count": 2
+        },
+        {
+          "id": "outlaw",
+          "label": {
+            "en": "Outlaw",
+            "it": "Fuorilegge"
+          },
+          "count": 3
+        },
+        {
+          "id": "renegade",
+          "label": {
+            "en": "Renegade",
+            "it": "Rinnegato"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "characters",
+      "name": {
+        "en": "Characters",
+        "it": "Personaggi"
+      },
+      "count": 16
+    }
+  ],
+  "handLimit": {
+    "en": "Your current life points (end of your turn)",
+    "it": "I tuoi punti vita attuali (a fine turno)"
+  },
+  "ruleRefs": ["brown-blue", "hand-limit"],
+  "anatomy": {
+    "sceneId": "card-anatomy"
+  }
+}
