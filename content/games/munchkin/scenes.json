@@ -1,0 +1,592 @@
+[
+  {
+    "id": "character",
+    "title": {
+      "en": "Your character",
+      "it": "Il tuo personaggio"
+    },
+    "image": {
+      "src": "images/character.webp",
+      "width": 1400,
+      "height": 1120,
+      "alt": {
+        "en": "Where your Race, Class, Items, Level, Curses and hand go",
+        "it": "Dove vanno Razza, Classe, Oggetti, Livello, Maledizioni e mano"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "headgear",
+        "label": {
+          "en": "Headgear (1)",
+          "it": "Copricapo (1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4357,
+            "y": 0.0357,
+            "w": 0.1286,
+            "h": 0.1339
+          }
+        },
+        "description": {
+          "en": "One equipped at a time.",
+          "it": "Uno solo in uso."
+        },
+        "ruleRefs": ["item-slots"]
+      },
+      {
+        "id": "armor",
+        "label": {
+          "en": "Armor (1)",
+          "it": "Armatura (1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4357,
+            "y": 0.2946,
+            "w": 0.1286,
+            "h": 0.2054
+          }
+        },
+        "description": {
+          "en": "One suit equipped at a time.",
+          "it": "Una sola in uso."
+        },
+        "ruleRefs": ["item-slots"]
+      },
+      {
+        "id": "footgear",
+        "label": {
+          "en": "Footgear (1)",
+          "it": "Calzatura (1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4357,
+            "y": 0.6429,
+            "w": 0.1286,
+            "h": 0.1339
+          }
+        },
+        "description": {
+          "en": "One pair equipped at a time.",
+          "it": "Un paio in uso."
+        },
+        "ruleRefs": ["item-slots"]
+      },
+      {
+        "id": "hand-left",
+        "label": {
+          "en": "1-Hand Item",
+          "it": "Oggetto a una mano"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2357,
+            "y": 0.3036,
+            "w": 0.1286,
+            "h": 0.2054
+          }
+        },
+        "description": {
+          "en": "Two 1-Hand Items, or one 2-Hands Item.",
+          "it": "Due Oggetti a una mano, o uno a due mani."
+        },
+        "ruleRefs": ["item-slots"]
+      },
+      {
+        "id": "hand-right",
+        "label": {
+          "en": "1-Hand Item",
+          "it": "Oggetto a una mano"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6357,
+            "y": 0.3036,
+            "w": 0.1286,
+            "h": 0.2054
+          }
+        },
+        "description": {
+          "en": "Two 1-Hand Items, or one 2-Hands Item.",
+          "it": "Due Oggetti a una mano, o uno a due mani."
+        },
+        "ruleRefs": ["item-slots"]
+      },
+      {
+        "id": "big-item",
+        "label": {
+          "en": "Big Item (only 1)",
+          "it": "Oggetto Grande (solo 1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8071,
+            "y": 0.2946,
+            "w": 0.1429,
+            "h": 0.2232
+          }
+        },
+        "description": {
+          "en": "Dwarves can carry more.",
+          "it": "I Nani possono portarne di più."
+        },
+        "ruleRefs": ["big-items"]
+      },
+      {
+        "id": "race",
+        "label": {
+          "en": "Race",
+          "it": "Razza"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0429,
+            "y": 0.0536,
+            "w": 0.1429,
+            "h": 0.25
+          }
+        },
+        "description": {
+          "en": "No card = Human. Half-Breed allows two.",
+          "it": "Senza carta = Umano. Mezzosangue ne permette due."
+        },
+        "ruleRefs": ["race-class", "super-munchkin"]
+      },
+      {
+        "id": "class",
+        "label": {
+          "en": "Class",
+          "it": "Classe"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0429,
+            "y": 0.3393,
+            "w": 0.1429,
+            "h": 0.25
+          }
+        },
+        "description": {
+          "en": "No card = no class. Super Munchkin allows two.",
+          "it": "Senza carta = senza classe. Super Munchkin ne permette due."
+        },
+        "ruleRefs": ["race-class", "super-munchkin"]
+      },
+      {
+        "id": "level",
+        "label": {
+          "en": "Level (1–10)",
+          "it": "Livello (1–10)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8071,
+            "y": 0.0536,
+            "w": 0.1429,
+            "h": 0.1786
+          }
+        },
+        "description": {
+          "en": "Tokens or a level counter.",
+          "it": "Segnalini o contalivelli."
+        },
+        "ruleRefs": ["levels", "win"]
+      },
+      {
+        "id": "curses",
+        "label": {
+          "en": "Ongoing Curses",
+          "it": "Maledizioni attive"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.8071,
+            "y": 0.5714,
+            "w": 0.1429,
+            "h": 0.1964
+          }
+        },
+        "description": {
+          "en": "Stay here until they take effect.",
+          "it": "Restano qui finché non hanno effetto."
+        },
+        "ruleRefs": ["curses-played"]
+      },
+      {
+        "id": "hand",
+        "label": {
+          "en": "Your hand (max 5 at end of turn)",
+          "it": "La tua mano (max 5 a fine turno)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0429,
+            "y": 0.6518,
+            "w": 0.3286,
+            "h": 0.1786
+          }
+        },
+        "description": {
+          "en": "Not in play: no bonus, but safe.",
+          "it": "Non in gioco: nessun bonus, ma al sicuro."
+        },
+        "ruleRefs": ["in-play-vs-hand", "charity"]
+      }
+    ]
+  },
+  {
+    "id": "table",
+    "title": {
+      "en": "The table",
+      "it": "Il tavolo"
+    },
+    "image": {
+      "src": "images/table.webp",
+      "width": 1400,
+      "height": 860,
+      "alt": {
+        "en": "Door deck and discards, Treasure deck and discards, and the die",
+        "it": "Mazzo e scarti Porta, mazzo e scarti Tesoro, e il dado"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "door-deck",
+        "label": {
+          "en": "Door deck",
+          "it": "Mazzo Porta"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1286,
+            "y": 0.1395,
+            "w": 0.1571,
+            "h": 0.3721
+          }
+        },
+        "description": {
+          "en": "Kick Open The Door and Loot The Room draw from here.",
+          "it": "Aprire la Porta e Svuotare la Stanza pescano da qui."
+        },
+        "ruleRefs": ["kick-open-door", "loot-the-room"]
+      },
+      {
+        "id": "door-discard",
+        "label": {
+          "en": "Door discards (face up)",
+          "it": "Scarti Porta (scoperti)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3143,
+            "y": 0.1395,
+            "w": 0.1571,
+            "h": 0.3721
+          }
+        },
+        "description": {
+          "en": "No peeking; reshuffled when the deck runs out.",
+          "it": "Vietato guardare; si rimescolano quando il mazzo finisce."
+        },
+        "ruleRefs": ["discards"]
+      },
+      {
+        "id": "treasure-deck",
+        "label": {
+          "en": "Treasure deck",
+          "it": "Mazzo Tesoro"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5286,
+            "y": 0.1395,
+            "w": 0.1571,
+            "h": 0.3721
+          }
+        },
+        "description": {
+          "en": "Draw the monster's Treasures from here.",
+          "it": "Da qui si pescano i Tesori del mostro."
+        },
+        "ruleRefs": ["rewards"]
+      },
+      {
+        "id": "treasure-discard",
+        "label": {
+          "en": "Treasure discards (face up)",
+          "it": "Scarti Tesoro (scoperti)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7143,
+            "y": 0.1395,
+            "w": 0.1571,
+            "h": 0.3721
+          }
+        },
+        "description": {
+          "en": "No peeking; reshuffled when the deck runs out.",
+          "it": "Vietato guardare; si rimescolano quando il mazzo finisce."
+        },
+        "ruleRefs": ["discards"]
+      },
+      {
+        "id": "die",
+        "label": {
+          "en": "The die",
+          "it": "Il dado"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4429,
+            "y": 0.6047,
+            "w": 0.1143,
+            "h": 0.186
+          }
+        },
+        "description": {
+          "en": "Run Away on 5 or 6.",
+          "it": "Fuga con 5 o 6."
+        },
+        "ruleRefs": ["run-away"]
+      }
+    ]
+  },
+  {
+    "id": "rulebook-it-p2",
+    "title": {
+      "en": "Rulebook p. 2 (Italian)",
+      "it": "Regolamento p. 2 (IT)"
+    },
+    "image": {
+      "src": "images/rulebook-it-p2.webp",
+      "width": 1100,
+      "height": 1421,
+      "alt": {
+        "en": "Italian rulebook page 2: turn phases and combat",
+        "it": "Pagina 2 del regolamento italiano: fasi di gioco e combattimento"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "phases",
+        "label": {
+          "en": "Turn phases",
+          "it": "Fasi di gioco"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.03,
+            "y": 0.03,
+            "w": 0.46,
+            "h": 0.66
+          }
+        },
+        "ruleRefs": [
+          "turn-phases",
+          "kick-open-door",
+          "look-for-trouble",
+          "loot-the-room",
+          "charity"
+        ]
+      },
+      {
+        "id": "combat",
+        "label": {
+          "en": "Combat",
+          "it": "Combattimento"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.03,
+            "y": 0.69,
+            "w": 0.46,
+            "h": 0.29
+          }
+        },
+        "ruleRefs": ["combat-basics"]
+      },
+      {
+        "id": "combat-2",
+        "label": {
+          "en": "Combat (continued)",
+          "it": "Combattimento (segue)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.03,
+            "w": 0.46,
+            "h": 0.47
+          }
+        },
+        "ruleRefs": ["combat-lock", "wait-2-6-seconds"]
+      },
+      {
+        "id": "multiple",
+        "label": {
+          "en": "Multiple monsters",
+          "it": "Mostri multipli"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.5,
+            "w": 0.46,
+            "h": 0.22
+          }
+        },
+        "ruleRefs": ["multiple-monsters"]
+      },
+      {
+        "id": "help",
+        "label": {
+          "en": "Asking for help",
+          "it": "Chiedere aiuto"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.72,
+            "w": 0.46,
+            "h": 0.26
+          }
+        },
+        "ruleRefs": ["ask-for-help", "helper-reward"]
+      }
+    ]
+  },
+  {
+    "id": "rulebook-en-p2",
+    "title": {
+      "en": "Rulebook p. 2 (English)",
+      "it": "Regolamento p. 2 (EN)"
+    },
+    "image": {
+      "src": "images/rulebook-en-p2.webp",
+      "width": 1100,
+      "height": 1424,
+      "alt": {
+        "en": "English rulebook page 2: when to act, turn phases, combat basics, character stats",
+        "it": "Pagina 2 del regolamento inglese: quando agire, fasi del turno, combattimento, caratteristiche"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "when",
+        "label": {
+          "en": "When you may take actions",
+          "it": "Quando puoi agire"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.03,
+            "y": 0.02,
+            "w": 0.47,
+            "h": 0.38
+          }
+        },
+        "ruleRefs": ["when-to-act"]
+      },
+      {
+        "id": "phases",
+        "label": {
+          "en": "Turn phases",
+          "it": "Fasi del turno"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.03,
+            "y": 0.4,
+            "w": 0.47,
+            "h": 0.58
+          }
+        },
+        "ruleRefs": [
+          "turn-phases",
+          "kick-open-door",
+          "look-for-trouble",
+          "loot-the-room",
+          "charity"
+        ]
+      },
+      {
+        "id": "combat",
+        "label": {
+          "en": "Combat: basic rules",
+          "it": "Combattimento: regole base"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.02,
+            "w": 0.47,
+            "h": 0.15
+          }
+        },
+        "ruleRefs": ["combat-basics"]
+      },
+      {
+        "id": "stats",
+        "label": {
+          "en": "Character stats",
+          "it": "Caratteristiche del personaggio"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.17,
+            "w": 0.47,
+            "h": 0.61
+          }
+        },
+        "ruleRefs": ["levels", "race-class"]
+      },
+      {
+        "id": "super",
+        "label": {
+          "en": "Super Munchkin and Half-Breed",
+          "it": "Super Munchkin e Mezzosangue"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.51,
+            "y": 0.78,
+            "w": 0.47,
+            "h": 0.2
+          }
+        },
+        "ruleRefs": ["super-munchkin"]
+      }
+    ]
+  }
+]

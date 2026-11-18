@@ -1,0 +1,387 @@
+{
+  "id": "turn",
+  "kind": "turnOrder",
+  "order": "clockwise",
+  "actor": "active-player",
+  "title": {
+    "en": "A player's turn",
+    "it": "Turno di un giocatore"
+  },
+  "firstPlayer": {
+    "en": "Agree (or roll the die)",
+    "it": "Mettetevi d'accordo (o tirate il dado)"
+  },
+  "ruleRefs": ["turn-phases"],
+  "children": [
+    {
+      "id": "anyone-anytime",
+      "kind": "trigger",
+      "title": {
+        "en": "Any time, anyone",
+        "it": "Sempre, chiunque"
+      },
+      "when": {
+        "en": "Someone is fighting a monster",
+        "it": "Qualcuno sta combattendo un mostro"
+      },
+      "actor": "all-players",
+      "ruleRefs": ["interfere", "curses-played", "go-up-a-level"],
+      "children": [
+        {
+          "id": "interfere-now",
+          "kind": "step",
+          "title": {
+            "en": "Play one-shots, enhancers, a Wandering Monster or a Curse",
+            "it": "Gioca Uso Singolo, Potenziamenti, un Mostro Errante o una Maledizione"
+          },
+          "ruleRefs": ["interfere", "enhancers", "multiple-monsters"]
+        }
+      ]
+    },
+    {
+      "id": "on-death",
+      "kind": "trigger",
+      "title": {
+        "en": "Someone dies",
+        "it": "Qualcuno muore"
+      },
+      "when": {
+        "en": "A player suffers Bad Stuff that kills them",
+        "it": "Un giocatore subisce Brutte Cose mortali"
+      },
+      "actor": "all-players",
+      "ruleRefs": ["death"],
+      "children": [
+        {
+          "id": "loot-body",
+          "kind": "step",
+          "title": {
+            "en": "Loot the body: highest Level picks first",
+            "it": "Saccheggio del cadavere: sceglie per primo il Livello più alto"
+          },
+          "ruleRefs": ["death", "after-death"]
+        }
+      ]
+    },
+    {
+      "id": "listen-at-door",
+      "kind": "step",
+      "title": {
+        "en": "0 · Listen At The Door",
+        "it": "0 · Ascoltare Rumori alla Porta"
+      },
+      "description": {
+        "en": "Draw a face-down Door card.",
+        "it": "Pesca una carta Porta coperta."
+      },
+      "ruleRefs": ["faster-play"],
+      "conditions": {
+        "variants": ["faster-play"]
+      }
+    },
+    {
+      "id": "arrange",
+      "kind": "step",
+      "title": {
+        "en": "Arrange your cards",
+        "it": "Sistema le tue carte"
+      },
+      "description": {
+        "en": "Play Races, Classes and Items, switch equipped/carried, trade, sell Items for levels.",
+        "it": "Gioca Razze, Classi e Oggetti, cambia in uso/trasportati, scambia, vendi Oggetti per Livelli."
+      },
+      "ruleRefs": ["turn-phases", "sell-items", "item-slots"],
+      "sceneRef": {
+        "sceneId": "character"
+      }
+    },
+    {
+      "id": "kick-door",
+      "kind": "step",
+      "title": {
+        "en": "1 · Kick Open The Door",
+        "it": "1 · Aprire la Porta"
+      },
+      "description": {
+        "en": "Draw the top Door card face up.",
+        "it": "Pesca scoperta la prima carta Porta."
+      },
+      "ruleRefs": ["kick-open-door"],
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "door-deck"
+      }
+    },
+    {
+      "id": "door-card",
+      "kind": "choice",
+      "title": {
+        "en": "What's behind the door?",
+        "it": "Cosa c'è dietro la porta?"
+      },
+      "pick": {
+        "min": 1,
+        "max": 1
+      },
+      "ruleRefs": ["kick-open-door"],
+      "options": [
+        {
+          "id": "door-monster",
+          "kind": "sequence",
+          "title": {
+            "en": "A monster!",
+            "it": "Un mostro!"
+          },
+          "children": [
+            {
+              "id": "combat",
+              "kind": "step",
+              "title": {
+                "en": "Fight: compare combat strengths",
+                "it": "Combatti: confronta le forze di combattimento"
+              },
+              "description": {
+                "en": "Others may interfere; you may ask one player for help.",
+                "it": "Gli altri possono interferire; puoi chiedere aiuto a un giocatore."
+              },
+              "ruleRefs": ["combat-basics", "ask-for-help", "interfere"]
+            },
+            {
+              "id": "outcome",
+              "kind": "choice",
+              "title": {
+                "en": "Who won?",
+                "it": "Chi ha vinto?"
+              },
+              "pick": {
+                "min": 1,
+                "max": 1
+              },
+              "options": [
+                {
+                  "id": "win",
+                  "kind": "step",
+                  "title": {
+                    "en": "You're stronger: kill it",
+                    "it": "Sei più forte: lo uccidi"
+                  },
+                  "description": {
+                    "en": "Wait ~2.6 s, then go up a level and draw its Treasures.",
+                    "it": "Aspetta ~2,6 s, poi avanza di Livello e pesca i suoi Tesori."
+                  },
+                  "ruleRefs": ["wait-2-6-seconds", "rewards", "helper-reward"]
+                },
+                {
+                  "id": "run-away",
+                  "kind": "roll",
+                  "title": {
+                    "en": "Tie or weaker: Run Away",
+                    "it": "Pareggio o più debole: Fuggi"
+                  },
+                  "dieId": "d6",
+                  "count": 1,
+                  "ruleRefs": ["run-away", "run-away-multiple"],
+                  "reroll": {
+                    "en": "Roll once per monster; modifiers from Items, Races and Classes apply.",
+                    "it": "Un tiro per mostro; valgono i modificatori di Oggetti, Razze e Classi."
+                  },
+                  "outcomes": [
+                    {
+                      "label": {
+                        "en": "5–6: you escape (discard the monster)",
+                        "it": "5–6: scappi (scarta il mostro)"
+                      },
+                      "faces": ["5", "6"]
+                    },
+                    {
+                      "label": {
+                        "en": "1–4: Bad Stuff!",
+                        "it": "1–4: Brutte Cose!"
+                      },
+                      "faces": ["1", "2", "3", "4"],
+                      "children": [
+                        {
+                          "id": "bad-stuff",
+                          "kind": "step",
+                          "title": {
+                            "en": "Suffer the monster's Bad Stuff",
+                            "it": "Subisci le Brutte Cose del mostro"
+                          },
+                          "description": {
+                            "en": "It may cost Items, levels — or your life.",
+                            "it": "Possono costarti Oggetti, Livelli o la vita."
+                          },
+                          "ruleRefs": ["run-away", "death"]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "door-curse",
+          "kind": "step",
+          "title": {
+            "en": "A Curse: it hits you",
+            "it": "Una Maledizione: ti colpisce"
+          },
+          "ruleRefs": ["curses-drawn"]
+        },
+        {
+          "id": "door-other",
+          "kind": "sequence",
+          "title": {
+            "en": "Anything else: keep or play it",
+            "it": "Altro: tienila o giocala"
+          },
+          "children": [
+            {
+              "id": "no-monster",
+              "kind": "choice",
+              "title": {
+                "en": "No fight yet: Look For Trouble or Loot The Room",
+                "it": "Nessun combattimento: Cercar Guai o Svuotare la Stanza"
+              },
+              "pick": {
+                "min": 1,
+                "max": 1
+              },
+              "options": [
+                {
+                  "id": "look-for-trouble",
+                  "kind": "sequence",
+                  "title": {
+                    "en": "2 · Look For Trouble",
+                    "it": "2 · Cercar Guai"
+                  },
+                  "ruleRefs": ["look-for-trouble"],
+                  "children": [
+                    {
+                      "id": "trouble-combat",
+                      "kind": "step",
+                      "title": {
+                        "en": "Fight: compare combat strengths",
+                        "it": "Combatti: confronta le forze di combattimento"
+                      },
+                      "description": {
+                        "en": "Others may interfere; you may ask one player for help.",
+                        "it": "Gli altri possono interferire; puoi chiedere aiuto a un giocatore."
+                      },
+                      "ruleRefs": ["combat-basics", "ask-for-help", "interfere"]
+                    },
+                    {
+                      "id": "trouble-outcome",
+                      "kind": "choice",
+                      "title": {
+                        "en": "Who won?",
+                        "it": "Chi ha vinto?"
+                      },
+                      "pick": {
+                        "min": 1,
+                        "max": 1
+                      },
+                      "options": [
+                        {
+                          "id": "trouble-win",
+                          "kind": "step",
+                          "title": {
+                            "en": "You're stronger: kill it",
+                            "it": "Sei più forte: lo uccidi"
+                          },
+                          "description": {
+                            "en": "Wait ~2.6 s, then go up a level and draw its Treasures.",
+                            "it": "Aspetta ~2,6 s, poi avanza di Livello e pesca i suoi Tesori."
+                          },
+                          "ruleRefs": ["wait-2-6-seconds", "rewards", "helper-reward"]
+                        },
+                        {
+                          "id": "trouble-run-away",
+                          "kind": "roll",
+                          "title": {
+                            "en": "Tie or weaker: Run Away",
+                            "it": "Pareggio o più debole: Fuggi"
+                          },
+                          "dieId": "d6",
+                          "count": 1,
+                          "ruleRefs": ["run-away", "run-away-multiple"],
+                          "reroll": {
+                            "en": "Roll once per monster; modifiers from Items, Races and Classes apply.",
+                            "it": "Un tiro per mostro; valgono i modificatori di Oggetti, Razze e Classi."
+                          },
+                          "outcomes": [
+                            {
+                              "label": {
+                                "en": "5–6: you escape (discard the monster)",
+                                "it": "5–6: scappi (scarta il mostro)"
+                              },
+                              "faces": ["5", "6"]
+                            },
+                            {
+                              "label": {
+                                "en": "1–4: Bad Stuff!",
+                                "it": "1–4: Brutte Cose!"
+                              },
+                              "faces": ["1", "2", "3", "4"],
+                              "children": [
+                                {
+                                  "id": "trouble-bad-stuff",
+                                  "kind": "step",
+                                  "title": {
+                                    "en": "Suffer the monster's Bad Stuff",
+                                    "it": "Subisci le Brutte Cose del mostro"
+                                  },
+                                  "description": {
+                                    "en": "It may cost Items, levels — or your life.",
+                                    "it": "Possono costarti Oggetti, Livelli o la vita."
+                                  },
+                                  "ruleRefs": ["run-away", "death"]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "loot-the-room",
+                  "kind": "step",
+                  "title": {
+                    "en": "3 · Loot The Room",
+                    "it": "3 · Svuotare la Stanza"
+                  },
+                  "description": {
+                    "en": "Draw a Door card face down into your hand.",
+                    "it": "Pesca una carta Porta coperta e mettila in mano."
+                  },
+                  "ruleRefs": ["loot-the-room"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charity",
+      "kind": "step",
+      "title": {
+        "en": "4 · Charity",
+        "it": "4 · Carità"
+      },
+      "description": {
+        "en": "More than 5 cards? Play them or give the excess to the lowest Level.",
+        "it": "Più di 5 carte? Giocale o dai l'eccesso al Livello più basso."
+      },
+      "ruleRefs": ["charity"],
+      "sceneRef": {
+        "sceneId": "character",
+        "hotspotId": "hand"
+      }
+    }
+  ]
+}

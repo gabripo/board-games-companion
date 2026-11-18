@@ -1,0 +1,107 @@
+{
+  "id": "races-classes",
+  "kind": "sections",
+  "title": {
+    "en": "Races & Classes",
+    "it": "Razze e Classi"
+  },
+  "ruleRefs": ["race-class"],
+  "sections": [
+    {
+      "id": "human",
+      "title": {
+        "en": "Human",
+        "it": "Umano"
+      },
+      "body": {
+        "en": "No card and no special ability.",
+        "it": "Nessuna carta e nessuna abilità speciale."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "elf",
+      "title": {
+        "en": "Elf",
+        "it": "Elfo"
+      },
+      "body": {
+        "en": "+1 to Run Away; goes up a level for each monster they help someone else kill.",
+        "it": "+1 alla Fuga; avanza di un Livello per ogni mostro che aiuta un altro a uccidere."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "dwarf",
+      "title": {
+        "en": "Dwarf",
+        "it": "Nano"
+      },
+      "body": {
+        "en": "Can carry any number of Big Items and keep 6 cards in hand.",
+        "it": "Può portare qualunque numero di Oggetti Grandi e tenere 6 carte in mano."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "halfling",
+      "title": {
+        "en": "Halfling",
+        "it": "Halfling"
+      },
+      "body": {
+        "en": "Once per turn may sell one Item for double its value; after a failed Run Away roll, may discard a card to roll again.",
+        "it": "Una volta per turno può vendere un Oggetto al doppio del valore; dopo una fuga fallita può scartare una carta per ritirare."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "warrior",
+      "title": {
+        "en": "Warrior",
+        "it": "Guerriero"
+      },
+      "body": {
+        "en": "Berserking: discard up to 3 cards in combat for +1 each. Wins ties.",
+        "it": "Furia combattiva: scarta fino a 3 carte in combattimento per +1 ciascuna. Vince i pareggi."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "wizard",
+      "title": {
+        "en": "Wizard",
+        "it": "Mago"
+      },
+      "body": {
+        "en": "Flight: discard up to 3 cards after rolling to Run Away, +1 each. Charm: discard your whole hand (at least 3) to charm one monster and take its Treasure (no level).",
+        "it": "Volo: dopo il tiro di fuga scarta fino a 3 carte, +1 ciascuna. Ammaliare: scarta tutta la mano (almeno 3) per ammaliare un mostro e prenderne il Tesoro (senza Livello)."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "thief",
+      "title": {
+        "en": "Thief",
+        "it": "Ladro"
+      },
+      "body": {
+        "en": "Backstab: discard a card for −2 to a player in combat (once per victim per combat). Theft: discard a card to try to steal a Small Item; roll 4+ or get caught and lose a level.",
+        "it": "Attacco Furtivo: scarta una carta per dare −2 a un giocatore in combattimento (una volta per vittima per combattimento). Furto: scarta una carta per rubare un Oggetto Piccolo; tira 4+ o vieni scoperto e perdi un Livello."
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "cleric",
+      "title": {
+        "en": "Cleric",
+        "it": "Chierico"
+      },
+      "body": {
+        "en": "Resurrection: when drawing face up, discard one card per draw to take the top discard instead. Turning: discard up to 3 cards against Undead, +3 each.",
+        "it": "Resurrezione: quando peschi scoperto, scarta una carta per prendere invece la prima degli scarti. Scacciare: scarta fino a 3 carte contro i Non Morti, +3 ciascuna."
+      },
+      "ruleRefs": ["race-class"]
+    }
+  ]
+}

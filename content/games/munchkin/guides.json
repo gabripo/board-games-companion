@@ -1,0 +1,355 @@
+{
+  "overview": {
+    "pitch": {
+      "en": "Kick down doors, kill monsters, grab the loot — and stab your friends in the back. A card game parody of dungeon-crawling role-play.",
+      "it": "Sfonda porte, uccidi mostri, arraffa tesori e pugnala i tuoi amici alle spalle. Una parodia a carte dei giochi di ruolo."
+    },
+    "goal": {
+      "en": "Be the first to reach Level 10.",
+      "it": "Sii il primo a raggiungere il Livello 10."
+    },
+    "howToWin": {
+      "en": "Reach Level 10 by killing a monster (selling Items or Go Up a Level can't give you the last level).",
+      "it": "Arriva al Livello 10 uccidendo un mostro (vendere Oggetti o Avanzi di Livello non danno l'ultimo Livello)."
+    }
+  },
+  "coreLoop": {
+    "en": "Open a door, fight what's behind it (or loot), level up with Items and kills, and use every Curse and monster you hold to stop whoever is about to win.",
+    "it": "Apri una porta, combatti ciò che c'è dietro (o svuota la stanza), sali di Livello con Oggetti e uccisioni, e usa ogni Maledizione e mostro che hai per fermare chi sta per vincere."
+  },
+  "misconceptions": [
+    {
+      "id": "ties",
+      "myth": {
+        "en": "Ties go to the player.",
+        "it": "In caso di pareggio vince il giocatore."
+      },
+      "rule": {
+        "en": "Monsters win ties — unless you're a Warrior.",
+        "it": "I mostri vincono i pareggi, a meno che tu non sia un Guerriero."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 2
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["combat-basics"]
+    },
+    {
+      "id": "sell-to-ten",
+      "myth": {
+        "en": "You can sell Items to reach Level 10.",
+        "it": "Puoi vendere Oggetti per arrivare al Livello 10."
+      },
+      "rule": {
+        "en": "Level 10 only comes from killing a monster.",
+        "it": "Il Livello 10 si ottiene solo uccidendo un mostro."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["sell-items", "win"]
+    },
+    {
+      "id": "helper-levels",
+      "myth": {
+        "en": "The helper goes up a level too.",
+        "it": "Anche l'aiutante avanza di Livello."
+      },
+      "rule": {
+        "en": "Only the player who fought gains levels (Elves are the exception).",
+        "it": "Avanza solo chi combatte (gli Elfi sono l'eccezione)."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 3
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 4
+        }
+      ],
+      "ruleRefs": ["helper-reward"]
+    },
+    {
+      "id": "discard-items",
+      "myth": {
+        "en": "You can throw away an Item you don't want.",
+        "it": "Puoi buttare via un Oggetto che non ti serve."
+      },
+      "rule": {
+        "en": "Sell, trade, give or use it to power an ability — no free discards.",
+        "it": "Vendilo, scambialo, regalalo o usalo per un'abilità: niente scarti gratuiti."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 4
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["no-discarding-items"]
+    },
+    {
+      "id": "curse-own-turn",
+      "myth": {
+        "en": "Curses can only be played on your turn.",
+        "it": "Le Maledizioni si giocano solo nel tuo turno."
+      },
+      "rule": {
+        "en": "From your hand, a Curse can hit any player at any time.",
+        "it": "Dalla mano una Maledizione colpisce chiunque in qualunque momento."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        }
+      ],
+      "ruleRefs": ["curses-played"]
+    },
+    {
+      "id": "loot-after-fleeing",
+      "myth": {
+        "en": "After running away you can still loot the room.",
+        "it": "Dopo essere fuggito puoi comunque svuotare la stanza."
+      },
+      "rule": {
+        "en": "Running away means no level, no Treasure and no looting.",
+        "it": "Se fuggi niente Livello, niente Tesori e niente saccheggio."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 3
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        }
+      ],
+      "ruleRefs": ["run-away", "loot-the-room"]
+    },
+    {
+      "id": "equip-in-combat",
+      "myth": {
+        "en": "You can put on a better weapon once the monster shows up.",
+        "it": "Puoi equipaggiare un'arma migliore quando appare il mostro."
+      },
+      "rule": {
+        "en": "Equipment is locked during combat; only one-shots can be played.",
+        "it": "In combattimento l'equipaggiamento è bloccato; si giocano solo Oggetti a Uso Singolo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 2
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["combat-lock"]
+    }
+  ],
+  "edgeCases": [
+    {
+      "id": "next-combat-curse",
+      "question": {
+        "en": "Someone plays a \"your next combat\" Curse on me while I'm fighting. Does it wait?",
+        "it": "Mi giocano una Maledizione \"nel tuo prossimo combattimento\" mentre combatto. Aspetta?"
+      },
+      "answer": {
+        "en": "No — it counts in the current combat.",
+        "it": "No: vale per il combattimento in corso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["curses-played"]
+    },
+    {
+      "id": "remove-one-flee",
+      "question": {
+        "en": "I removed one monster with a card and fled from the other. Do I get its Treasure?",
+        "it": "Ho eliminato un mostro con una carta e sono fuggito dall'altro. Prendo i suoi Tesori?"
+      },
+      "answer": {
+        "en": "No — no Treasure at all.",
+        "it": "No: nessun Tesoro."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 2
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 4
+        }
+      ],
+      "ruleRefs": ["multiple-monsters"]
+    },
+    {
+      "id": "both-run",
+      "question": {
+        "en": "My helper and I still lose. Who runs?",
+        "it": "Io e il mio aiutante perdiamo comunque. Chi fugge?"
+      },
+      "answer": {
+        "en": "Both of you, each rolling separately; the monster can catch you both.",
+        "it": "Entrambi, ognuno tira separatamente; il mostro può prendervi tutti e due."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 3
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        }
+      ],
+      "ruleRefs": ["run-away-multiple"]
+    },
+    {
+      "id": "dwarf-loses-race",
+      "question": {
+        "en": "I lose my Dwarf card while carrying two Big Items.",
+        "it": "Perdo la carta Nano mentre porto due Oggetti Grandi."
+      },
+      "answer": {
+        "en": "Fix it at once: on your turn and out of combat sell the extras; otherwise give them to the lowest-Level player(s) who can carry them, then discard the rest.",
+        "it": "Rimedia subito: nel tuo turno e fuori dal combattimento vendi quelli in più; altrimenti dalli ai giocatori di Livello più basso che possono portarli, poi scarta il resto."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 4
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 3
+        }
+      ],
+      "ruleRefs": ["big-items"]
+    },
+    {
+      "id": "dead-charity",
+      "question": {
+        "en": "Can a dead player receive Charity?",
+        "it": "Un giocatore morto può ricevere la Carità?"
+      },
+      "answer": {
+        "en": "No — dead characters can't receive cards for any reason.",
+        "it": "No: i morti non possono ricevere carte per nessun motivo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 3
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        }
+      ],
+      "ruleRefs": ["after-death", "charity"]
+    },
+    {
+      "id": "empty-deck",
+      "question": {
+        "en": "A deck runs out and its discard pile is empty too.",
+        "it": "Un mazzo finisce e anche i suoi scarti sono vuoti."
+      },
+      "answer": {
+        "en": "In the Italian edition, nobody can draw that type of card any more.",
+        "it": "Nell'edizione italiana nessuno può più pescare carte di quel tipo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 1
+        }
+      ],
+      "ruleRefs": ["discards"]
+    },
+    {
+      "id": "enhance-mate",
+      "question": {
+        "en": "Ancient and Enraged are played on a monster with a Mate.",
+        "it": "Su un mostro con Partner vengono giocati Antico e Infuriato."
+      },
+      "answer": {
+        "en": "Enhancers apply to the Mate too: two Ancient Enraged monsters.",
+        "it": "I potenziamenti valgono anche per il Partner: due mostri Antichi e Infuriati."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-it",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 4
+        }
+      ],
+      "ruleRefs": ["enhancers"]
+    }
+  ]
+}

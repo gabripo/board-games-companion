@@ -1,0 +1,68 @@
+{
+  "id": "die",
+  "kind": "dice",
+  "title": {
+    "en": "The die",
+    "it": "Il dado"
+  },
+  "ruleRefs": ["run-away"],
+  "dice": [
+    {
+      "id": "d6",
+      "name": {
+        "en": "Six-sided die",
+        "it": "Dado a sei facce"
+      },
+      "count": 1,
+      "sides": 6,
+      "faces": [
+        {
+          "id": "1",
+          "value": 1
+        },
+        {
+          "id": "2",
+          "value": 2
+        },
+        {
+          "id": "3",
+          "value": 3
+        },
+        {
+          "id": "4",
+          "value": 4
+        },
+        {
+          "id": "5",
+          "value": 5
+        },
+        {
+          "id": "6",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "rerollPolicy": {
+    "en": "No rerolls, unless a card or ability says so (e.g. Halfling).",
+    "it": "Niente ritiri, a meno che una carta o un'abilità non lo dica (es. Halfling)."
+  },
+  "modifiers": [
+    {
+      "id": "escape",
+      "text": {
+        "en": "Run Away succeeds on 5 or more.",
+        "it": "La fuga riesce con 5 o più."
+      },
+      "ruleRefs": ["run-away"]
+    },
+    {
+      "id": "modifiers",
+      "text": {
+        "en": "Items, Races, Classes and some monsters add or subtract from the roll.",
+        "it": "Oggetti, Razze, Classi e alcuni mostri aggiungono o tolgono al tiro."
+      },
+      "ruleRefs": ["run-away"]
+    }
+  ]
+}

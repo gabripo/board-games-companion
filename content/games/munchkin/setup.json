@@ -1,0 +1,96 @@
+{
+  "areas": [
+    {
+      "id": "table",
+      "name": {
+        "en": "Middle of the table",
+        "it": "Centro del tavolo"
+      }
+    },
+    {
+      "id": "players",
+      "name": {
+        "en": "Each player",
+        "it": "Ogni giocatore"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "split",
+      "areaId": "table",
+      "text": {
+        "en": "Split the cards into the Door deck and the Treasure deck and shuffle both. Leave room for two face-up discard piles.",
+        "it": "Dividi le carte nel mazzo Porta e nel mazzo Tesoro e mescolali. Lascia spazio per due pile degli scarti scoperte."
+      },
+      "components": ["door-cards", "treasure-cards"],
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "door-deck"
+      },
+      "ruleRefs": ["setup-decks", "discards"]
+    },
+    {
+      "id": "die",
+      "areaId": "table",
+      "text": {
+        "en": "Put the die where everyone can reach it.",
+        "it": "Metti il dado dove tutti possano prenderlo."
+      },
+      "components": ["die"],
+      "sceneRef": {
+        "sceneId": "table",
+        "hotspotId": "die"
+      }
+    },
+    {
+      "id": "tokens",
+      "areaId": "players",
+      "text": {
+        "en": "Each player takes 10 tokens (or a level counter) and starts at Level 1.",
+        "it": "Ogni giocatore prende 10 segnalini (o un contalivelli) e parte dal Livello 1."
+      },
+      "components": ["level-tokens"],
+      "sceneRef": {
+        "sceneId": "character",
+        "hotspotId": "level"
+      },
+      "ruleRefs": ["setup-decks"]
+    },
+    {
+      "id": "deal",
+      "areaId": "players",
+      "text": {
+        "en": "Deal each player 4 Door cards and 4 Treasure cards.",
+        "it": "Dai a ogni giocatore 4 carte Porta e 4 carte Tesoro."
+      },
+      "components": ["door-cards", "treasure-cards"],
+      "sceneRef": {
+        "sceneId": "character",
+        "hotspotId": "hand"
+      },
+      "ruleRefs": ["setup-decks"]
+    },
+    {
+      "id": "create",
+      "areaId": "players",
+      "text": {
+        "en": "Look at your 8 cards: you may play one Race, one Class and any usable Items in front of you.",
+        "it": "Guarda le tue 8 carte: puoi giocare davanti a te una Razza, una Classe e gli Oggetti utilizzabili."
+      },
+      "sceneRef": {
+        "sceneId": "character"
+      },
+      "ruleRefs": ["character-creation"]
+    },
+    {
+      "id": "first",
+      "areaId": "players",
+      "text": {
+        "en": "Decide who goes first; play passes to the left.",
+        "it": "Decidete chi inizia; si procede verso sinistra."
+      },
+      "ruleRefs": ["first-player"]
+    }
+  ]
+}

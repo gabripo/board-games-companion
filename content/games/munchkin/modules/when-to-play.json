@@ -1,0 +1,203 @@
+{
+  "id": "when-to-play",
+  "kind": "actions",
+  "title": {
+    "en": "When can I…?",
+    "it": "Quando posso…?"
+  },
+  "ruleRefs": ["when-to-act"],
+  "actions": [
+    {
+      "id": "discard-race-class",
+      "name": {
+        "en": "Discard a Race or Class",
+        "it": "Scartare una Razza o Classe"
+      },
+      "effect": {
+        "en": "Become Human / classless.",
+        "it": "Torni Umano / senza classe."
+      },
+      "limit": {
+        "en": "Any time, even in combat",
+        "it": "Sempre, anche in combattimento"
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "play-go-up-level",
+      "name": {
+        "en": "Play Go Up a Level",
+        "it": "Giocare Avanzi di Livello"
+      },
+      "effect": {
+        "en": "Any player goes up a level.",
+        "it": "Un giocatore qualsiasi avanza di Livello."
+      },
+      "limit": {
+        "en": "Any time · never the winning level",
+        "it": "Sempre · mai il Livello vincente"
+      },
+      "ruleRefs": ["go-up-a-level"]
+    },
+    {
+      "id": "play-curse",
+      "name": {
+        "en": "Play a Curse from hand",
+        "it": "Giocare una Maledizione dalla mano"
+      },
+      "effect": {
+        "en": "On any player.",
+        "it": "Su qualunque giocatore."
+      },
+      "limit": {
+        "en": "Any time",
+        "it": "Sempre"
+      },
+      "ruleRefs": ["curses-played"]
+    },
+    {
+      "id": "trade",
+      "name": {
+        "en": "Trade Items",
+        "it": "Scambiare Oggetti"
+      },
+      "effect": {
+        "en": "Items from the table only.",
+        "it": "Solo Oggetti dal tavolo."
+      },
+      "limit": {
+        "en": "Not in combat (both players)",
+        "it": "Non in combattimento (entrambi)"
+      },
+      "ruleRefs": ["trading"]
+    },
+    {
+      "id": "change-equipped",
+      "name": {
+        "en": "Change equipped Items",
+        "it": "Cambiare gli Oggetti in uso"
+      },
+      "effect": {
+        "en": "Turn cards sideways or upright.",
+        "it": "Gira le carte di lato o dritte."
+      },
+      "limit": {
+        "en": "Not in combat or while fleeing",
+        "it": "Non in combattimento o durante la fuga"
+      },
+      "ruleRefs": ["item-slots"]
+    },
+    {
+      "id": "play-race-class",
+      "name": {
+        "en": "Play a Race or Class",
+        "it": "Giocare una Razza o Classe"
+      },
+      "effect": {
+        "en": "Gain its abilities.",
+        "it": "Ne ottieni le abilità."
+      },
+      "limit": {
+        "en": "When you get it, or on your turn",
+        "it": "Quando la ottieni o nel tuo turno"
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "sell",
+      "name": {
+        "en": "Sell Items for levels",
+        "it": "Vendere Oggetti per Livelli"
+      },
+      "effect": {
+        "en": "Every 1,000 Gold Pieces = 1 level.",
+        "it": "Ogni 1000 Pezzi d'Oro = 1 Livello."
+      },
+      "limit": {
+        "en": "Your turn, not in combat · not to Level 10",
+        "it": "Tuo turno, non in combattimento · non al 10"
+      },
+      "ruleRefs": ["sell-items"]
+    },
+    {
+      "id": "play-item",
+      "name": {
+        "en": "Play an Item",
+        "it": "Giocare un Oggetto"
+      },
+      "effect": {
+        "en": "Put it in front of you.",
+        "it": "Mettilo davanti a te."
+      },
+      "limit": {
+        "en": "When you get it or on your turn, not in combat",
+        "it": "Quando lo ottieni o nel tuo turno, non in combattimento"
+      },
+      "ruleRefs": ["item-slots"]
+    },
+    {
+      "id": "one-shot",
+      "name": {
+        "en": "Use a one-shot",
+        "it": "Usare un Oggetto a Uso Singolo"
+      },
+      "effect": {
+        "en": "For or against anyone in the fight.",
+        "it": "A favore o contro chiunque nel combattimento."
+      },
+      "limit": {
+        "en": "Any combat, from hand or table",
+        "it": "Qualsiasi combattimento, dalla mano o dal tavolo"
+      },
+      "ruleRefs": ["one-shots"]
+    },
+    {
+      "id": "enhance",
+      "name": {
+        "en": "Play a monster enhancer",
+        "it": "Giocare un Potenziamento per Mostri"
+      },
+      "effect": {
+        "en": "Stronger monster, more Treasure.",
+        "it": "Mostro più forte, più Tesori."
+      },
+      "limit": {
+        "en": "Any combat",
+        "it": "Qualsiasi combattimento"
+      },
+      "ruleRefs": ["enhancers"]
+    },
+    {
+      "id": "wandering",
+      "name": {
+        "en": "Wandering Monster",
+        "it": "Mostro Errante"
+      },
+      "effect": {
+        "en": "Add a monster from your hand to the fight.",
+        "it": "Aggiungi un mostro dalla tua mano al combattimento."
+      },
+      "limit": {
+        "en": "Any combat",
+        "it": "Qualsiasi combattimento"
+      },
+      "ruleRefs": ["multiple-monsters"]
+    },
+    {
+      "id": "ask-help",
+      "name": {
+        "en": "Ask for help",
+        "it": "Chiedere aiuto"
+      },
+      "effect": {
+        "en": "One helper adds their strength.",
+        "it": "Un aiutante somma la sua forza."
+      },
+      "limit": {
+        "en": "Your combat",
+        "it": "Il tuo combattimento"
+      },
+      "ruleRefs": ["ask-for-help"]
+    }
+  ]
+}

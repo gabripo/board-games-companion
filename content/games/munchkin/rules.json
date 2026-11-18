@@ -1,0 +1,1191 @@
+[
+  {
+    "id": "setup-decks",
+    "topics": ["setup"],
+    "summary": {
+      "en": "Split the cards into the Door and Treasure decks, shuffle both and deal each player 4 cards from each.",
+      "it": "Dividi le carte nel mazzo Porta e nel mazzo Tesoro, mescolali e dai a ogni giocatore 4 carte da ciascuno."
+    },
+    "detail": {
+      "en": "3–6 players; each needs 10 tokens (or anything that counts to 10) for their Level.",
+      "it": "Da 3 a 6 giocatori; ognuno ha bisogno di 10 segnalini (o qualunque cosa conti fino a 10) per il Livello."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "components": ["door-cards", "treasure-cards", "level-tokens"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "table"
+      }
+    ]
+  },
+  {
+    "id": "discards",
+    "topics": ["cards"],
+    "summary": {
+      "en": "Each deck has its own face-up discard pile. You can't look through discards unless a card lets you; when a deck runs out, reshuffle its discards.",
+      "it": "Ogni mazzo ha la sua pila degli scarti scoperta. Non puoi guardare gli scarti se una carta non lo permette; quando un mazzo finisce, rimescola i suoi scarti."
+    },
+    "detail": {
+      "en": "Italian edition: if a deck runs out with no discards, nobody can draw that type of card any more.",
+      "it": "Edizione italiana: se un mazzo finisce senza scarti, nessuno può più pescare carte di quel tipo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "door-discard"
+      }
+    ]
+  },
+  {
+    "id": "in-play-vs-hand",
+    "topics": ["cards"],
+    "summary": {
+      "en": "Cards in front of you are in play and public; cards in your hand don't help you but can only be taken by cards that affect \"your hand\". Cards in play never go back to your hand.",
+      "it": "Le carte davanti a te sono in gioco e pubbliche; quelle in mano non ti aiutano ma possono essere prese solo da carte che agiscono sulla \"tua mano\". Le carte in gioco non tornano mai in mano."
+    },
+    "detail": {
+      "en": "You may show your hand to others. Like anyone could stop you.",
+      "it": "Puoi mostrare la tua mano agli altri. Come se qualcuno potesse impedirtelo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "hand"
+      }
+    ]
+  },
+  {
+    "id": "character-creation",
+    "topics": ["setup", "races-classes"],
+    "summary": {
+      "en": "Everyone starts at Level 1 as a Human with no Class. From your 8 starting cards you may play one Race, one Class and any usable Items in front of you.",
+      "it": "Tutti iniziano al Livello 1, Umani e senza Classe. Dalle tue 8 carte iniziali puoi giocare davanti a te una Razza, una Classe e gli Oggetti utilizzabili."
+    },
+    "detail": {
+      "en": "Your character's sex starts as your own unless you say otherwise.",
+      "it": "Il sesso del personaggio è inizialmente quello del giocatore."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character"
+      }
+    ]
+  },
+  {
+    "id": "first-player",
+    "topics": ["setup", "turn"],
+    "summary": {
+      "en": "Agree on who starts (the English rules say: roll the die and argue). Play goes to the left.",
+      "it": "Decidete chi inizia mettendovi d'accordo (le regole inglesi dicono: tirate il dado e litigate). Si procede verso sinistra."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "win",
+    "topics": ["victory", "levels"],
+    "summary": {
+      "en": "The first player to reach Level 10 wins — and Level 10 must come from killing a monster, unless a card specifically says otherwise.",
+      "it": "Vince il primo che raggiunge il Livello 10, che va raggiunto uccidendo un mostro, a meno che una carta non dica specificatamente altro."
+    },
+    "detail": {
+      "en": "You can't sell Items or play Go Up a Level to reach Level 10.",
+      "it": "Non puoi vendere Oggetti né giocare Avanzi di Livello per arrivare al Livello 10."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "level"
+      }
+    ]
+  },
+  {
+    "id": "golden-rules",
+    "topics": ["cards", "levels"],
+    "summary": {
+      "en": "Cards beat the rulesheet, except these four: nothing takes a player below Level 1; you only gain a level after combat by killing a monster; no rewards in the middle of a combat; Level 10 only by killing a monster.",
+      "it": "Le carte prevalgono sul regolamento, tranne queste quattro regole: nulla porta un giocatore sotto il Livello 1; avanzi dopo un combattimento solo uccidendo un mostro; niente ricompense a metà combattimento; il Livello 10 solo uccidendo un mostro."
+    },
+    "detail": {
+      "en": "Combat strength can still go below 1. Everything else: loud arguments, owner of the game decides.",
+      "it": "La forza di combattimento può comunque scendere sotto 1. Per il resto: litigi rumorosi, decide il padrone del gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "turn-phases",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Turn: arrange your cards, then (1) Kick Open The Door, (2) Look For Trouble, (3) Loot The Room, (4) Charity.",
+      "it": "Turno: sistema le tue carte, poi (1) Aprire la Porta, (2) Cercar Guai, (3) Svuotare la Stanza, (4) Carità."
+    },
+    "detail": {
+      "en": "Before phase 1 you may play cards, switch Items between equipped and carried, trade and sell Items.",
+      "it": "Prima della fase 1 puoi giocare carte, passare Oggetti da \"in uso\" a \"trasportati\" e viceversa, scambiare e vendere Oggetti."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["turn", "arrange"]
+    },
+    "conflicts": [
+      {
+        "claim": {
+          "en": "The English rules (v1.8) list 3 phases: Look For Trouble and Loot The Room are one phase, where you choose one of the two.",
+          "it": "Le regole inglesi (v1.8) elencano 3 fasi: Cercar Guai e Svuotare la Stanza sono un'unica fase in cui scegli una delle due."
+        },
+        "citation": {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 2
+        },
+        "resolution": {
+          "en": "Same game either way: if no monster came through the door you either fight one from your hand or loot — never both.",
+          "it": "Il gioco è lo stesso: se dalla porta non è uscito un mostro, o ne combatti uno dalla tua mano o svuoti la stanza, mai entrambe."
+        }
+      }
+    ]
+  },
+  {
+    "id": "kick-open-door",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Phase 1: draw the top Door card face up. A monster: fight it now. A Curse: it hits you at once (if it can) and is discarded. Anything else: keep it in hand or play it right away.",
+      "it": "Fase 1: pesca scoperta la prima carta Porta. Un mostro: combattilo subito. Una Maledizione: ti colpisce subito (se possibile) e si scarta. Altro: tienila in mano o giocala subito."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["kick-door"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "door-deck"
+      }
+    ]
+  },
+  {
+    "id": "look-for-trouble",
+    "topics": ["turn", "monsters"],
+    "summary": {
+      "en": "Phase 2: if no monster came through the door, you may play a monster from your hand and fight it.",
+      "it": "Fase 2: se dalla porta non è uscito un mostro, puoi giocare un mostro dalla tua mano e combatterlo."
+    },
+    "detail": {
+      "en": "Don't pick a fight you can't win unless you're sure someone will help.",
+      "it": "Non scegliere un mostro che non puoi battere, a meno che tu non sia sicuro di avere aiuto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["look-for-trouble"]
+    }
+  },
+  {
+    "id": "loot-the-room",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Phase 3: if you met no monster and didn't Look For Trouble, draw a second Door card face down into your hand.",
+      "it": "Fase 3: se non hai incontrato mostri e non hai Cercato Guai, pesca una seconda carta Porta coperta e mettila in mano."
+    },
+    "detail": {
+      "en": "If you ran away from a monster you get no Treasure and can't loot.",
+      "it": "Se sei fuggito da un mostro non ricevi Tesori e non puoi svuotare la stanza."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["loot-the-room"]
+    }
+  },
+  {
+    "id": "charity",
+    "topics": ["turn", "cards"],
+    "summary": {
+      "en": "Phase 4: if you have more than 5 cards in hand, play cards or give the excess to the lowest-Level player (split evenly if tied; you choose who gets more). If you are the lowest, discard the excess.",
+      "it": "Fase 4: se hai più di 5 carte in mano, giocane o dai quelle in eccesso al giocatore di Livello più basso (divise equamente in caso di parità; scegli tu chi ne prende di più). Se il più basso sei tu, scartale."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["charity"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "hand"
+      }
+    ]
+  },
+  {
+    "id": "when-to-act",
+    "topics": ["turn", "cards"],
+    "summary": {
+      "en": "Any time: discard a Race or Class, play Go Up a Level, play a Curse. Any time except in combat: trade Items, change what you have equipped. On your turn: play Race/Class cards, sell Items, play Items (one-shots also in combat).",
+      "it": "In qualunque momento: scartare Razza o Classe, giocare Avanzi di Livello, giocare Maledizioni. Sempre tranne in combattimento: scambiare Oggetti, cambiare quelli in uso. Nel tuo turno: giocare Razze/Classi, vendere Oggetti, giocare Oggetti (quelli a Uso Singolo anche in combattimento)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "modules": ["when-to-play"]
+    }
+  },
+  {
+    "id": "combat-basics",
+    "topics": ["combat"],
+    "summary": {
+      "en": "Compare your combat strength (Level + all bonuses and penalties) with the monster's. Higher than the monster: you kill it, go up a level (two for some monsters) and draw its Treasures. Equal or lower: the monster wins and you must Run Away.",
+      "it": "Confronta la tua forza di combattimento (Livello + tutti i bonus e le penalità) con quella del mostro. Superiore: lo uccidi, avanzi di Livello (due per alcuni mostri) e peschi i suoi Tesori. Pari o inferiore: vince il mostro e devi Fuggire."
+    },
+    "detail": {
+      "en": "Monsters win ties (Warriors are the exception).",
+      "it": "I mostri vincono i pareggi (i Guerrieri sono l'eccezione)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["combat", "trouble-combat"]
+    }
+  },
+  {
+    "id": "defeat-without-killing",
+    "topics": ["combat"],
+    "summary": {
+      "en": "Getting rid of a monster without killing it (a card, a Race or Class power) is a win, but you get no level — and maybe no Treasure.",
+      "it": "Liberarti di un mostro senza ucciderlo (con una carta o un potere di Razza o Classe) è una vittoria, ma non avanzi di Livello e forse non ricevi Tesori."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "combat-lock",
+    "topics": ["combat", "items"],
+    "summary": {
+      "en": "In combat you can't sell, steal, equip, unequip or trade Items, or play Items from your hand except one-shots. You fight with your gear as it is.",
+      "it": "In combattimento non puoi vendere, rubare, mettere o togliere dall'equipaggiamento o scambiare Oggetti, né giocare Oggetti dalla mano tranne quelli a Uso Singolo. Combatti con l'equipaggiamento così com'è."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "wait-2-6-seconds",
+    "topics": ["combat"],
+    "summary": {
+      "en": "After you win, wait a reasonable time (about 2.6 seconds) for anyone to play something. Then you really killed it and collect level and Treasures.",
+      "it": "Dopo aver vinto, aspetta un tempo ragionevole (circa 2,6 secondi) perché gli altri possano intervenire. Poi l'hai davvero ucciso e prendi Livello e Tesori."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["win", "trouble-win"]
+    }
+  },
+  {
+    "id": "rewards",
+    "topics": ["combat"],
+    "summary": {
+      "en": "Draw the Treasures shown on the monster (plus any from enhancers): face down if you won alone, face up if someone helped.",
+      "it": "Pesca i Tesori indicati sul mostro (più quelli dei potenziamenti): coperti se hai vinto da solo, scoperti se qualcuno ti ha aiutato."
+    },
+    "detail": {
+      "en": "Treasure cards can be played as soon as you get them, even as the helper.",
+      "it": "Le carte Tesoro si possono giocare appena le ottieni, anche se sei l'aiutante."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "treasure-deck"
+      }
+    ]
+  },
+  {
+    "id": "multiple-monsters",
+    "topics": ["combat", "monsters"],
+    "summary": {
+      "en": "With several monsters (e.g. Wandering Monster) you must beat their combined strength. You may remove one with a card and fight the rest, but you can't fight one and flee the others.",
+      "it": "Con più mostri (ad es. Mostro Errante) devi superare la loro forza combinata. Puoi eliminarne uno con una carta e combattere gli altri, ma non combatterne uno e fuggire dagli altri."
+    },
+    "detail": {
+      "en": "If you remove one and then run from the rest, you get no Treasure at all.",
+      "it": "Se ne elimini uno e poi fuggi dagli altri, non ottieni alcun Tesoro."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "enhancers",
+    "topics": ["monsters", "combat"],
+    "summary": {
+      "en": "Monster enhancers raise (or lower) one monster's strength and its Treasures; anyone can play them in any combat. With several monsters, whoever plays one picks the monster.",
+      "it": "I Potenziamenti per i Mostri alzano (o abbassano) forza e Tesori di un mostro; chiunque li gioca in qualsiasi combattimento. Con più mostri, chi lo gioca sceglie il mostro."
+    },
+    "detail": {
+      "en": "Anything that enhances a monster also enhances its Mate: Ancient + Enraged + Mate = two Ancient Enraged monsters.",
+      "it": "Qualunque potenziamento vale anche per il Partner: Antico + Infuriato + Partner = due mostri Antichi e Infuriati."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "undead",
+    "topics": ["monsters", "help"],
+    "summary": {
+      "en": "When you fight an Undead monster, the others can add any Undead from their hand to the fight, without a Wandering Monster.",
+      "it": "Quando affronti un Non Morto, gli altri possono aggiungere al combattimento qualunque Non Morto abbiano in mano, senza Mostro Errante."
+    },
+    "detail": {
+      "en": "A card that makes a monster Undead also lets you use this rule.",
+      "it": "Una carta che rende Non Morto un mostro permette di usare questa regola."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ask-for-help",
+    "topics": ["help", "combat"],
+    "summary": {
+      "en": "Can't win alone? Ask one player to help: they add their combat strength to yours. Ask the others one by one until someone agrees or all refuse.",
+      "it": "Non riesci a vincere da solo? Chiedi aiuto a un giocatore: somma la sua forza di combattimento alla tua. Chiedi agli altri uno alla volta finché uno accetta o tutti rifiutano."
+    },
+    "detail": {
+      "en": "Bribe with Items you carry or with the monster's Treasures (agree who picks first). The monster's specials apply to the helper too: a helping Warrior wins ties, a Cleric can chase the vampire, an Elf makes the slime stronger.",
+      "it": "Corrompi con Oggetti che porti o con i Tesori del mostro (accordatevi su chi sceglie prima). I poteri del mostro valgono anche per l'aiutante: un Guerriero vince i pareggi, un Chierico scaccia il vampiro, un Elfo rende la fanga più forte."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["combat", "trouble-combat"]
+    }
+  },
+  {
+    "id": "helper-reward",
+    "topics": ["help", "levels"],
+    "summary": {
+      "en": "If you win with help, you go up a level per monster killed; the helper does not (an Elf's ability is the exception). You draw the Treasures and share them as agreed.",
+      "it": "Se vinci con un aiuto, avanzi di un Livello per ogni mostro ucciso; l'aiutante no (l'abilità dell'Elfo è l'eccezione). Peschi tu i Tesori e li dividi come concordato."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "forced-help",
+    "topics": ["help", "victory"],
+    "summary": {
+      "en": "Cards that force someone to help you don't work when you're fighting for the win; a forced helper may back out if the fight becomes one for the win. Voluntary helpers can't back out.",
+      "it": "Le carte che obbligano qualcuno ad aiutarti non funzionano quando combatti per la vittoria; un aiutante obbligato può ritirarsi se il combattimento diventa per la vittoria. Chi aiuta volontariamente non può ritirarsi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "interfere",
+    "topics": ["help", "combat"],
+    "summary": {
+      "en": "Anyone can interfere with a fight: one-shot Items (for or against), monster enhancers, a Wandering Monster from hand, a Thief's Backstab, or a Curse.",
+      "it": "Chiunque può interferire in un combattimento: Oggetti a Uso Singolo (a favore o contro), Potenziamenti per Mostri, un Mostro Errante dalla mano, l'Attacco Furtivo del Ladro o una Maledizione."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["combat", "trouble-combat"]
+    }
+  },
+  {
+    "id": "run-away",
+    "topics": ["run-away"],
+    "summary": {
+      "en": "If you lose, Run Away: roll the die, you escape on 5 or 6. Escaped: discard the monster, no level, no Treasure, no looting. Caught: the monster does its Bad Stuff to you.",
+      "it": "Se perdi devi Fuggire: tira il dado, scappi con 5 o 6. Scappato: scarta il mostro, niente Livello, Tesori o saccheggio. Preso: il mostro ti fa le sue Brutte Cose."
+    },
+    "detail": {
+      "en": "Some Items, Races and Classes change the roll; some monsters are faster or slower. Read the card: a few hurt you even if you escape.",
+      "it": "Alcuni Oggetti, Razze e Classi modificano il tiro; alcuni mostri sono più veloci o più lenti. Leggi la carta: alcuni ti fanno male anche se scappi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["run-away", "trouble-run-away"],
+      "components": ["die"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "table",
+        "hotspotId": "die"
+      }
+    ]
+  },
+  {
+    "id": "run-away-multiple",
+    "topics": ["run-away"],
+    "summary": {
+      "en": "Fleeing several monsters: roll for each, in the order you choose, and take Bad Stuff from each one that catches you. If you and a helper lose, both of you run and each rolls — the monster can catch you both.",
+      "it": "Fuggendo da più mostri tiri per ognuno, nell'ordine che preferisci, e subisci le Brutte Cose di chi ti prende. Se tu e l'aiutante perdete, fuggite entrambi e ognuno tira: il mostro può prendervi tutti e due."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "death",
+    "topics": ["death"],
+    "summary": {
+      "en": "If you die you lose all your stuff but keep your Race(s), Class(es), Level, Curses, Half-Breed and Super Munchkin.",
+      "it": "Se muori perdi tutta la tua roba, ma mantieni Razza/e, Classe/i, Livello, Maledizioni, Mezzosangue e Super Munchkin."
+    },
+    "detail": {
+      "en": "Looting the body: lay out your hand next to your cards in play; starting with the highest Level (ties: roll), each other player takes one card; discard the rest.",
+      "it": "Saccheggio del cadavere: metti la tua mano accanto alle carte in gioco; partendo dal Livello più alto (parità: tirate il dado), ogni altro giocatore prende una carta; il resto si scarta."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["on-death"]
+    }
+  },
+  {
+    "id": "after-death",
+    "topics": ["death"],
+    "summary": {
+      "en": "Dead characters can't receive cards (not even Charity) or level up. Your new character appears at the next player's turn and can help in combat; on your next turn draw 4 Door + 4 Treasure face down and play them as at the start.",
+      "it": "I morti non possono ricevere carte (nemmeno con la Carità) né avanzare di Livello. Il nuovo personaggio appare al turno del giocatore successivo e può aiutare in combattimento; al tuo turno peschi 4 Porte + 4 Tesori coperti e li giochi come a inizio partita."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "curses-drawn",
+    "topics": ["curses"],
+    "summary": {
+      "en": "A Curse drawn face up when kicking open the door hits you immediately (if it can) and is discarded.",
+      "it": "Una Maledizione pescata scoperta aprendo la porta ti colpisce subito (se possibile) e si scarta."
+    },
+    "detail": {
+      "en": "If it applies to something you don't have (Lose Your Armor with no armor), nothing happens.",
+      "it": "Se riguarda qualcosa che non hai (Perdi la tua Armatura senza armatura), non succede nulla."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["door-curse"]
+    }
+  },
+  {
+    "id": "curses-played",
+    "topics": ["curses"],
+    "summary": {
+      "en": "A Curse you got any other way goes into your hand: play it on ANY player at ANY time — ideally right when they think they've won a fight.",
+      "it": "Una Maledizione ottenuta in altro modo va in mano: giocala su QUALUNQUE giocatore in QUALUNQUE momento, meglio se proprio quando pensa di aver vinto."
+    },
+    "detail": {
+      "en": "Ongoing Curses stay in front of the victim until they take effect; they can't be discarded to power abilities. A \"next combat\" Curse played during a combat counts in that combat. The victim chooses which Item a Curse hits.",
+      "it": "Le Maledizioni con effetti continui restano davanti alla vittima finché non hanno effetto; non si possono scartare per attivare abilità. Una Maledizione \"nel prossimo combattimento\" giocata durante un combattimento vale per quello. La vittima sceglie quale Oggetto è colpito."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "curses"
+      }
+    ]
+  },
+  {
+    "id": "levels",
+    "topics": ["levels"],
+    "summary": {
+      "en": "You go up a level when you kill a monster, when a card says so, or by selling Items. You lose levels only by card effects, and never go below Level 1.",
+      "it": "Avanzi di Livello quando uccidi un mostro, quando una carta lo dice o vendendo Oggetti. Perdi Livelli solo per effetto di carte, e mai sotto il Livello 1."
+    },
+    "detail": {
+      "en": "Your combat strength can still be negative.",
+      "it": "La tua forza di combattimento però può essere negativa."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "level"
+      }
+    ]
+  },
+  {
+    "id": "race-class",
+    "topics": ["races-classes"],
+    "summary": {
+      "en": "Races: Human (no card), Elf, Dwarf, Halfling. Classes: Warrior, Wizard, Thief, Cleric. You gain the abilities printed on the card when you play it and lose them when you discard it.",
+      "it": "Razze: Umano (senza carta), Elfo, Nano, Halfling. Classi: Guerriero, Mago, Ladro, Chierico. Ottieni le abilità stampate sulla carta quando la giochi e le perdi quando la scarti."
+    },
+    "detail": {
+      "en": "Some abilities are powered by discards: discard any card, in play or in hand. You can drop a Race or Class any time, even in combat. Only one of each, and never two copies of the same card.",
+      "it": "Alcune abilità si attivano scartando: scarta qualunque carta, in gioco o in mano. Puoi abbandonare Razza o Classe in qualsiasi momento, anche in combattimento. Una sola per tipo, mai due copie della stessa carta."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "modules": ["races-classes"]
+    },
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "race"
+      },
+      {
+        "sceneId": "character",
+        "hotspotId": "class"
+      }
+    ]
+  },
+  {
+    "id": "thief-in-combat",
+    "topics": ["races-classes", "combat"],
+    "summary": {
+      "en": "A Thief can't steal while they or the target are in combat — and the fight starts as soon as a monster is revealed.",
+      "it": "Un Ladro non può rubare mentre lui o il bersaglio sono in combattimento, e il combattimento inizia appena un mostro si rivela."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "super-munchkin",
+    "topics": ["races-classes"],
+    "summary": {
+      "en": "Super Munchkin (two Classes) and Half-Breed (two Races) are played whenever you could play a Class or Race, onto a Class/Race card you already have.",
+      "it": "Super Munchkin (due Classi) e Mezzosangue (due Razze) si giocano quando potresti giocare una Classe o Razza, su una carta Classe/Razza che hai già."
+    },
+    "detail": {
+      "en": "With only one Class (Race) you get its advantages and none of its drawbacks; costs of abilities still apply.",
+      "it": "Con una sola Classe (Razza) ottieni i vantaggi e nessuno svantaggio; i costi delle abilità restano."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "item-slots",
+    "topics": ["items"],
+    "summary": {
+      "en": "You may carry any Items but use only 1 Headgear, 1 Armor, 1 Footgear and two 1-Hand Items (or one 2-Hands Item). Turn the others sideways: carried, not equipped.",
+      "it": "Puoi portare qualunque Oggetto ma usarne solo 1 Copricapo, 1 Armatura, 1 Calzatura e due Oggetti a una mano (o uno a due mani). Gira di lato gli altri: trasportati, non in uso."
+    },
+    "detail": {
+      "en": "Some Items are restricted (e.g. Cleric only) and only work while you meet the requirement. You can't change what's equipped during combat or while running away.",
+      "it": "Alcuni Oggetti hanno restrizioni (ad es. solo Chierici) e funzionano solo se le rispetti. Non puoi cambiare equipaggiamento in combattimento o durante la fuga."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "headgear"
+      },
+      {
+        "sceneId": "character",
+        "hotspotId": "armor"
+      },
+      {
+        "sceneId": "character",
+        "hotspotId": "footgear"
+      }
+    ]
+  },
+  {
+    "id": "big-items",
+    "topics": ["items"],
+    "summary": {
+      "en": "Only one Big Item in play (anything not marked Big is Small). You can't discard a Big Item to make room for another: sell, trade or lose it.",
+      "it": "Un solo Oggetto Grande in gioco (ciò che non è indicato come Grande è Piccolo). Non puoi scartarne uno per fare posto a un altro: vendilo, scambialo o perdilo."
+    },
+    "detail": {
+      "en": "If you lose the ability to carry more (e.g. no longer a Dwarf), fix it at once: sell the extras on your turn or give them to the lowest-Level player(s); discard what's left.",
+      "it": "Se perdi la capacità di portarne di più (ad es. non sei più Nano), rimedia subito: vendi quelli in più nel tuo turno o dalli ai giocatori di Livello più basso; scarta il resto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "character",
+        "hotspotId": "big-item"
+      }
+    ]
+  },
+  {
+    "id": "no-discarding-items",
+    "topics": ["items"],
+    "summary": {
+      "en": "You can't discard Items just because. Sell them, trade them, give them away, or discard them to power a Race/Class ability.",
+      "it": "Non puoi scartare Oggetti solo perché ti va. Vendili, scambiali, regalali o scartali per attivare un'abilità di Razza/Classe."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "trading",
+    "topics": ["items"],
+    "summary": {
+      "en": "You may trade Items (no other cards) with other players, only from the table, any time except when either of you is in combat. Received Items go straight into play.",
+      "it": "Puoi scambiare Oggetti (non altre carte) con gli altri, solo dal tavolo, in qualsiasi momento tranne quando uno dei due è in combattimento. Gli Oggetti ricevuti vanno subito in gioco."
+    },
+    "detail": {
+      "en": "Italian edition: you can't sell a received Item until your turn. You may also give Items away as bribes.",
+      "it": "Edizione italiana: non puoi vendere un Oggetto ricevuto fino al tuo turno. Puoi anche regalare Oggetti per corrompere."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "sell-items",
+    "topics": ["items", "levels"],
+    "summary": {
+      "en": "On your turn, outside combat, discard Items worth at least 1,000 Gold Pieces to go up a level (2,000 = two levels…). No change is given; you can sell from hand or from the table.",
+      "it": "Nel tuo turno, fuori dal combattimento, scarta Oggetti per almeno 1000 Pezzi d'Oro per avanzare di un Livello (2000 = due Livelli…). Non si dà resto; puoi vendere dalla mano o dal tavolo."
+    },
+    "detail": {
+      "en": "You can't sell your way to Level 10.",
+      "it": "Non puoi vendere per arrivare al Livello 10."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["arrange"]
+    }
+  },
+  {
+    "id": "one-shots",
+    "topics": ["items", "combat"],
+    "summary": {
+      "en": "One-shot Items (\"usable once only\") can be played in combat from hand or table — to help anyone, or against them. Discard them after the combat; ones with a Gold value can also be sold.",
+      "it": "Gli Oggetti a Uso Singolo si possono giocare in combattimento dalla mano o dal tavolo, a favore o contro chiunque. Si scartano dopo il combattimento; quelli con un valore si possono anche vendere."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "go-up-a-level",
+    "topics": ["levels", "cards"],
+    "summary": {
+      "en": "Go Up a Level cards can be played on yourself or anyone, at any time, even in combat — but never to give someone the winning level.",
+      "it": "Le carte Avanzi di Livello si giocano su di te o su chiunque, in qualsiasi momento, anche in combattimento, ma mai per far raggiungere il Livello vincente."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "faster-play",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Faster play: at the start of your turn draw a face-down Door card (phase 0, Listen At The Door); Loot The Room draws a face-down Treasure instead of a Door. Optionally, a helper also wins if the player they help reaches Level 10.",
+      "it": "Gioco veloce: all'inizio del turno pesca una carta Porta coperta (fase 0, Ascoltare Rumori alla Porta); Svuotare la Stanza pesca un Tesoro coperto invece di una Porta. Facoltativo: anche l'aiutante vince se il giocatore aiutato raggiunge il Livello 10."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "appliesTo": {
+      "flowNodes": ["listen-at-door"]
+    },
+    "conditions": {
+      "variants": ["faster-play"]
+    }
+  },
+  {
+    "id": "combine-sets",
+    "topics": ["setup"],
+    "summary": {
+      "en": "You can shuffle different Munchkin sets and expansions together for a genre-crossing game.",
+      "it": "Puoi mescolare diversi set ed espansioni di Munchkin per una partita che attraversa i generi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-it",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high"
+  }
+]

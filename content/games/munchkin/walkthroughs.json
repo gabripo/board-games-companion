@@ -1,0 +1,84 @@
+[
+  {
+    "id": "first-turn",
+    "title": {
+      "en": "Your first turn",
+      "it": "Il tuo primo turno"
+    },
+    "level": "newbie",
+    "steps": [
+      {
+        "id": "decks",
+        "text": {
+          "en": "Two decks: Doors (brown) hide monsters and surprises, Treasures (gold) are the loot.",
+          "it": "Due mazzi: le Porte (marroni) nascondono mostri e sorprese, i Tesori (oro) sono il bottino."
+        },
+        "sceneId": "table",
+        "highlightHotspots": ["door-deck", "treasure-deck"]
+      },
+      {
+        "id": "kick",
+        "text": {
+          "en": "Start by kicking open the door: draw the top Door card face up.",
+          "it": "Inizia aprendo la porta: pesca scoperta la prima carta Porta."
+        },
+        "flowNodeRef": "kick-door",
+        "sceneId": "table",
+        "focus": {
+          "x": 0.08,
+          "y": 0.08,
+          "w": 0.4,
+          "h": 0.6
+        },
+        "check": {
+          "question": {
+            "en": "Tap the deck you draw from when you kick open the door.",
+            "it": "Tocca il mazzo da cui peschi quando apri la porta."
+          },
+          "answerHotspotId": "door-deck",
+          "explanation": {
+            "en": "Door deck — Treasures only come as rewards.",
+            "it": "Mazzo Porta: i Tesori arrivano solo come ricompensa."
+          }
+        }
+      },
+      {
+        "id": "fight",
+        "text": {
+          "en": "A monster? Compare your Level + Items with its strength. Ties go to the monster.",
+          "it": "Un mostro? Confronta il tuo Livello + Oggetti con la sua forza. Il pareggio va al mostro."
+        },
+        "flowNodeRef": "combat",
+        "sceneId": "character",
+        "highlightHotspots": ["level", "armor", "hand-left", "hand-right"]
+      },
+      {
+        "id": "run",
+        "text": {
+          "en": "Losing? Run Away: roll the die, 5 or 6 escapes.",
+          "it": "Stai perdendo? Fuggi: tira il dado, con 5 o 6 scappi."
+        },
+        "flowNodeRef": "run-away",
+        "sceneId": "table",
+        "highlightHotspots": ["die"],
+        "check": {
+          "question": {
+            "en": "Tap what you use to Run Away.",
+            "it": "Tocca ciò che usi per fuggire."
+          },
+          "answerHotspotId": "die"
+        }
+      },
+      {
+        "id": "charity",
+        "text": {
+          "en": "End of turn: no more than 5 cards in hand — give the extra to the lowest Level.",
+          "it": "Fine turno: non più di 5 carte in mano; dai le altre al Livello più basso."
+        },
+        "flowNodeRef": "charity",
+        "sceneId": "character",
+        "highlightHotspots": ["hand"]
+      }
+    ]
+  }
+]

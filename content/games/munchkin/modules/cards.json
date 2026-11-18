@@ -1,0 +1,23 @@
+{
+  "id": "cards",
+  "kind": "cards",
+  "title": {
+    "en": "Cards",
+    "it": "Carte"
+  },
+  "ruleRefs": ["setup-decks", "discards"],
+  "decks": [
+    {
+      "id": "all",
+      "name": {
+        "en": "Door + Treasure cards (Italian edition)",
+        "it": "Carte Porta + Tesoro (edizione italiana)"
+      },
+      "count": 172
+    }
+  ],
+  "handLimit": {
+    "en": "5 cards at the end of your turn (Charity)",
+    "it": "5 carte a fine turno (Carità)"
+  }
+}

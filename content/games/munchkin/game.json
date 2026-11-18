@@ -1,0 +1,707 @@
+{
+  "schemaVersion": 3,
+  "id": "munchkin",
+  "meta": {
+    "title": {
+      "en": "Munchkin",
+      "it": "Munchkin"
+    },
+    "publisher": "Steve Jackson Games (IT: Raven Distribution)",
+    "year": 2001,
+    "designers": ["Steve Jackson"],
+    "bggId": 1927
+  },
+  "classification": {
+    "turnModel": "sequential",
+    "interaction": "competitive",
+    "mechanics": ["hand-management", "take-that", "dice-rolling", "other"],
+    "playerCount": {
+      "min": 3,
+      "max": 6,
+      "best": [4, 5]
+    },
+    "playtimeMinutes": {
+      "min": 60,
+      "max": 120
+    },
+    "complexity": 1.8,
+    "minAge": 10
+  },
+  "sources": [
+    {
+      "id": "rulebook-it",
+      "type": "pdf",
+      "title": "Munchkin – Regolamento v1.71 (Raven Distribution, 2014)",
+      "lang": "it",
+      "official": true,
+      "url": "https://www.ravendistribution.it/munchkin/",
+      "edition": "Raven Distribution, regole v1.71"
+    },
+    {
+      "id": "rulebook-en",
+      "type": "pdf",
+      "title": "Munchkin Rules v1.8 (Steve Jackson Games, 2019)",
+      "lang": "en",
+      "official": true,
+      "url": "https://munchkin.game/gameplay/rules/",
+      "edition": "Rules version 1.8"
+    },
+    {
+      "id": "bgg",
+      "type": "web",
+      "title": "BoardGameGeek — Munchkin",
+      "lang": "en",
+      "official": false,
+      "url": "https://boardgamegeek.com/boardgame/1927/munchkin"
+    }
+  ],
+  "components": [
+    {
+      "id": "door-cards",
+      "type": "card",
+      "name": {
+        "en": "Door cards",
+        "it": "Carte Porta"
+      },
+      "description": {
+        "en": "Monsters, Curses, Races, Classes, monster enhancers and other surprises.",
+        "it": "Mostri, Maledizioni, Razze, Classi, Potenziamenti per Mostri e altre sorprese."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "table",
+          "hotspotId": "door-deck"
+        }
+      ]
+    },
+    {
+      "id": "treasure-cards",
+      "type": "card",
+      "name": {
+        "en": "Treasure cards",
+        "it": "Carte Tesoro"
+      },
+      "description": {
+        "en": "Items, one-shot Items and other Treasures such as Go Up a Level.",
+        "it": "Oggetti, Oggetti a Uso Singolo e altri Tesori come Avanzi di Livello."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "table",
+          "hotspotId": "treasure-deck"
+        }
+      ]
+    },
+    {
+      "id": "die",
+      "type": "die",
+      "name": {
+        "en": "Six-sided die",
+        "it": "Dado a sei facce"
+      },
+      "quantity": 1,
+      "sceneRefs": [
+        {
+          "sceneId": "table",
+          "hotspotId": "die"
+        }
+      ]
+    },
+    {
+      "id": "level-tokens",
+      "type": "token",
+      "name": {
+        "en": "Level counters (not included)",
+        "it": "Segnalini livello (non inclusi)"
+      },
+      "description": {
+        "en": "10 tokens per player — coins, chips or a level-counter app.",
+        "it": "10 segnalini a testa: monete, fiches o un'app contalivelli."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "character",
+          "hotspotId": "level"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "faster-play",
+      "kind": "variant",
+      "name": {
+        "en": "Faster play",
+        "it": "Gioco veloce"
+      },
+      "description": {
+        "en": "Add phase 0 \"Listen At The Door\" (draw a face-down Door); Loot The Room draws a Treasure; optional shared victories.",
+        "it": "Aggiungi la fase 0 \"Ascoltare Rumori alla Porta\" (pesca una Porta coperta); Svuotare la Stanza pesca un Tesoro; vittorie multiple facoltative."
+      }
+    }
+  ],
+  "expansions": [],
+  "topics": [
+    {
+      "id": "setup",
+      "name": {
+        "en": "Setup",
+        "it": "Preparazione"
+      }
+    },
+    {
+      "id": "turn",
+      "name": {
+        "en": "Turn",
+        "it": "Turno"
+      }
+    },
+    {
+      "id": "combat",
+      "name": {
+        "en": "Combat",
+        "it": "Combattimento"
+      }
+    },
+    {
+      "id": "help",
+      "name": {
+        "en": "Help & interference",
+        "it": "Aiuto e interferenze"
+      }
+    },
+    {
+      "id": "run-away",
+      "name": {
+        "en": "Running away",
+        "it": "Fuga"
+      }
+    },
+    {
+      "id": "death",
+      "name": {
+        "en": "Death",
+        "it": "Morte"
+      }
+    },
+    {
+      "id": "curses",
+      "name": {
+        "en": "Curses",
+        "it": "Maledizioni"
+      }
+    },
+    {
+      "id": "items",
+      "name": {
+        "en": "Items",
+        "it": "Oggetti"
+      }
+    },
+    {
+      "id": "levels",
+      "name": {
+        "en": "Levels",
+        "it": "Livelli"
+      }
+    },
+    {
+      "id": "races-classes",
+      "name": {
+        "en": "Races & Classes",
+        "it": "Razze e Classi"
+      }
+    },
+    {
+      "id": "monsters",
+      "name": {
+        "en": "Monsters",
+        "it": "Mostri"
+      }
+    },
+    {
+      "id": "cards",
+      "name": {
+        "en": "Cards",
+        "it": "Carte"
+      }
+    },
+    {
+      "id": "victory",
+      "name": {
+        "en": "Winning",
+        "it": "Vittoria"
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "id": "door",
+      "term": {
+        "en": "Door card",
+        "it": "Carta Porta"
+      },
+      "definition": {
+        "en": "The deck you draw from when you Kick Open The Door (and Loot The Room).",
+        "it": "Il mazzo da cui peschi quando Apri la Porta (e Svuoti la Stanza)."
+      },
+      "aliases": {
+        "en": ["Carta Porta"],
+        "it": ["Door card"]
+      },
+      "icon": {
+        "sceneId": "table",
+        "hotspotId": "door-deck"
+      },
+      "ruleRefs": ["kick-open-door"]
+    },
+    {
+      "id": "treasure",
+      "term": {
+        "en": "Treasure",
+        "it": "Tesoro"
+      },
+      "definition": {
+        "en": "Rewards for killing monsters: Items, one-shots, Go Up a Level…",
+        "it": "Ricompense per aver ucciso mostri: Oggetti, Uso Singolo, Avanzi di Livello…"
+      },
+      "aliases": {
+        "en": ["Tesoro"],
+        "it": ["Treasure"]
+      },
+      "icon": {
+        "sceneId": "table",
+        "hotspotId": "treasure-deck"
+      },
+      "ruleRefs": ["rewards"]
+    },
+    {
+      "id": "level",
+      "term": {
+        "en": "Level",
+        "it": "Livello"
+      },
+      "definition": {
+        "en": "Your score: 1 to 10. Reach 10 by killing a monster to win.",
+        "it": "Il tuo punteggio: da 1 a 10. Arriva al 10 uccidendo un mostro per vincere."
+      },
+      "aliases": {
+        "en": ["Livello"],
+        "it": ["Level"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "level"
+      },
+      "ruleRefs": ["levels", "win"]
+    },
+    {
+      "id": "combat-strength",
+      "term": {
+        "en": "Combat strength",
+        "it": "Forza di Combattimento"
+      },
+      "definition": {
+        "en": "Level plus every bonus and penalty. Can go below 1.",
+        "it": "Livello più tutti i bonus e le penalità. Può scendere sotto 1."
+      },
+      "aliases": {
+        "en": ["Forza di Combattimento"],
+        "it": ["Combat strength"]
+      },
+      "ruleRefs": ["combat-basics"]
+    },
+    {
+      "id": "monster",
+      "term": {
+        "en": "Monster",
+        "it": "Mostro"
+      },
+      "definition": {
+        "en": "Fight it: beat its combat strength (ties go to the monster).",
+        "it": "Combattilo: supera la sua forza di combattimento (in caso di pareggio vince il mostro)."
+      },
+      "aliases": {
+        "en": ["Mostro"],
+        "it": ["Monster"]
+      },
+      "ruleRefs": ["combat-basics"]
+    },
+    {
+      "id": "bad-stuff",
+      "term": {
+        "en": "Bad Stuff",
+        "it": "Brutte Cose"
+      },
+      "definition": {
+        "en": "What a monster does to you if you fail to Run Away.",
+        "it": "Ciò che un mostro ti fa se non riesci a fuggire."
+      },
+      "aliases": {
+        "en": ["Brutte Cose"],
+        "it": ["Bad Stuff"]
+      },
+      "ruleRefs": ["run-away"]
+    },
+    {
+      "id": "run-away",
+      "term": {
+        "en": "Run Away",
+        "it": "Fuggire"
+      },
+      "definition": {
+        "en": "Roll the die: 5 or 6 escapes.",
+        "it": "Tira il dado: con 5 o 6 scappi."
+      },
+      "aliases": {
+        "en": ["Fuggire"],
+        "it": ["Run Away"]
+      },
+      "icon": {
+        "sceneId": "table",
+        "hotspotId": "die"
+      },
+      "ruleRefs": ["run-away"]
+    },
+    {
+      "id": "curse",
+      "term": {
+        "en": "Curse",
+        "it": "Maledizione"
+      },
+      "definition": {
+        "en": "Hits whoever draws it face up; from your hand, play it on anyone at any time.",
+        "it": "Colpisce chi la pesca scoperta; dalla mano la giochi su chiunque in qualunque momento."
+      },
+      "aliases": {
+        "en": ["Maledizione"],
+        "it": ["Curse"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "curses"
+      },
+      "ruleRefs": ["curses-drawn", "curses-played"]
+    },
+    {
+      "id": "race",
+      "term": {
+        "en": "Race",
+        "it": "Razza"
+      },
+      "definition": {
+        "en": "Human (no card), Elf, Dwarf or Halfling. Gives special abilities.",
+        "it": "Umano (senza carta), Elfo, Nano o Halfling. Dà abilità speciali."
+      },
+      "aliases": {
+        "en": ["Razza"],
+        "it": ["Race"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "race"
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "class",
+      "term": {
+        "en": "Class",
+        "it": "Classe"
+      },
+      "definition": {
+        "en": "Warrior, Wizard, Thief or Cleric. No card = no class.",
+        "it": "Guerriero, Mago, Ladro o Chierico. Senza carta = senza classe."
+      },
+      "aliases": {
+        "en": ["Classe"],
+        "it": ["Class"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "class"
+      },
+      "ruleRefs": ["race-class"]
+    },
+    {
+      "id": "super-munchkin",
+      "term": {
+        "en": "Super Munchkin",
+        "it": "Super Munchkin"
+      },
+      "definition": {
+        "en": "Lets you have two Classes.",
+        "it": "Ti permette di avere due Classi."
+      },
+      "ruleRefs": ["super-munchkin"]
+    },
+    {
+      "id": "half-breed",
+      "term": {
+        "en": "Half-Breed",
+        "it": "Mezzosangue"
+      },
+      "definition": {
+        "en": "Lets you have two Races.",
+        "it": "Ti permette di avere due Razze."
+      },
+      "aliases": {
+        "en": ["Mezzosangue"],
+        "it": ["Half-Breed"]
+      },
+      "ruleRefs": ["super-munchkin"]
+    },
+    {
+      "id": "item",
+      "term": {
+        "en": "Item",
+        "it": "Oggetto"
+      },
+      "definition": {
+        "en": "Treasure with a Gold Piece value that you carry or equip.",
+        "it": "Tesoro con un valore in Pezzi d'Oro che porti o usi."
+      },
+      "aliases": {
+        "en": ["Oggetto"],
+        "it": ["Item"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "armor"
+      },
+      "ruleRefs": ["item-slots"]
+    },
+    {
+      "id": "equipped",
+      "term": {
+        "en": "Equipped / carried",
+        "it": "In uso / trasportato"
+      },
+      "definition": {
+        "en": "Equipped Items give their bonus; carried-but-unused Items are turned sideways.",
+        "it": "Gli Oggetti in uso danno il bonus; quelli solo trasportati si girano di lato."
+      },
+      "aliases": {
+        "en": ["In uso / trasportato"],
+        "it": ["Equipped / carried"]
+      },
+      "ruleRefs": ["item-slots"]
+    },
+    {
+      "id": "big-item",
+      "term": {
+        "en": "Big Item",
+        "it": "Oggetto Grande"
+      },
+      "definition": {
+        "en": "You may have only one in play (Dwarves can have more).",
+        "it": "Puoi averne in gioco uno solo (i Nani di più)."
+      },
+      "aliases": {
+        "en": ["Oggetto Grande"],
+        "it": ["Big Item"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "big-item"
+      },
+      "ruleRefs": ["big-items"]
+    },
+    {
+      "id": "one-shot",
+      "term": {
+        "en": "One-shot",
+        "it": "Uso Singolo"
+      },
+      "definition": {
+        "en": "\"Usable once only\" Treasure, usually played in combat from hand or table.",
+        "it": "Tesoro \"usabile una volta sola\", di solito giocato in combattimento dalla mano o dal tavolo."
+      },
+      "aliases": {
+        "en": ["Uso Singolo"],
+        "it": ["One-shot"]
+      },
+      "ruleRefs": ["one-shots"]
+    },
+    {
+      "id": "gold-pieces",
+      "term": {
+        "en": "Gold Pieces",
+        "it": "Pezzi d'Oro"
+      },
+      "definition": {
+        "en": "Item value: every 1,000 sold = 1 level.",
+        "it": "Valore degli Oggetti: ogni 1000 venduti = 1 Livello."
+      },
+      "aliases": {
+        "en": ["Pezzi d'Oro"],
+        "it": ["Gold Pieces"]
+      },
+      "ruleRefs": ["sell-items"]
+    },
+    {
+      "id": "go-up-a-level",
+      "term": {
+        "en": "Go Up a Level",
+        "it": "Avanzi di Livello"
+      },
+      "definition": {
+        "en": "Treasure that gives a level to any player, any time — but never the winning level.",
+        "it": "Tesoro che fa avanzare di Livello un giocatore qualsiasi in qualunque momento, ma mai al Livello vincente."
+      },
+      "aliases": {
+        "en": ["Avanzi di Livello"],
+        "it": ["Go Up a Level"]
+      },
+      "ruleRefs": ["go-up-a-level"]
+    },
+    {
+      "id": "monster-enhancer",
+      "term": {
+        "en": "Monster enhancer",
+        "it": "Potenziamento per Mostri"
+      },
+      "definition": {
+        "en": "Raises or lowers one monster's strength and Treasure; anyone can play it in any combat.",
+        "it": "Alza o abbassa forza e Tesori di un mostro; chiunque può giocarlo in qualsiasi combattimento."
+      },
+      "aliases": {
+        "en": ["Potenziamento per Mostri"],
+        "it": ["Monster enhancer"]
+      },
+      "ruleRefs": ["enhancers"]
+    },
+    {
+      "id": "mate",
+      "term": {
+        "en": "Mate",
+        "it": "Partner"
+      },
+      "definition": {
+        "en": "Adds a copy of the monster; enhancers on the monster also apply to its Mate.",
+        "it": "Aggiunge una copia del mostro; i potenziamenti sul mostro valgono anche per il Partner."
+      },
+      "aliases": {
+        "en": ["Partner"],
+        "it": ["Mate"]
+      },
+      "ruleRefs": ["enhancers"]
+    },
+    {
+      "id": "wandering-monster",
+      "term": {
+        "en": "Wandering Monster",
+        "it": "Mostro Errante"
+      },
+      "definition": {
+        "en": "Lets a player add a monster from their hand to someone else's fight.",
+        "it": "Permette di aggiungere un mostro dalla propria mano al combattimento di un altro."
+      },
+      "aliases": {
+        "en": ["Mostro Errante"],
+        "it": ["Wandering Monster"]
+      },
+      "ruleRefs": ["multiple-monsters", "interfere"]
+    },
+    {
+      "id": "undead",
+      "term": {
+        "en": "Undead",
+        "it": "Non Morto"
+      },
+      "definition": {
+        "en": "Undead monsters can join a fight against another Undead without a Wandering Monster.",
+        "it": "I mostri Non Morti possono unirsi a un combattimento contro un altro Non Morto senza Mostro Errante."
+      },
+      "aliases": {
+        "en": ["Non Morto"],
+        "it": ["Undead"]
+      },
+      "ruleRefs": ["undead"]
+    },
+    {
+      "id": "charity",
+      "term": {
+        "en": "Charity",
+        "it": "Carità"
+      },
+      "definition": {
+        "en": "End of turn: get down to 5 cards; give the excess to the lowest-Level player.",
+        "it": "Fine turno: scendi a 5 carte; dai l'eccesso al giocatore di Livello più basso."
+      },
+      "aliases": {
+        "en": ["Carità"],
+        "it": ["Charity"]
+      },
+      "icon": {
+        "sceneId": "character",
+        "hotspotId": "hand"
+      },
+      "ruleRefs": ["charity"]
+    },
+    {
+      "id": "looting-the-body",
+      "term": {
+        "en": "Looting the body",
+        "it": "Saccheggio del cadavere"
+      },
+      "definition": {
+        "en": "When you die, each other player takes one of your cards, highest Level first.",
+        "it": "Quando muori, ogni altro giocatore prende una tua carta, a partire dal Livello più alto."
+      },
+      "aliases": {
+        "en": ["Saccheggio del cadavere"],
+        "it": ["Looting the body"]
+      },
+      "ruleRefs": ["death"]
+    },
+    {
+      "id": "kick-open-door",
+      "term": {
+        "en": "Kick Open The Door",
+        "it": "Aprire la Porta"
+      },
+      "definition": {
+        "en": "Phase 1: draw the top Door card face up.",
+        "it": "Fase 1: pesca scoperta la prima carta Porta."
+      },
+      "aliases": {
+        "en": ["Aprire la Porta"],
+        "it": ["Kick Open The Door"]
+      },
+      "ruleRefs": ["kick-open-door"]
+    },
+    {
+      "id": "look-for-trouble",
+      "term": {
+        "en": "Look For Trouble",
+        "it": "Cercar Guai"
+      },
+      "definition": {
+        "en": "No monster behind the door? Fight one from your hand.",
+        "it": "Nessun mostro dietro la porta? Combattine uno dalla tua mano."
+      },
+      "aliases": {
+        "en": ["Cercar Guai"],
+        "it": ["Look For Trouble"]
+      },
+      "ruleRefs": ["look-for-trouble"]
+    },
+    {
+      "id": "loot-the-room",
+      "term": {
+        "en": "Loot The Room",
+        "it": "Svuotare la Stanza"
+      },
+      "definition": {
+        "en": "Draw a second Door card face down into your hand.",
+        "it": "Pesca una seconda carta Porta coperta e mettila in mano."
+      },
+      "aliases": {
+        "en": ["Svuotare la Stanza"],
+        "it": ["Loot The Room"]
+      },
+      "ruleRefs": ["loot-the-room"]
+    }
+  ]
+}
