@@ -7,6 +7,7 @@ import {
   GlossaryEntry,
   Guides,
   Source,
+  Topic,
   Variant,
 } from "./core/game";
 import { Id, LocalizedString } from "./core/primitives";
@@ -15,7 +16,7 @@ import { FlowNode } from "./flow/flow";
 import { Module } from "./modules/modules";
 import { Scene, Walkthrough } from "./scenes/scenes";
 
-export const CURRENT_SCHEMA_VERSION = 1;
+export const CURRENT_SCHEMA_VERSION = 2;
 
 // ── per-file schemas (content/games/<id>/…) ────────────────────────────────
 
@@ -30,6 +31,8 @@ export const GameFile = z.strictObject({
   variants: z.array(Variant),
   expansions: z.array(Expansion),
   glossary: z.array(GlossaryEntry),
+  /** Rule topic tags with translated names (rules reference them by id). */
+  topics: z.array(Topic),
 });
 export type GameFile = z.infer<typeof GameFile>;
 

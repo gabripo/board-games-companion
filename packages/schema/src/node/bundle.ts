@@ -55,41 +55,69 @@ function prefixed(file: string, issues: IntegrityIssue[]): IntegrityIssue[] {
 /** Reads, validates and merges one `content/games/<id>/` folder into a GameGuide bundle. */
 export async function loadGameDir(dir: string): Promise<GameLoadResult> {
   const issues: IntegrityIssue[] = [];
-  const parts: Record<string, unknown> = {};
 
-  for (const [key, { file, schema, required }] of Object.entries(GAME_FILES)) {
+  // 1. Read every file raw.
+  const raw: Record<string, unknown> = {};
+  for (const [key, { file, required }] of Object.entries(GAME_FILES)) {
     const path = join(dir, file);
     if (!existsSync(path)) {
       if (required) issues.push({ severity: "error", path: file, message: "file is missing" });
-      else parts[key] = [];
+      else raw[key] = [];
       continue;
     }
     const json = await readJson(path);
-    if (!json.ok) {
-      issues.push({ severity: "error", path: file, message: `invalid JSON: ${json.error}` });
-      continue;
+    if (json.ok) raw[key] = json.value;
+    else issues.push({ severity: "error", path: file, message: `invalid JSON: ${json.error}` });
+  }
+  const moduleFiles: string[] = [];
+  const rawModules: unknown[] = [];
+  const modulesDir = join(dir, "modules");
+  if (existsSync(modulesDir)) {
+    for (const f of (await readdir(modulesDir)).filter((x) => x.endsWith(".json")).sort()) {
+      const json = await readJson(join(modulesDir, f));
+      if (!json.ok) {
+        issues.push({
+          severity: "error",
+          path: `modules/${f}`,
+          message: `invalid JSON: ${json.error}`,
+        });
+        continue;
+      }
+      moduleFiles.push(`modules/${f}`);
+      rawModules.push(json.value);
     }
-    const value = key === "game" ? migrateToCurrent(json.value) : json.value;
-    const parsed = (schema as z.ZodType).safeParse(value);
+  }
+
+  // 2. Migrate the whole guide at once (a migration may need several files, e.g. game + rules).
+  if (raw.game && typeof raw.game === "object" && !Array.isArray(raw.game)) {
+    const { game, ...others } = raw;
+    try {
+      const migrated = migrateToCurrent({
+        ...(game as object),
+        ...others,
+        modules: rawModules,
+      }) as Record<string, unknown>;
+      const { rules, setup, flow, scenes, walkthroughs, guides, modules, ...gameOnly } = migrated;
+      Object.assign(raw, { game: gameOnly, rules, setup, flow, scenes, walkthroughs, guides });
+      if (Array.isArray(modules)) rawModules.splice(0, rawModules.length, ...modules);
+    } catch (e) {
+      issues.push({ severity: "error", path: "game.json › schemaVersion", message: String(e) });
+    }
+  }
+
+  // 3. Validate each file with its own schema (errors keep their file prefix).
+  const parts: Record<string, unknown> = {};
+  for (const [key, { file, schema }] of Object.entries(GAME_FILES)) {
+    if (!(key in raw)) continue;
+    const parsed = (schema as z.ZodType).safeParse(raw[key]);
     if (parsed.success) parts[key] = parsed.data;
     else issues.push(...prefixed(file, zodIssues(parsed.error)));
   }
-
   const modules: unknown[] = [];
-  const modulesDir = join(dir, "modules");
-  if (existsSync(modulesDir)) {
-    const files = (await readdir(modulesDir)).filter((f) => f.endsWith(".json")).sort();
-    for (const f of files) {
-      const rel = `modules/${f}`;
-      const json = await readJson(join(modulesDir, f));
-      if (!json.ok) {
-        issues.push({ severity: "error", path: rel, message: `invalid JSON: ${json.error}` });
-        continue;
-      }
-      const parsed = ModuleFile.safeParse(json.value);
-      if (parsed.success) modules.push(parsed.data);
-      else issues.push(...prefixed(rel, zodIssues(parsed.error)));
-    }
+  for (const [i, value] of rawModules.entries()) {
+    const parsed = ModuleFile.safeParse(value);
+    if (parsed.success) modules.push(parsed.data);
+    else issues.push(...prefixed(moduleFiles[i] ?? `modules[${i}]`, zodIssues(parsed.error)));
   }
 
   if (issues.length > 0) return { dir, issues };

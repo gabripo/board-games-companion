@@ -78,7 +78,8 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 ## Content model (packages/schema)
 
 - **Core** (every game): classification (turnModel, interaction, mechanics, players),
-  sources, components, rules, setup, variants/expansions, glossary, guides.
+  sources, components, rules, setup, variants/expansions, glossary, guides, and
+  `topics` (rule tags declared once in game.json with `{en,it}` names; rules reference ids).
 - **Flow graph** (every game): tree of nodes `sequence | repeat | turnOrder |
   simultaneous | choice | roll | timer | step | trigger`, each with `actor`,
   `conditions`, `ruleRefs`. Never hard-code a game rhythm in UI code — render the graph.
@@ -100,7 +101,7 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 
 ## Content rules
 
-- **Schema-first:** change Zod first, bump `schemaVersion`, add a migration, update fixtures.
+- **Schema-first:** change Zod, bump `schemaVersion`, add a migration (runs on the merged raw guide).
 - Every rule has ≥1 citation `{sourceId, page}` | `{sourceId, tStart, tEnd}` | `{sourceId, url}`.
 - **Official PDF is ground truth.** Conflicting video/web claims stay in `conflicts[]`
   with a resolution; never silently merged.

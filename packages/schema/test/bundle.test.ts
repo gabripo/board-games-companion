@@ -40,6 +40,28 @@ describe("loadGameDir()", () => {
     },
   );
 
+  it("migrates a v1 game folder (topics derived from rules.json)", async () => {
+    const dir = await writeGame(tmp);
+    const game = JSON.parse(await readFile(join(dir, "game.json"), "utf8"));
+    delete game.topics;
+    game.schemaVersion = 1;
+    await writeFile(join(dir, "game.json"), JSON.stringify(game));
+    const r = await loadGameDir(dir);
+    expect(r.issues.filter((i) => i.severity === "error")).toEqual([]);
+    expect(r.guide?.schemaVersion).toBe(2);
+    expect(r.guide?.topics).toHaveLength(4);
+  });
+
+  it("rejects a game folder from a newer schema version", async () => {
+    const dir = await writeGame(tmp);
+    const game = JSON.parse(await readFile(join(dir, "game.json"), "utf8"));
+    game.schemaVersion = 99;
+    await writeFile(join(dir, "game.json"), JSON.stringify(game));
+    const r = await loadGameDir(dir);
+    expect(r.guide).toBeUndefined();
+    expect(r.issues.map((i) => i.message).join()).toMatch(/newer than supported/);
+  });
+
   it("reports a missing required file", async () => {
     const dir = await writeGame(tmp);
     await rm(join(dir, "rules.json"));

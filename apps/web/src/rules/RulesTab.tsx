@@ -69,7 +69,8 @@ function EdgeCases() {
 }
 
 export function RulesTab() {
-  const { guide, isApplicable, level } = useGame();
+  const { guide, isApplicable, level, topicName } = useGame();
+  const L = useL();
   const { t } = useTranslation();
   const lang = useLocale();
   const [query, setQuery] = useState("");
@@ -78,7 +79,13 @@ export function RulesTab() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const index = useMemo(() => buildRuleSearch(guide, lang), [guide, lang]);
-  const topics = useMemo(() => [...new Set(guide.rules.flatMap((r) => r.topics))].sort(), [guide]);
+  const topics = useMemo(
+    () =>
+      [...new Set(guide.rules.flatMap((r) => r.topics))]
+        .map((id) => ({ id, name: L(topicName(id)) }))
+        .sort((a, b) => a.name.localeCompare(b.name, lang)),
+    [guide, L, topicName, lang],
+  );
 
   // Experienced players come here to look something up: focus search on open.
   useEffect(() => {
@@ -114,11 +121,11 @@ export function RulesTab() {
             </Chip>
             {topics.map((tp) => (
               <Chip
-                key={tp}
-                tone={tp === topic ? "accent" : "neutral"}
-                onClick={() => setTopic(tp)}
+                key={tp.id}
+                tone={tp.id === topic ? "accent" : "neutral"}
+                onClick={() => setTopic(tp.id)}
               >
-                #{tp}
+                #{tp.name}
               </Chip>
             ))}
           </div>

@@ -6,7 +6,7 @@ export * from "./flow/flow";
 export * from "./guide";
 export { checkIntegrity } from "./integrity/check";
 export { formatPath, hasErrors, type IntegrityIssue, type Severity } from "./integrity/issues";
-export { migrateToCurrent, UnsupportedSchemaVersionError } from "./migrations";
+export { humanizeId, migrateToCurrent, UnsupportedSchemaVersionError } from "./migrations";
 export * from "./modules/modules";
 export * from "./parse";
 export * from "./scenes/scenes";

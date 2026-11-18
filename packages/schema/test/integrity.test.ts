@@ -230,3 +230,25 @@ describe("warnings", () => {
     expect(r.ok).toBe(false);
   });
 });
+
+describe("topics", () => {
+  it("rule topics must be declared", () => {
+    const g = clone(sequentialGame);
+    g.rules[0]!.topics = ["tiles", "scoring"];
+    expectError(g, "rules[0].topics[1]", /unknown topic "scoring"/);
+  });
+
+  it("topic ids are unique", () => {
+    const g = clone(sequentialGame);
+    g.topics[1]!.id = "tiles";
+    expectError(g, "topics[1].id", /duplicate topic id "tiles"/);
+  });
+
+  it("warns about unused and untranslated topics", () => {
+    const g = clone(sequentialGame);
+    g.topics.push({ id: "endgame", name: L("Endgame", "Endgame") });
+    const warnings = warningsOf(g).join("\n");
+    expect(warnings).toMatch(/topics\[4\]: topic "endgame" is not used by any rule/);
+    expect(warnings).toMatch(/topics\[4\]\.name: topic "endgame" is not translated/);
+  });
+});

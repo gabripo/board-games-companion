@@ -33,13 +33,19 @@ export function buildRuleSearch(guide: GameGuide, lang: Locale): RuleSearch {
     for (const r of g.ruleRefs ?? []) termsByRule.set(r, [...(termsByRule.get(r) ?? []), ...words]);
   }
 
+  const topicNames = new Map(guide.topics.map((t) => [t.id, t.name]));
+
   const docs: RuleDoc[] = guide.rules.map((r) => ({
     id: r.id,
     summary: r.summary[lang],
     detail: r.detail?.[lang] ?? "",
-    topics: r.topics.join(" ").replaceAll("-", " "),
+    topics: r.topics.map((t) => topicNames.get(t)?.[lang] ?? t.replaceAll("-", " ")).join(" "),
     terms: (termsByRule.get(r.id) ?? []).join(" "),
-    other: `${r.summary[otherLang]} ${r.detail?.[otherLang] ?? ""}`,
+    other: [
+      r.summary[otherLang],
+      r.detail?.[otherLang] ?? "",
+      ...r.topics.map((t) => topicNames.get(t)?.[otherLang] ?? ""),
+    ].join(" "),
   }));
 
   const index = new MiniSearch<RuleDoc>({

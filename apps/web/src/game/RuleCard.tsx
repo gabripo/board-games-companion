@@ -155,7 +155,7 @@ export function RuleCard(props: { rule: Rule; defaultExpanded?: boolean; compact
         {!props.compact &&
           rule.topics.map((topic) => (
             <Chip key={topic} className="opacity-80">
-              #{topic}
+              #{L(game.topicName(topic))}
             </Chip>
           ))}
       </div>

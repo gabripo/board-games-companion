@@ -62,7 +62,7 @@ const GUIDES = (goal: string, goalIt: string): GameGuide["guides"] => ({
 
 // ── 1. sequential turns: tile placement ────────────────────────────────────
 export const sequentialGame: GameGuide = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: "tile-trek",
   meta: { title: L("Tile Trek", "Sentiero di Tessere"), year: 2024 },
   classification: {
@@ -106,6 +106,12 @@ export const sequentialGame: GameGuide = {
       icon: { sceneId: "table", hotspotId: "map" },
       ruleRefs: ["place-tile"],
     },
+  ],
+  topics: [
+    { id: "tiles", name: L("Tiles", "Tessere") },
+    { id: "turn", name: L("Turn", "Turno") },
+    { id: "followers", name: L("Followers", "Seguaci") },
+    { id: "setup", name: L("Setup", "Preparazione") },
   ],
   rules: [
     {
@@ -311,7 +317,7 @@ export const sequentialGame: GameGuide = {
 
 // ── 2. simultaneous: card drafting ─────────────────────────────────────────
 export const simultaneousGame: GameGuide = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: "card-feast",
   meta: { title: L("Card Feast", "Banchetto di Carte") },
   classification: {
@@ -327,6 +333,7 @@ export const simultaneousGame: GameGuide = {
   variants: [],
   expansions: [],
   glossary: [],
+  topics: [{ id: "drafting", name: L("Drafting", "Draft") }],
   rules: [
     {
       id: "draft",
@@ -412,7 +419,7 @@ export const simultaneousGame: GameGuide = {
 
 // ── 3. real-time co-op ─────────────────────────────────────────────────────
 export const realTimeGame: GameGuide = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: "panic-kitchen",
   meta: { title: L("Panic Kitchen", "Cucina nel Panico") },
   classification: {
@@ -428,6 +435,7 @@ export const realTimeGame: GameGuide = {
   variants: [],
   expansions: [],
   glossary: [],
+  topics: [{ id: "communication", name: L("Communication", "Comunicazione") }],
   rules: [
     {
       id: "no-talking",
@@ -476,7 +484,7 @@ export const realTimeGame: GameGuide = {
 const d6Faces = [1, 2, 3, 4, 5, 6].map((v) => ({ id: `f${v}`, value: v }));
 
 export const diceGame: GameGuide = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: "dice-harbor",
   meta: { title: L("Dice Harbor", "Porto dei Dadi") },
   classification: {
@@ -492,6 +500,10 @@ export const diceGame: GameGuide = {
   variants: [],
   expansions: [],
   glossary: [],
+  topics: [
+    { id: "dice", name: L("Dice", "Dadi") },
+    { id: "actions", name: L("Actions", "Azioni") },
+  ],
   rules: [
     {
       id: "bust",
@@ -679,7 +691,7 @@ export const diceGame: GameGuide = {
 
 // ── 5. trick-taking ────────────────────────────────────────────────────────
 export const trickTakingGame: GameGuide = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: "trump-tide",
   meta: { title: L("Trump Tide", "Marea di Briscole") },
   classification: {
@@ -695,6 +707,7 @@ export const trickTakingGame: GameGuide = {
   variants: [],
   expansions: [],
   glossary: [],
+  topics: [{ id: "tricks", name: L("Tricks", "Prese") }],
   rules: [
     {
       id: "follow-suit",

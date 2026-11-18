@@ -33,6 +33,11 @@ describe("rule search", () => {
     expect(buildRuleSearch(game, "en").search("seguace")).toContain("follower-limit");
   });
 
+  it("finds rules by translated topic name in either language", () => {
+    expect(buildRuleSearch(game, "it").search("preparazione")).toContain("duel-followers");
+    expect(buildRuleSearch(game, "en").search("preparazione")).toContain("duel-followers");
+  });
+
   it("empty query returns nothing", () => {
     expect(buildRuleSearch(game, "en").search("  ")).toEqual([]);
   });

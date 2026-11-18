@@ -103,3 +103,23 @@ describe("rules tab", () => {
     expect(screen.getByText("Penalties")).toBeInTheDocument();
   });
 });
+
+describe("translated topic tags", () => {
+  it("shows topic chips in the UI language", async () => {
+    setLevel("tile-trek", "experienced");
+    renderApp("/game/tile-trek?tab=rules", { language: "it" });
+    const card = await screen.findByTestId("rule-place-tile");
+    expect(within(card).getByText("#Tessere")).toBeInTheDocument();
+    expect(within(card).getByText("#Turno")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "#Seguaci" })).toBeInTheDocument();
+    expect(screen.queryByText("#tiles")).not.toBeInTheDocument();
+  });
+
+  it("filters by a translated topic", async () => {
+    setLevel("tile-trek", "experienced");
+    renderApp("/game/tile-trek?tab=rules", { language: "it" });
+    await userEvent.click(await screen.findByRole("button", { name: "#Seguaci" }));
+    expect(screen.getByTestId("rule-follower-limit")).toBeInTheDocument();
+    expect(screen.queryByTestId("rule-place-tile")).not.toBeInTheDocument();
+  });
+});

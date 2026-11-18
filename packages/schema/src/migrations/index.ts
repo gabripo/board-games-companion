@@ -9,7 +9,32 @@ type Migration = {
   migrate: (raw: Record<string, unknown>) => Record<string, unknown>;
 };
 
-const MIGRATIONS: Migration[] = [];
+/** "turn-order" → "Turn order" (fallback name for topics that were never translated). */
+export function humanizeId(id: string): string {
+  const words = id.replaceAll("-", " ");
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
+const MIGRATIONS: Migration[] = [
+  {
+    // v2: topic tags are declared with translated names. Derive them from the rules;
+    // names fall back to the humanized id (integrity warns they are untranslated).
+    from: 1,
+    migrate: (doc) => {
+      if (Array.isArray(doc.topics)) return doc;
+      const ids = new Set<string>();
+      for (const rule of Array.isArray(doc.rules) ? doc.rules : []) {
+        const topics = (rule as { topics?: unknown }).topics;
+        if (Array.isArray(topics)) for (const t of topics) if (typeof t === "string") ids.add(t);
+      }
+      const topics = [...ids].map((id) => {
+        const name = humanizeId(id);
+        return { id, name: { en: name, it: name } };
+      });
+      return { ...doc, topics };
+    },
+  },
+];
 
 export class UnsupportedSchemaVersionError extends Error {}
 

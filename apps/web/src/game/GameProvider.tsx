@@ -3,6 +3,8 @@ import {
   type Conditions,
   type FlowNode,
   type GameGuide,
+  humanizeId,
+  type LocalizedString,
   pruneFlow,
   type Rule,
   type SceneRef,
@@ -32,6 +34,8 @@ export interface GameContextValue {
   /** Flow graph pruned to the current session. */
   flow: FlowNode | undefined;
   rule(id: string): Rule | undefined;
+  /** Translated name of a rule topic tag (humanized id if undeclared). */
+  topicName(id: string): LocalizedString;
   assetUrl(src: string): string;
   openClip(clip: YouTubeClip): void;
   openRule(id: string): void;
@@ -77,6 +81,7 @@ export function GameProvider(props: { guide: GameGuide; children: ReactNode }) {
 
   const session = useMemo(() => sanitizeSession(guide, prefs.session), [guide, prefs.session]);
   const rulesById = useMemo(() => new Map(guide.rules.map((r) => [r.id, r])), [guide]);
+  const topicsById = useMemo(() => new Map(guide.topics.map((t) => [t.id, t.name])), [guide]);
   const flow = useMemo(() => pruneFlow(guide.flow, session), [guide, session]);
 
   const showOnBoard = useCallback(
@@ -102,13 +107,14 @@ export function GameProvider(props: { guide: GameGuide; children: ReactNode }) {
       isApplicable: (c) => applies(c, session),
       flow,
       rule: (id) => rulesById.get(id),
+      topicName: (id) => topicsById.get(id) ?? { en: humanizeId(id), it: humanizeId(id) },
       assetUrl: (src) => assetUrlFor(guide.id, src),
       openClip: setClip,
       openRule: setRuleId,
       showOnBoard,
       defaultTab: prefs.level === "experienced" ? "rules" : "learn",
     }),
-    [guide, prefs, session, store, flow, rulesById, assetUrlFor, showOnBoard],
+    [guide, prefs, session, store, flow, rulesById, topicsById, assetUrlFor, showOnBoard],
   );
 
   return (

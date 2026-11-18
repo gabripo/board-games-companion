@@ -147,6 +147,13 @@ export const Expansion = z.strictObject({
 });
 export type Expansion = z.infer<typeof Expansion>;
 
+/** A rule topic tag (e.g. "tiles"), declared once with its name in every language. */
+export const Topic = z.strictObject({
+  id: Id,
+  name: LocalizedString,
+});
+export type Topic = z.infer<typeof Topic>;
+
 export const GlossaryEntry = z.strictObject({
   id: Id,
   /** Official term in each language's edition. */

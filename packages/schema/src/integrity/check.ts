@@ -23,6 +23,7 @@ export function checkIntegrity(g: GameGuide): IntegrityIssue[] {
   const expansionIds = issues.unique(g.expansions, ["expansions"], "expansion");
   issues.unique(g.glossary, ["glossary"], "glossary");
   const ruleIds = issues.unique(g.rules, ["rules"], "rule");
+  const topicIds = issues.unique(g.topics, ["topics"], "topic");
   const moduleIds = issues.unique(g.modules, ["modules"], "module");
   const sceneIds = issues.unique(g.scenes, ["scenes"], "scene");
   issues.unique(g.walkthroughs, ["walkthroughs"], "walkthrough");
@@ -136,6 +137,14 @@ export function checkIntegrity(g: GameGuide): IntegrityIssue[] {
   for (const [i, rule] of g.rules.entries()) {
     const p: Path = ["rules", i];
     for (const [j, c] of rule.citations.entries()) checkCitation(c, [...p, "citations", j]);
+    for (const [j, topic] of rule.topics.entries()) {
+      if (!topicIds.has(topic)) {
+        issues.error(
+          [...p, "topics", j],
+          `unknown topic "${topic}" (declare it in game.json topics)`,
+        );
+      }
+    }
     for (const [j, conflict] of (rule.conflicts ?? []).entries()) {
       checkCitation(conflict.citation, [...p, "conflicts", j, "citation"]);
     }
@@ -170,6 +179,20 @@ export function checkIntegrity(g: GameGuide): IntegrityIssue[] {
           `rule "${rule.id}" is not backed by an official source — verify against the rulebook`,
         );
       }
+    }
+  }
+
+  // ── topics ──────────────────────────────────────────────────────────────
+  const usedTopics = new Set(g.rules.flatMap((r) => r.topics));
+  for (const [i, topic] of g.topics.entries()) {
+    if (!usedTopics.has(topic.id)) {
+      issues.warning(["topics", i], `topic "${topic.id}" is not used by any rule`);
+    }
+    if (topic.name.en.trim().toLowerCase() === topic.name.it.trim().toLowerCase()) {
+      issues.warning(
+        ["topics", i, "name"],
+        `topic "${topic.id}" is not translated (same EN and IT name)`,
+      );
     }
   }
 
