@@ -17,6 +17,9 @@
     "validate": "tsx packages/schema/src/cli/validate.ts",
     "schemas": "tsx packages/schema/src/cli/export-json-schema.ts",
     "build": "pnpm validate && pnpm fixtures && turbo run build",
+    "build:games": "VITE_CONTENT=games pnpm build",
+    "preview:games": "VITE_CONTENT=games pnpm --filter @bgc/web preview",
+    "deploy:pages": "pnpm build:games && pnpm dlx wrangler@4 pages deploy apps/web/dist --project-name ${CF_PAGES_PROJECT:-board-games-companion} --branch main",
     "e2e": "pnpm fixtures && pnpm --filter @bgc/web e2e",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate"
   },

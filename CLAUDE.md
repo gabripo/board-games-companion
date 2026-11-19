@@ -70,8 +70,11 @@ pnpm test         # vitest (schema, integrity, content, unit)
 pnpm validate     # validate content/games/* → write dist/games (--no-out, --strict, [dir])
 pnpm schemas      # export JSON Schemas to dist/schemas (LLM structured output)
 pnpm check        # typecheck + lint + test + validate
-pnpm build        # validate + fixtures, then builds web (PWA + service worker)
+pnpm build        # validate + fixtures, then builds web (PWA + service worker) — ships fixtures
+pnpm build:games  # same, shipping the real games (VITE_CONTENT=games)
+pnpm preview:games # serve that build on :4173, also on the LAN (phone testing)
 pnpm e2e          # Playwright on the prod build: Pixel 7 + iPad landscape (--trace off)
+pnpm deploy:pages # build:games + upload apps/web/dist to Cloudflare Pages (see docs/DEPLOY.md)
 ```
 Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 

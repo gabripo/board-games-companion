@@ -1,0 +1,45 @@
+name: Deploy
+
+# Ships the real games to Cloudflare Pages after CI passes on main (or on demand).
+# Inactive until the repository has:
+#   variable CLOUDFLARE_PAGES_PROJECT  (e.g. board-games-companion)
+#   secrets  CLOUDFLARE_API_TOKEN (Cloudflare Pages: Edit) and CLOUDFLARE_ACCOUNT_ID
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: >-
+      vars.CLOUDFLARE_PAGES_PROJECT != '' &&
+      (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build:games
+      - name: Deploy to Cloudflare Pages
+        run: >-
+          pnpm dlx wrangler@4 pages deploy apps/web/dist
+          --project-name "${{ vars.CLOUDFLARE_PAGES_PROJECT }}"
+          --branch main
+          --commit-hash "${{ github.event.workflow_run.head_sha || github.sha }}"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
