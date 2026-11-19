@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { GameIndex, parseGuide } from "../src";
 import { bundleAll, loadGameDir, writeGameDir } from "../src/node";
 import { ARCHETYPES, clone, diceGame, sequentialGame } from "./fixtures/archetypes";
@@ -12,6 +12,7 @@ beforeEach(async () => {
   tmp = await mkdtemp(join(tmpdir(), "bgc-bundle-"));
 });
 afterEach(async () => {
+  vi.unstubAllEnvs();
   await rm(tmp, { recursive: true, force: true });
 });
 
@@ -107,12 +108,24 @@ describe("loadGameDir()", () => {
   });
 
   it("reports missing scene images", async () => {
+    vi.stubEnv("BGC_IMAGES", ""); // CI sets it; this case is about local/deploy builds
     const dir = await writeGame(tmp);
     await rm(join(dir, "images/table.svg"));
     const r = await loadGameDir(dir);
     expect(r.issues).toContainEqual(
       expect.objectContaining({ path: "scenes[0].image.src", severity: "error" }),
     );
+  });
+
+  it("only warns about missing images when BGC_IMAGES=optional (CI without private images)", async () => {
+    vi.stubEnv("BGC_IMAGES", "optional");
+    const dir = await writeGame(tmp);
+    await rm(join(dir, "images/table.svg"));
+    const r = await loadGameDir(dir);
+    expect(r.issues).toContainEqual(
+      expect.objectContaining({ path: "scenes[0].image.src", severity: "warning" }),
+    );
+    expect(r.issues.filter((i) => i.severity === "error")).toEqual([]);
   });
 
   it("runs integrity checks on the merged guide", async () => {
