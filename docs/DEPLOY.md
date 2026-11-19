@@ -54,8 +54,8 @@ pnpm deploy:pages           # build:games + upload apps/web/dist
 ```
 
 `deploy:pages` uploads to the Pages project named by `CF_PAGES_PROJECT` (default
-`board-games-companion`), creating it on the first run is a one-off:
-`pnpm dlx wrangler@4 pages project create <name> --production-branch main`.
+`whatweplay` → https://whatweplay.pages.dev). The project was created once with
+`pnpm dlx wrangler@4 pages project create whatweplay --production-branch main`.
 Don't run `pnpm deploy`: that's pnpm's own built-in command.
 
 The site is reachable by anyone who has the link (not indexed: `_headers` sends `noindex`,

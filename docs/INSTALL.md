@@ -4,7 +4,7 @@ Board Games Companion is a web app (PWA): there is no app store. You open a link
 "install" it, which adds an icon to the home screen. It then opens full screen like a normal
 app, keeps working offline for the games you download, and updates itself.
 
-**Link:** https://board-games-companion.pages.dev
+**Link:** https://whatweplay.pages.dev
 
 Open the link in the phone's **real browser** (Chrome, Firefox, Samsung Internet or Safari).
 Links opened inside WhatsApp, Telegram or Instagram open in a mini-browser that can't
@@ -69,7 +69,7 @@ downloads. The same site in a Safari tab keeps separate storage.
 
 ## Italiano — in breve
 
-È un'app web: niente store. Apri il link **https://board-games-companion.pages.dev** nel
+È un'app web: niente store. Apri il link **https://whatweplay.pages.dev** nel
 browser del telefono (non dentro WhatsApp/Telegram: usa "Apri nel browser").
 
 - **Android (Chrome):** tocca il banner **Installa app**, oppure menu **⋮** › **Aggiungi a
