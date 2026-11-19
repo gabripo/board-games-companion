@@ -1,5 +1,7 @@
 # Installing the app on a phone
 
+_Italiano: [INSTALL.it.md](INSTALL.it.md)_
+
 Board Games Companion is a web app (PWA): there is no app store. You open a link once and
 "install" it, which adds an icon to the home screen. It then opens full screen like a normal
 app, keeps working offline for the games you download, and updates itself.
@@ -65,21 +67,4 @@ downloads. The same site in a Safari tab keeps separate storage.
 | A game says it needs a connection          | It wasn't downloaded: go online, open it, tap **Download for offline**.    |
 | Pictures missing offline                   | Download the game again while online (it saves the pictures too).          |
 
----
-
-## Italiano — in breve
-
-È un'app web: niente store. Apri il link **https://whatweplay.pages.dev** nel
-browser del telefono (non dentro WhatsApp/Telegram: usa "Apri nel browser").
-
-- **Android (Chrome):** tocca il banner **Installa app**, oppure menu **⋮** › **Aggiungi a
-  schermata Home** › **Installa**.
-- **Android (Firefox):** menu **⋮** › **Altro** › **Aggiungi app alla schermata principale**.
-- **Android (Samsung Internet):** menu **≡** › **Aggiungi pagina a** › **Schermata Home**.
-- **iPhone/iPad:** in Safari tocca **Condividi** (quadrato con freccia ↑) › **Aggiungi alla
-  schermata Home**, lascia attivo **Apri come app web** e tocca **Aggiungi**.
-
-Poi apri l'app dall'icona **mentre sei online**, scegli la lingua e, per ogni gioco che userai,
-tocca **Scarica per l'uso offline** nella scheda Impara: così funziona anche senza rete (i video
-richiedono comunque la connessione). Gli aggiornamenti arrivano da soli; per rimuoverla,
-tieni premuta l'icona e disinstalla.
+To try the app and report problems: [TESTING.md](TESTING.md).

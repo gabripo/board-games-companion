@@ -67,6 +67,8 @@ installs behind Access.
 
 ## After a deploy
 
-Open the site on a phone and install it ([INSTALL.md](INSTALL.md)). Updates arrive
+Open the site on a phone and install it ([INSTALL.md](INSTALL.md) ·
+[INSTALL.it.md](INSTALL.it.md)); testers follow [TESTING.md](TESTING.md) ·
+[TESTING.it.md](TESTING.it.md). Updates arrive
 automatically: the service worker swaps in the new version on the next launch
 (`autoUpdate`). Guides downloaded for offline use refresh in the background when online.
