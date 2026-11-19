@@ -146,3 +146,30 @@ test("landscape tablets keep the board beside the other tabs", async ({ page }, 
   await expect(page.getByTestId("game-loop")).toBeVisible();
   await expect(page.getByTestId("scene-harbor")).toBeVisible();
 });
+
+test("learn shortcuts land below the sticky header on phones", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "phone", "phone layout only");
+  await boot(page, { levels: { "tile-trek": "newbie" } });
+  await page.goto("/#/game/tile-trek?tab=learn");
+  const nav = page.getByRole("navigation", { name: "Jump to a section" });
+  await nav.getByRole("button", { name: "How a game flows" }).click();
+  // Wait for the smooth scroll to finish: scrollY moved and stopped changing.
+  await page.waitForFunction(
+    () =>
+      new Promise((resolve) => {
+        let last = -1;
+        const timer = setInterval(() => {
+          if (window.scrollY > 0 && window.scrollY === last) {
+            clearInterval(timer);
+            resolve(true);
+          }
+          last = window.scrollY;
+        }, 150);
+      }),
+  );
+  const header = await page.locator("header").first().boundingBox();
+  const section = await page.locator("#learn-loop").boundingBox();
+  const headerBottom = (header?.y ?? 0) + (header?.height ?? 0);
+  expect(section?.y ?? 0).toBeGreaterThanOrEqual(headerBottom - 1);
+  expect(section?.y ?? 0).toBeLessThan(headerBottom + 40);
+});
