@@ -1,0 +1,123 @@
+{
+  "id": "hero-actions",
+  "kind": "actions",
+  "title": {
+    "en": "Hero actions",
+    "it": "Azioni degli Eroi"
+  },
+  "ruleRefs": ["hero-phase"],
+  "actions": [
+    {
+      "id": "move",
+      "name": {
+        "en": "Move",
+        "it": "Muovere"
+      },
+      "effect": {
+        "en": "To an adjacent location, or circle to circle. Citizens with you may follow.",
+        "it": "In un luogo adiacente, o da cerchio a cerchio. I Cittadini con te possono seguirti."
+      },
+      "ruleRefs": ["action-move", "teleportation"]
+    },
+    {
+      "id": "guide",
+      "name": {
+        "en": "Guide",
+        "it": "Guidare"
+      },
+      "effect": {
+        "en": "Move 1 Citizen between your location and an adjacent one (not through circles).",
+        "it": "Sposta 1 Cittadino tra il tuo luogo e uno adiacente (non attraverso i cerchi)."
+      },
+      "ruleRefs": ["action-guide", "citizens-teleport"]
+    },
+    {
+      "id": "pick-up",
+      "name": {
+        "en": "Pick Up",
+        "it": "Raccogliere"
+      },
+      "effect": {
+        "en": "Take any number of Items from your location.",
+        "it": "Prendi quanti Oggetti vuoi dal tuo luogo."
+      },
+      "ruleRefs": ["action-pick-up"]
+    },
+    {
+      "id": "share",
+      "name": {
+        "en": "Share",
+        "it": "Condividere"
+      },
+      "effect": {
+        "en": "All Heroes in your location trade Items freely.",
+        "it": "Tutti gli Eroi nel tuo luogo si scambiano Oggetti liberamente."
+      },
+      "ruleRefs": ["action-share"]
+    },
+    {
+      "id": "advance",
+      "name": {
+        "en": "Advance",
+        "it": "Avanzare"
+      },
+      "effect": {
+        "en": "Spend Items on a Monster's challenge (step 1 of its mat).",
+        "it": "Spendi Oggetti sulla sfida di un Mostro (passo 1 della plancia)."
+      },
+      "ruleRefs": ["action-advance"],
+      "cost": {
+        "en": "Items, as the mat says",
+        "it": "Oggetti, come dice la plancia"
+      }
+    },
+    {
+      "id": "defeat",
+      "name": {
+        "en": "Defeat",
+        "it": "Sconfiggere"
+      },
+      "effect": {
+        "en": "Challenge done? Use Items to defeat the Monster; Terror −1.",
+        "it": "Sfida completata? Usa Oggetti per sconfiggere il Mostro; Terrore −1."
+      },
+      "ruleRefs": ["action-defeat", "monster-defeated"],
+      "cost": {
+        "en": "Items, as the mat says",
+        "it": "Oggetti, come dice la plancia"
+      }
+    },
+    {
+      "id": "special",
+      "name": {
+        "en": "Special Action",
+        "it": "Azione Speciale"
+      },
+      "effect": {
+        "en": "Roll the d20 and apply your tile's result at once.",
+        "it": "Tira il d20 e applica subito il risultato della tessera."
+      },
+      "ruleRefs": ["action-special"],
+      "sceneRef": {
+        "sceneId": "hero-tile",
+        "hotspotId": "special"
+      }
+    },
+    {
+      "id": "reveal-lair",
+      "name": {
+        "en": "Reveal a Lair",
+        "it": "Rivelare una Tana"
+      },
+      "effect": {
+        "en": "Flip the facedown Lair in your location.",
+        "it": "Gira la Tana coperta nel tuo luogo."
+      },
+      "ruleRefs": ["reveal-lair"],
+      "cost": {
+        "en": "Items of any colour worth 3+",
+        "it": "Oggetti di qualunque colore per 3+"
+      }
+    }
+  ]
+}

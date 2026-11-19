@@ -1,0 +1,61 @@
+{
+  "id": "monster-displacer-beast",
+  "kind": "sections",
+  "title": {
+    "en": "Displacer Beast",
+    "it": "Displacer Beast"
+  },
+  "conditions": {
+    "variants": ["monster-displacer-beast"]
+  },
+  "sections": [
+    {
+      "id": "objective",
+      "title": {
+        "en": "Objective",
+        "it": "Obiettivo"
+      },
+      "body": {
+        "en": "Find its true location, then vanquish it. Frenzy 1 · sword/orange, skull/blue, hat/brown · starts at the Abandoned Camp.",
+        "it": "Trova la sua vera posizione, poi sconfiggilo. Frenesia 1 · spada/arancione, teschio/blu, cappello/marrone · parte da Abandoned Camp."
+      },
+      "ruleRefs": ["monster-start"]
+    },
+    {
+      "id": "power",
+      "title": {
+        "en": "Power: Displacement",
+        "it": "Potere: Dislocazione"
+      },
+      "body": {
+        "en": "It jumps to the next-closest Hero, who takes its Hits this turn.",
+        "it": "Salta sull'Eroe successivo più vicino, che subisce i suoi Colpi in questo turno."
+      },
+      "ruleRefs": ["displacer-power"]
+    },
+    {
+      "id": "step-1",
+      "title": {
+        "en": "Step 1 · Investigate the displacement field",
+        "it": "Passo 1 · Indagare il campo di dislocazione"
+      },
+      "body": {
+        "en": "Place Items on its mat: Strength 1–3 covers that many numbers, 4–6 any spot. 5 Items unlock the strike.",
+        "it": "Metti Oggetti sulla plancia: Forza 1–3 copre altrettanti numeri, 4–6 qualunque spazio. 5 Oggetti sbloccano il colpo."
+      },
+      "ruleRefs": ["displacer-advance"]
+    },
+    {
+      "id": "step-2",
+      "title": {
+        "en": "Step 2 · Strike the Displacer Beast",
+        "it": "Passo 2 · Colpire il Displacer Beast"
+      },
+      "body": {
+        "en": "Discard any Items worth 7+, roll the d20: a covered number wins. Miss: move one placed Item. 1 lose a placed Item; 20 win + Perk + action.",
+        "it": "Scarta Oggetti qualsiasi per 7+, tira il d20: un numero coperto vince. Mancato: sposta un Oggetto piazzato. 1 perdi un Oggetto piazzato; 20 vittoria + Vantaggio + azione."
+      },
+      "ruleRefs": ["displacer-defeat"]
+    }
+  ]
+}

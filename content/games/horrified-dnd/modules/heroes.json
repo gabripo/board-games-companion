@@ -1,0 +1,71 @@
+{
+  "id": "heroes",
+  "kind": "sections",
+  "title": {
+    "en": "Heroes (d20 special actions)",
+    "it": "Eroi (azioni speciali col d20)"
+  },
+  "ruleRefs": ["action-special"],
+  "sections": [
+    {
+      "id": "wizard",
+      "title": {
+        "en": "Wizard — Blackstaff Tower",
+        "it": "Mago — Blackstaff Tower"
+      },
+      "body": {
+        "en": "1 no effect · 2–8 roll the d20: move any Monster to that location (the Red Dragon goes to a Lair) · 9–15 roll the d20: move any Hero to that location · 16–19 move any Hero to any location · 20 move to any location, gain a Perk.",
+        "it": "1 nessun effetto · 2–8 tira il d20: sposta un Mostro in quel luogo (il Drago Rosso va in una Tana) · 9–15 tira il d20: sposta un Eroe in quel luogo · 16–19 sposta un Eroe in un luogo qualsiasi · 20 vai in un luogo qualsiasi, ottieni un Vantaggio."
+      },
+      "ruleRefs": ["wizard-teleport"]
+    },
+    {
+      "id": "rogue",
+      "title": {
+        "en": "Rogue — The Sword and Sextant",
+        "it": "Ladro — The Sword and Sextant"
+      },
+      "body": {
+        "en": "1 no effect · 2–8 share Items with any and all Heroes · 9–15 take 2 Items from the nearest location · 16–19 take 2 Items from the discard pile · 20 take 3 Items from the Haversack, gain a Perk.",
+        "it": "1 nessun effetto · 2–8 scambia Oggetti con tutti gli Eroi · 9–15 prendi 2 Oggetti dal luogo più vicino · 16–19 prendi 2 Oggetti dagli scarti · 20 prendi 3 Oggetti dalla Sacca, ottieni un Vantaggio."
+      },
+      "ruleRefs": ["action-special"]
+    },
+    {
+      "id": "fighter",
+      "title": {
+        "en": "Fighter — Hall of Heroes",
+        "it": "Guerriero — Hall of Heroes"
+      },
+      "body": {
+        "en": "1 no effect · 2–8 move at once to the nearest Monster's location · 9–15 in the Monster Phase, ignore all Hits of 1 Monster attack · 16–19 don't draw a Monster card this turn · 20 gain 2 more actions this turn, gain a Perk.",
+        "it": "1 nessun effetto · 2–8 vai subito nel luogo del Mostro più vicino · 9–15 nella Fase dei Mostri ignora tutti i Colpi di 1 attacco · 16–19 non pescare la carta Mostro in questo turno · 20 ottieni 2 azioni in più in questo turno e un Vantaggio."
+      },
+      "ruleRefs": ["monster-phase-effects"]
+    },
+    {
+      "id": "cleric",
+      "title": {
+        "en": "Cleric — Castle Waterdeep",
+        "it": "Chierico — Castle Waterdeep"
+      },
+      "body": {
+        "en": "1 no effect · 2–8 in the Monster Phase, reroll 1 die showing Hit or Power · 9–15 reroll all dice showing Hit or Power · 16–19 if a Hero is defeated, don't raise Terror: move that Hero to your location instead · 20 all Monster attacks this turn use only 1 die, gain a Perk.",
+        "it": "1 nessun effetto · 2–8 nella Fase dei Mostri ritira 1 dado con Colpo o Potere · 9–15 ritira tutti i dadi con Colpo o Potere · 16–19 se un Eroe è sconfitto, il Terrore non sale: sposta invece quell'Eroe nel tuo luogo · 20 tutti gli attacchi dei Mostri in questo turno usano 1 solo dado, ottieni un Vantaggio."
+      },
+      "ruleRefs": ["monster-phase-effects"]
+    },
+    {
+      "id": "bard",
+      "title": {
+        "en": "Bard — The Yawning Portal: Taproom",
+        "it": "Bardo — The Yawning Portal: Taproom"
+      },
+      "body": {
+        "en": "1 no effect · 2–8 move all Citizens up to 2 locations toward you · 9–15 move all Heroes up to 2 locations toward you · 16–19 move Monsters 2 locations away from you · 20 move any Citizen or Hero to your location, gain a Perk.",
+        "it": "1 nessun effetto · 2–8 sposta tutti i Cittadini fino a 2 luoghi verso di te · 9–15 sposta tutti gli Eroi fino a 2 luoghi verso di te · 16–19 allontana i Mostri di 2 luoghi da te · 20 porta un Cittadino o un Eroe nel tuo luogo, ottieni un Vantaggio."
+      },
+      "ruleRefs": ["action-special"]
+    }
+  ]
+}

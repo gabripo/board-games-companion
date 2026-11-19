@@ -1,0 +1,266 @@
+{
+  "areas": [
+    {
+      "id": "board",
+      "name": {
+        "en": "The board",
+        "it": "Il tabellone"
+      }
+    },
+    {
+      "id": "monsters",
+      "name": {
+        "en": "Monsters",
+        "it": "Mostri"
+      }
+    },
+    {
+      "id": "players",
+      "name": {
+        "en": "Each player",
+        "it": "Ogni giocatore"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "gameboard",
+      "areaId": "board",
+      "text": {
+        "en": "Set out the gameboard: Waterdeep on top, Undermountain below.",
+        "it": "Apri il tabellone: Waterdeep in alto, Undermountain sotto."
+      },
+      "components": ["gameboard"],
+      "sceneRef": {
+        "sceneId": "board"
+      },
+      "ruleRefs": ["setup-board"]
+    },
+    {
+      "id": "lairs",
+      "areaId": "board",
+      "text": {
+        "en": "Shuffle the 4 Lair tokens and place them facedown on Skull Island, Dragon's Platform, Obelisk of the Eye and Abandoned Camp.",
+        "it": "Mescola i 4 segnalini Tana e mettili coperti su Skull Island, Dragon's Platform, Obelisk of the Eye e Abandoned Camp."
+      },
+      "components": ["lair-tokens"],
+      "sceneRef": {
+        "sceneId": "setup-example",
+        "hotspotId": "lairs"
+      },
+      "ruleRefs": ["setup-board", "reveal-lair"]
+    },
+    {
+      "id": "terror",
+      "areaId": "board",
+      "text": {
+        "en": "Put the Terror marker in a clear base on 0 of the Terror Level track.",
+        "it": "Metti il segnalino Terrore in una base trasparente sullo 0 del tracciato Terrore."
+      },
+      "components": ["terror-marker"],
+      "sceneRef": {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      },
+      "ruleRefs": ["setup-board"],
+      "conditions": {
+        "playerCount": [2, 3, 4, 5]
+      }
+    },
+    {
+      "id": "terror-solo",
+      "areaId": "board",
+      "text": {
+        "en": "Solo: put the Terror marker on 3 instead.",
+        "it": "In solitario: metti invece il segnalino Terrore sul 3."
+      },
+      "components": ["terror-marker"],
+      "sceneRef": {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      },
+      "ruleRefs": ["solo"],
+      "conditions": {
+        "playerCount": [1]
+      }
+    },
+    {
+      "id": "citizens",
+      "areaId": "board",
+      "text": {
+        "en": "Put the 10 Citizens in clear bases next to the board.",
+        "it": "Metti i 10 Cittadini nelle basi trasparenti accanto al tabellone."
+      },
+      "components": ["citizen-standees"],
+      "sceneRef": {
+        "sceneId": "setup-example",
+        "hotspotId": "citizens"
+      },
+      "ruleRefs": ["citizens"]
+    },
+    {
+      "id": "monster-deck",
+      "areaId": "board",
+      "text": {
+        "en": "Shuffle the Monster cards into a facedown deck.",
+        "it": "Mescola le carte Mostro in un mazzo coperto."
+      },
+      "components": ["monster-cards"],
+      "sceneRef": {
+        "sceneId": "setup-example",
+        "hotspotId": "monster-deck"
+      },
+      "ruleRefs": ["setup-board"]
+    },
+    {
+      "id": "choose-monsters",
+      "areaId": "monsters",
+      "text": {
+        "en": "Choose your Monsters (first game: Displacer Beast + Beholder) and lay their mats out in Frenzy Order, lowest first. Box the rest.",
+        "it": "Scegli i Mostri (prima partita: Displacer Beast + Beholder) e disponi le plance in ordine di Frenesia, dal più basso. Il resto nella scatola."
+      },
+      "components": ["monster-mats"],
+      "sceneRef": {
+        "sceneId": "monsters"
+      },
+      "ruleRefs": ["choose-monsters"]
+    },
+    {
+      "id": "place-monsters",
+      "areaId": "monsters",
+      "text": {
+        "en": "Put each Monster figure on the location with its Frenzy flame: Displacer Beast → Abandoned Camp (1), Beholder → Skull Island (4), Red Dragon → Dragon's Platform (6).",
+        "it": "Metti ogni miniatura sul luogo con la fiamma della sua Frenesia: Displacer Beast → Abandoned Camp (1), Beholder → Skull Island (4), Drago Rosso → Dragon's Platform (6)."
+      },
+      "components": ["monster-figures"],
+      "sceneRef": {
+        "sceneId": "board",
+        "hotspotId": "skull-island"
+      },
+      "ruleRefs": ["monster-start"]
+    },
+    {
+      "id": "mimic-mat",
+      "areaId": "monsters",
+      "text": {
+        "en": "Mimic: it starts on its own Monster mat, not on the board.",
+        "it": "Mimic: parte sulla sua plancia Mostro, non sul tabellone."
+      },
+      "conditions": {
+        "variants": ["monster-mimic"]
+      },
+      "sceneRef": {
+        "sceneId": "monsters",
+        "hotspotId": "mimic"
+      },
+      "ruleRefs": ["mimic-notes"]
+    },
+    {
+      "id": "beholder-setup",
+      "areaId": "monsters",
+      "text": {
+        "en": "Beholder: put the Eye Ray reference card and the 10 damage markers by its mat.",
+        "it": "Beholder: metti la carta dei Raggi Oculari e i 10 segnalini Danno accanto alla sua plancia."
+      },
+      "conditions": {
+        "variants": ["monster-beholder"]
+      },
+      "components": ["eye-ray-card", "damage-markers"],
+      "sceneRef": {
+        "sceneId": "beholder"
+      },
+      "ruleRefs": ["beholder-advance"]
+    },
+    {
+      "id": "dragon-setup",
+      "areaId": "monsters",
+      "text": {
+        "en": "Red Dragon: lay out both of its mats and set up the Vault puzzle (obstacles and Orb) as the back of the mat explains — roll the d20 to choose the layout.",
+        "it": "Drago Rosso: disponi entrambe le plance e prepara il rompicapo della Cripta (ostacoli e Globo) come spiega il retro della plancia; tira il d20 per scegliere la disposizione."
+      },
+      "conditions": {
+        "variants": ["monster-red-dragon"]
+      },
+      "components": ["obstacle-tokens", "orb"],
+      "ruleRefs": ["dragon-vault"]
+    },
+    {
+      "id": "frenzy",
+      "areaId": "monsters",
+      "text": {
+        "en": "Put the Frenzy marker on the mat with the lowest Frenzy Order.",
+        "it": "Metti il segnalino Frenesia sulla plancia con l'ordine di Frenesia più basso."
+      },
+      "components": ["frenzy-marker"],
+      "sceneRef": {
+        "sceneId": "setup-example",
+        "hotspotId": "frenzy-marker"
+      },
+      "ruleRefs": ["frenzy-start"]
+    },
+    {
+      "id": "heroes",
+      "areaId": "players",
+      "text": {
+        "en": "Choose a Hero: take its tile, standee and a reference card. Box the unused ones.",
+        "it": "Scegli un Eroe: prendi tessera, sagoma e una carta di riepilogo. Il resto nella scatola."
+      },
+      "components": ["hero-tiles", "hero-standees", "reference-cards"],
+      "sceneRef": {
+        "sceneId": "hero-tile"
+      },
+      "ruleRefs": ["setup-players"]
+    },
+    {
+      "id": "hero-start",
+      "areaId": "players",
+      "text": {
+        "en": "Place your standee on the starting location on your tile.",
+        "it": "Metti la tua sagoma sul luogo di partenza della tessera."
+      },
+      "sceneRef": {
+        "sceneId": "hero-tile",
+        "hotspotId": "start"
+      },
+      "ruleRefs": ["setup-players"]
+    },
+    {
+      "id": "perks",
+      "areaId": "players",
+      "text": {
+        "en": "Shuffle the Perk cards, deal 1 to each player and stack the rest facedown.",
+        "it": "Mescola le carte Vantaggio, danne 1 a ogni giocatore e impila le altre coperte."
+      },
+      "components": ["perk-cards"],
+      "sceneRef": {
+        "sceneId": "setup-example",
+        "hotspotId": "perk-deck"
+      },
+      "ruleRefs": ["setup-perks-items"]
+    },
+    {
+      "id": "items",
+      "areaId": "board",
+      "text": {
+        "en": "Put all 60 Items in the Haversack, shake it, draw 12 and place each on the location printed on it.",
+        "it": "Metti tutti i 60 Oggetti nella Sacca, scuotila, pescane 12 e mettili ciascuno sul luogo stampato sopra."
+      },
+      "components": ["item-tokens", "haversack"],
+      "sceneRef": {
+        "sceneId": "items",
+        "hotspotId": "location"
+      },
+      "ruleRefs": ["setup-perks-items", "items"]
+    },
+    {
+      "id": "first-player",
+      "areaId": "players",
+      "text": {
+        "en": "Everyone rolls the d20: highest starts (reroll ties).",
+        "it": "Tutti tirano il d20: inizia il più alto (si ripetono i pareggi)."
+      },
+      "components": ["d20"],
+      "ruleRefs": ["first-player"]
+    }
+  ]
+}

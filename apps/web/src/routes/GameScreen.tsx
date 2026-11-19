@@ -1,5 +1,5 @@
 import { getRouteApi, Link } from "@tanstack/react-router";
-import { lazy, type ReactNode, Suspense, useState } from "react";
+import { lazy, type ReactNode, type RefObject, Suspense, useEffect, useRef, useState } from "react";
 import { TABS, type Tab, useGame } from "../game/GameProvider";
 import { SessionSheet, useSessionLabel } from "../game/SessionSheet";
 import { useL, useTranslation } from "../i18n";
@@ -113,6 +113,28 @@ function TabBar(props: { tab: Tab; onChange: (t: Tab) => void }) {
   );
 }
 
+/**
+ * The page scrolls under the sticky header: reserve its height as scroll padding so
+ * in-page jumps (Learn shortcuts, scrollIntoView) land below it, not behind it.
+ */
+function useHeaderScrollPadding(header: RefObject<HTMLElement | null>) {
+  useEffect(() => {
+    const el = header.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const root = document.documentElement;
+    const update = () => {
+      root.style.scrollPaddingTop = `${el.getBoundingClientRect().height}px`;
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      root.style.scrollPaddingTop = "";
+    };
+  }, [header]);
+}
+
 export function GameScreen() {
   const game = useGame();
   const { guide } = game;
@@ -122,7 +144,9 @@ export function GameScreen() {
   const navigate = route.useNavigate();
   const sessionLabel = useSessionLabel();
   const [sessionOpen, setSessionOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
   useWakeLock();
+  useHeaderScrollPadding(headerRef);
 
   const tab = search.tab ?? game.defaultTab;
   const setTab = (next: Tab) => void navigate({ search: { tab: next } });
@@ -138,7 +162,10 @@ export function GameScreen() {
 
   return (
     <div className="min-h-dvh pb-24">
-      <header className="pt-safe sticky top-0 z-20 border-b border-line bg-bg/90 backdrop-blur">
+      <header
+        ref={headerRef}
+        className="pt-safe sticky top-0 z-20 border-b border-line bg-bg/90 backdrop-blur"
+      >
         <div className="mx-auto flex max-w-6xl items-center gap-1 px-2 py-1.5">
           <Link
             to="/"

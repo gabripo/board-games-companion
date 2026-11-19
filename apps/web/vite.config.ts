@@ -22,6 +22,8 @@ export default defineConfig(({ mode }) => {
         registerType: "autoUpdate",
         injectRegister: false,
         includeAssets: ["icon.svg"],
+        // Send cookies with the manifest request, so installing works behind Cloudflare Access.
+        useCredentials: true,
         manifest: {
           name: "Board Games Companion",
           short_name: "BG Companion",
@@ -65,7 +67,9 @@ export default defineConfig(({ mode }) => {
       __CONTENT_SOURCE__: JSON.stringify(content),
     },
     server: { port: 5173, host: true },
-    preview: { port: 4173, host: true },
+    // host: reachable from phones on the same Wi-Fi; allowedHosts: HTTPS test tunnels
+    // (`cloudflared tunnel --url http://localhost:4173`) so the PWA can be installed.
+    preview: { port: 4173, host: true, allowedHosts: [".trycloudflare.com"] },
     test: {
       environment: "happy-dom",
       setupFiles: ["./test/setup.ts"],

@@ -53,6 +53,14 @@
       "lang": "en",
       "official": false,
       "url": "https://boardgamegeek.com/boardgame/1927/munchkin"
+    },
+    {
+      "id": "munchkin-wiki",
+      "type": "web",
+      "title": "Munchkin Wiki (fandom) — classic Races and Classes",
+      "lang": "en",
+      "official": false,
+      "url": "https://munchkin.fandom.com/wiki/Munchkin"
     }
   ],
   "components": [

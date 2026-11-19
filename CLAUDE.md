@@ -70,8 +70,11 @@ pnpm test         # vitest (schema, integrity, content, unit)
 pnpm validate     # validate content/games/* → write dist/games (--no-out, --strict, [dir])
 pnpm schemas      # export JSON Schemas to dist/schemas (LLM structured output)
 pnpm check        # typecheck + lint + test + validate
-pnpm build        # validate + fixtures, then builds web (PWA + service worker)
+pnpm build        # validate + fixtures, then builds web (PWA + service worker) — ships fixtures
+pnpm build:games  # same, shipping the real games (VITE_CONTENT=games)
+pnpm preview:games # serve that build on :4173, also on the LAN (phone testing)
 pnpm e2e          # Playwright on the prod build: Pixel 7 + iPad landscape (--trace off)
+pnpm deploy:pages # build:games + upload to Cloudflare Pages, from the owner's Mac only (docs/DEPLOY.md)
 ```
 Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 
@@ -114,7 +117,9 @@ Done means: `pnpm check` passes. `pnpm lint:fix` applies Biome's safe fixes.
 
 - Never download YouTube videos or extract frames. Clips = IFrame embed with `start`/`end`/`lang`.
 - Images: own photos, rulebook page renders, or official publisher card/component images
-  (private use only). Keep the raw downloads in `sources/<game>/`; commit only the composed WebP scenes.
+  (private use only). Raw downloads go in `sources/<game>/`; composed WebP scenes go in
+  `content/games/<id>/images/`, which is **gitignored** (public repo): never commit images.
+  Deploy only from the owner's machine; CI validates with `BGC_IMAGES=optional`.
 - Do not commit rulebook PDFs or long verbatim rule text; paraphrase + cite page.
 - API keys only in `.env` (gitignored): `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`.
 

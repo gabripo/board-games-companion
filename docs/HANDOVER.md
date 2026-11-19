@@ -35,7 +35,9 @@ pnpm --filter @bgc/web exec playwright install chromium && pnpm e2e
    builder → reconcile vs PDF → translate → validate. Claude for PDF/web/translation, Gemini
    for YouTube URLs only. Keys in `.env`. Stages are pure, tested against recorded responses.
 3. **`apps/admin`** (local only): review AI output, drag-to-edit hotspots and annotations.
-4. **Deploy** to Cloudflare Pages (HTTPS is required to install the PWA on a phone).
+4. **Deploy** to Cloudflare Pages with `pnpm deploy:pages` from the owner's Mac (game images
+   are gitignored, so CI can't deploy). Steps in `docs/DEPLOY.md`; phone install in
+   `docs/INSTALL.md`.
 5. **More modules** when a real game needs them: tricks, roles/narrator, timer, tracks, economy
    (follow "Adding a new mechanic" in CLAUDE.md).
 

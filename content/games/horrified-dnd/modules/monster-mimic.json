@@ -1,0 +1,61 @@
+{
+  "id": "monster-mimic",
+  "kind": "sections",
+  "title": {
+    "en": "Mimic",
+    "it": "Mimic"
+  },
+  "conditions": {
+    "variants": ["monster-mimic"]
+  },
+  "sections": [
+    {
+      "id": "objective",
+      "title": {
+        "en": "Objective",
+        "it": "Obiettivo"
+      },
+      "body": {
+        "en": "Find the Mimic and defeat it quickly. Frenzy 5 · wand/purple, chest/yellow, spellbook/teal · starts on its own mat.",
+        "it": "Trova il Mimic e sconfiggilo in fretta. Frenesia 5 · bacchetta/viola, forziere/giallo, libro/verde acqua · parte sulla sua plancia."
+      },
+      "ruleRefs": ["mimic-notes"]
+    },
+    {
+      "id": "power",
+      "title": {
+        "en": "Power: Scavenger",
+        "it": "Potere: Spazzino"
+      },
+      "body": {
+        "en": "Removes the highest-Strength Item from the location nearest the current player's Hero (only once it's on the board).",
+        "it": "Toglie l'Oggetto con Forza più alta dal luogo più vicino all'Eroe del giocatore di turno (solo quando è sul tabellone)."
+      },
+      "ruleRefs": ["mimic-power"]
+    },
+    {
+      "id": "step-1",
+      "title": {
+        "en": "Step 1 · Where is it?!",
+        "it": "Passo 1 · Dov'è?!"
+      },
+      "body": {
+        "en": "Bite space: draw an Item; if every Hero discards a matching-colour Item it appears at the active player's location, otherwise Terror +1.",
+        "it": "Casella morso: pesca un Oggetto; se ogni Eroe scarta un Oggetto di quel colore appare nel luogo del giocatore attivo, altrimenti Terrore +1."
+      },
+      "ruleRefs": ["mimic-advance"]
+    },
+    {
+      "id": "step-2",
+      "title": {
+        "en": "Step 2 · Mimic battle",
+        "it": "Passo 2 · Battaglia col Mimic"
+      },
+      "body": {
+        "en": "At its location, Magical (blue) Items worth 6+.",
+        "it": "Nel suo luogo, Oggetti Magici (blu) per 6+."
+      },
+      "ruleRefs": ["mimic-defeat"]
+    }
+  ]
+}

@@ -891,6 +891,10 @@
         "kind": "page",
         "sourceId": "rulebook-en",
         "page": 2
+      },
+      {
+        "kind": "url",
+        "sourceId": "munchkin-wiki"
       }
     ],
     "confidence": "high",

@@ -1,0 +1,136 @@
+{
+  "id": "d20",
+  "kind": "dice",
+  "title": {
+    "en": "The d20",
+    "it": "Il d20"
+  },
+  "ruleRefs": ["d20-rules"],
+  "dice": [
+    {
+      "id": "d20",
+      "name": {
+        "en": "20-sided die",
+        "it": "Dado a 20 facce"
+      },
+      "count": 1,
+      "sides": 20,
+      "faces": [
+        {
+          "id": "f1",
+          "value": 1
+        },
+        {
+          "id": "f2",
+          "value": 2
+        },
+        {
+          "id": "f3",
+          "value": 3
+        },
+        {
+          "id": "f4",
+          "value": 4
+        },
+        {
+          "id": "f5",
+          "value": 5
+        },
+        {
+          "id": "f6",
+          "value": 6
+        },
+        {
+          "id": "f7",
+          "value": 7
+        },
+        {
+          "id": "f8",
+          "value": 8
+        },
+        {
+          "id": "f9",
+          "value": 9
+        },
+        {
+          "id": "f10",
+          "value": 10
+        },
+        {
+          "id": "f11",
+          "value": 11
+        },
+        {
+          "id": "f12",
+          "value": 12
+        },
+        {
+          "id": "f13",
+          "value": 13
+        },
+        {
+          "id": "f14",
+          "value": 14
+        },
+        {
+          "id": "f15",
+          "value": 15
+        },
+        {
+          "id": "f16",
+          "value": 16
+        },
+        {
+          "id": "f17",
+          "value": 17
+        },
+        {
+          "id": "f18",
+          "value": 18
+        },
+        {
+          "id": "f19",
+          "value": 19
+        },
+        {
+          "id": "f20",
+          "value": 20,
+          "label": {
+            "en": "& (20)",
+            "it": "& (20)"
+          }
+        }
+      ]
+    }
+  ],
+  "rerollPolicy": {
+    "en": "No rerolls unless a Perk or the Cleric says so.",
+    "it": "Niente ritiri, salvo un Vantaggio o il Chierico."
+  },
+  "modifiers": [
+    {
+      "id": "nat-20",
+      "text": {
+        "en": "Hero Phase: 20 or more (even with a Perk) = new Perk card. Not in the Monster Phase.",
+        "it": "Fase degli Eroi: 20 o più (anche con un Vantaggio) = nuova carta Vantaggio. Non nella Fase dei Mostri."
+      },
+      "ruleRefs": ["d20-rules"]
+    },
+    {
+      "id": "nat-1",
+      "text": {
+        "en": "A 1 is a critical failure: no effect.",
+        "it": "Un 1 è un fallimento critico: nessun effetto."
+      },
+      "ruleRefs": ["d20-rules"]
+    },
+    {
+      "id": "dragon-sum",
+      "text": {
+        "en": "Red Dragon: add the 3 Hoard Items' Strength; 20+ destroys it.",
+        "it": "Drago Rosso: aggiungi la Forza dei 3 Oggetti nel Tesoro; 20+ lo distrugge."
+      },
+      "ruleRefs": ["dragon-defeat"]
+    }
+  ]
+}

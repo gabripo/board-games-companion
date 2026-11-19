@@ -6,11 +6,18 @@
       "outputs": []
     },
     "test": {
+      "env": ["BGC_IMAGES"],
       "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/content/**"],
       "outputs": []
     },
     "build": {
       "dependsOn": ["^build"],
+      "env": ["VITE_CONTENT"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/dist/games/**",
+        "$TURBO_ROOT$/dist/fixture-games/**"
+      ],
       "outputs": ["dist/**"]
     },
     "dev": {

@@ -1,0 +1,85 @@
+{
+  "id": "monster-red-dragon",
+  "kind": "sections",
+  "title": {
+    "en": "Red Dragon",
+    "it": "Drago Rosso"
+  },
+  "conditions": {
+    "variants": ["monster-red-dragon"]
+  },
+  "sections": [
+    {
+      "id": "objective",
+      "title": {
+        "en": "Objective",
+        "it": "Obiettivo"
+      },
+      "body": {
+        "en": "Claim the Orb of Dragonkind, lure the Red Dragon to its Hoard and defeat it. Frenzy 6 · sword/orange, shield/red, potion/green, spellbook/teal · starts on Dragon's Platform · can't enter Waterdeep.",
+        "it": "Ottieni il Globo dei Draghi, attira il Drago Rosso nel suo Tesoro e sconfiggilo. Frenesia 6 · spada/arancione, scudo/rosso, pozione/verde, libro/verde acqua · parte da Dragon's Platform · non entra a Waterdeep."
+      },
+      "ruleRefs": ["dragon-overview", "dragon-movement"]
+    },
+    {
+      "id": "power",
+      "title": {
+        "en": "Power: Fire Breath",
+        "it": "Potere: Soffio Infuocato"
+      },
+      "body": {
+        "en": "Every Hero and Citizen in its location is hit.",
+        "it": "Ogni Eroe e Cittadino nel suo luogo è colpito."
+      },
+      "ruleRefs": ["dragon-power"]
+    },
+    {
+      "id": "step-1",
+      "title": {
+        "en": "Step 1 · Solve the Vault",
+        "it": "Passo 1 · Risolvere la Cripta"
+      },
+      "body": {
+        "en": "At the Vault Lair: discard an Item, slide same-coloured obstacles; get the Orb to the Vault Exit.",
+        "it": "Nella Tana Cripta: scarta un Oggetto, fai scorrere gli ostacoli di un colore; porta il Globo all'Uscita."
+      },
+      "ruleRefs": ["dragon-vault"]
+    },
+    {
+      "id": "step-2",
+      "title": {
+        "en": "Step 2 · Lure the Red Dragon",
+        "it": "Passo 2 · Attirare il Drago Rosso"
+      },
+      "body": {
+        "en": "At its Hoard: action to draw an Item; the Dragon moves toward the Hoard by its Strength.",
+        "it": "Nel suo Tesoro: un'azione per pescare un Oggetto; il Drago si avvicina al Tesoro di tanti luoghi quanta è la sua Forza."
+      },
+      "ruleRefs": ["dragon-lure"]
+    },
+    {
+      "id": "step-3",
+      "title": {
+        "en": "Step 3 · Surround the Lair",
+        "it": "Passo 3 · Circondare la Tana"
+      },
+      "body": {
+        "en": "Dragon in the Hoard: one action per Item or Orb placed on the marked spots.",
+        "it": "Drago nel Tesoro: un'azione per ogni Oggetto o Globo messo sugli spazi indicati."
+      },
+      "ruleRefs": ["dragon-surround"]
+    },
+    {
+      "id": "step-4",
+      "title": {
+        "en": "Step 4 · Destroy the Red Dragon",
+        "it": "Passo 4 · Distruggere il Drago Rosso"
+      },
+      "body": {
+        "en": "d20 + the 3 Items' Strength ≥ 20 wins; otherwise discard 1 placed Item and return to step 3.",
+        "it": "d20 + la Forza dei 3 Oggetti ≥ 20 vince; altrimenti scarta 1 Oggetto piazzato e torna al passo 3."
+      },
+      "ruleRefs": ["dragon-defeat"]
+    }
+  ]
+}

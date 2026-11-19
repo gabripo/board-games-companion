@@ -74,8 +74,8 @@
         "it": "Mago"
       },
       "body": {
-        "en": "Flight: discard up to 3 cards after rolling to Run Away, +1 each. Charm: discard your whole hand (at least 3) to charm one monster and take its Treasure (no level).",
-        "it": "Volo: dopo il tiro di fuga scarta fino a 3 carte, +1 ciascuna. Ammaliare: scarta tutta la mano (almeno 3) per ammaliare un mostro e prenderne il Tesoro (senza Livello)."
+        "en": "Flight: discard up to 3 cards after rolling to Run Away, +1 each. Charm: discard your whole hand (at least 3) to charm one monster and take its Treasure (no level); fight any other monsters normally.",
+        "it": "Volo: dopo il tiro di fuga scarta fino a 3 carte, +1 ciascuna. Ammaliare: scarta tutta la mano (almeno 3) per ammaliare un mostro e prenderne il Tesoro (senza Livello); gli altri mostri si combattono normalmente."
       },
       "ruleRefs": ["race-class"]
     },

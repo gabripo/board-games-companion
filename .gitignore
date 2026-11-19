@@ -13,6 +13,10 @@ coverage/
 # raw ingestion sources (rulebook PDFs, transcripts) — never committed
 sources/
 
+# game images (publisher card art, rulebook renders): private, deployed from the owner's
+# machine only — never pushed to the public repo (see docs/DEPLOY.md)
+content/games/*/images/
+
 # playwright
 test-results/
 playwright-report/
