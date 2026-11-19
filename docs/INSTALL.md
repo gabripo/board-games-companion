@@ -20,8 +20,8 @@ install apps: use its "Open in browser" option first. Private/incognito tabs can
 **Firefox**
 
 1. Open the link.
-2. Tap the **⋮** menu (bottom right) › **Add app to Home screen** › **Add** (or drag the icon
-   to where you want it).
+2. Tap the **⋮** menu (bottom right) › **More** › **Add app to Home screen** › **Add** (or
+   drag the icon to where you want it). Older Firefox versions show it without **More**.
 
 **Samsung Internet**
 
@@ -74,7 +74,7 @@ browser del telefono (non dentro WhatsApp/Telegram: usa "Apri nel browser").
 
 - **Android (Chrome):** tocca il banner **Installa app**, oppure menu **⋮** › **Aggiungi a
   schermata Home** › **Installa**.
-- **Android (Firefox):** menu **⋮** › **Aggiungi app alla schermata principale**.
+- **Android (Firefox):** menu **⋮** › **Altro** › **Aggiungi app alla schermata principale**.
 - **Android (Samsung Internet):** menu **≡** › **Aggiungi pagina a** › **Schermata Home**.
 - **iPhone/iPad:** in Safari tocca **Condividi** (quadrato con freccia ↑) › **Aggiungi alla
   schermata Home**, lascia attivo **Apri come app web** e tocca **Aggiungi**.
