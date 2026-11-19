@@ -1,0 +1,61 @@
+{
+  "id": "monster-beholder",
+  "kind": "sections",
+  "title": {
+    "en": "Beholder",
+    "it": "Beholder"
+  },
+  "conditions": {
+    "variants": ["monster-beholder"]
+  },
+  "sections": [
+    {
+      "id": "objective",
+      "title": {
+        "en": "Objective",
+        "it": "Obiettivo"
+      },
+      "body": {
+        "en": "Damage all 10 eyestalks, then blind the central antimagic eye. Frenzy 4 · shield/red, hat/brown, spellbook/teal · starts on Skull Island.",
+        "it": "Danneggia tutti i 10 peduncoli, poi acceca l'occhio antimagia centrale. Frenesia 4 · scudo/rosso, cappello/marrone, libro/verde acqua · parte da Skull Island."
+      },
+      "ruleRefs": ["monster-start"]
+    },
+    {
+      "id": "power",
+      "title": {
+        "en": "Power: Eye Ray",
+        "it": "Potere: Raggio Oculare"
+      },
+      "body": {
+        "en": "Roll the d20: an undamaged eyestalk fires its ray; a damaged one makes every Hero with Items discard 1.",
+        "it": "Tira il d20: un peduncolo intatto spara il suo raggio; uno danneggiato fa scartare 1 Oggetto a ogni Eroe che ne ha."
+      },
+      "ruleRefs": ["beholder-power", "eye-rays"]
+    },
+    {
+      "id": "step-1",
+      "title": {
+        "en": "Step 1 · Damage the eyestalks",
+        "it": "Passo 1 · Danneggiare i peduncoli"
+      },
+      "body": {
+        "en": "Discard any Item and roll: 2–15 one eyestalk, 16–19 two, 20 three + Item back + Perk.",
+        "it": "Scarta un Oggetto e tira: 2–15 un peduncolo, 16–19 due, 20 tre + Oggetto restituito + Vantaggio."
+      },
+      "ruleRefs": ["beholder-advance"]
+    },
+    {
+      "id": "step-2",
+      "title": {
+        "en": "Step 2 · Blind the Beholder",
+        "it": "Passo 2 · Accecare il Beholder"
+      },
+      "body": {
+        "en": "All 10 damaged: Mundane (yellow) Items worth 6+ at its location.",
+        "it": "Tutti i 10 danneggiati: Oggetti Comuni (gialli) per 6+ nel suo luogo."
+      },
+      "ruleRefs": ["beholder-defeat"]
+    }
+  ]
+}

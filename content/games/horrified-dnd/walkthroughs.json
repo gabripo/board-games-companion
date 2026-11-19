@@ -1,0 +1,192 @@
+[
+  {
+    "id": "first-turn",
+    "title": {
+      "en": "Your first turn",
+      "it": "Il tuo primo turno"
+    },
+    "level": "newbie",
+    "steps": [
+      {
+        "id": "terror",
+        "text": {
+          "en": "You all lose if this marker reaches the skull: every fallen Hero or Citizen pushes it up.",
+          "it": "Perdete tutti se questo segnalino arriva al teschio: ogni Eroe o Cittadino caduto lo fa salire."
+        },
+        "sceneId": "board",
+        "focus": {
+          "x": 0.2,
+          "y": 0,
+          "w": 0.6,
+          "h": 0.15
+        },
+        "highlightHotspots": ["terror-track"]
+      },
+      {
+        "id": "tile",
+        "text": {
+          "en": "Your tile gives 4 actions and a start. Move, Pick Up Items, Share, Guide Citizens, Advance and Defeat Monsters.",
+          "it": "La tessera ti dà 4 azioni e una partenza. Muovi, Raccogli Oggetti, Condividi, Guida Cittadini, Avanza e Sconfiggi i Mostri."
+        },
+        "sceneId": "hero-tile",
+        "flowNodeRef": "actions",
+        "highlightHotspots": ["actions", "start"]
+      },
+      {
+        "id": "special",
+        "text": {
+          "en": "Or gamble an action on your special: roll the d20 and apply the row. A 20 also gives a Perk.",
+          "it": "Oppure rischia un'azione sulla speciale: tira il d20 e applica la riga. Un 20 dà anche un Vantaggio."
+        },
+        "sceneId": "hero-tile",
+        "flowNodeRef": "special",
+        "focus": {
+          "x": 0.55,
+          "y": 0.6,
+          "w": 0.45,
+          "h": 0.4
+        },
+        "highlightHotspots": ["special"]
+      },
+      {
+        "id": "items",
+        "text": {
+          "en": "Items fuel everything. Their colour and shape matter for some Monsters; their Strength adds up.",
+          "it": "Gli Oggetti alimentano tutto. Colore e forma contano per alcuni Mostri; la Forza si somma."
+        },
+        "sceneId": "items",
+        "highlightHotspots": ["strength", "weapons", "magical", "mundane"],
+        "check": {
+          "question": {
+            "en": "Tap the kind of Item the Beholder must be blinded with.",
+            "it": "Tocca il tipo di Oggetto con cui va accecato il Beholder."
+          },
+          "answerHotspotId": "mundane",
+          "explanation": {
+            "en": "Mundane (yellow) Items worth 6+.",
+            "it": "Oggetti Comuni (gialli) per 6+."
+          }
+        }
+      },
+      {
+        "id": "card",
+        "text": {
+          "en": "Then the Monster Phase: draw a card, place its Items, resolve the Event, then the attack line.",
+          "it": "Poi la Fase dei Mostri: pesca una carta, piazza i suoi Oggetti, risolvi l'Evento, poi la riga d'attacco."
+        },
+        "sceneId": "monster-card",
+        "flowNodeRef": "monster-phase",
+        "highlightHotspots": ["items", "event"]
+      },
+      {
+        "id": "attack",
+        "text": {
+          "en": "Each icon wakes up Monsters: they move toward the nearest character and roll dice. Discard 1 Item per Hit to survive.",
+          "it": "Ogni icona sveglia dei Mostri: si avvicinano al personaggio più vicino e tirano i dadi. Scarta 1 Oggetto per Colpo per sopravvivere."
+        },
+        "sceneId": "monster-card",
+        "flowNodeRef": "attack-line",
+        "highlightHotspots": ["attack-symbols", "attack-move", "attack-dice"],
+        "check": {
+          "question": {
+            "en": "Tap the part that says which Monsters act.",
+            "it": "Tocca la parte che dice quali Mostri agiscono."
+          },
+          "answerHotspotId": "attack-symbols",
+          "explanation": {
+            "en": "Frenzy icon and colour symbols, left to right.",
+            "it": "Icona Frenesia e simboli colorati, da sinistra a destra."
+          }
+        }
+      },
+      {
+        "id": "respawn",
+        "text": {
+          "en": "Defeated? You come back here next turn with all your Items and Perks.",
+          "it": "Sconfitto? Torni qui al tuo prossimo turno con tutti i tuoi Oggetti e Vantaggi."
+        },
+        "sceneId": "board",
+        "focus": {
+          "x": 0.6,
+          "y": 0,
+          "w": 0.4,
+          "h": 0.3
+        },
+        "check": {
+          "question": {
+            "en": "Tap where defeated Heroes come back.",
+            "it": "Tocca dove tornano gli Eroi sconfitti."
+          },
+          "answerHotspotId": "taproom",
+          "explanation": {
+            "en": "The Yawning Portal: Taproom.",
+            "it": "The Yawning Portal: Taproom."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "beholder",
+    "title": {
+      "en": "Beating the Beholder",
+      "it": "Battere il Beholder"
+    },
+    "level": "any",
+    "conditions": {
+      "variants": ["monster-beholder"]
+    },
+    "steps": [
+      {
+        "id": "rays",
+        "text": {
+          "en": "Every POW, roll the d20: the matching eyestalk fires its ray. A damaged eyestalk fires the antimagic eye instead (all Heroes discard 1 Item).",
+          "it": "A ogni POW tira il d20: il peduncolo corrispondente spara il suo raggio. Se è danneggiato spara l'occhio antimagia (ogni Eroe scarta 1 Oggetto)."
+        },
+        "sceneId": "beholder",
+        "highlightHotspots": ["power", "rays-map"]
+      },
+      {
+        "id": "damage",
+        "text": {
+          "en": "At its location, discard any Item and roll: 2–15 damages one eyestalk, 16–19 two, 20 three.",
+          "it": "Nel suo luogo scarta un Oggetto e tira: 2–15 danneggia un peduncolo, 16–19 due, 20 tre."
+        },
+        "sceneId": "beholder",
+        "focus": {
+          "x": 0.5,
+          "y": 0,
+          "w": 0.5,
+          "h": 0.72
+        },
+        "highlightHotspots": ["advance"]
+      },
+      {
+        "id": "blind",
+        "text": {
+          "en": "All ten marked? Spend Mundane Items worth 6+ there to blind it.",
+          "it": "Tutti e dieci segnati? Spendi lì Oggetti Comuni per 6+ per accecarlo."
+        },
+        "sceneId": "beholder",
+        "focus": {
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.5,
+          "h": 0.3
+        },
+        "highlightHotspots": ["defeat"],
+        "check": {
+          "question": {
+            "en": "Which eyestalk fires on a 20?",
+            "it": "Quale peduncolo spara con un 20?"
+          },
+          "answerHotspotId": "death",
+          "explanation": {
+            "en": "The Death Ray — damage it early.",
+            "it": "Il Raggio Mortale: danneggialo presto."
+          }
+        }
+      }
+    ]
+  }
+]

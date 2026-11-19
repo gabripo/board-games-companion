@@ -1,0 +1,1532 @@
+[
+  {
+    "id": "objective",
+    "topics": ["end"],
+    "summary": {
+      "en": "Fully cooperative: everyone wins by defeating every Monster in play, or loses together.",
+      "it": "Totalmente cooperativo: si vince tutti sconfiggendo ogni Mostro in gioco, o si perde insieme."
+    },
+    "detail": {
+      "en": "Each Monster is defeated in its own way, shown on its Monster mat.",
+      "it": "Ogni Mostro si sconfigge in modo diverso, indicato sulla sua plancia."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "setup-board",
+    "topics": ["setup", "lairs"],
+    "summary": {
+      "en": "Shuffle the 4 Lair tokens facedown onto Skull Island, Dragon's Platform, Obelisk of the Eye and the Abandoned Camp. Terror marker on 0, Citizens beside the board, Monster deck shuffled facedown.",
+      "it": "Mescola i 4 segnalini Tana coperti su Skull Island, Dragon's Platform, Obelisk of the Eye e Abandoned Camp. Segnalino Terrore sullo 0, Cittadini accanto al tabellone, mazzo Mostro mescolato coperto."
+    },
+    "appliesTo": {
+      "components": ["lair-tokens", "terror-marker", "citizen-standees", "monster-cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      }
+    ]
+  },
+  {
+    "id": "choose-monsters",
+    "topics": ["setup", "monsters"],
+    "summary": {
+      "en": "Choose the Monsters to face and lay their mats out in Frenzy Order, lowest to highest. Follow each Monster's setup (back of its mat); return the unused ones to the box.",
+      "it": "Scegli i Mostri da affrontare e disponi le loro plance in ordine di Frenesia, dal più basso al più alto. Segui la preparazione di ogni Mostro (retro della plancia); rimetti nella scatola quelli non usati."
+    },
+    "detail": {
+      "en": "First game: Displacer Beast and Beholder. Experienced: the Red Dragon campaign (two challenges) plus any other Monster. In the app, turn on each Monster in the session sheet.",
+      "it": "Prima partita: Displacer Beast e Beholder. Esperti: la campagna del Drago Rosso (due sfide) più un altro Mostro. Nell'app attiva ogni Mostro nella scheda della sessione."
+    },
+    "appliesTo": {
+      "components": ["monster-mats"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monsters"
+      }
+    ]
+  },
+  {
+    "id": "monster-start",
+    "topics": ["setup", "monsters"],
+    "summary": {
+      "en": "Each Monster starts on the board location showing a flame with its Frenzy number: Displacer Beast (1) Abandoned Camp, Beholder (4) Skull Island, Red Dragon (6) Dragon's Platform. The Mimic starts on its own mat.",
+      "it": "Ogni Mostro parte dal luogo del tabellone con la fiamma del suo numero di Frenesia: Displacer Beast (1) Abandoned Camp, Beholder (4) Skull Island, Drago Rosso (6) Dragon's Platform. Il Mimic parte sulla sua plancia."
+    },
+    "detail": {
+      "en": "Flames 2, 3 and 5 are for Monsters from other Horrified games.",
+      "it": "Le fiamme 2, 3 e 5 servono ai Mostri di altri giochi Horrified."
+    },
+    "appliesTo": {
+      "components": ["monster-figures"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "combining",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "abandoned-camp"
+      },
+      {
+        "sceneId": "board",
+        "hotspotId": "skull-island"
+      },
+      {
+        "sceneId": "board",
+        "hotspotId": "dragons-platform"
+      }
+    ]
+  },
+  {
+    "id": "frenzy-start",
+    "topics": ["setup", "monsters"],
+    "summary": {
+      "en": "Put the Frenzy marker in a clear base on the Monster mat with the lowest Frenzy Order.",
+      "it": "Metti il segnalino Frenesia in una base trasparente sulla plancia Mostro con l'ordine di Frenesia più basso."
+    },
+    "appliesTo": {
+      "components": ["frenzy-marker"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "setup-example",
+        "hotspotId": "frenzy-marker"
+      }
+    ]
+  },
+  {
+    "id": "setup-players",
+    "topics": ["setup", "heroes"],
+    "summary": {
+      "en": "Each player picks a Hero and takes its tile, standee and a reference card, then places the standee on the starting location shown on the tile.",
+      "it": "Ogni giocatore sceglie un Eroe e ne prende tessera, sagoma e una carta di riepilogo, poi mette la sagoma sul luogo di partenza indicato sulla tessera."
+    },
+    "appliesTo": {
+      "components": ["hero-tiles", "hero-standees", "reference-cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "hero-tile",
+        "hotspotId": "start"
+      }
+    ]
+  },
+  {
+    "id": "setup-perks-items",
+    "topics": ["setup", "items", "perks"],
+    "summary": {
+      "en": "Deal 1 Perk card to each player (rest facedown). Put all 60 Items in the Haversack, shake, draw 12 and place each on the location printed on it.",
+      "it": "Dai 1 carta Vantaggio a ogni giocatore (il resto coperto). Metti tutti i 60 Oggetti nella Sacca, scuoti, pescane 12 e mettili ciascuno sul luogo stampato sopra."
+    },
+    "appliesTo": {
+      "components": ["perk-cards", "item-tokens", "haversack"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "items",
+        "hotspotId": "location"
+      }
+    ]
+  },
+  {
+    "id": "solo",
+    "topics": ["setup"],
+    "summary": {
+      "en": "Solo: start the Terror marker on 3 — the Citizens doubt a lone Hero.",
+      "it": "In solitario: il segnalino Terrore parte dal 3, perché i Cittadini dubitano di un Eroe solitario."
+    },
+    "conditions": {
+      "playerCount": [1]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      }
+    ]
+  },
+  {
+    "id": "first-player",
+    "topics": ["turn", "d20"],
+    "summary": {
+      "en": "Everyone rolls the d20; highest goes first (reroll ties). Play continues clockwise.",
+      "it": "Tutti tirano il d20; il risultato più alto inizia (si ripetono i pareggi). Si prosegue in senso orario."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "turn-structure",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Each turn: Hero Phase (your actions, anyone's Perks), then Monster Phase (draw and resolve one Monster card).",
+      "it": "Ogni turno: Fase degli Eroi (le tue azioni, i Vantaggi di chiunque), poi Fase dei Mostri (pesca e risolvi una carta Mostro)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "d20-rules",
+    "topics": ["d20"],
+    "summary": {
+      "en": "The & on the d20 is 20. In the Hero Phase any result of 20 or more (even boosted by a Perk) gives the active Hero a new Perk card; in the Monster Phase it doesn't. A 1 is always a critical failure with no effect.",
+      "it": "La & sul d20 vale 20. Nella Fase degli Eroi un risultato di 20 o più (anche aumentato da un Vantaggio) dà all'Eroe attivo una nuova carta Vantaggio; nella Fase dei Mostri no. Un 1 è sempre un fallimento critico senza effetto."
+    },
+    "detail": {
+      "en": "A Perk card may adjust a 1.",
+      "it": "Una carta Vantaggio può modificare un 1."
+    },
+    "appliesTo": {
+      "components": ["d20"],
+      "modules": ["d20"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hero-phase",
+    "topics": ["turn", "hero-actions"],
+    "summary": {
+      "en": "Take up to the number of actions on your Hero tile (4), in any order, repeating them as you like. Any player may play any number of Perks during any Hero Phase.",
+      "it": "Fai fino al numero di azioni sulla tessera Eroe (4), in qualunque ordine e ripetendole a piacere. Ogni giocatore può giocare quanti Vantaggi vuole in qualunque Fase degli Eroi."
+    },
+    "appliesTo": {
+      "modules": ["hero-actions"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "hero-tile",
+        "hotspotId": "actions"
+      }
+    ]
+  },
+  {
+    "id": "action-move",
+    "topics": ["hero-actions", "movement"],
+    "summary": {
+      "en": "Move: go to an adjacent location along a path; any Citizens with you may come along. Being placed somewhere ignores paths.",
+      "it": "Muovere: vai in un luogo adiacente lungo un sentiero; i Cittadini con te possono seguirti. Essere piazzati altrove ignora i sentieri."
+    },
+    "detail": {
+      "en": "You can enter or leave a Monster's location, but ending your turn there leaves you exposed in the Monster Phase.",
+      "it": "Puoi entrare o uscire da un luogo con un Mostro, ma finire il turno lì ti espone nella Fase dei Mostri."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "teleportation",
+    "topics": ["movement"],
+    "summary": {
+      "en": "One Move takes you from any Teleportation Circle to any other. Castle Corkscrew ↔ Skullport Gate and The Yawning Portal: The Well ↔ Entry Well are secret passages that work the same way.",
+      "it": "Un Movimento ti porta da un Cerchio di Teletrasporto a qualunque altro. Castle Corkscrew ↔ Skullport Gate e The Yawning Portal: The Well ↔ Entry Well sono passaggi segreti che funzionano allo stesso modo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "tc-west"
+      },
+      {
+        "sceneId": "board",
+        "hotspotId": "castle-corkscrew"
+      },
+      {
+        "sceneId": "board",
+        "hotspotId": "the-well"
+      }
+    ]
+  },
+  {
+    "id": "action-guide",
+    "topics": ["hero-actions", "citizens"],
+    "summary": {
+      "en": "Guide: move one Citizen from your location to an adjacent one, or from an adjacent location to yours.",
+      "it": "Guidare: sposta un Cittadino dal tuo luogo a uno adiacente, o da un luogo adiacente al tuo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-pick-up",
+    "topics": ["hero-actions", "items"],
+    "summary": {
+      "en": "Pick Up: take any number of Items from your location and keep them in front of you.",
+      "it": "Raccogliere: prendi quanti Oggetti vuoi dal tuo luogo e tienili davanti a te."
+    },
+    "detail": {
+      "en": "Grab Items early: you need them to Advance, Defeat and defend.",
+      "it": "Raccogli Oggetti presto: servono per Avanzare, Sconfiggere e difendersi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-share",
+    "topics": ["hero-actions", "items"],
+    "summary": {
+      "en": "Share: all Heroes in your location may swap any Items. It needn't be one-for-one, and you needn't be part of the trade.",
+      "it": "Condividere: tutti gli Eroi nel tuo luogo possono scambiarsi Oggetti a piacere. Non serve uno-a-uno, né che tu partecipi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-advance",
+    "topics": ["hero-actions", "monsters"],
+    "summary": {
+      "en": "Advance: use Items on a Monster's challenge, as shown on its mat.",
+      "it": "Avanzare: usa Oggetti sulla sfida di un Mostro, come indicato sulla sua plancia."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-defeat",
+    "topics": ["hero-actions", "monsters"],
+    "summary": {
+      "en": "Defeat: once a Monster's challenge is complete, use Items to defeat it. The Terror marker goes down 1.",
+      "it": "Sconfiggere: completata la sfida di un Mostro, usa Oggetti per sconfiggerlo. Il segnalino Terrore scende di 1."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-special",
+    "topics": ["hero-actions", "heroes", "d20"],
+    "summary": {
+      "en": "Special Action: roll the d20 and apply your Hero tile's result immediately, before your next action. You may use it again with your next action.",
+      "it": "Azione Speciale: tira il d20 e applica subito il risultato della tua tessera Eroe, prima dell'azione successiva. Puoi rifarla con l'azione seguente."
+    },
+    "appliesTo": {
+      "modules": ["heroes"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "hero-tile",
+        "hotspotId": "special"
+      }
+    ]
+  },
+  {
+    "id": "monster-phase-effects",
+    "topics": ["heroes", "attacks"],
+    "summary": {
+      "en": "Cleric and Fighter results apply in that turn's Monster Phase. With several, choose their order; each is used once, and any left over is lost when the Monster Phase ends.",
+      "it": "I risultati del Chierico e del Guerriero valgono nella Fase dei Mostri di quel turno. Se sono più d'uno, scegli l'ordine; ognuno si usa una volta, e quelli avanzati si perdono a fine Fase dei Mostri."
+    },
+    "detail": {
+      "en": "Example: the Fighter's \"ignore all Hits of 1 attack\" can wait for a dangerous attack — but if no Hits come, it's gone.",
+      "it": "Esempio: l'\"ignora tutti i Colpi di 1 attacco\" del Guerriero può aspettare un attacco pericoloso, ma se non arrivano Colpi va perso."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "wizard-teleport",
+    "topics": ["heroes", "movement", "d20"],
+    "summary": {
+      "en": "Wizard: board locations are numbered 1–20; roll the d20 again for the destination. The spell always works, even if nobody wants to go there. The Red Dragon is never sent to a random location: it goes to a Lair.",
+      "it": "Mago: i luoghi del tabellone sono numerati da 1 a 20; tira di nuovo il d20 per la destinazione. L'incantesimo funziona sempre, anche se nessuno vuole andarci. Il Drago Rosso non va mai in un luogo casuale: va in una Tana."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "conflicts": [
+      {
+        "claim": {
+          "en": "Ravensburger confirmed that the Wizard sends the Red Dragon to a Lair, as the Wizard tile says.",
+          "it": "Ravensburger ha confermato che il Mago manda il Drago Rosso in una Tana, come dice la tessera del Mago."
+        },
+        "citation": {
+          "kind": "url",
+          "sourceId": "bgg-mimic-dragon"
+        },
+        "resolution": {
+          "en": "The rulebook text says \"back to its starting location\" while the official tile says \"to a Lair\"; follow the tile and the publisher's answer. Its start, Dragon's Platform, is a Lair location anyway.",
+          "it": "Il regolamento dice \"al luogo di partenza\" mentre la tessera ufficiale dice \"in una Tana\"; segui la tessera e la risposta dell'editore. La sua partenza, Dragon's Platform, è comunque un luogo con Tana."
+        }
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "hero-tile",
+        "hotspotId": "special"
+      }
+    ]
+  },
+  {
+    "id": "reveal-lair",
+    "topics": ["hero-actions", "lairs"],
+    "summary": {
+      "en": "Reveal a Lair: at a facedown Lair token, discard Items of any colour totalling 3+ Strength to flip it. A blank one means no Lair there. Revealed Lairs stay for the whole game.",
+      "it": "Rivelare una Tana: su un segnalino Tana coperto, scarta Oggetti di qualunque colore per un totale di Forza 3+ e giralo. Se è vuoto, lì non c'è nessuna Tana. Le Tane rivelate restano per tutta la partita."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "setup-example",
+        "hotspotId": "lairs"
+      }
+    ]
+  },
+  {
+    "id": "lair-tokens",
+    "topics": ["lairs"],
+    "summary": {
+      "en": "Two Lair tokens belong to the Red Dragon (its Hoard and the Vault of the Orb of Dragonkind); the others are blank.",
+      "it": "Due segnalini Tana sono del Drago Rosso (il suo Tesoro e la Cripta del Globo dei Draghi); gli altri sono vuoti."
+    },
+    "detail": {
+      "en": "Lairs stay on the board even if their Monster isn't in the game.",
+      "it": "Le Tane restano sul tabellone anche se il loro Mostro non è in gioco."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "combining",
+        "page": 1
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "citizens",
+    "topics": ["citizens", "perks"],
+    "summary": {
+      "en": "Citizens enter during the Monster Phase at the locations shown by the Monster cards. Move and Guide them to the safe location printed on their standee: then remove them and the active player draws a Perk card.",
+      "it": "I Cittadini entrano nella Fase dei Mostri nei luoghi indicati dalle carte Mostro. Muovili e Guidali al luogo sicuro stampato sulla loro sagoma: poi toglili e il giocatore attivo pesca una carta Vantaggio."
+    },
+    "appliesTo": {
+      "components": ["citizen-standees"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "setup-example",
+        "hotspotId": "citizens"
+      }
+    ]
+  },
+  {
+    "id": "citizens-teleport",
+    "topics": ["citizens", "movement"],
+    "summary": {
+      "en": "Citizens can travel through a Teleportation Circle with a Hero's Move, but never by Guide. You can Guide them onto a circle to wait for a Hero.",
+      "it": "I Cittadini possono attraversare un Cerchio di Teletrasporto col Movimento di un Eroe, ma mai con Guidare. Puoi Guidarli su un cerchio ad aspettare un Eroe."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "perk-cards",
+    "topics": ["perks"],
+    "summary": {
+      "en": "Everyone starts with 1 Perk. Earn more by saving Citizens and by rolling 20+ in the Hero Phase. Play them on anyone's turn during the Hero Phase, without spending an action; discard face up.",
+      "it": "Tutti partono con 1 Vantaggio. Se ne guadagnano salvando Cittadini e facendo 20+ nella Fase degli Eroi. Si giocano nel turno di chiunque durante la Fase degli Eroi, senza spendere azioni; poi si scartano scoperti."
+    },
+    "detail": {
+      "en": "Talk about your Perks with the group and plan when to use them.",
+      "it": "Parlate dei vostri Vantaggi e decidete insieme quando usarli."
+    },
+    "appliesTo": {
+      "components": ["perk-cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "items",
+    "topics": ["items"],
+    "summary": {
+      "en": "Every Item has a name, colour, location, Strength and type: red hexagon = Weapon, blue circle = Magical, yellow square = Mundane. Used Items go to the discard pile; when the Haversack is empty, refill it with the discards.",
+      "it": "Ogni Oggetto ha nome, colore, luogo, Forza e tipo: esagono rosso = Arma, cerchio blu = Magico, quadrato giallo = Comune. Gli Oggetti usati vanno negli scarti; quando la Sacca è vuota, si riempie con gli scarti."
+    },
+    "appliesTo": {
+      "components": ["item-tokens", "haversack"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "items"
+      }
+    ]
+  },
+  {
+    "id": "item-requirements",
+    "topics": ["items"],
+    "summary": {
+      "en": "Requirements like \"6+\" are met by adding the Strength of any number of Items in one action. A three-shape icon accepts any Item; a single-shape icon needs Items of that type.",
+      "it": "Requisiti come \"6+\" si soddisfano sommando la Forza di quanti Oggetti vuoi in una sola azione. L'icona con tre forme accetta qualunque Oggetto; quella con una sola forma vuole Oggetti di quel tipo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "items",
+        "hotspotId": "any-token"
+      },
+      {
+        "sceneId": "items",
+        "hotspotId": "single-color"
+      }
+    ]
+  },
+  {
+    "id": "monster-phase",
+    "topics": ["monster-phase"],
+    "summary": {
+      "en": "Draw the top Monster card and resolve it top to bottom: Items, Event, Monster Attack. Then discard it face up.",
+      "it": "Pesca la prima carta Mostro e risolvila dall'alto in basso: Oggetti, Evento, Attacco del Mostro. Poi scartala scoperta."
+    },
+    "appliesTo": {
+      "components": ["monster-cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card"
+      }
+    ]
+  },
+  {
+    "id": "card-items",
+    "topics": ["monster-phase", "items"],
+    "summary": {
+      "en": "Items: draw the number of Items in the card's top-right corner from the Haversack and place each on its location (refill the bag from the discards if needed).",
+      "it": "Oggetti: pesca dalla Sacca il numero di Oggetti indicato in alto a destra sulla carta e mettili ciascuno sul suo luogo (se serve, riempi la sacca con gli scarti)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card",
+        "hotspotId": "items"
+      }
+    ]
+  },
+  {
+    "id": "card-event",
+    "topics": ["monster-phase"],
+    "summary": {
+      "en": "Event: read it aloud and do what it says. If it names a colour symbol of a Monster not in your game, skip it and go to the Monster Attack.",
+      "it": "Evento: leggilo ad alta voce ed eseguilo. Se indica il simbolo colorato di un Mostro non in gioco, saltalo e passa all'Attacco del Mostro."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card",
+        "hotspotId": "event"
+      }
+    ]
+  },
+  {
+    "id": "attack-order",
+    "topics": ["monster-phase", "attacks"],
+    "summary": {
+      "en": "Monster Attack: read the icons left to right. The Frenzy icon activates the Frenzied Monster; a colour symbol activates every Monster whose mat shows that colour or symbol. Symbols not on any mat are ignored.",
+      "it": "Attacco del Mostro: leggi le icone da sinistra a destra. L'icona Frenesia attiva il Mostro in Frenesia; un simbolo colorato attiva ogni Mostro la cui plancia mostra quel colore o simbolo. I simboli assenti dalle plance si ignorano."
+    },
+    "detail": {
+      "en": "A Monster can therefore act twice in one turn. Finish one Monster's move and attack before the next; with several, the active player picks the order.",
+      "it": "Un Mostro può quindi agire due volte nello stesso turno. Completa movimento e attacco di un Mostro prima del successivo; se sono più d'uno, l'ordine lo sceglie il giocatore attivo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card",
+        "hotspotId": "attack-symbols"
+      },
+      {
+        "sceneId": "monsters"
+      }
+    ]
+  },
+  {
+    "id": "monster-movement",
+    "topics": ["monster-phase", "movement"],
+    "summary": {
+      "en": "The Monster moves the number of locations shown toward the closest character (Hero or Citizen), along the shortest path, and stops as soon as it reaches a location with a character.",
+      "it": "Il Mostro si muove del numero di luoghi indicato verso il personaggio più vicino (Eroe o Cittadino), lungo il percorso più breve, e si ferma appena raggiunge un luogo con un personaggio."
+    },
+    "detail": {
+      "en": "Ties: a Hero over a Citizen; between Heroes the active player chooses (also between equal paths). Monsters use Teleportation Circles. A Monster that starts with a character, or with no characters on the board, doesn't move.",
+      "it": "Pareggi: un Eroe prima di un Cittadino; tra Eroi sceglie il giocatore attivo (anche tra percorsi equivalenti). I Mostri usano i Cerchi di Teletrasporto. Un Mostro che parte con un personaggio, o senza personaggi sul tabellone, non si muove."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card",
+        "hotspotId": "attack-move"
+      }
+    ]
+  },
+  {
+    "id": "dragon-movement",
+    "topics": ["movement", "monsters"],
+    "summary": {
+      "en": "Dragons can't enter Waterdeep (the city at the top, marked by the no-dragon icon). If every Hero and Citizen is in Waterdeep, the Red Dragon doesn't move; any move that would force it in means it doesn't move at all.",
+      "it": "I draghi non possono entrare a Waterdeep (la città in alto, segnata dall'icona col drago barrato). Se tutti gli Eroi e i Cittadini sono a Waterdeep, il Drago Rosso non si muove; ogni movimento che ve lo costringerebbe lo lascia fermo."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "castle-corkscrew"
+      }
+    ]
+  },
+  {
+    "id": "monster-attack",
+    "topics": ["monster-phase", "attacks"],
+    "summary": {
+      "en": "Attack one character in the Monster's location by rolling the number of Monster dice shown. Heroes are targeted before Citizens; the active player picks between Heroes. No character there: no attack. Then repeat for the next icon.",
+      "it": "Attacca un personaggio nel luogo del Mostro tirando il numero di dadi Mostro indicato. Gli Eroi vengono presi di mira prima dei Cittadini; tra Eroi sceglie il giocatore attivo. Nessun personaggio: nessun attacco. Poi ripeti con l'icona successiva."
+    },
+    "appliesTo": {
+      "components": ["monster-dice"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monster-card",
+        "hotspotId": "attack-dice"
+      }
+    ]
+  },
+  {
+    "id": "reading-dice",
+    "topics": ["attacks"],
+    "summary": {
+      "en": "Resolve every POW first: the Monster's Power triggers once per POW. Then, if the target is still in the Monster's location, each HIT hits it. Blank faces miss.",
+      "it": "Risolvi prima ogni POW: il Potere del Mostro si attiva una volta per POW. Poi, se il bersaglio è ancora nel luogo del Mostro, ogni COLPO lo colpisce. Le facce vuote mancano il bersaglio."
+    },
+    "appliesTo": {
+      "components": ["monster-dice"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "defend",
+    "topics": ["attacks", "items"],
+    "summary": {
+      "en": "A Hero defends by discarding 1 Item per Hit. Not enough Items (or not willing), and the Hero is defeated.",
+      "it": "Un Eroe si difende scartando 1 Oggetto per Colpo. Se non ne ha abbastanza (o non vuole), è sconfitto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hero-defeated",
+    "topics": ["attacks", "heroes"],
+    "summary": {
+      "en": "Defeated Hero: remove it and raise Terror by 1. At the start of that player's next turn the Hero returns at The Yawning Portal: Taproom with full actions, keeping all Items and Perks.",
+      "it": "Eroe sconfitto: toglilo e alza il Terrore di 1. All'inizio del prossimo turno di quel giocatore l'Eroe torna in The Yawning Portal: Taproom con tutte le azioni, tenendo Oggetti e Vantaggi."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "taproom"
+      }
+    ]
+  },
+  {
+    "id": "citizen-defeated",
+    "topics": ["attacks", "citizens"],
+    "summary": {
+      "en": "A Citizen hit by a Monster is defeated at once: remove it and raise Terror by 1. Heroes can't discard Items to save Citizens.",
+      "it": "Un Cittadino colpito da un Mostro è subito sconfitto: toglilo e alza il Terrore di 1. Gli Eroi non possono scartare Oggetti per salvarlo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "frenzy",
+    "topics": ["monsters", "monster-phase"],
+    "summary": {
+      "en": "One Monster is always Frenzied, starting with the lowest Frenzy Order. When told to move the Frenzy marker, pass it to the next-higher Frenzy Order, wrapping round to the lowest. With no other Monster left it stays put.",
+      "it": "Un Mostro è sempre in Frenesia, a partire da quello con l'ordine più basso. Quando devi spostare il segnalino Frenesia, passalo all'ordine successivo più alto, ricominciando dal più basso. Se non restano altri Mostri, resta dov'è."
+    },
+    "appliesTo": {
+      "components": ["frenzy-marker"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "monster-defeated",
+    "topics": ["monsters", "end"],
+    "summary": {
+      "en": "A defeated Monster leaves the board and Terror goes down 1. Ignore its Events and attacks from now on; pass on the Frenzy marker if it had it; discard Items on its mat and box its components.",
+      "it": "Un Mostro sconfitto lascia il tabellone e il Terrore scende di 1. D'ora in poi ignora i suoi Eventi e attacchi; se aveva il segnalino Frenesia, passalo; scarta gli Oggetti sulla sua plancia e rimetti i suoi componenti nella scatola."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "win",
+    "topics": ["end"],
+    "summary": {
+      "en": "Heroes win as soon as every Monster in play is defeated.",
+      "it": "Gli Eroi vincono appena ogni Mostro in gioco è sconfitto."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "lose-terror",
+    "topics": ["end"],
+    "summary": {
+      "en": "You lose if the Terror Level reaches its maximum (the skull space).",
+      "it": "Perdete se il Livello di Terrore raggiunge il massimo (la casella col teschio)."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      }
+    ]
+  },
+  {
+    "id": "lose-time",
+    "topics": ["end", "monster-phase"],
+    "summary": {
+      "en": "You lose if the Monster deck is empty when you must draw a card.",
+      "it": "Perdete se il mazzo Mostro è vuoto quando dovete pescare una carta."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mimic-notes",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Mimic (Frenzy 5; wand/purple, chest/yellow, spellbook/teal) starts on its mat, not the board. It can be Frenzied there, and Monster attack movement moves it along its mat; Perks and Events don't affect it until it appears.",
+      "it": "Mimic (Frenesia 5; bacchetta/viola, forziere/giallo, libro/verde acqua) parte sulla sua plancia, non sul tabellone. Lì può essere in Frenesia, e il movimento degli attacchi lo sposta lungo la plancia; Vantaggi ed Eventi non lo toccano finché non appare."
+    },
+    "conditions": {
+      "variants": ["monster-mimic"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monsters",
+        "hotspotId": "mimic"
+      }
+    ]
+  },
+  {
+    "id": "mimic-advance",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Where is it?!: when the Mimic passes or stops on a bite space, draw an Item. If every Hero has an Item of that colour, each discards one and the Mimic appears at the active player's location; otherwise Terror +1 and it stays on its path. Discard the drawn Item.",
+      "it": "Dov'è?!: quando il Mimic passa o si ferma su una casella morso, pesca un Oggetto. Se ogni Eroe ha un Oggetto di quel colore, ognuno ne scarta uno e il Mimic appare nel luogo del giocatore attivo; altrimenti Terrore +1 e resta sul suo percorso. Scarta l'Oggetto pescato."
+    },
+    "detail": {
+      "en": "It happens during the Monster Attack, not as a Hero action.",
+      "it": "Avviene durante l'Attacco del Mostro, non come azione di un Eroe."
+    },
+    "conditions": {
+      "variants": ["monster-mimic"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      },
+      {
+        "kind": "url",
+        "sourceId": "bgg-mimic-dragon"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mimic-defeat",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Mimic battle: once it is on the board, at its location discard Magical (blue) Items worth 6+ to defeat it.",
+      "it": "Battaglia col Mimic: quando è sul tabellone, nel suo luogo scarta Oggetti Magici (blu) per 6+ per sconfiggerlo."
+    },
+    "conditions": {
+      "variants": ["monster-mimic"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mimic-power",
+    "topics": ["monsters", "attacks"],
+    "summary": {
+      "en": "Power — Scavenger: remove the highest-Strength Item from the location nearest the current player's Hero.",
+      "it": "Potere — Spazzino: togli l'Oggetto con Forza più alta dal luogo più vicino all'Eroe del giocatore di turno."
+    },
+    "conditions": {
+      "variants": ["monster-mimic"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "displacer-power",
+    "topics": ["monsters", "attacks"],
+    "summary": {
+      "en": "Displacer Beast (Frenzy 1; sword/orange, skull/blue, hat/brown). Power — Displacement: it moves to the next-closest Hero, who takes any of its Hits this turn.",
+      "it": "Displacer Beast (Frenesia 1; spada/arancione, teschio/blu, cappello/marrone). Potere — Dislocazione: si sposta sull'Eroe successivo più vicino, che subisce i suoi Colpi in questo turno."
+    },
+    "conditions": {
+      "variants": ["monster-displacer-beast"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monsters",
+        "hotspotId": "displacer-beast"
+      }
+    ]
+  },
+  {
+    "id": "displacer-advance",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Investigate: at its location, place an Item on its mat. A Strength 1–3 Item covers that many numbers; 4–6 fits any spot. With 5+ Items placed you may Strike, even in the same Hero Phase.",
+      "it": "Indagare: nel suo luogo, metti un Oggetto sulla sua plancia. Un Oggetto di Forza 1–3 copre altrettanti numeri; uno da 4–6 va su qualunque spazio. Con 5+ Oggetti piazzati puoi Colpirlo, anche nella stessa Fase degli Eroi."
+    },
+    "detail": {
+      "en": "You may place more than 5, but all of them are discarded when it is defeated.",
+      "it": "Puoi metterne più di 5, ma vengono tutti scartati quando è sconfitto."
+    },
+    "conditions": {
+      "variants": ["monster-displacer-beast"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "displacer-defeat",
+    "topics": ["monsters", "d20"],
+    "summary": {
+      "en": "Strike: at its location discard Items of any type worth 7+ and roll the d20. A covered number defeats it; otherwise move one placed Item to another spot. A 1 discards a placed Item; a 20 defeats it and gives a Perk plus an extra action.",
+      "it": "Colpire: nel suo luogo scarta Oggetti di qualunque tipo per 7+ e tira il d20. Un numero coperto lo sconfigge; altrimenti sposta un Oggetto piazzato su un altro spazio. Con 1 scarti un Oggetto piazzato; con 20 lo sconfiggi e ottieni un Vantaggio più un'azione extra."
+    },
+    "conditions": {
+      "variants": ["monster-displacer-beast"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "beholder-power",
+    "topics": ["monsters", "attacks", "d20"],
+    "summary": {
+      "en": "Beholder (Frenzy 4; shield/red, hat/brown, spellbook/teal). Power — Eye Ray: roll the d20 and check the Eye Ray card. An undamaged eyestalk fires that ray; a damaged one fires the antimagic eye instead: every Hero with Items discards 1.",
+      "it": "Beholder (Frenesia 4; scudo/rosso, cappello/marrone, libro/verde acqua). Potere — Raggio Oculare: tira il d20 e controlla la carta dei Raggi. Un peduncolo intatto spara quel raggio; se è danneggiato spara l'occhio antimagia: ogni Eroe con Oggetti ne scarta 1."
+    },
+    "detail": {
+      "en": "A 20 on this roll gives no Perk.",
+      "it": "Un 20 in questo tiro non dà Vantaggi."
+    },
+    "conditions": {
+      "variants": ["monster-beholder"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "beholder",
+        "hotspotId": "power"
+      }
+    ]
+  },
+  {
+    "id": "eye-rays",
+    "topics": ["monsters", "attacks"],
+    "summary": {
+      "en": "Eye rays (front of the card): 1 Lucky, miss · 2–3 Charm: place a Citizen in the Beholder's location · 4–5 Paralyzing: discard an Item or the current player can't Move next turn · 6–7 Fear: all Heroes and Citizens move 1 location away · 8–9 Slowing: discard an Item or the current player has 1 action less next turn · 10–11 Enervation: anyone with more than 2 Items discards down to 2.",
+      "it": "Raggi (fronte della carta): 1 Fortuna, mancato · 2–3 Charme: metti un Cittadino nel luogo del Beholder · 4–5 Paralisi: scarta un Oggetto o il giocatore di turno non può Muovere il prossimo turno · 6–7 Paura: tutti gli Eroi e i Cittadini si allontanano di 1 luogo · 8–9 Lentezza: scarta un Oggetto o il giocatore di turno ha 1 azione in meno il prossimo turno · 10–11 Snervamento: chi ha più di 2 Oggetti scarta fino a 2."
+    },
+    "detail": {
+      "en": "12–13 Telekinetic, 14–15 Sleep, 16–17 Petrification, 18–19 Disintegration, 20 Death: their effects are on the back of the card.",
+      "it": "12–13 Telecinesi, 14–15 Sonno, 16–17 Pietrificazione, 18–19 Disintegrazione, 20 Morte: gli effetti sono sul retro della carta."
+    },
+    "appliesTo": {
+      "components": ["eye-ray-card"]
+    },
+    "conditions": {
+      "variants": ["monster-beholder"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "medium",
+    "sceneRefs": [
+      {
+        "sceneId": "beholder",
+        "hotspotId": "rays-map"
+      }
+    ]
+  },
+  {
+    "id": "beholder-advance",
+    "topics": ["monsters", "d20"],
+    "summary": {
+      "en": "Damage the eyestalks: at its location discard any Item and roll the d20. 1 miss · 2–15 damage 1 eyestalk of your choice · 16–19 up to 2 · 20 up to 3, take the Item back and gain a Perk. Mark damaged eyestalks with an X.",
+      "it": "Danneggiare i peduncoli: nel suo luogo scarta un Oggetto qualsiasi e tira il d20. 1 mancato · 2–15 danneggia 1 peduncolo a scelta · 16–19 fino a 2 · 20 fino a 3, riprendi l'Oggetto e ottieni un Vantaggio. Segna i peduncoli danneggiati con una X."
+    },
+    "detail": {
+      "en": "Choose together which eyestalks to disable.",
+      "it": "Decidete insieme quali peduncoli disattivare."
+    },
+    "appliesTo": {
+      "components": ["damage-markers"]
+    },
+    "conditions": {
+      "variants": ["monster-beholder"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "beholder",
+        "hotspotId": "advance"
+      }
+    ]
+  },
+  {
+    "id": "beholder-defeat",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Blind the Beholder: once all 10 eyestalks are damaged, at its location use Mundane (yellow) Items worth 6+ to defeat it.",
+      "it": "Accecare il Beholder: quando tutti i 10 peduncoli sono danneggiati, nel suo luogo usa Oggetti Comuni (gialli) per 6+ per sconfiggerlo."
+    },
+    "conditions": {
+      "variants": ["monster-beholder"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "beholder",
+        "hotspotId": "defeat"
+      }
+    ]
+  },
+  {
+    "id": "dragon-overview",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Red Dragon (Frenzy 6; sword/orange, shield/red, potion/green, spellbook/teal) is a two-mat campaign: claim the Orb of Dragonkind, lure the Dragon to its Hoard, then destroy it there.",
+      "it": "Drago Rosso (Frenesia 6; spada/arancione, scudo/rosso, pozione/verde, libro/verde acqua) è una campagna su due plance: ottieni il Globo dei Draghi, attira il Drago nel suo Tesoro e distruggilo lì."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "monsters",
+        "hotspotId": "red-dragon"
+      }
+    ]
+  },
+  {
+    "id": "dragon-power",
+    "topics": ["monsters", "attacks"],
+    "summary": {
+      "en": "Power — Fire Breath: every Hero and Citizen in the Red Dragon's location is hit.",
+      "it": "Potere — Soffio Infuocato: ogni Eroe e Cittadino nel luogo del Drago Rosso viene colpito."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dragon-vault",
+    "topics": ["monsters", "lairs"],
+    "summary": {
+      "en": "Solve the Vault: at the Vault of the Orb of Dragonkind Lair, discard an Item, then slide all obstacles of one colour any number of spaces. Moving the Orb to the Vault Exit collects it.",
+      "it": "Risolvi la Cripta: nella Tana Cripta del Globo dei Draghi scarta un Oggetto, poi fai scorrere tutti gli ostacoli di un colore di quante caselle vuoi. Portare il Globo all'Uscita della Cripta lo fa ottenere."
+    },
+    "detail": {
+      "en": "Whoever collects the Orb keeps it; it can change hands with Share but isn't an Item. Obstacles slide orthogonally through open spaces and can't be rotated. The puzzle has 20 starting layouts, picked with the d20.",
+      "it": "Chi ottiene il Globo lo tiene; può passare di mano con Condividere ma non è un Oggetto. Gli ostacoli scorrono in orizzontale/verticale negli spazi liberi e non si ruotano. Il rompicapo ha 20 disposizioni iniziali, scelte col d20."
+    },
+    "appliesTo": {
+      "components": ["obstacle-tokens", "orb"]
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      },
+      {
+        "kind": "url",
+        "sourceId": "bgg-mimic-dragon"
+      },
+      {
+        "kind": "url",
+        "sourceId": "family-gamers"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dragon-lure",
+    "topics": ["monsters", "lairs"],
+    "summary": {
+      "en": "Lure the Red Dragon: at the Red Dragon's Hoard, spend an action to draw 1 Item. The Dragon moves toward its Hoard as many locations as the Item's Strength. You can do this without the Orb.",
+      "it": "Attirare il Drago Rosso: nel Tesoro del Drago Rosso spendi un'azione per pescare 1 Oggetto. Il Drago si muove verso il suo Tesoro di tanti luoghi quanta è la Forza dell'Oggetto. Puoi farlo anche senza il Globo."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dragon-surround",
+    "topics": ["monsters"],
+    "summary": {
+      "en": "Surround the Lair: while the Red Dragon is in its Hoard, use an action to place an Item or the Orb on the marked spots. With the Orb and all three Items placed, go to step 4.",
+      "it": "Circondare la Tana: mentre il Drago Rosso è nel suo Tesoro, usa un'azione per mettere un Oggetto o il Globo sugli spazi indicati. Con il Globo e tutti e tre gli Oggetti piazzati, passa al passo 4."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dragon-defeat",
+    "topics": ["monsters", "d20"],
+    "summary": {
+      "en": "Destroy the Red Dragon: while it is in its Hoard, roll the d20 and add the Strength of the 3 placed Items. 20 or more defeats it; otherwise discard 1 placed Item and go back to step 3.",
+      "it": "Distruggere il Drago Rosso: mentre è nel suo Tesoro, tira il d20 e aggiungi la Forza dei 3 Oggetti piazzati. Con 20 o più è sconfitto; altrimenti scarta 1 Oggetto piazzato e torna al passo 3."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dragon-notes",
+    "topics": ["monsters", "movement"],
+    "summary": {
+      "en": "The Hoard is a single location: one Move enters or leaves it, Monsters can attack Heroes there and may follow them in, and Perks work there. The Red Dragon attacks normally as soon as its symbols come up.",
+      "it": "Il Tesoro è un unico luogo: un Movimento basta per entrare o uscire, i Mostri possono attaccare gli Eroi lì e seguirli dentro, e i Vantaggi funzionano. Il Drago Rosso attacca normalmente appena escono i suoi simboli."
+    },
+    "detail": {
+      "en": "It can't be teleported to Waterdeep.",
+      "it": "Non può essere teletrasportato a Waterdeep."
+    },
+    "conditions": {
+      "variants": ["monster-red-dragon"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "combine",
+    "topics": ["setup", "monsters"],
+    "summary": {
+      "en": "Combining Horrified games: the board you play on sets the Monster deck, Perks, Lairs, Items and Citizens; Heroes and Monsters can come from any game. A visiting Hero starts on an unused Hero start; D&D Heroes need a d20.",
+      "it": "Combinare i giochi Horrified: il tabellone su cui giochi determina mazzo Mostro, Vantaggi, Tane, Oggetti e Cittadini; Eroi e Mostri possono venire da qualunque gioco. Un Eroe ospite parte da una partenza di Eroe libera; gli Eroi D&D richiedono un d20."
+    },
+    "detail": {
+      "en": "On D&D and World of Monsters boards, Monsters start on the location matching their Frenzy number. On equal Frenzy numbers the visiting Monster takes the Frenzy marker. Card icons are read by colour, not shape. On other boards, number locations 1–20 in rows from top-left (snake order) for the Wizard and other numbered effects.",
+      "it": "Sui tabelloni D&D e World of Monsters i Mostri partono dal luogo col loro numero di Frenesia. A parità di Frenesia il segnalino va al Mostro ospite. Le icone delle carte si leggono per colore, non per forma. Su altri tabelloni numerate i luoghi 1–20 a righe dall'alto a sinistra (a serpentina) per il Mago e gli altri effetti numerati."
+    },
+    "conditions": {
+      "variants": ["combine"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "combining",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "combining",
+        "page": 2
+      }
+    ],
+    "confidence": "high"
+  }
+]

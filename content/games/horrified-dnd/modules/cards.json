@@ -1,0 +1,30 @@
+{
+  "id": "cards",
+  "kind": "cards",
+  "title": {
+    "en": "Cards",
+    "it": "Carte"
+  },
+  "ruleRefs": ["monster-phase", "perk-cards"],
+  "decks": [
+    {
+      "id": "monster-deck",
+      "name": {
+        "en": "Monster deck — also the game timer",
+        "it": "Mazzo Mostro, che è anche il timer della partita"
+      },
+      "count": 30
+    },
+    {
+      "id": "perk-deck",
+      "name": {
+        "en": "Perk deck",
+        "it": "Mazzo Vantaggio"
+      },
+      "count": 20
+    }
+  ],
+  "anatomy": {
+    "sceneId": "monster-card"
+  }
+}

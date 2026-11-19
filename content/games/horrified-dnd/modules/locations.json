@@ -1,0 +1,59 @@
+{
+  "id": "locations",
+  "kind": "sections",
+  "title": {
+    "en": "Locations (numbered for the Wizard)",
+    "it": "Luoghi (numerati per il Mago)"
+  },
+  "ruleRefs": ["wizard-teleport", "teleportation"],
+  "sections": [
+    {
+      "id": "waterdeep",
+      "title": {
+        "en": "Waterdeep (no dragons)",
+        "it": "Waterdeep (niente draghi)"
+      },
+      "body": {
+        "en": "1 Blackstaff Tower · 2 Ahghairon's Tower · 3 House of Wonder · 4 Castle Waterdeep · 5 Trollskull Alley · 6 Trollskull Manor · 7 The Yawning Portal: Exterior · 8 The Yawning Portal: Taproom.",
+        "it": "1 Blackstaff Tower · 2 Ahghairon's Tower · 3 House of Wonder · 4 Castle Waterdeep · 5 Trollskull Alley · 6 Trollskull Manor · 7 The Yawning Portal: Exterior · 8 The Yawning Portal: Taproom."
+      },
+      "ruleRefs": ["dragon-movement"]
+    },
+    {
+      "id": "undermountain",
+      "title": {
+        "en": "Undermountain",
+        "it": "Undermountain"
+      },
+      "body": {
+        "en": "9 Obelisk of the Eye · 10 Hall of Heroes · 11 Goblin Bazaar · 12 Altar to Juiblex · 13 Kalabash's Chambers · 14 Abandoned Camp · 15 Dead Man's Corner · 16 Skull Island · 17 The Sword and Sextant · 18 Wyllow's Tower · 19 Dragon's Platform · 20 Abandoned Priory.",
+        "it": "9 Obelisk of the Eye · 10 Hall of Heroes · 11 Goblin Bazaar · 12 Altar to Juiblex · 13 Kalabash's Chambers · 14 Abandoned Camp · 15 Dead Man's Corner · 16 Skull Island · 17 The Sword and Sextant · 18 Wyllow's Tower · 19 Dragon's Platform · 20 Abandoned Priory."
+      },
+      "ruleRefs": ["wizard-teleport"]
+    },
+    {
+      "id": "passages",
+      "title": {
+        "en": "Circles and passages (not numbered)",
+        "it": "Cerchi e passaggi (non numerati)"
+      },
+      "body": {
+        "en": "4 Teleportation Circles (any to any). Secret passages: Castle Corkscrew ↔ Skullport Gate, The Yawning Portal: The Well ↔ Entry Well. Also Stairway to Arcane Chambers.",
+        "it": "4 Cerchi di Teletrasporto (da uno qualsiasi a un altro). Passaggi segreti: Castle Corkscrew ↔ Skullport Gate, The Yawning Portal: The Well ↔ Entry Well. C'è anche Stairway to Arcane Chambers."
+      },
+      "ruleRefs": ["teleportation"]
+    },
+    {
+      "id": "flames",
+      "title": {
+        "en": "Monster starts and Lairs",
+        "it": "Partenze dei Mostri e Tane"
+      },
+      "body": {
+        "en": "Flames show Frenzy numbers: 1 Abandoned Camp, 2 Altar to Juiblex, 3 Trollskull Manor, 4 Skull Island, 5 Obelisk of the Eye, 6 Dragon's Platform. Lairs: Skull Island, Dragon's Platform, Obelisk of the Eye, Abandoned Camp.",
+        "it": "Le fiamme indicano i numeri di Frenesia: 1 Abandoned Camp, 2 Altar to Juiblex, 3 Trollskull Manor, 4 Skull Island, 5 Obelisk of the Eye, 6 Dragon's Platform. Tane: Skull Island, Dragon's Platform, Obelisk of the Eye, Abandoned Camp."
+      },
+      "ruleRefs": ["monster-start", "reveal-lair"]
+    }
+  ]
+}

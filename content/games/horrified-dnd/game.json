@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 3,
+  "id": "horrified-dnd",
+  "meta": {
+    "title": {
+      "en": "Horrified: Dungeons & Dragons",
+      "it": "Horrified: Dungeons & Dragons"
+    },
+    "publisher": "Ravensburger (Wizards of the Coast licence)",
+    "year": 2025,
+    "designers": ["Mike Mulvihill", "Peter Lee", "Prospero Hall (original Horrified design)"],
+    "bggId": 437705
+  },
+  "classification": {
+    "turnModel": "sequential",
+    "interaction": "cooperative",
+    "mechanics": ["action-points", "dice-rolling", "pick-up-and-deliver", "other"],
+    "playerCount": {
+      "min": 1,
+      "max": 5,
+      "best": [4]
+    },
+    "playtimeMinutes": {
+      "min": 45,
+      "max": 60
+    },
+    "complexity": 2.2,
+    "minAge": 10
+  },
+  "sources": [
+    {
+      "id": "rulebook-en",
+      "type": "pdf",
+      "title": "Horrified: Dungeons & Dragons – Instructions (Ravensburger, 2025)",
+      "lang": "en",
+      "official": true,
+      "url": "https://www.ravensburger.us/en-US/products/games/board-games/horrified-dungeons-dragons--24754",
+      "edition": "Ravensburger US, item 24754 (manual 704005)"
+    },
+    {
+      "id": "combining",
+      "type": "pdf",
+      "title": "Combining Horrified Games (Ravensburger)",
+      "lang": "en",
+      "official": true,
+      "url": "https://files.ravensburger.cloud/ravensburger/HORRIFIED_Games.pdf"
+    },
+    {
+      "id": "bgg",
+      "type": "web",
+      "title": "BoardGameGeek — Horrified: Dungeons & Dragons",
+      "lang": "en",
+      "official": false,
+      "url": "https://boardgamegeek.com/boardgame/437705/horrified-dungeons-and-dragons"
+    },
+    {
+      "id": "bgg-mimic-dragon",
+      "type": "web",
+      "title": "BoardGameGeek forum — Mimic and Red Dragon rules questions (incl. Ravensburger answer)",
+      "lang": "en",
+      "official": false,
+      "url": "https://boardgamegeek.com/thread/3555016/mimic-and-red-dragon-rules-questions"
+    },
+    {
+      "id": "family-gamers",
+      "type": "web",
+      "title": "The Family Gamers — Horrified: Dungeons and Dragons review",
+      "lang": "en",
+      "official": false,
+      "url": "https://www.thefamilygamers.com/horrified-dungeons-and-dragons/"
+    }
+  ],
+  "components": [
+    {
+      "id": "gameboard",
+      "type": "board",
+      "name": {
+        "en": "Gameboard",
+        "it": "Tabellone"
+      },
+      "quantity": 1,
+      "description": {
+        "en": "Waterdeep on top, Undermountain below; 20 numbered locations.",
+        "it": "Waterdeep in alto, Undermountain sotto; 20 luoghi numerati."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "board"
+        }
+      ]
+    },
+    {
+      "id": "hero-standees",
+      "type": "meeple",
+      "name": {
+        "en": "Hero standees",
+        "it": "Sagome degli Eroi"
+      },
+      "quantity": 5,
+      "description": {
+        "en": "Insert into the matching-coloured bases.",
+        "it": "Da inserire nelle basi del colore corrispondente."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "board",
+          "hotspotId": "taproom"
+        }
+      ]
+    },
+    {
+      "id": "hero-tiles",
+      "type": "tile",
+      "name": {
+        "en": "Hero tiles",
+        "it": "Tessere Eroe"
+      },
+      "quantity": 5,
+      "description": {
+        "en": "Actions, starting location and the d20 special action.",
+        "it": "Azioni, luogo di partenza e azione speciale col d20."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "hero-tile"
+        }
+      ]
+    },
+    {
+      "id": "citizen-standees",
+      "type": "meeple",
+      "name": {
+        "en": "Citizen standees",
+        "it": "Sagome dei Cittadini"
+      },
+      "quantity": 10,
+      "description": {
+        "en": "Clear bases; each shows its safe location.",
+        "it": "Basi trasparenti; ognuna indica il suo luogo sicuro."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "citizens"
+        }
+      ]
+    },
+    {
+      "id": "monster-mats",
+      "type": "player-board",
+      "name": {
+        "en": "Monster mats",
+        "it": "Plance Mostro"
+      },
+      "quantity": 5,
+      "description": {
+        "en": "One per Monster, two for the Red Dragon campaign. Setup on the back.",
+        "it": "Una per Mostro, due per la campagna del Drago Rosso. Preparazione sul retro."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "monster-mats"
+        }
+      ]
+    },
+    {
+      "id": "monster-figures",
+      "type": "meeple",
+      "name": {
+        "en": "Monster figures",
+        "it": "Miniature dei Mostri"
+      },
+      "quantity": 4,
+      "sceneRefs": [
+        {
+          "sceneId": "monsters"
+        }
+      ]
+    },
+    {
+      "id": "item-tokens",
+      "type": "token",
+      "name": {
+        "en": "Item tokens",
+        "it": "Segnalini Oggetto"
+      },
+      "quantity": 60,
+      "description": {
+        "en": "Name, colour, Strength, type and the location where they appear.",
+        "it": "Nome, colore, Forza, tipo e luogo in cui compaiono."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "items"
+        }
+      ]
+    },
+    {
+      "id": "haversack",
+      "type": "other",
+      "name": {
+        "en": "Horrified Haversack",
+        "it": "Sacca Horrified"
+      },
+      "quantity": 1,
+      "description": {
+        "en": "The bag you draw Items from.",
+        "it": "Il sacchetto da cui si pescano gli Oggetti."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "haversack"
+        }
+      ]
+    },
+    {
+      "id": "terror-marker",
+      "type": "token",
+      "name": {
+        "en": "Terror marker",
+        "it": "Segnalino Terrore"
+      },
+      "quantity": 1,
+      "sceneRefs": [
+        {
+          "sceneId": "board",
+          "hotspotId": "terror-track"
+        }
+      ]
+    },
+    {
+      "id": "frenzy-marker",
+      "type": "token",
+      "name": {
+        "en": "Frenzy marker",
+        "it": "Segnalino Frenesia"
+      },
+      "quantity": 1,
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "frenzy-marker"
+        }
+      ]
+    },
+    {
+      "id": "lair-tokens",
+      "type": "token",
+      "name": {
+        "en": "Lair tokens",
+        "it": "Segnalini Tana"
+      },
+      "quantity": 4,
+      "description": {
+        "en": "Red Dragon's Hoard, the Vault of the Orb of Dragonkind and blanks.",
+        "it": "Tesoro del Drago Rosso, Cripta del Globo dei Draghi e segnalini vuoti."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "lairs"
+        }
+      ]
+    },
+    {
+      "id": "monster-dice",
+      "type": "die",
+      "name": {
+        "en": "Monster dice",
+        "it": "Dadi Mostro"
+      },
+      "quantity": 3,
+      "description": {
+        "en": "Faces: POW, HIT and blank.",
+        "it": "Facce: POW, COLPO e vuota."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "monster-dice"
+        }
+      ]
+    },
+    {
+      "id": "d20",
+      "type": "die",
+      "name": {
+        "en": "20-sided die (d20)",
+        "it": "Dado a 20 facce (d20)"
+      },
+      "quantity": 1,
+      "description": {
+        "en": "The & face counts as 20.",
+        "it": "La faccia & vale 20."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "d20"
+        }
+      ]
+    },
+    {
+      "id": "monster-cards",
+      "type": "card",
+      "name": {
+        "en": "Monster cards",
+        "it": "Carte Mostro"
+      },
+      "quantity": 30,
+      "sceneRefs": [
+        {
+          "sceneId": "monster-card"
+        }
+      ]
+    },
+    {
+      "id": "perk-cards",
+      "type": "card",
+      "name": {
+        "en": "Perk cards",
+        "it": "Carte Vantaggio"
+      },
+      "quantity": 20,
+      "sceneRefs": [
+        {
+          "sceneId": "setup-example",
+          "hotspotId": "perk-deck"
+        }
+      ]
+    },
+    {
+      "id": "reference-cards",
+      "type": "card",
+      "name": {
+        "en": "Reference cards",
+        "it": "Carte di riepilogo"
+      },
+      "quantity": 5
+    },
+    {
+      "id": "eye-ray-card",
+      "type": "card",
+      "name": {
+        "en": "Beholder Eye Ray reference card",
+        "it": "Carta di riferimento Raggi Oculari del Beholder"
+      },
+      "quantity": 1,
+      "conditions": {
+        "variants": ["monster-beholder"]
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "beholder"
+        }
+      ]
+    },
+    {
+      "id": "damage-markers",
+      "type": "token",
+      "name": {
+        "en": "Beholder damage markers",
+        "it": "Segnalini Danno del Beholder"
+      },
+      "quantity": 10,
+      "conditions": {
+        "variants": ["monster-beholder"]
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "beholder",
+          "hotspotId": "damage-markers"
+        }
+      ]
+    },
+    {
+      "id": "obstacle-tokens",
+      "type": "token",
+      "name": {
+        "en": "Red Dragon obstacle tokens",
+        "it": "Segnalini Ostacolo del Drago Rosso"
+      },
+      "quantity": 6,
+      "conditions": {
+        "variants": ["monster-red-dragon"]
+      }
+    },
+    {
+      "id": "orb",
+      "type": "token",
+      "name": {
+        "en": "Orb of Dragonkind",
+        "it": "Globo dei Draghi"
+      },
+      "quantity": 1,
+      "conditions": {
+        "variants": ["monster-red-dragon"]
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "monster-beholder",
+      "kind": "variant",
+      "name": {
+        "en": "Monster: Beholder",
+        "it": "Mostro: Beholder"
+      },
+      "description": {
+        "en": "Frenzy 4 · damage all 10 eyestalks, then blind the antimagic eye.",
+        "it": "Frenesia 4 · danneggia tutti i 10 peduncoli oculari, poi acceca l'occhio antimagia."
+      }
+    },
+    {
+      "id": "monster-displacer-beast",
+      "kind": "variant",
+      "name": {
+        "en": "Monster: Displacer Beast",
+        "it": "Mostro: Displacer Beast"
+      },
+      "description": {
+        "en": "Frenzy 1 · cover the displacement field with Items, then roll to strike its true location.",
+        "it": "Frenesia 1 · copri il campo di dislocazione con Oggetti, poi tira per colpire la sua vera posizione."
+      }
+    },
+    {
+      "id": "monster-mimic",
+      "kind": "variant",
+      "name": {
+        "en": "Monster: Mimic",
+        "it": "Mostro: Mimic"
+      },
+      "description": {
+        "en": "Frenzy 5 · it starts hidden on its mat: make it appear, then defeat it fast.",
+        "it": "Frenesia 5 · parte nascosto sulla sua plancia: fallo apparire, poi sconfiggilo in fretta."
+      }
+    },
+    {
+      "id": "monster-red-dragon",
+      "kind": "variant",
+      "name": {
+        "en": "Monster: Red Dragon",
+        "it": "Mostro: Drago Rosso"
+      },
+      "description": {
+        "en": "Frenzy 6 · two-mat campaign: free the Orb of Dragonkind, lure the Dragon to its Hoard, destroy it.",
+        "it": "Frenesia 6 · campagna su due plance: libera il Globo dei Draghi, attira il Drago nel suo Tesoro, distruggilo."
+      }
+    },
+    {
+      "id": "combine",
+      "kind": "advanced",
+      "name": {
+        "en": "Combine Horrified games",
+        "it": "Combinare i giochi Horrified"
+      },
+      "description": {
+        "en": "Mix Monsters and Heroes from other Horrified boxes; the chosen board sets decks, Items, Lairs and Citizens.",
+        "it": "Mescola Mostri ed Eroi di altre scatole Horrified; il tabellone scelto determina mazzi, Oggetti, Tane e Cittadini."
+      }
+    }
+  ],
+  "expansions": [],
+  "topics": [
+    {
+      "id": "setup",
+      "name": {
+        "en": "Setup",
+        "it": "Preparazione"
+      }
+    },
+    {
+      "id": "turn",
+      "name": {
+        "en": "Turn",
+        "it": "Turno"
+      }
+    },
+    {
+      "id": "hero-actions",
+      "name": {
+        "en": "Hero actions",
+        "it": "Azioni degli Eroi"
+      }
+    },
+    {
+      "id": "movement",
+      "name": {
+        "en": "Movement",
+        "it": "Movimento"
+      }
+    },
+    {
+      "id": "items",
+      "name": {
+        "en": "Items",
+        "it": "Oggetti"
+      }
+    },
+    {
+      "id": "citizens",
+      "name": {
+        "en": "Citizens",
+        "it": "Cittadini"
+      }
+    },
+    {
+      "id": "perks",
+      "name": {
+        "en": "Perk cards",
+        "it": "Carte Vantaggio"
+      }
+    },
+    {
+      "id": "d20",
+      "name": {
+        "en": "The d20",
+        "it": "Il d20"
+      }
+    },
+    {
+      "id": "lairs",
+      "name": {
+        "en": "Lairs",
+        "it": "Tane"
+      }
+    },
+    {
+      "id": "monster-phase",
+      "name": {
+        "en": "Monster Phase",
+        "it": "Fase dei Mostri"
+      }
+    },
+    {
+      "id": "attacks",
+      "name": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      }
+    },
+    {
+      "id": "heroes",
+      "name": {
+        "en": "Heroes",
+        "it": "Eroi"
+      }
+    },
+    {
+      "id": "monsters",
+      "name": {
+        "en": "Monsters",
+        "it": "Mostri"
+      }
+    },
+    {
+      "id": "end",
+      "name": {
+        "en": "End of game",
+        "it": "Fine partita"
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hero-phase",
+      "term": {
+        "en": "Hero Phase",
+        "it": "Fase degli Eroi"
+      },
+      "definition": {
+        "en": "First half of your turn: take up to 4 actions; anyone may play Perk cards.",
+        "it": "Prima metà del turno: fino a 4 azioni; chiunque può giocare carte Vantaggio."
+      },
+      "aliases": {
+        "en": ["Fase degli Eroi"],
+        "it": ["Hero Phase"]
+      },
+      "ruleRefs": ["hero-phase"]
+    },
+    {
+      "id": "monster-phase",
+      "term": {
+        "en": "Monster Phase",
+        "it": "Fase dei Mostri"
+      },
+      "definition": {
+        "en": "Second half of your turn: draw a Monster card and resolve it top to bottom.",
+        "it": "Seconda metà del turno: pesca una carta Mostro e risolvila dall'alto in basso."
+      },
+      "aliases": {
+        "en": ["Fase dei Mostri"],
+        "it": ["Monster Phase"]
+      },
+      "icon": {
+        "sceneId": "monster-card"
+      },
+      "ruleRefs": ["monster-phase"]
+    },
+    {
+      "id": "citizen",
+      "term": {
+        "en": "Citizen",
+        "it": "Cittadino"
+      },
+      "definition": {
+        "en": "A standee you escort to the safe location printed on its base. Saving one earns a Perk.",
+        "it": "Una sagoma da scortare al luogo sicuro stampato sulla sua base. Salvarla fa guadagnare un Vantaggio."
+      },
+      "aliases": {
+        "en": ["Citizen", "Cittadino"],
+        "it": ["Citizen", "Abitante"]
+      },
+      "icon": {
+        "sceneId": "setup-example",
+        "hotspotId": "citizens"
+      },
+      "ruleRefs": ["citizens", "citizen-defeated"]
+    },
+    {
+      "id": "item",
+      "term": {
+        "en": "Item",
+        "it": "Oggetto"
+      },
+      "definition": {
+        "en": "Token with a Strength, a colour/type and a location. Spend them to Advance, Defeat and defend.",
+        "it": "Segnalino con Forza, colore/tipo e luogo. Si spendono per Avanzare, Sconfiggere e difendersi."
+      },
+      "aliases": {
+        "en": ["Oggetto"],
+        "it": ["Item"]
+      },
+      "icon": {
+        "sceneId": "items",
+        "hotspotId": "strength"
+      },
+      "ruleRefs": ["items", "item-requirements"]
+    },
+    {
+      "id": "strength",
+      "term": {
+        "en": "Strength",
+        "it": "Forza"
+      },
+      "definition": {
+        "en": "The number on an Item. Requirements like 6+ add up several Items' Strengths.",
+        "it": "Il numero su un Oggetto. Requisiti come 6+ sommano la Forza di più Oggetti."
+      },
+      "aliases": {
+        "en": ["Forza"],
+        "it": ["Strength"]
+      },
+      "icon": {
+        "sceneId": "items",
+        "hotspotId": "strength"
+      },
+      "ruleRefs": ["item-requirements"]
+    },
+    {
+      "id": "weapon",
+      "term": {
+        "en": "Weapon (red hexagon)",
+        "it": "Arma (esagono rosso)"
+      },
+      "definition": {
+        "en": "Red Items with a hexagon around their Strength.",
+        "it": "Oggetti rossi con un esagono intorno alla Forza."
+      },
+      "aliases": {
+        "en": ["Arma (esagono rosso)"],
+        "it": ["Weapon (red hexagon)"]
+      },
+      "icon": {
+        "sceneId": "items",
+        "hotspotId": "weapons"
+      },
+      "ruleRefs": ["items"]
+    },
+    {
+      "id": "magical",
+      "term": {
+        "en": "Magical (blue circle)",
+        "it": "Magico (cerchio blu)"
+      },
+      "definition": {
+        "en": "Blue Items with a circle around their Strength.",
+        "it": "Oggetti blu con un cerchio intorno alla Forza."
+      },
+      "aliases": {
+        "en": ["Magico (cerchio blu)"],
+        "it": ["Magical (blue circle)"]
+      },
+      "icon": {
+        "sceneId": "items",
+        "hotspotId": "magical"
+      },
+      "ruleRefs": ["items"]
+    },
+    {
+      "id": "mundane",
+      "term": {
+        "en": "Mundane (yellow square)",
+        "it": "Comune (quadrato giallo)"
+      },
+      "definition": {
+        "en": "Yellow Items with a square around their Strength.",
+        "it": "Oggetti gialli con un quadrato intorno alla Forza."
+      },
+      "aliases": {
+        "en": ["Comune (quadrato giallo)"],
+        "it": ["Mundane (yellow square)"]
+      },
+      "icon": {
+        "sceneId": "items",
+        "hotspotId": "mundane"
+      },
+      "ruleRefs": ["items"]
+    },
+    {
+      "id": "terror-level",
+      "term": {
+        "en": "Terror Level",
+        "it": "Livello di Terrore"
+      },
+      "definition": {
+        "en": "Track at the top of the board. It rises when Heroes or Citizens fall; reaching the skull loses the game.",
+        "it": "Tracciato in cima al tabellone. Sale quando cadono Eroi o Cittadini; raggiungere il teschio fa perdere."
+      },
+      "aliases": {
+        "en": ["Livello di Terrore"],
+        "it": ["Terror Level"]
+      },
+      "icon": {
+        "sceneId": "board",
+        "hotspotId": "terror-track"
+      },
+      "ruleRefs": ["lose-terror", "hero-defeated", "citizen-defeated"]
+    },
+    {
+      "id": "frenzy",
+      "term": {
+        "en": "Frenzy",
+        "it": "Frenesia"
+      },
+      "definition": {
+        "en": "One Monster is always Frenzied and also acts when a card shows the Frenzy symbol. Frenzy Order is the number on each mat.",
+        "it": "Un Mostro è sempre in Frenesia e agisce anche quando una carta mostra il simbolo Frenesia. L'ordine di Frenesia è il numero su ogni plancia."
+      },
+      "aliases": {
+        "en": ["Frenesia"],
+        "it": ["Frenzy"]
+      },
+      "icon": {
+        "sceneId": "setup-example",
+        "hotspotId": "frenzy-marker"
+      },
+      "ruleRefs": ["frenzy", "attack-order"]
+    },
+    {
+      "id": "perk",
+      "term": {
+        "en": "Perk card",
+        "it": "Carta Vantaggio"
+      },
+      "definition": {
+        "en": "One-shot help from a famous D&D character. Play during any Hero Phase, no action needed.",
+        "it": "Aiuto monouso da un personaggio famoso di D&D. Si gioca in qualunque Fase degli Eroi, senza spendere azioni."
+      },
+      "aliases": {
+        "en": ["Carta Vantaggio"],
+        "it": ["Perk card"]
+      },
+      "icon": {
+        "sceneId": "setup-example",
+        "hotspotId": "perk-deck"
+      },
+      "ruleRefs": ["perk-cards"]
+    },
+    {
+      "id": "lair",
+      "term": {
+        "en": "Lair",
+        "it": "Tana"
+      },
+      "definition": {
+        "en": "Facedown token at four locations. Reveal it with Items worth 3+; the Red Dragon's challenges happen at Lairs.",
+        "it": "Segnalino coperto in quattro luoghi. Si rivela con Oggetti per 3+; le sfide del Drago Rosso avvengono nelle Tane."
+      },
+      "aliases": {
+        "en": ["Tana"],
+        "it": ["Lair"]
+      },
+      "icon": {
+        "sceneId": "setup-example",
+        "hotspotId": "lairs"
+      },
+      "ruleRefs": ["reveal-lair", "lair-tokens"]
+    },
+    {
+      "id": "teleportation-circle",
+      "term": {
+        "en": "Teleportation Circle",
+        "it": "Cerchio di Teletrasporto"
+      },
+      "definition": {
+        "en": "One Move takes you from any circle to any other circle.",
+        "it": "Con un solo Movimento vai da un cerchio a qualunque altro."
+      },
+      "aliases": {
+        "en": ["Cerchio di Teletrasporto"],
+        "it": ["Teleportation Circle"]
+      },
+      "icon": {
+        "sceneId": "board",
+        "hotspotId": "tc-west"
+      },
+      "ruleRefs": ["teleportation"]
+    },
+    {
+      "id": "secret-passage",
+      "term": {
+        "en": "Secret passage",
+        "it": "Passaggio segreto"
+      },
+      "definition": {
+        "en": "Castle Corkscrew ↔ Skullport Gate and The Well ↔ Entry Well work like Teleportation Circles.",
+        "it": "Castle Corkscrew ↔ Skullport Gate e The Well ↔ Entry Well funzionano come Cerchi di Teletrasporto."
+      },
+      "aliases": {
+        "en": ["Passaggio segreto"],
+        "it": ["Secret passage"]
+      },
+      "icon": {
+        "sceneId": "board",
+        "hotspotId": "castle-corkscrew"
+      },
+      "ruleRefs": ["teleportation"]
+    },
+    {
+      "id": "monster-attack",
+      "term": {
+        "en": "Monster Attack",
+        "it": "Attacco del Mostro"
+      },
+      "definition": {
+        "en": "Bottom line of a Monster card: which Monsters act, how far they move, how many dice they roll.",
+        "it": "Riga in fondo alla carta Mostro: quali Mostri agiscono, di quanto si muovono, quanti dadi tirano."
+      },
+      "aliases": {
+        "en": ["Attacco del Mostro"],
+        "it": ["Monster Attack"]
+      },
+      "icon": {
+        "sceneId": "monster-card",
+        "hotspotId": "attack-symbols"
+      },
+      "ruleRefs": ["attack-order", "monster-movement", "monster-attack"]
+    },
+    {
+      "id": "pow",
+      "term": {
+        "en": "POW",
+        "it": "POW"
+      },
+      "definition": {
+        "en": "Monster die face: the Monster's Power triggers once per POW, before Hits.",
+        "it": "Faccia del dado Mostro: il Potere del Mostro si attiva una volta per POW, prima dei Colpi."
+      },
+      "aliases": {
+        "en": ["POW"],
+        "it": ["POW"]
+      },
+      "ruleRefs": ["reading-dice"]
+    },
+    {
+      "id": "hit",
+      "term": {
+        "en": "HIT",
+        "it": "Colpo"
+      },
+      "definition": {
+        "en": "Monster die face: discard 1 Item per Hit or the Hero is defeated. Citizens fall at once.",
+        "it": "Faccia del dado Mostro: scarta 1 Oggetto per Colpo o l'Eroe è sconfitto. I Cittadini cadono subito."
+      },
+      "aliases": {
+        "en": ["Colpo"],
+        "it": ["HIT"]
+      },
+      "ruleRefs": ["reading-dice", "defend"]
+    },
+    {
+      "id": "advance",
+      "term": {
+        "en": "Advance",
+        "it": "Avanzare"
+      },
+      "definition": {
+        "en": "Action: spend Items on a Monster's challenge (step 1 on its mat).",
+        "it": "Azione: spendi Oggetti sulla sfida di un Mostro (passo 1 sulla sua plancia)."
+      },
+      "aliases": {
+        "en": ["Avanzare"],
+        "it": ["Advance"]
+      },
+      "ruleRefs": ["action-advance"]
+    },
+    {
+      "id": "defeat",
+      "term": {
+        "en": "Defeat",
+        "it": "Sconfiggere"
+      },
+      "definition": {
+        "en": "Action: once the challenge is done, finish the Monster off. Terror goes down 1.",
+        "it": "Azione: completata la sfida, elimina il Mostro. Il Terrore scende di 1."
+      },
+      "aliases": {
+        "en": ["Sconfiggere"],
+        "it": ["Defeat"]
+      },
+      "ruleRefs": ["action-defeat", "monster-defeated"]
+    },
+    {
+      "id": "critical-failure",
+      "term": {
+        "en": "Critical failure (1)",
+        "it": "Fallimento critico (1)"
+      },
+      "definition": {
+        "en": "A natural 1 on the d20 has no effect — unless a Perk changes it.",
+        "it": "Un 1 naturale sul d20 non ha effetto, salvo che un Vantaggio lo modifichi."
+      },
+      "aliases": {
+        "en": ["Fallimento critico (1)"],
+        "it": ["Critical failure (1)"]
+      },
+      "ruleRefs": ["d20-rules"]
+    },
+    {
+      "id": "eyestalk",
+      "term": {
+        "en": "Eyestalk",
+        "it": "Peduncolo oculare"
+      },
+      "definition": {
+        "en": "Each of the Beholder's 10 eye rays. Damage them all before blinding the central eye.",
+        "it": "Ognuno dei 10 raggi oculari del Beholder. Vanno danneggiati tutti prima di accecare l'occhio centrale."
+      },
+      "aliases": {
+        "en": ["Peduncolo oculare"],
+        "it": ["Eyestalk"]
+      },
+      "icon": {
+        "sceneId": "beholder",
+        "hotspotId": "rays-map"
+      },
+      "conditions": {
+        "variants": ["monster-beholder"]
+      },
+      "ruleRefs": ["beholder-advance", "eye-rays"]
+    },
+    {
+      "id": "orb",
+      "term": {
+        "en": "Orb of Dragonkind",
+        "it": "Globo dei Draghi"
+      },
+      "definition": {
+        "en": "Freed from its Vault; needed on the Hoard mat to destroy the Red Dragon. It is not an Item.",
+        "it": "Si libera dalla sua Cripta; serve sulla plancia del Tesoro per distruggere il Drago Rosso. Non è un Oggetto."
+      },
+      "aliases": {
+        "en": ["Globo dei Draghi", "Orb"],
+        "it": ["Orb of Dragonkind", "Orbe"]
+      },
+      "conditions": {
+        "variants": ["monster-red-dragon"]
+      },
+      "ruleRefs": ["dragon-vault", "dragon-surround"]
+    },
+    {
+      "id": "hoard",
+      "term": {
+        "en": "Red Dragon's Hoard",
+        "it": "Tesoro del Drago Rosso"
+      },
+      "definition": {
+        "en": "The Red Dragon's Lair: a single location where you lure it, surround it and destroy it.",
+        "it": "La Tana del Drago Rosso: un unico luogo in cui attirarlo, circondarlo e distruggerlo."
+      },
+      "aliases": {
+        "en": ["Tesoro del Drago Rosso"],
+        "it": ["Red Dragon's Hoard"]
+      },
+      "conditions": {
+        "variants": ["monster-red-dragon"]
+      },
+      "ruleRefs": ["dragon-lure", "dragon-notes"]
+    },
+    {
+      "id": "bite-space",
+      "term": {
+        "en": "Bite space",
+        "it": "Casella morso"
+      },
+      "definition": {
+        "en": "Red mouth icon on the Mimic's mat. Passing or stopping on it triggers \"Where is it?!\".",
+        "it": "Icona rossa a bocca sulla plancia del Mimic. Passarci o fermarcisi attiva \"Dov'è?!\"."
+      },
+      "aliases": {
+        "en": ["Casella morso"],
+        "it": ["Bite space"]
+      },
+      "conditions": {
+        "variants": ["monster-mimic"]
+      },
+      "ruleRefs": ["mimic-advance"]
+    }
+  ]
+}

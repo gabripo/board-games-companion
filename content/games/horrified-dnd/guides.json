@@ -1,0 +1,300 @@
+{
+  "overview": {
+    "pitch": {
+      "en": "Classic D&D monsters invade Waterdeep and Undermountain. Team up as Wizard, Rogue, Fighter, Cleric and Bard, gather Items, rescue Citizens and solve each Monster's unique puzzle before terror wins.",
+      "it": "I mostri classici di D&D invadono Waterdeep e Undermountain. Fate squadra come Mago, Ladro, Guerriero, Chierico e Bardo, raccogliete Oggetti, salvate i Cittadini e risolvete il rompicapo di ogni Mostro prima che vinca il terrore."
+    },
+    "goal": {
+      "en": "Defeat every Monster in play — together.",
+      "it": "Sconfiggere insieme ogni Mostro in gioco."
+    },
+    "howToWin": {
+      "en": "Complete each Monster's challenge and Defeat it before the Terror Level hits the skull or the Monster deck runs out.",
+      "it": "Completate la sfida di ogni Mostro e sconfiggetelo prima che il Terrore arrivi al teschio o che finisca il mazzo Mostro."
+    }
+  },
+  "coreLoop": {
+    "en": "Spend 4 actions moving, collecting Items and pushing a Monster's challenge forward; then a Monster card spawns Items, triggers an Event and sends Monsters after the nearest Hero or Citizen.",
+    "it": "Spendi 4 azioni per muoverti, raccogliere Oggetti e far avanzare la sfida di un Mostro; poi una carta Mostro fa comparire Oggetti, attiva un Evento e lancia i Mostri contro l'Eroe o il Cittadino più vicino."
+  },
+  "misconceptions": [
+    {
+      "id": "chase-heroes",
+      "myth": {
+        "en": "Monsters only chase Heroes.",
+        "it": "I Mostri inseguono solo gli Eroi."
+      },
+      "rule": {
+        "en": "They go for the closest character, Hero or Citizen; Heroes only win ties.",
+        "it": "Vanno verso il personaggio più vicino, Eroe o Cittadino; gli Eroi hanno la precedenza solo a parità."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        }
+      ],
+      "ruleRefs": ["monster-movement"]
+    },
+    {
+      "id": "save-citizen",
+      "myth": {
+        "en": "You can discard Items to protect a Citizen.",
+        "it": "Puoi scartare Oggetti per proteggere un Cittadino."
+      },
+      "rule": {
+        "en": "Citizens fall on any Hit; Items only protect Heroes.",
+        "it": "I Cittadini cadono al primo Colpo; gli Oggetti proteggono solo gli Eroi."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 9
+        }
+      ],
+      "ruleRefs": ["citizen-defeated"]
+    },
+    {
+      "id": "lose-stuff",
+      "myth": {
+        "en": "A defeated Hero loses their Items.",
+        "it": "Un Eroe sconfitto perde i suoi Oggetti."
+      },
+      "rule": {
+        "en": "They keep all Items and Perks and return at the Taproom.",
+        "it": "Tiene tutti gli Oggetti e i Vantaggi e torna al Taproom."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 9
+        }
+      ],
+      "ruleRefs": ["hero-defeated"]
+    },
+    {
+      "id": "monster-20",
+      "myth": {
+        "en": "Any 20 on the d20 gives a Perk.",
+        "it": "Ogni 20 sul d20 dà un Vantaggio."
+      },
+      "rule": {
+        "en": "Only in the Hero Phase — never in the Monster Phase (e.g. the Beholder's Eye Ray).",
+        "it": "Solo nella Fase degli Eroi, mai in quella dei Mostri (es. il Raggio Oculare del Beholder)."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 11
+        }
+      ],
+      "ruleRefs": ["d20-rules", "beholder-power"]
+    },
+    {
+      "id": "perk-action",
+      "myth": {
+        "en": "Playing a Perk costs an action.",
+        "it": "Giocare un Vantaggio costa un'azione."
+      },
+      "rule": {
+        "en": "Perks are free, and anyone can play them on any player's Hero Phase.",
+        "it": "I Vantaggi sono gratis e chiunque può giocarli nella Fase degli Eroi di chiunque."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["perk-cards"]
+    },
+    {
+      "id": "guide-circle",
+      "myth": {
+        "en": "You can Guide a Citizen through a Teleportation Circle.",
+        "it": "Puoi Guidare un Cittadino attraverso un Cerchio di Teletrasporto."
+      },
+      "rule": {
+        "en": "Only a Hero's Move carries them through; Guide can only bring them onto the circle.",
+        "it": "Solo il Movimento di un Eroe li porta attraverso; Guidare può solo portarli sul cerchio."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["citizens-teleport"]
+    }
+  ],
+  "edgeCases": [
+    {
+      "id": "fighter-wait",
+      "question": {
+        "en": "The Fighter rolled \"ignore all Hits of 1 attack\". Must it be used on the first attack?",
+        "it": "Il Guerriero ha ottenuto \"ignora tutti i Colpi di 1 attacco\". Va usato sul primo attacco?"
+      },
+      "answer": {
+        "en": "No — wait for the attack you want. But if no Hits come before the Monster Phase ends, it's lost.",
+        "it": "No, aspetta l'attacco che preferisci. Ma se non arrivano Colpi prima della fine della Fase dei Mostri, si perde."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["monster-phase-effects"]
+    },
+    {
+      "id": "monster-stays",
+      "question": {
+        "en": "A Monster starts its move in a location with a character. Does it move?",
+        "it": "Un Mostro inizia il movimento in un luogo con un personaggio. Si muove?"
+      },
+      "answer": {
+        "en": "No: it stays and attacks there.",
+        "it": "No: resta lì e attacca."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        }
+      ],
+      "ruleRefs": ["monster-movement"]
+    },
+    {
+      "id": "missing-color",
+      "question": {
+        "en": "The Event names a colour no Monster in play has.",
+        "it": "L'Evento indica un colore che nessun Mostro in gioco ha."
+      },
+      "answer": {
+        "en": "Ignore the Event and go on to the Monster Attack.",
+        "it": "Ignora l'Evento e passa all'Attacco del Mostro."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 7
+        }
+      ],
+      "ruleRefs": ["card-event"]
+    },
+    {
+      "id": "wizard-unwanted",
+      "question": {
+        "en": "The Wizard's teleport lands somewhere terrible. Can we decline?",
+        "it": "Il teletrasporto del Mago finisce in un posto terribile. Possiamo rifiutare?"
+      },
+      "answer": {
+        "en": "No: the spell always works and someone must go there.",
+        "it": "No: l'incantesimo funziona sempre e qualcuno deve andarci."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        }
+      ],
+      "ruleRefs": ["wizard-teleport"]
+    },
+    {
+      "id": "dragon-forced",
+      "question": {
+        "en": "A move would push the Red Dragon into Waterdeep.",
+        "it": "Un movimento spingerebbe il Drago Rosso a Waterdeep."
+      },
+      "answer": {
+        "en": "Then it doesn't move at all.",
+        "it": "Allora non si muove affatto."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 11
+        }
+      ],
+      "ruleRefs": ["dragon-movement"]
+    },
+    {
+      "id": "displacer-extra",
+      "question": {
+        "en": "Can we put more than 5 Items on the Displacer Beast's mat?",
+        "it": "Possiamo mettere più di 5 Oggetti sulla plancia del Displacer Beast?"
+      },
+      "answer": {
+        "en": "Yes — more covered numbers mean better odds, but all are discarded when it falls.",
+        "it": "Sì: più numeri coperti significano più probabilità, ma vengono scartati tutti quando cade."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 10
+        }
+      ],
+      "ruleRefs": ["displacer-advance"]
+    },
+    {
+      "id": "mimic-hidden",
+      "question": {
+        "en": "Do Events and Perks affect the Mimic while it's on its mat?",
+        "it": "Eventi e Vantaggi influenzano il Mimic mentre è sulla sua plancia?"
+      },
+      "answer": {
+        "en": "No. It can still be Frenzied, and attack movement moves it along the mat.",
+        "it": "No. Può comunque essere in Frenesia, e il movimento degli attacchi lo sposta sulla plancia."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 10
+        }
+      ],
+      "ruleRefs": ["mimic-notes"]
+    },
+    {
+      "id": "orb-not-item",
+      "question": {
+        "en": "Can the Orb of Dragonkind be discarded to block Hits?",
+        "it": "Il Globo dei Draghi si può scartare per bloccare i Colpi?"
+      },
+      "answer": {
+        "en": "No: it isn't an Item. It can only pass between Heroes with Share.",
+        "it": "No: non è un Oggetto. Può solo passare tra Eroi con Condividere."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 11
+        }
+      ],
+      "ruleRefs": ["dragon-vault"]
+    }
+  ]
+}

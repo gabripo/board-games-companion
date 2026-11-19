@@ -1,0 +1,430 @@
+{
+  "id": "turn",
+  "kind": "turnOrder",
+  "order": "clockwise",
+  "actor": "active-player",
+  "title": {
+    "en": "A player's turn",
+    "it": "Turno di un giocatore"
+  },
+  "firstPlayer": {
+    "en": "Highest d20 roll (reroll ties)",
+    "it": "Il d20 più alto (si ripetono i pareggi)"
+  },
+  "ruleRefs": ["turn-structure", "first-player"],
+  "children": [
+    {
+      "id": "perks-anytime",
+      "kind": "trigger",
+      "title": {
+        "en": "Perk cards",
+        "it": "Carte Vantaggio"
+      },
+      "when": {
+        "en": "it is anyone's Hero Phase",
+        "it": "è la Fase degli Eroi di chiunque"
+      },
+      "actor": "all-players",
+      "ruleRefs": ["perk-cards"],
+      "children": [
+        {
+          "id": "play-perk",
+          "kind": "step",
+          "title": {
+            "en": "Play any number of Perks — no action needed",
+            "it": "Gioca quanti Vantaggi vuoi, senza spendere azioni"
+          },
+          "ruleRefs": ["perk-cards"]
+        }
+      ]
+    },
+    {
+      "id": "hero-phase",
+      "kind": "sequence",
+      "title": {
+        "en": "1 · Hero Phase",
+        "it": "1 · Fase degli Eroi"
+      },
+      "actor": "active-player",
+      "ruleRefs": ["hero-phase"],
+      "sceneRef": {
+        "sceneId": "hero-tile",
+        "hotspotId": "actions"
+      },
+      "children": [
+        {
+          "id": "respawn",
+          "kind": "step",
+          "title": {
+            "en": "Defeated last round? Return at The Yawning Portal: Taproom",
+            "it": "Sconfitto nel giro precedente? Torna in The Yawning Portal: Taproom"
+          },
+          "ruleRefs": ["hero-defeated"],
+          "sceneRef": {
+            "sceneId": "board",
+            "hotspotId": "taproom"
+          }
+        },
+        {
+          "id": "actions",
+          "kind": "repeat",
+          "title": {
+            "en": "Take an action (up to 4)",
+            "it": "Fai un'azione (fino a 4)"
+          },
+          "until": {
+            "en": "you've taken 4 actions or choose to stop",
+            "it": "hai fatto 4 azioni o decidi di fermarti"
+          },
+          "untilRuleRef": "hero-phase",
+          "children": [
+            {
+              "id": "pick-action",
+              "kind": "choice",
+              "title": {
+                "en": "Choose one action",
+                "it": "Scegli un'azione"
+              },
+              "pick": {
+                "min": 1,
+                "max": 1
+              },
+              "options": [
+                {
+                  "id": "move",
+                  "kind": "step",
+                  "title": {
+                    "en": "Move",
+                    "it": "Muovere"
+                  },
+                  "ruleRefs": ["action-move", "teleportation"]
+                },
+                {
+                  "id": "guide",
+                  "kind": "step",
+                  "title": {
+                    "en": "Guide a Citizen",
+                    "it": "Guidare un Cittadino"
+                  },
+                  "ruleRefs": ["action-guide", "citizens-teleport"]
+                },
+                {
+                  "id": "pick-up",
+                  "kind": "step",
+                  "title": {
+                    "en": "Pick Up Items",
+                    "it": "Raccogliere Oggetti"
+                  },
+                  "ruleRefs": ["action-pick-up"]
+                },
+                {
+                  "id": "share",
+                  "kind": "step",
+                  "title": {
+                    "en": "Share Items",
+                    "it": "Condividere Oggetti"
+                  },
+                  "ruleRefs": ["action-share"]
+                },
+                {
+                  "id": "advance",
+                  "kind": "step",
+                  "title": {
+                    "en": "Advance a challenge",
+                    "it": "Avanzare una sfida"
+                  },
+                  "ruleRefs": ["action-advance", "item-requirements"]
+                },
+                {
+                  "id": "defeat",
+                  "kind": "step",
+                  "title": {
+                    "en": "Defeat a Monster",
+                    "it": "Sconfiggere un Mostro"
+                  },
+                  "ruleRefs": ["action-defeat", "monster-defeated"]
+                },
+                {
+                  "id": "reveal",
+                  "kind": "step",
+                  "title": {
+                    "en": "Reveal a Lair (Items 3+)",
+                    "it": "Rivelare una Tana (Oggetti 3+)"
+                  },
+                  "ruleRefs": ["reveal-lair"]
+                },
+                {
+                  "id": "special",
+                  "kind": "roll",
+                  "title": {
+                    "en": "Special Action: roll the d20",
+                    "it": "Azione Speciale: tira il d20"
+                  },
+                  "dieId": "d20",
+                  "count": 1,
+                  "ruleRefs": ["action-special", "d20-rules"],
+                  "sceneRef": {
+                    "sceneId": "hero-tile",
+                    "hotspotId": "special"
+                  },
+                  "outcomes": [
+                    {
+                      "label": {
+                        "en": "1 · No effect",
+                        "it": "1 · Nessun effetto"
+                      },
+                      "sum": {
+                        "min": 1,
+                        "max": 1
+                      }
+                    },
+                    {
+                      "label": {
+                        "en": "2–8 · Your tile's effect",
+                        "it": "2–8 · Effetto della tessera"
+                      },
+                      "sum": {
+                        "min": 2,
+                        "max": 8
+                      }
+                    },
+                    {
+                      "label": {
+                        "en": "9–15 · Your tile's effect",
+                        "it": "9–15 · Effetto della tessera"
+                      },
+                      "sum": {
+                        "min": 9,
+                        "max": 15
+                      }
+                    },
+                    {
+                      "label": {
+                        "en": "16–19 · Your tile's effect",
+                        "it": "16–19 · Effetto della tessera"
+                      },
+                      "sum": {
+                        "min": 16,
+                        "max": 19
+                      }
+                    },
+                    {
+                      "label": {
+                        "en": "20 · Tile effect + a Perk",
+                        "it": "20 · Effetto della tessera + un Vantaggio"
+                      },
+                      "sum": {
+                        "min": 20,
+                        "max": 20
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "citizen-saved",
+          "kind": "trigger",
+          "title": {
+            "en": "Citizen saved",
+            "it": "Cittadino salvato"
+          },
+          "when": {
+            "en": "a Citizen reaches its safe location",
+            "it": "un Cittadino raggiunge il suo luogo sicuro"
+          },
+          "ruleRefs": ["citizens"],
+          "children": [
+            {
+              "id": "citizen-perk",
+              "kind": "step",
+              "title": {
+                "en": "Remove it; the active player draws a Perk",
+                "it": "Toglilo; il giocatore attivo pesca un Vantaggio"
+              },
+              "ruleRefs": ["citizens"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monster-phase",
+      "kind": "sequence",
+      "title": {
+        "en": "2 · Monster Phase",
+        "it": "2 · Fase dei Mostri"
+      },
+      "actor": "game",
+      "ruleRefs": ["monster-phase"],
+      "sceneRef": {
+        "sceneId": "monster-card"
+      },
+      "children": [
+        {
+          "id": "draw-card",
+          "kind": "step",
+          "title": {
+            "en": "Draw a Monster card (deck empty = you lose)",
+            "it": "Pesca una carta Mostro (mazzo vuoto = sconfitta)"
+          },
+          "ruleRefs": ["monster-phase", "lose-time"]
+        },
+        {
+          "id": "place-items",
+          "kind": "step",
+          "title": {
+            "en": "Items: draw and place the number shown",
+            "it": "Oggetti: pesca e piazza il numero indicato"
+          },
+          "ruleRefs": ["card-items"],
+          "sceneRef": {
+            "sceneId": "monster-card",
+            "hotspotId": "items"
+          }
+        },
+        {
+          "id": "event",
+          "kind": "step",
+          "title": {
+            "en": "Event: read it aloud and resolve it",
+            "it": "Evento: leggilo ad alta voce e risolvilo"
+          },
+          "ruleRefs": ["card-event"],
+          "sceneRef": {
+            "sceneId": "monster-card",
+            "hotspotId": "event"
+          }
+        },
+        {
+          "id": "attack-line",
+          "kind": "repeat",
+          "title": {
+            "en": "Monster Attack: next icon, left to right",
+            "it": "Attacco del Mostro: icona successiva, da sinistra a destra"
+          },
+          "until": {
+            "en": "no icons are left on the Monster Attack line",
+            "it": "non restano icone sulla riga dell'Attacco"
+          },
+          "untilRuleRef": "attack-order",
+          "children": [
+            {
+              "id": "which-monster",
+              "kind": "step",
+              "title": {
+                "en": "Frenzy icon = Frenzied Monster; colour = every matching Monster",
+                "it": "Icona Frenesia = Mostro in Frenesia; colore = ogni Mostro corrispondente"
+              },
+              "ruleRefs": ["attack-order", "frenzy"],
+              "sceneRef": {
+                "sceneId": "monster-card",
+                "hotspotId": "attack-symbols"
+              }
+            },
+            {
+              "id": "mimic-on-mat",
+              "kind": "step",
+              "title": {
+                "en": "Mimic still hidden: move it along its mat; bite space = \"Where is it?!\"",
+                "it": "Mimic ancora nascosto: muovilo sulla sua plancia; casella morso = \"Dov'è?!\""
+              },
+              "conditions": {
+                "variants": ["monster-mimic"]
+              },
+              "ruleRefs": ["mimic-notes", "mimic-advance"]
+            },
+            {
+              "id": "move-monster",
+              "kind": "step",
+              "title": {
+                "en": "Move it toward the closest character",
+                "it": "Muovilo verso il personaggio più vicino"
+              },
+              "ruleRefs": ["monster-movement", "dragon-movement"],
+              "sceneRef": {
+                "sceneId": "monster-card",
+                "hotspotId": "attack-move"
+              }
+            },
+            {
+              "id": "roll-attack",
+              "kind": "roll",
+              "title": {
+                "en": "Roll the Monster dice shown at a character there",
+                "it": "Tira i dadi Mostro indicati contro un personaggio lì"
+              },
+              "count": 2,
+              "ruleRefs": ["monster-attack", "reading-dice", "monster-phase-effects"],
+              "sceneRef": {
+                "sceneId": "monster-card",
+                "hotspotId": "attack-dice"
+              },
+              "outcomes": [
+                {
+                  "label": {
+                    "en": "POW: the Monster's Power (first)",
+                    "it": "POW: il Potere del Mostro (per primo)"
+                  },
+                  "faces": ["pow"]
+                },
+                {
+                  "label": {
+                    "en": "HIT: discard 1 Item or be defeated",
+                    "it": "COLPO: scarta 1 Oggetto o sei sconfitto"
+                  },
+                  "faces": ["hit"],
+                  "children": [
+                    {
+                      "id": "hit-result",
+                      "kind": "step",
+                      "title": {
+                        "en": "Defeated Hero/Citizen: Terror +1",
+                        "it": "Eroe/Cittadino sconfitto: Terrore +1"
+                      },
+                      "ruleRefs": ["defend", "hero-defeated", "citizen-defeated"]
+                    }
+                  ]
+                },
+                {
+                  "label": {
+                    "en": "Blank: miss",
+                    "it": "Vuota: mancato"
+                  },
+                  "faces": ["blank"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "game-end",
+      "kind": "trigger",
+      "title": {
+        "en": "End of the game",
+        "it": "Fine della partita"
+      },
+      "when": {
+        "en": "all Monsters are defeated, Terror hits the skull or no Monster card is left",
+        "it": "tutti i Mostri sono sconfitti, il Terrore arriva al teschio o non restano carte Mostro"
+      },
+      "actor": "game",
+      "ruleRefs": ["win", "lose-terror", "lose-time"],
+      "children": [
+        {
+          "id": "check-end",
+          "kind": "step",
+          "title": {
+            "en": "Win only if every Monster is defeated",
+            "it": "Si vince solo se ogni Mostro è sconfitto"
+          },
+          "ruleRefs": ["win", "lose-terror", "lose-time"]
+        }
+      ]
+    }
+  ]
+}
