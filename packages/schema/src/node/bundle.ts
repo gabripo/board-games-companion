@@ -136,10 +136,13 @@ export async function loadGameDir(dir: string): Promise<GameLoadResult> {
 
   const guide = merged.data;
   issues.push(...checkIntegrity(guide));
+  // Game images are private (gitignored, kept only on the owner's machine). CI checkouts
+  // don't have them: BGC_IMAGES=optional turns a missing image into a warning there.
+  const imagesOptional = process.env.BGC_IMAGES === "optional";
   for (const [i, scene] of guide.scenes.entries()) {
     if (!existsSync(join(dir, scene.image.src))) {
       issues.push({
-        severity: "error",
+        severity: imagesOptional ? "warning" : "error",
         path: `scenes[${i}].image.src`,
         message: `image file "${scene.image.src}" not found in ${basename(dir)}/`,
       });

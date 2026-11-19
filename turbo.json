@@ -6,6 +6,7 @@
       "outputs": []
     },
     "test": {
+      "env": ["BGC_IMAGES"],
       "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/content/**"],
       "outputs": []
     },
