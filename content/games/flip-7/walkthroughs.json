@@ -1,0 +1,94 @@
+[
+  {
+    "id": "first-round",
+    "title": {
+      "en": "Your first round",
+      "it": "Il tuo primo round"
+    },
+    "level": "newbie",
+    "steps": [
+      {
+        "id": "deck",
+        "text": {
+          "en": "High numbers are worth more but there are more of them: twelve 12s, only one 1. Remember what has come out.",
+          "it": "I numeri alti valgono di più ma ce ne sono di più: dodici 12, un solo 1. Ricorda cosa è già uscito."
+        },
+        "sceneId": "deck",
+        "focus": {
+          "x": 0,
+          "y": 0.05,
+          "w": 1,
+          "h": 0.5
+        },
+        "highlightHotspots": ["n12", "n1"]
+      },
+      {
+        "id": "line",
+        "text": {
+          "en": "Each Hit adds a card to your line. Stay whenever you like to bank what's there.",
+          "it": "Ogni \"Carta!\" aggiunge una carta alla tua fila. Di' \"Sto!\" quando vuoi per mettere da parte i punti."
+        },
+        "flowNodeRef": "hit-or-stay",
+        "sceneId": "your-line",
+        "highlightHotspots": ["numbers", "total"]
+      },
+      {
+        "id": "bust",
+        "text": {
+          "en": "A number you already have means bust: 0 points this round.",
+          "it": "Un numero che hai già significa sballare: 0 punti in questo round."
+        },
+        "flowNodeRef": "duplicate",
+        "sceneId": "end-of-round",
+        "check": {
+          "question": {
+            "en": "Tap the line that busted.",
+            "it": "Tocca la fila che ha sballato."
+          },
+          "answerHotspotId": "bust",
+          "explanation": {
+            "en": "Two 7s.",
+            "it": "Due 7."
+          }
+        }
+      },
+      {
+        "id": "actions",
+        "text": {
+          "en": "Action cards hit any active player — you choose who. Second Chance saves you from one duplicate.",
+          "it": "Le carte Azione colpiscono qualsiasi giocatore attivo: scegli tu chi. La Seconda Chance ti salva da un doppione."
+        },
+        "flowNodeRef": "action",
+        "sceneId": "deck",
+        "focus": {
+          "x": 0,
+          "y": 0.8,
+          "w": 1,
+          "h": 0.2
+        },
+        "highlightHotspots": ["freeze", "flip-three", "second-chance"],
+        "check": {
+          "question": {
+            "en": "Tap the card that protects you from a duplicate.",
+            "it": "Tocca la carta che ti protegge da un doppione."
+          },
+          "answerHotspotId": "second-chance",
+          "explanation": {
+            "en": "Second Chance: discard it with the duplicate.",
+            "it": "Seconda Chance: scartala insieme al doppione."
+          }
+        }
+      },
+      {
+        "id": "score",
+        "text": {
+          "en": "Score: numbers, then x2, then +cards, then +15 for a Flip 7. First to 200 at a round's end wins.",
+          "it": "Punteggio: numeri, poi x2, poi carte +, poi +15 per un Flip 7. Vince chi è più alto a fine round con 200 o più."
+        },
+        "flowNodeRef": "score",
+        "sceneId": "scoring",
+        "highlightHotspots": ["step-1", "step-2", "step-3", "step-4"]
+      }
+    ]
+  }
+]

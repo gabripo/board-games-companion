@@ -1,0 +1,197 @@
+{
+  "id": "cards",
+  "kind": "cards",
+  "title": {
+    "en": "The deck",
+    "it": "Il mazzo"
+  },
+  "ruleRefs": ["deck"],
+  "decks": [
+    {
+      "id": "deck",
+      "name": {
+        "en": "Flip 7 deck",
+        "it": "Mazzo di Flip 7"
+      },
+      "count": 94,
+      "composition": [
+        {
+          "id": "n12",
+          "label": {
+            "en": "12",
+            "it": "12"
+          },
+          "count": 12
+        },
+        {
+          "id": "n11",
+          "label": {
+            "en": "11",
+            "it": "11"
+          },
+          "count": 11
+        },
+        {
+          "id": "n10",
+          "label": {
+            "en": "10",
+            "it": "10"
+          },
+          "count": 10
+        },
+        {
+          "id": "n9",
+          "label": {
+            "en": "9",
+            "it": "9"
+          },
+          "count": 9
+        },
+        {
+          "id": "n8",
+          "label": {
+            "en": "8",
+            "it": "8"
+          },
+          "count": 8
+        },
+        {
+          "id": "n7",
+          "label": {
+            "en": "7",
+            "it": "7"
+          },
+          "count": 7
+        },
+        {
+          "id": "n6",
+          "label": {
+            "en": "6",
+            "it": "6"
+          },
+          "count": 6
+        },
+        {
+          "id": "n5",
+          "label": {
+            "en": "5",
+            "it": "5"
+          },
+          "count": 5
+        },
+        {
+          "id": "n4",
+          "label": {
+            "en": "4",
+            "it": "4"
+          },
+          "count": 4
+        },
+        {
+          "id": "n3",
+          "label": {
+            "en": "3",
+            "it": "3"
+          },
+          "count": 3
+        },
+        {
+          "id": "n2",
+          "label": {
+            "en": "2",
+            "it": "2"
+          },
+          "count": 2
+        },
+        {
+          "id": "n1",
+          "label": {
+            "en": "1",
+            "it": "1"
+          },
+          "count": 1
+        },
+        {
+          "id": "n0",
+          "label": {
+            "en": "0",
+            "it": "0"
+          },
+          "count": 1
+        },
+        {
+          "id": "plus2",
+          "label": {
+            "en": "+2",
+            "it": "+2"
+          },
+          "count": 1
+        },
+        {
+          "id": "plus4",
+          "label": {
+            "en": "+4",
+            "it": "+4"
+          },
+          "count": 1
+        },
+        {
+          "id": "plus6",
+          "label": {
+            "en": "+6",
+            "it": "+6"
+          },
+          "count": 1
+        },
+        {
+          "id": "plus8",
+          "label": {
+            "en": "+8",
+            "it": "+8"
+          },
+          "count": 1
+        },
+        {
+          "id": "plus10",
+          "label": {
+            "en": "+10",
+            "it": "+10"
+          },
+          "count": 1
+        },
+        {
+          "id": "times2",
+          "label": {
+            "en": "x2",
+            "it": "x2"
+          },
+          "count": 1
+        },
+        {
+          "id": "freeze",
+          "label": {
+            "en": "Freeze",
+            "it": "Freeze"
+          },
+          "count": 3
+        },
+        {
+          "id": "flip-three",
+          "label": {
+            "en": "Flip Three",
+            "it": "Tre Carte"
+          },
+          "count": 3
+        },
+        {
+          "id": "second-chance",
+          "label": {
+            "en": "Second Chance",
+            "it": "Seconda Chance"
+          },
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

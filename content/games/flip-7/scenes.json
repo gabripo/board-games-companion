@@ -1,0 +1,889 @@
+[
+  {
+    "id": "deck",
+    "title": {
+      "en": "The 94 cards",
+      "it": "Le 94 carte"
+    },
+    "image": {
+      "src": "images/deck.webp",
+      "width": 720,
+      "height": 1080,
+      "alt": {
+        "en": "Every Flip 7 card with how many copies are in the deck",
+        "it": "Tutte le carte di Flip 7 con il numero di copie nel mazzo"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "n12",
+        "label": {
+          "en": "12 — twelve (×12)",
+          "it": "12 — dodici (×12)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0389,
+            "y": 0.088,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "12 in the deck.",
+          "it": "12 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n11",
+        "label": {
+          "en": "11 — eleven (×11)",
+          "it": "11 — undici (×11)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2278,
+            "y": 0.088,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "11 in the deck.",
+          "it": "11 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n10",
+        "label": {
+          "en": "10 — ten (×10)",
+          "it": "10 — dieci (×10)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4167,
+            "y": 0.088,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "10 in the deck.",
+          "it": "10 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n9",
+        "label": {
+          "en": "9 — nine (×9)",
+          "it": "9 — nove (×9)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6042,
+            "y": 0.088,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "9 in the deck.",
+          "it": "9 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n8",
+        "label": {
+          "en": "8 — eight (×8)",
+          "it": "8 — otto (×8)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7917,
+            "y": 0.088,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "8 in the deck.",
+          "it": "8 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n7",
+        "label": {
+          "en": "7 — seven (×7)",
+          "it": "7 — sette (×7)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0389,
+            "y": 0.2296,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "7 in the deck.",
+          "it": "7 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n6",
+        "label": {
+          "en": "6 — six (×6)",
+          "it": "6 — sei (×6)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2278,
+            "y": 0.2296,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "6 in the deck.",
+          "it": "6 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n5",
+        "label": {
+          "en": "5 — five (×5)",
+          "it": "5 — cinque (×5)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4167,
+            "y": 0.2296,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "5 in the deck.",
+          "it": "5 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n4",
+        "label": {
+          "en": "4 — four (×4)",
+          "it": "4 — quattro (×4)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6042,
+            "y": 0.2296,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "4 in the deck.",
+          "it": "4 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n3",
+        "label": {
+          "en": "3 — three (×3)",
+          "it": "3 — tre (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7917,
+            "y": 0.2296,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "3 in the deck.",
+          "it": "3 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n2",
+        "label": {
+          "en": "2 — two (×2)",
+          "it": "2 — due (×2)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0389,
+            "y": 0.3722,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "2 in the deck.",
+          "it": "2 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n1",
+        "label": {
+          "en": "1 — one (×1)",
+          "it": "1 — uno (×1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2278,
+            "y": 0.3722,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "1 in the deck.",
+          "it": "1 nel mazzo."
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "n0",
+        "label": {
+          "en": "0 — zero (×1)",
+          "it": "0 — zero (×1)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4167,
+            "y": 0.3722,
+            "w": 0.1694,
+            "h": 0.1222
+          }
+        },
+        "description": {
+          "en": "Worth 0 points but counts toward Flip 7.",
+          "it": "Vale 0 punti ma conta per il Flip 7."
+        },
+        "ruleRefs": ["zero", "deck"]
+      },
+      {
+        "id": "modifiers",
+        "label": {
+          "en": "Score Modifier cards",
+          "it": "Carte Bonus"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0,
+            "y": 0.5602,
+            "w": 0.5556,
+            "h": 0.0694
+          }
+        },
+        "description": {
+          "en": "One of each: +2, +4, +6, +8, +10, x2.",
+          "it": "Una per tipo: +2, +4, +6, +8, +10, x2."
+        },
+        "ruleRefs": ["modifiers"]
+      },
+      {
+        "id": "mod-2",
+        "label": {
+          "en": "+2 card",
+          "it": "Carta +2"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0389,
+            "y": 0.637,
+            "w": 0.1139,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Adds to your round score.",
+          "it": "Si aggiunge al punteggio del round."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "mod-4",
+        "label": {
+          "en": "+4 card",
+          "it": "Carta +4"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1889,
+            "y": 0.637,
+            "w": 0.1139,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Adds to your round score.",
+          "it": "Si aggiunge al punteggio del round."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "mod-6",
+        "label": {
+          "en": "+6 card",
+          "it": "Carta +6"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.3403,
+            "y": 0.637,
+            "w": 0.1139,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Adds to your round score.",
+          "it": "Si aggiunge al punteggio del round."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "mod-8",
+        "label": {
+          "en": "+8 card",
+          "it": "Carta +8"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4903,
+            "y": 0.637,
+            "w": 0.1139,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Adds to your round score.",
+          "it": "Si aggiunge al punteggio del round."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "mod-10",
+        "label": {
+          "en": "+10 card",
+          "it": "Carta +10"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6403,
+            "y": 0.637,
+            "w": 0.1139,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Adds to your round score.",
+          "it": "Si aggiunge al punteggio del round."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "times-two",
+        "label": {
+          "en": "x2 card",
+          "it": "Carta x2"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7917,
+            "y": 0.637,
+            "w": 0.1667,
+            "h": 0.1185
+          }
+        },
+        "description": {
+          "en": "Doubles your Number cards only.",
+          "it": "Raddoppia solo le carte Numerate."
+        },
+        "ruleRefs": ["modifiers", "scoring-order"]
+      },
+      {
+        "id": "freeze",
+        "label": {
+          "en": "Freeze (×3)",
+          "it": "Freeze (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0389,
+            "y": 0.8704,
+            "w": 0.1556,
+            "h": 0.1176
+          }
+        },
+        "ruleRefs": ["freeze"]
+      },
+      {
+        "id": "flip-three",
+        "label": {
+          "en": "Flip Three (×3)",
+          "it": "Tre Carte (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.2292,
+            "y": 0.8704,
+            "w": 0.1556,
+            "h": 0.1176
+          }
+        },
+        "ruleRefs": ["flip-three"]
+      },
+      {
+        "id": "second-chance",
+        "label": {
+          "en": "Second Chance (×3)",
+          "it": "Seconda Chance (×3)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4181,
+            "y": 0.8704,
+            "w": 0.1556,
+            "h": 0.1176
+          }
+        },
+        "ruleRefs": ["second-chance"]
+      },
+      {
+        "id": "big-group",
+        "label": {
+          "en": "More than 18 players",
+          "it": "Più di 18 giocatori"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.6319,
+            "y": 0.8685,
+            "w": 0.3236,
+            "h": 0.1056
+          }
+        },
+        "description": {
+          "en": "Add a second deck.",
+          "it": "Aggiungete un secondo mazzo."
+        },
+        "ruleRefs": ["deck"]
+      }
+    ]
+  },
+  {
+    "id": "your-line",
+    "title": {
+      "en": "Your line",
+      "it": "La tua fila"
+    },
+    "image": {
+      "src": "images/your-line.webp",
+      "width": 720,
+      "height": 620,
+      "alt": {
+        "en": "A player's line: 11, 5 and 12 with a +4 above",
+        "it": "La fila di un giocatore: 11, 5 e 12 con un +4 sopra"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "modifier",
+        "label": {
+          "en": "Modifier above the line",
+          "it": "Carta Bonus sopra la fila"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.4236,
+            "y": 0.0484,
+            "w": 0.1639,
+            "h": 0.2871
+          }
+        },
+        "ruleRefs": ["hit-or-stay", "modifiers"]
+      },
+      {
+        "id": "numbers",
+        "label": {
+          "en": "Number cards in one row",
+          "it": "Carte Numerate in una riga"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0347,
+            "y": 0.3742,
+            "w": 0.5528,
+            "h": 0.2871
+          }
+        },
+        "ruleRefs": ["hit-or-stay", "bust"]
+      },
+      {
+        "id": "total",
+        "label": {
+          "en": "28 + 4 = 32 points",
+          "it": "28 + 4 = 32 punti"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.5875,
+            "y": 0.4032,
+            "w": 0.4125,
+            "h": 0.229
+          }
+        },
+        "description": {
+          "en": "What this player banks by staying now.",
+          "it": "Ciò che questo giocatore mette da parte dicendo \"Sto!\" ora."
+        },
+        "ruleRefs": ["line-example"]
+      }
+    ]
+  },
+  {
+    "id": "end-of-round",
+    "title": {
+      "en": "Bust and Flip 7",
+      "it": "Sballare e Flip 7"
+    },
+    "image": {
+      "src": "images/end-of-round.webp",
+      "width": 720,
+      "height": 930,
+      "alt": {
+        "en": "A bust on a second 7, and a Flip 7 with seven different numbers",
+        "it": "Uno sballo con un secondo 7 e un Flip 7 con sette numeri diversi"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "bust",
+        "label": {
+          "en": "Bust: a second 7",
+          "it": "Sballato: un secondo 7"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0278,
+            "y": 0.2742,
+            "w": 0.9653,
+            "h": 0.3548
+          }
+        },
+        "description": {
+          "en": "Out of the round, 0 points.",
+          "it": "Fuori dal round, 0 punti."
+        },
+        "ruleRefs": ["bust"]
+      },
+      {
+        "id": "flip-7",
+        "label": {
+          "en": "Flip 7: seven different numbers",
+          "it": "Flip 7: sette numeri diversi"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0278,
+            "y": 0.6452,
+            "w": 0.9653,
+            "h": 0.3065
+          }
+        },
+        "description": {
+          "en": "+15 and the round ends for everyone.",
+          "it": "+15 e il round finisce per tutti."
+        },
+        "ruleRefs": ["round-end", "scoring-order"]
+      }
+    ]
+  },
+  {
+    "id": "scoring",
+    "title": {
+      "en": "Scoring a round",
+      "it": "Punteggio di un round"
+    },
+    "image": {
+      "src": "images/scoring.webp",
+      "width": 1270,
+      "height": 890,
+      "alt": {
+        "en": "The four scoring steps with examples",
+        "it": "I quattro passi del punteggio con esempi"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "step-1",
+        "label": {
+          "en": "1 · Add the Number cards",
+          "it": "1 · Somma le carte Numerate"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0197,
+            "y": 0.0955,
+            "w": 0.6654,
+            "h": 0.2169
+          }
+        },
+        "ruleRefs": ["scoring-order"]
+      },
+      {
+        "id": "step-2",
+        "label": {
+          "en": "2 · x2 doubles them",
+          "it": "2 · x2 le raddoppia"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0197,
+            "y": 0.3236,
+            "w": 0.8228,
+            "h": 0.2135
+          }
+        },
+        "ruleRefs": ["scoring-order", "modifiers"]
+      },
+      {
+        "id": "step-3",
+        "label": {
+          "en": "3 · Add +cards",
+          "it": "3 · Aggiungi le carte +"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0197,
+            "y": 0.5483,
+            "w": 0.8228,
+            "h": 0.2112
+          }
+        },
+        "ruleRefs": ["scoring-order", "modifiers"]
+      },
+      {
+        "id": "step-4",
+        "label": {
+          "en": "4 · +15 for Flip 7",
+          "it": "4 · +15 per Flip 7"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0197,
+            "y": 0.7708,
+            "w": 0.9764,
+            "h": 0.227
+          }
+        },
+        "ruleRefs": ["scoring-order", "round-end"]
+      }
+    ]
+  },
+  {
+    "id": "italian-cards",
+    "title": {
+      "en": "Italian edition cards",
+      "it": "Carte dell'edizione italiana"
+    },
+    "image": {
+      "src": "images/italian-cards.webp",
+      "width": 1600,
+      "height": 1020,
+      "alt": {
+        "en": "Ghenos Games' Italian cards: Freeze, Tre Carte, Seconda Chance, numbers and Bonus cards",
+        "it": "Le carte italiane di Ghenos Games: Freeze, Tre Carte, Seconda Chance, numeri e carte Bonus"
+      }
+    },
+    "hotspots": [
+      {
+        "id": "freeze",
+        "label": {
+          "en": "Freeze",
+          "it": "Freeze"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1144,
+            "y": 0.0284,
+            "w": 0.1569,
+            "h": 0.3186
+          }
+        },
+        "ruleRefs": ["freeze"]
+      },
+      {
+        "id": "deck-back",
+        "label": {
+          "en": "Card back",
+          "it": "Dorso delle carte"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.425,
+            "y": 0.0333,
+            "w": 0.1394,
+            "h": 0.3029
+          }
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "second-chance",
+        "label": {
+          "en": "Seconda Chance (Second Chance)",
+          "it": "Seconda Chance"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7056,
+            "y": 0.0225,
+            "w": 0.0369,
+            "h": 0.3137
+          }
+        },
+        "ruleRefs": ["second-chance"]
+      },
+      {
+        "id": "tre-carte",
+        "label": {
+          "en": "Tre Carte (Flip Three)",
+          "it": "Tre Carte"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.7431,
+            "y": 0.0284,
+            "w": 0.1531,
+            "h": 0.3078
+          }
+        },
+        "ruleRefs": ["flip-three"]
+      },
+      {
+        "id": "plus-8",
+        "label": {
+          "en": "+8 (Bonus card)",
+          "it": "+8 (carta Bonus)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.57,
+            "y": 0.3608,
+            "w": 0.1288,
+            "h": 0.2961
+          }
+        },
+        "ruleRefs": ["modifiers"]
+      },
+      {
+        "id": "times-two",
+        "label": {
+          "en": "x2 (Bonus card)",
+          "it": "x2 (carta Bonus)"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.845,
+            "y": 0.3608,
+            "w": 0.1319,
+            "h": 0.2961
+          }
+        },
+        "ruleRefs": ["modifiers"]
+      },
+      {
+        "id": "numbers-top",
+        "label": {
+          "en": "Number cards (carte Numerate)",
+          "it": "Carte Numerate"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.0188,
+            "y": 0.3588,
+            "w": 0.5488,
+            "h": 0.298
+          }
+        },
+        "description": {
+          "en": "Each shows its value in words: QUATTRO, DODICI…",
+          "it": "Ognuna riporta il valore in lettere: QUATTRO, DODICI…"
+        },
+        "ruleRefs": ["deck"]
+      },
+      {
+        "id": "numbers",
+        "label": {
+          "en": "Number cards (carte Numerate)",
+          "it": "Carte Numerate"
+        },
+        "shape": {
+          "kind": "rect",
+          "rect": {
+            "x": 0.1538,
+            "y": 0.6667,
+            "w": 0.6894,
+            "h": 0.2971
+          }
+        },
+        "ruleRefs": ["deck"]
+      }
+    ]
+  }
+]

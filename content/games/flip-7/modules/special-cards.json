@@ -1,0 +1,71 @@
+{
+  "id": "special-cards",
+  "kind": "sections",
+  "title": {
+    "en": "Action & Modifier cards",
+    "it": "Carte Azione e Bonus"
+  },
+  "ruleRefs": ["action-cards", "modifiers"],
+  "sections": [
+    {
+      "id": "freeze",
+      "title": {
+        "en": "Freeze (×3)",
+        "it": "Freeze (×3)"
+      },
+      "body": {
+        "en": "Target an active player (or yourself): they bank their points and are out of the round.",
+        "it": "Scegli un giocatore attivo (o te stesso): mette da parte i punti ed esce dal round."
+      },
+      "ruleRefs": ["freeze"]
+    },
+    {
+      "id": "flip-three",
+      "title": {
+        "en": "Flip Three (×3)",
+        "it": "Tre Carte (×3)"
+      },
+      "body": {
+        "en": "Target takes the next 3 cards one by one; stops on Flip 7 or bust. New Actions wait until the third card.",
+        "it": "Il bersaglio prende 3 carte una alla volta; si ferma con Flip 7 o sballando. Le nuove Azioni aspettano la terza carta."
+      },
+      "ruleRefs": ["flip-three"]
+    },
+    {
+      "id": "second-chance",
+      "title": {
+        "en": "Second Chance (×3)",
+        "it": "Seconda Chance (×3)"
+      },
+      "body": {
+        "en": "Keep it: it absorbs one duplicate number. Max one each; discarded at round end.",
+        "it": "Tienila: assorbe un numero doppio. Massimo una a testa; si scarta a fine round."
+      },
+      "ruleRefs": ["second-chance"]
+    },
+    {
+      "id": "plus",
+      "title": {
+        "en": "+2, +4, +6, +8, +10",
+        "it": "+2, +4, +6, +8, +10"
+      },
+      "body": {
+        "en": "Add to your round score, after any x2. Scores even without Number cards.",
+        "it": "Si aggiungono al punteggio del round, dopo l'eventuale x2. Valgono anche senza carte Numerate."
+      },
+      "ruleRefs": ["modifiers", "scoring-order"]
+    },
+    {
+      "id": "times-two",
+      "title": {
+        "en": "x2",
+        "it": "x2"
+      },
+      "body": {
+        "en": "Doubles the sum of your Number cards only.",
+        "it": "Raddoppia solo la somma delle tue carte Numerate."
+      },
+      "ruleRefs": ["modifiers", "scoring-order"]
+    }
+  ]
+}

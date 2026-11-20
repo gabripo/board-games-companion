@@ -1,0 +1,54 @@
+{
+  "areas": [
+    {
+      "id": "table",
+      "name": {
+        "en": "The table",
+        "it": "Il tavolo"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "score-sheet",
+      "areaId": "table",
+      "text": {
+        "en": "Get pen and paper (or a printable score sheet) to track scores up to 200.",
+        "it": "Prendete carta e penna (o un segnapunti stampabile) per segnare i punti fino a 200."
+      },
+      "components": ["score-pad"],
+      "ruleRefs": ["setup"]
+    },
+    {
+      "id": "shuffle",
+      "areaId": "table",
+      "text": {
+        "en": "Shuffle all 94 cards thoroughly.",
+        "it": "Mescolate bene tutte le 94 carte."
+      },
+      "components": ["deck"],
+      "sceneRef": {
+        "sceneId": "deck"
+      },
+      "ruleRefs": ["setup", "deck"]
+    },
+    {
+      "id": "second-deck",
+      "areaId": "table",
+      "text": {
+        "en": "More than 18 players? Shuffle in a second deck.",
+        "it": "Più di 18 giocatori? Aggiungete un secondo mazzo."
+      },
+      "ruleRefs": ["deck"]
+    },
+    {
+      "id": "dealer",
+      "areaId": "table",
+      "text": {
+        "en": "Choose the first Dealer; from then on the deck passes left each round.",
+        "it": "Scegliete il primo mazziere; poi il mazzo passa a sinistra a ogni round."
+      },
+      "ruleRefs": ["setup", "next-round"]
+    }
+  ]
+}

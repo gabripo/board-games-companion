@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 3,
+  "id": "flip-7",
+  "meta": {
+    "title": {
+      "en": "Flip 7",
+      "it": "Flip 7"
+    },
+    "publisher": "The Op (IT: Ghenos Games)",
+    "year": 2024,
+    "designers": ["Eric Olsen"],
+    "bggId": 420087
+  },
+  "classification": {
+    "turnModel": "sequential",
+    "interaction": "competitive",
+    "mechanics": ["push-your-luck", "set-collection"],
+    "playerCount": {
+      "min": 3,
+      "max": 18,
+      "best": [5, 6]
+    },
+    "playtimeMinutes": {
+      "min": 20,
+      "max": 30
+    },
+    "complexity": 1,
+    "minAge": 8
+  },
+  "sources": [
+    {
+      "id": "rulebook-en",
+      "type": "pdf",
+      "title": "Flip 7 – Rules, ruleset edition 3.1 (The Op, 2025)",
+      "lang": "en",
+      "official": true,
+      "url": "https://theop.games/pages/flip-7",
+      "edition": "Ruleset edition 3.1; pages are the booklet's printed page numbers"
+    },
+    {
+      "id": "faq",
+      "type": "web",
+      "title": "The Op — Flip 7 FAQs",
+      "lang": "en",
+      "official": true,
+      "url": "https://theop.games/pages/flip-7-faqs"
+    },
+    {
+      "id": "ghenos",
+      "type": "web",
+      "title": "Ghenos Games — Flip 7 (Italian edition)",
+      "lang": "it",
+      "official": true,
+      "url": "https://www.ghenosgames.com/it/prodotto/flip-7/"
+    },
+    {
+      "id": "bgg",
+      "type": "web",
+      "title": "BoardGameGeek — Flip 7",
+      "lang": "en",
+      "official": false,
+      "url": "https://boardgamegeek.com/boardgame/420087/flip-7"
+    }
+  ],
+  "components": [
+    {
+      "id": "deck",
+      "type": "card",
+      "quantity": 94,
+      "name": {
+        "en": "Flip 7 deck",
+        "it": "Mazzo di Flip 7"
+      },
+      "description": {
+        "en": "79 Number cards, 6 Score Modifier cards, 9 Action cards.",
+        "it": "79 carte Numerate, 6 carte Bonus, 9 carte Azione."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "deck"
+        }
+      ]
+    },
+    {
+      "id": "number-cards",
+      "type": "card",
+      "quantity": 79,
+      "name": {
+        "en": "Number cards",
+        "it": "Carte Numerate"
+      },
+      "description": {
+        "en": "Twelve 12s, eleven 11s… one 1 and one 0.",
+        "it": "Dodici 12, undici 11… un 1 e uno 0."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "deck",
+          "hotspotId": "n12"
+        }
+      ]
+    },
+    {
+      "id": "modifier-cards",
+      "type": "card",
+      "quantity": 6,
+      "name": {
+        "en": "Score Modifier cards",
+        "it": "Carte Bonus"
+      },
+      "description": {
+        "en": "+2, +4, +6, +8, +10 and x2.",
+        "it": "+2, +4, +6, +8, +10 e x2."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "deck",
+          "hotspotId": "modifiers"
+        }
+      ]
+    },
+    {
+      "id": "action-cards",
+      "type": "card",
+      "quantity": 9,
+      "name": {
+        "en": "Action cards",
+        "it": "Carte Azione"
+      },
+      "description": {
+        "en": "3 Freeze, 3 Flip Three, 3 Second Chance.",
+        "it": "3 Freeze, 3 Tre Carte, 3 Seconda Chance."
+      },
+      "sceneRefs": [
+        {
+          "sceneId": "deck",
+          "hotspotId": "freeze"
+        }
+      ]
+    },
+    {
+      "id": "score-pad",
+      "type": "sheet",
+      "name": {
+        "en": "Pen and paper (not included)",
+        "it": "Carta e penna (non incluse)"
+      },
+      "description": {
+        "en": "To track scores up to 200; The Op also offers printable score sheets.",
+        "it": "Per segnare i punti fino a 200; The Op offre anche segnapunti stampabili."
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "rounds-challenge",
+      "kind": "solo",
+      "name": {
+        "en": "Rounds challenge (1–2 players)",
+        "it": "Sfida dei round (1–2 giocatori)"
+      },
+      "description": {
+        "en": "Playing alone or as two? Count how many rounds it takes to reach 200 points.",
+        "it": "In uno o in due? Contate quanti round servono per arrivare a 200 punti."
+      }
+    }
+  ],
+  "expansions": [],
+  "topics": [
+    {
+      "id": "setup",
+      "name": {
+        "en": "Setup",
+        "it": "Preparazione"
+      }
+    },
+    {
+      "id": "turn",
+      "name": {
+        "en": "Turn",
+        "it": "Turno"
+      }
+    },
+    {
+      "id": "cards",
+      "name": {
+        "en": "Cards",
+        "it": "Carte"
+      }
+    },
+    {
+      "id": "actions",
+      "name": {
+        "en": "Action cards",
+        "it": "Carte Azione"
+      }
+    },
+    {
+      "id": "modifiers",
+      "name": {
+        "en": "Modifiers",
+        "it": "Carte Bonus"
+      }
+    },
+    {
+      "id": "scoring",
+      "name": {
+        "en": "Scoring",
+        "it": "Punteggio"
+      }
+    },
+    {
+      "id": "end",
+      "name": {
+        "en": "End of round & game",
+        "it": "Fine round e partita"
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hit",
+      "term": {
+        "en": "Hit",
+        "it": "Carta!"
+      },
+      "definition": {
+        "en": "Take another card from the Dealer.",
+        "it": "Prendi un'altra carta dal mazziere."
+      },
+      "aliases": {
+        "en": ["Carta!"],
+        "it": ["Hit", "Carta?"]
+      },
+      "ruleRefs": ["hit-or-stay"]
+    },
+    {
+      "id": "stay",
+      "term": {
+        "en": "Stay",
+        "it": "Sto!"
+      },
+      "definition": {
+        "en": "Leave the round and bank the points in front of you.",
+        "it": "Esci dal round e metti da parte i punti che hai davanti."
+      },
+      "aliases": {
+        "en": ["Sto!"],
+        "it": ["Stay"]
+      },
+      "ruleRefs": ["hit-or-stay"]
+    },
+    {
+      "id": "bust",
+      "term": {
+        "en": "Bust",
+        "it": "Sballare"
+      },
+      "definition": {
+        "en": "A second Number card with the same number: you're out of the round with 0 points.",
+        "it": "Una seconda carta Numerata con lo stesso numero: sei fuori dal round con 0 punti."
+      },
+      "aliases": {
+        "en": ["Sballare"],
+        "it": ["Bust"]
+      },
+      "icon": {
+        "sceneId": "end-of-round",
+        "hotspotId": "bust"
+      },
+      "ruleRefs": ["bust"]
+    },
+    {
+      "id": "flip-7",
+      "term": {
+        "en": "Flip 7",
+        "it": "Flip 7"
+      },
+      "definition": {
+        "en": "Seven different Number cards in your line: +15 points and the round ends for everyone.",
+        "it": "Sette carte Numerate diverse nella tua fila: +15 punti e il round finisce per tutti."
+      },
+      "aliases": {
+        "en": ["Flip 7"],
+        "it": ["Flip 7"]
+      },
+      "icon": {
+        "sceneId": "end-of-round",
+        "hotspotId": "flip-7"
+      },
+      "ruleRefs": ["round-end", "scoring-order"]
+    },
+    {
+      "id": "active-player",
+      "term": {
+        "en": "Active player",
+        "it": "Giocatore attivo"
+      },
+      "definition": {
+        "en": "Anyone who hasn't busted or stayed this round.",
+        "it": "Chiunque non abbia sballato o detto \"Sto!\" in questo round."
+      },
+      "aliases": {
+        "en": ["Giocatore attivo"],
+        "it": ["Active player"]
+      },
+      "ruleRefs": ["action-cards"]
+    },
+    {
+      "id": "dealer",
+      "term": {
+        "en": "Dealer",
+        "it": "Mazziere"
+      },
+      "definition": {
+        "en": "Deals the cards this round; the deck passes left each round.",
+        "it": "Distribuisce le carte in questo round; il mazzo passa a sinistra a ogni round."
+      },
+      "aliases": {
+        "en": ["Mazziere"],
+        "it": ["Dealer"]
+      },
+      "ruleRefs": ["initial-deal", "next-round"]
+    },
+    {
+      "id": "line",
+      "term": {
+        "en": "Your line",
+        "it": "La tua fila"
+      },
+      "definition": {
+        "en": "Your Number cards in one row, Modifier and Action cards above them.",
+        "it": "Le tue carte Numerate in una riga, carte Bonus e Azione sopra."
+      },
+      "aliases": {
+        "en": ["La tua fila"],
+        "it": ["Your line"]
+      },
+      "icon": {
+        "sceneId": "your-line",
+        "hotspotId": "numbers"
+      },
+      "ruleRefs": ["hit-or-stay"]
+    },
+    {
+      "id": "number-card",
+      "term": {
+        "en": "Number card",
+        "it": "Carta Numerata"
+      },
+      "definition": {
+        "en": "0 to 12; the higher the number, the more copies in the deck.",
+        "it": "Da 0 a 12; più alto è il numero, più copie ci sono nel mazzo."
+      },
+      "aliases": {
+        "en": ["Carta Numerata"],
+        "it": ["Number card"]
+      },
+      "icon": {
+        "sceneId": "deck",
+        "hotspotId": "n12"
+      },
+      "ruleRefs": ["deck", "zero"]
+    },
+    {
+      "id": "modifier-card",
+      "term": {
+        "en": "Score Modifier card",
+        "it": "Carta Bonus"
+      },
+      "definition": {
+        "en": "+2 to +10 adds to your score; x2 doubles your Number cards. Never makes you bust.",
+        "it": "Da +2 a +10 si aggiunge al punteggio; x2 raddoppia le carte Numerate. Non fa mai sballare."
+      },
+      "aliases": {
+        "en": ["Carta Bonus", "Modifier"],
+        "it": ["Score Modifier", "Modificatore"]
+      },
+      "icon": {
+        "sceneId": "deck",
+        "hotspotId": "modifiers"
+      },
+      "ruleRefs": ["modifiers"]
+    },
+    {
+      "id": "freeze",
+      "term": {
+        "en": "Freeze",
+        "it": "Freeze"
+      },
+      "definition": {
+        "en": "Action: the target banks their points and is out of the round.",
+        "it": "Azione: il bersaglio mette da parte i suoi punti ed esce dal round."
+      },
+      "aliases": {
+        "en": ["Congela"],
+        "it": ["Congela"]
+      },
+      "icon": {
+        "sceneId": "deck",
+        "hotspotId": "freeze"
+      },
+      "ruleRefs": ["freeze"]
+    },
+    {
+      "id": "flip-three",
+      "term": {
+        "en": "Flip Three",
+        "it": "Tre Carte"
+      },
+      "definition": {
+        "en": "Action: the target must take the next three cards, one at a time.",
+        "it": "Azione: il bersaglio deve prendere le prossime tre carte, una alla volta."
+      },
+      "aliases": {
+        "en": ["Tre Carte"],
+        "it": ["Flip Three"]
+      },
+      "icon": {
+        "sceneId": "deck",
+        "hotspotId": "flip-three"
+      },
+      "ruleRefs": ["flip-three"]
+    },
+    {
+      "id": "second-chance",
+      "term": {
+        "en": "Second Chance",
+        "it": "Seconda Chance"
+      },
+      "definition": {
+        "en": "Action: keep it; it cancels one duplicate Number card instead of busting.",
+        "it": "Azione: tienila; annulla una carta Numerata doppia invece di sballare."
+      },
+      "aliases": {
+        "en": ["Seconda Chance"],
+        "it": ["Second Chance"]
+      },
+      "icon": {
+        "sceneId": "deck",
+        "hotspotId": "second-chance"
+      },
+      "ruleRefs": ["second-chance"]
+    }
+  ]
+}

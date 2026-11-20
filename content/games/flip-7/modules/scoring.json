@@ -1,0 +1,59 @@
+{
+  "id": "scoring",
+  "kind": "scoring",
+  "title": {
+    "en": "Scoring a round",
+    "it": "Punteggio di un round"
+  },
+  "ruleRefs": ["scoring-order"],
+  "categories": [
+    {
+      "id": "numbers",
+      "name": {
+        "en": "Number cards (×2 if you have x2)",
+        "it": "Carte Numerate (×2 se hai x2)"
+      },
+      "timing": "immediate",
+      "description": {
+        "en": "Sum of your Number cards, doubled if you have the x2 card. 0 if you busted.",
+        "it": "Somma delle tue carte Numerate, raddoppiata se hai la carta x2. 0 se hai sballato."
+      },
+      "ruleRefs": ["scoring-order", "bust", "modifiers"]
+    },
+    {
+      "id": "plus",
+      "name": {
+        "en": "+2 to +10 cards",
+        "it": "Carte da +2 a +10"
+      },
+      "timing": "immediate",
+      "description": {
+        "en": "Add each +card (never doubled).",
+        "it": "Aggiungi ogni carta + (mai raddoppiata)."
+      },
+      "ruleRefs": ["modifiers", "scoring-order"]
+    },
+    {
+      "id": "flip-7",
+      "name": {
+        "en": "Flip 7 bonus (15)",
+        "it": "Bonus Flip 7 (15)"
+      },
+      "timing": "immediate",
+      "description": {
+        "en": "+15 for seven different Number cards.",
+        "it": "+15 per sette carte Numerate diverse."
+      },
+      "ruleRefs": ["round-end", "scoring-order"]
+    }
+  ],
+  "tieBreakers": [
+    {
+      "en": "Tied on 200+ at the end of a round: play more rounds until one player leads.",
+      "it": "Pareggio a 200+ a fine round: si giocano altri round finché uno è in testa."
+    }
+  ],
+  "sheet": {
+    "sceneId": "scoring"
+  }
+}

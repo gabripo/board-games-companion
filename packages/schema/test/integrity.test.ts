@@ -194,6 +194,17 @@ describe("warnings", () => {
     expect(warningsOf(g).join("\n")).toMatch(/dice mechanic but has no dice module/);
   });
 
+  it("push-your-luck alone (a card game) needs no dice module", () => {
+    const g = clone(diceGame);
+    g.classification.mechanics = ["push-your-luck"];
+    g.modules = g.modules.filter((m) => m.kind !== "dice");
+    g.rules[0]!.appliesTo = { flowNodes: ["roll"] };
+    if (g.flow.kind === "turnOrder" && g.flow.children[0]?.kind === "roll") {
+      delete g.flow.children[0].dieId;
+    }
+    expect(warningsOf(g).join("\n")).not.toMatch(/dice mechanic/);
+  });
+
   it("rule not backed by an official source", () => {
     const g = clone(sequentialGame);
     g.rules[1]!.citations = [{ kind: "url", sourceId: "review" }];

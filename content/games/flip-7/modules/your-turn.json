@@ -1,0 +1,39 @@
+{
+  "id": "your-turn",
+  "kind": "actions",
+  "title": {
+    "en": "Your turn",
+    "it": "Il tuo turno"
+  },
+  "ruleRefs": ["hit-or-stay"],
+  "actions": [
+    {
+      "id": "hit",
+      "name": {
+        "en": "Hit",
+        "it": "Carta!"
+      },
+      "effect": {
+        "en": "Take the next card. A duplicate number busts you.",
+        "it": "Prendi la carta successiva. Un numero doppio ti fa sballare."
+      },
+      "ruleRefs": ["hit-or-stay", "bust"]
+    },
+    {
+      "id": "stay",
+      "name": {
+        "en": "Stay",
+        "it": "Sto!"
+      },
+      "effect": {
+        "en": "Leave the round and bank your points.",
+        "it": "Esci dal round e metti da parte i punti."
+      },
+      "limit": {
+        "en": "Only with at least one card in front of you.",
+        "it": "Solo con almeno una carta davanti."
+      },
+      "ruleRefs": ["hit-or-stay"]
+    }
+  ]
+}

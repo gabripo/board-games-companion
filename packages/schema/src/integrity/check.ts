@@ -5,7 +5,8 @@ import { type IntegrityIssue, IssueCollector, type Path } from "./issues";
 import { checkModule } from "./modules";
 
 const CITATION_SOURCE_TYPE = { page: "pdf", time: "video", url: "web" } as const;
-const DICE_MECHANICS = new Set(["dice-rolling", "roll-and-write", "push-your-luck"]);
+// push-your-luck is not here: card games (e.g. Flip 7) press their luck without dice.
+const DICE_MECHANICS = new Set(["dice-rolling", "roll-and-write"]);
 
 /**
  * Cross-reference checks that a schema alone cannot express: every id reference must

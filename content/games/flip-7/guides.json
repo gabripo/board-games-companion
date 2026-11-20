@@ -1,0 +1,238 @@
+{
+  "overview": {
+    "pitch": {
+      "en": "A fast push-your-luck card game for any crowd: keep flipping cards for points, but one repeated number and you lose the lot.",
+      "it": "Un veloce gioco di carte \"tenta la fortuna\" per qualsiasi gruppo: continua a girare carte per fare punti, ma un numero ripetuto e perdi tutto."
+    },
+    "goal": {
+      "en": "Reach 200 points.",
+      "it": "Arrivare a 200 punti."
+    },
+    "howToWin": {
+      "en": "Have the most points at the end of the round in which someone reaches 200.",
+      "it": "Avere più punti alla fine del round in cui qualcuno arriva a 200."
+    }
+  },
+  "coreLoop": {
+    "en": "Hit or Stay: every new card adds points, every duplicate risks them all; Action cards let you freeze, overload or rescue players.",
+    "it": "\"Carta!\" o \"Sto!\": ogni carta nuova aggiunge punti, ogni doppione li mette tutti a rischio; le carte Azione permettono di bloccare, sovraccaricare o salvare i giocatori."
+  },
+  "misconceptions": [
+    {
+      "id": "x2-all",
+      "myth": {
+        "en": "x2 doubles your whole score.",
+        "it": "x2 raddoppia tutto il punteggio."
+      },
+      "rule": {
+        "en": "Only your Number cards: +cards and the 15 bonus are added afterwards.",
+        "it": "Solo le carte Numerate: le carte + e il bonus da 15 si aggiungono dopo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 10
+        },
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["scoring-order"]
+    },
+    {
+      "id": "modifier-seven",
+      "myth": {
+        "en": "Modifiers and Actions help you reach seven cards.",
+        "it": "Carte Bonus e Azione aiutano ad arrivare a sette carte."
+      },
+      "rule": {
+        "en": "Only seven different Number cards make a Flip 7.",
+        "it": "Solo sette carte Numerate diverse fanno Flip 7."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 5
+        },
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        }
+      ],
+      "ruleRefs": ["seven-numbers-only"]
+    },
+    {
+      "id": "dealer-chooses",
+      "myth": {
+        "en": "The Dealer decides who gets an Action card.",
+        "it": "Il mazziere decide chi subisce una carta Azione."
+      },
+      "rule": {
+        "en": "The player who was dealt it chooses any active player, themselves included.",
+        "it": "Sceglie chi l'ha ricevuta, su qualsiasi giocatore attivo, sé compreso."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        },
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["action-cards"]
+    },
+    {
+      "id": "shuffle-each-round",
+      "myth": {
+        "en": "Shuffle all cards back in every round.",
+        "it": "Si rimescolano tutte le carte a ogni round."
+      },
+      "rule": {
+        "en": "Used cards are set aside; the deck is reshuffled only when it runs out.",
+        "it": "Le carte usate si mettono da parte; il mazzo si rimescola solo quando finisce."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 12
+        }
+      ],
+      "ruleRefs": ["next-round"]
+    }
+  ],
+  "edgeCases": [
+    {
+      "id": "last-active",
+      "question": {
+        "en": "I'm the last active player and draw a Freeze.",
+        "it": "Sono l'ultimo giocatore attivo e pesco un Freeze."
+      },
+      "answer": {
+        "en": "You must play it on yourself: bank your points.",
+        "it": "Devi giocarlo su te stesso: metti da parte i punti."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 6
+        },
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["action-cards", "freeze"]
+    },
+    {
+      "id": "second-chance-freeze",
+      "question": {
+        "en": "Can Second Chance stop a Freeze?",
+        "it": "La Seconda Chance può fermare un Freeze?"
+      },
+      "answer": {
+        "en": "No — it only saves you from a duplicate Number card.",
+        "it": "No: ti salva solo da una carta Numerata doppia."
+      },
+      "citations": [
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["second-chance"]
+    },
+    {
+      "id": "two-second-chances",
+      "question": {
+        "en": "I already have a Second Chance and get another.",
+        "it": "Ho già una Seconda Chance e ne ricevo un'altra."
+      },
+      "answer": {
+        "en": "Give it to another active player; if nobody can take it, discard it.",
+        "it": "Dalla a un altro giocatore attivo; se nessuno può prenderla, scartala."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 7
+        }
+      ],
+      "ruleRefs": ["second-chance"]
+    },
+    {
+      "id": "only-x2",
+      "question": {
+        "en": "I stay with just an x2 and no numbers.",
+        "it": "Dico \"Sto!\" con solo un x2 e nessun numero."
+      },
+      "answer": {
+        "en": "x2 of nothing is 0. Other Modifiers score even without numbers.",
+        "it": "x2 di niente fa 0. Le altre carte Bonus valgono anche senza numeri."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 8
+        }
+      ],
+      "ruleRefs": ["modifiers"]
+    },
+    {
+      "id": "flip-three-actions",
+      "question": {
+        "en": "During Flip Three I reveal a Freeze.",
+        "it": "Durante Tre Carte rivelo un Freeze."
+      },
+      "answer": {
+        "en": "Finish all three cards first; then, if you haven't busted, play the Freeze on any active player.",
+        "it": "Prima finisci tutte e tre le carte; poi, se non hai sballato, gioca il Freeze su qualsiasi giocatore attivo."
+      },
+      "citations": [
+        {
+          "kind": "page",
+          "sourceId": "rulebook-en",
+          "page": 7
+        },
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["flip-three"]
+    },
+    {
+      "id": "tie-200",
+      "question": {
+        "en": "Two players finish a round tied above 200.",
+        "it": "Due giocatori finiscono un round in parità sopra 200."
+      },
+      "answer": {
+        "en": "Play more rounds until there's a single leader.",
+        "it": "Si giocano altri round finché c'è un solo giocatore in testa."
+      },
+      "citations": [
+        {
+          "kind": "url",
+          "sourceId": "faq"
+        }
+      ],
+      "ruleRefs": ["end-of-game"]
+    }
+  ]
+}

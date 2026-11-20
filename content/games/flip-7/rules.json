@@ -1,0 +1,481 @@
+[
+  {
+    "id": "objective",
+    "topics": ["end"],
+    "summary": {
+      "en": "Be the first to 200 points. Each round you score the cards in front of you — unless you bust.",
+      "it": "Arriva per primo a 200 punti. A ogni round segni le carte che hai davanti, a meno che tu non sballi."
+    },
+    "detail": {
+      "en": "Flip 7 different Number cards and the round ends for everyone, with 15 bonus points for you.",
+      "it": "Con 7 carte Numerate diverse il round finisce per tutti e tu guadagni 15 punti bonus."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "deck",
+    "topics": ["cards"],
+    "summary": {
+      "en": "94 cards: Number cards 0–12 with as many copies as their value (twelve 12s … one 1) plus one 0; six Score Modifiers (+2, +4, +6, +8, +10, x2); nine Action cards (3 Freeze, 3 Flip Three, 3 Second Chance).",
+      "it": "94 carte: carte Numerate da 0 a 12 con tante copie quanto il loro valore (dodici 12 … un 1) più uno 0; sei carte Bonus (+2, +4, +6, +8, +10, x2); nove carte Azione (3 Freeze, 3 Tre Carte, 3 Seconda Chance)."
+    },
+    "detail": {
+      "en": "The deck's make-up is part of the game: keep the card count in mind. With more than 18 players, add a second deck.",
+      "it": "La composizione del mazzo fa parte del gioco: tieni a mente quali carte sono uscite. Con più di 18 giocatori aggiungete un secondo mazzo."
+    },
+    "appliesTo": {
+      "components": ["deck", "number-cards", "modifier-cards", "action-cards"],
+      "modules": ["cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      },
+      {
+        "kind": "url",
+        "sourceId": "ghenos"
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck"
+      }
+    ]
+  },
+  {
+    "id": "zero",
+    "topics": ["cards"],
+    "summary": {
+      "en": "The 0 is a Number card worth no points, but it counts toward the seven for Flip 7.",
+      "it": "Lo 0 è una carta Numerata che non vale punti, ma conta per le sette del Flip 7."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 2
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck",
+        "hotspotId": "n0"
+      }
+    ]
+  },
+  {
+    "id": "setup",
+    "topics": ["setup"],
+    "summary": {
+      "en": "Grab pen and paper for scores, shuffle the deck thoroughly and choose a Dealer.",
+      "it": "Prendete carta e penna per i punti, mescolate bene il mazzo e scegliete un mazziere."
+    },
+    "appliesTo": {
+      "components": ["deck", "score-pad"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 3
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "initial-deal",
+    "topics": ["turn"],
+    "summary": {
+      "en": "The Dealer deals one card face up to each player, themself included, in turn order. An Action card is resolved immediately, then dealing continues.",
+      "it": "Il mazziere dà una carta scoperta a ogni giocatore, sé compreso, in ordine di turno. Una carta Azione si risolve subito, poi si continua a distribuire."
+    },
+    "detail": {
+      "en": "So after the deal some players have no card, others one, and some three or four, depending on the Action cards.",
+      "it": "Così dopo la distribuzione alcuni non hanno carte, altri una, e qualcuno tre o quattro, a seconda delle carte Azione."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hit-or-stay",
+    "topics": ["turn"],
+    "summary": {
+      "en": "Then the Dealer asks each player in turn: Hit (take another card) or Stay (leave the round and bank your points)? You may Stay as long as you have a card in front of you.",
+      "it": "Poi il mazziere chiede a turno a ogni giocatore: \"Carta?\". Rispondi \"Carta!\" per prenderne un'altra o \"Sto!\" per uscire dal round e mettere da parte i punti. Puoi dire \"Sto!\" se hai almeno una carta davanti."
+    },
+    "detail": {
+      "en": "Number cards go in a single row; Modifier and Action cards go above them.",
+      "it": "Le carte Numerate vanno in una sola riga; carte Bonus e Azione sopra di esse."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 4
+      },
+      {
+        "kind": "url",
+        "sourceId": "ghenos"
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "your-line"
+      }
+    ]
+  },
+  {
+    "id": "bust",
+    "topics": ["turn"],
+    "summary": {
+      "en": "If you get a Number card equal to one already in your line, you bust: you're out of the round and score nothing for it.",
+      "it": "Se ricevi una carta Numerata uguale a una che hai già nella fila, sballi: sei fuori dal round e non segni nulla."
+    },
+    "detail": {
+      "en": "Flip your cards face down to show you're no longer active.",
+      "it": "Gira le tue carte coperte per mostrare che non sei più attivo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 1
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "end-of-round",
+        "hotspotId": "bust"
+      }
+    ]
+  },
+  {
+    "id": "line-example",
+    "topics": ["scoring"],
+    "summary": {
+      "en": "Example: 11 + 5 + 12 = 28, plus a +4 = 32 points if this player stays now.",
+      "it": "Esempio: 11 + 5 + 12 = 28, più un +4 = 32 punti se ora dice \"Sto!\"."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "your-line",
+        "hotspotId": "total"
+      }
+    ]
+  },
+  {
+    "id": "seven-numbers-only",
+    "topics": ["scoring", "modifiers"],
+    "summary": {
+      "en": "Only seven different Number cards make a Flip 7: Action and Modifier cards never count toward it.",
+      "it": "Solo sette carte Numerate diverse fanno Flip 7: le carte Azione e Bonus non contano mai."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 5
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "action-cards",
+    "topics": ["actions"],
+    "summary": {
+      "en": "Action cards are played on any active player, yourself included; the player who got the card chooses the target. If you're the only active player you must play it on yourself. Place them above the Number cards.",
+      "it": "Le carte Azione si giocano su qualsiasi giocatore attivo, te compreso; sceglie il bersaglio chi riceve la carta. Se sei l'unico giocatore attivo devi giocarla su te stesso. Mettile sopra le carte Numerate."
+    },
+    "detail": {
+      "en": "Active player = anyone who hasn't busted or stayed.",
+      "it": "Giocatore attivo = chiunque non abbia sballato né detto \"Sto!\"."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "url",
+        "sourceId": "faq"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "freeze",
+    "topics": ["actions"],
+    "summary": {
+      "en": "Freeze: the target banks all the points they have collected and is out of the round.",
+      "it": "Freeze: il bersaglio mette da parte tutti i punti raccolti ed esce dal round."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck",
+        "hotspotId": "freeze"
+      }
+    ]
+  },
+  {
+    "id": "flip-three",
+    "topics": ["actions"],
+    "summary": {
+      "en": "Flip Three: the target must take the next three cards, one at a time. Stop early if they Flip 7 or bust. Action and Modifier cards count toward the three.",
+      "it": "Tre Carte: il bersaglio deve prendere le prossime tre carte, una alla volta. Ci si ferma prima se fa Flip 7 o sballa. Le carte Azione e Bonus contano tra le tre."
+    },
+    "detail": {
+      "en": "A Second Chance revealed meanwhile can be kept and used. Another Flip Three or Freeze is resolved after all three cards (only if the player hasn't busted), and may target any active player.",
+      "it": "Una Seconda Chance uscita nel frattempo si può tenere e usare. Un'altra Tre Carte o Freeze si risolve dopo tutte e tre le carte (solo se il giocatore non ha sballato) e può colpire qualsiasi giocatore attivo."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 6
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "url",
+        "sourceId": "faq"
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck",
+        "hotspotId": "flip-three"
+      }
+    ]
+  },
+  {
+    "id": "second-chance",
+    "topics": ["actions"],
+    "summary": {
+      "en": "Second Chance: keep it. If you're then given a duplicate Number card, discard both the Second Chance and the duplicate instead of busting.",
+      "it": "Seconda Chance: tienila. Se poi ricevi una carta Numerata doppia, scarta sia la Seconda Chance sia il doppione invece di sballare."
+    },
+    "detail": {
+      "en": "One per player: a second one must be given to another active player (discard it if nobody can take it). It doesn't stop a Freeze, you don't draw again right away, and unused ones are discarded at the end of the round.",
+      "it": "Una per giocatore: la seconda va data a un altro giocatore attivo (si scarta se nessuno può prenderla). Non ferma un Freeze, non peschi subito di nuovo e quelle inutilizzate si scartano a fine round."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 7
+      },
+      {
+        "kind": "url",
+        "sourceId": "faq"
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck",
+        "hotspotId": "second-chance"
+      }
+    ]
+  },
+  {
+    "id": "modifiers",
+    "topics": ["modifiers"],
+    "summary": {
+      "en": "Score Modifiers aren't Number cards: they never make you bust and don't count for Flip 7. +2 to +10 add to your score; x2 doubles your Number cards.",
+      "it": "Le carte Bonus non sono carte Numerate: non fanno mai sballare e non contano per il Flip 7. Da +2 a +10 si aggiungono al punteggio; x2 raddoppia le carte Numerate."
+    },
+    "detail": {
+      "en": "You can stay with only Modifier cards and still score them — except a lone x2.",
+      "it": "Puoi dire \"Sto!\" con sole carte Bonus e segnarle comunque, tranne un x2 da solo."
+    },
+    "appliesTo": {
+      "components": ["modifier-cards"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 8
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "deck",
+        "hotspotId": "modifiers"
+      }
+    ]
+  },
+  {
+    "id": "round-end",
+    "topics": ["end"],
+    "summary": {
+      "en": "The round ends when no active players are left (everyone busted or stayed), or immediately when someone flips 7 different Number cards.",
+      "it": "Il round finisce quando non restano giocatori attivi (tutti hanno sballato o detto \"Sto!\") oppure subito quando qualcuno ottiene 7 carte Numerate diverse."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 9
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "end-of-round"
+      }
+    ]
+  },
+  {
+    "id": "scoring-order",
+    "topics": ["scoring"],
+    "summary": {
+      "en": "Score in this order: add your Number cards; double them with x2; add +2…+10 cards; add 15 for a Flip 7. A busted player scores 0.",
+      "it": "Calcola in quest'ordine: somma le carte Numerate; raddoppiale con x2; aggiungi le carte da +2 a +10; aggiungi 15 per un Flip 7. Chi ha sballato fa 0."
+    },
+    "detail": {
+      "en": "x2 doubles only the Number cards, never the +cards or the 15 bonus.",
+      "it": "x2 raddoppia solo le carte Numerate, mai le carte + né il bonus da 15."
+    },
+    "appliesTo": {
+      "modules": ["scoring"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 10
+      },
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 11
+      },
+      {
+        "kind": "url",
+        "sourceId": "faq"
+      }
+    ],
+    "confidence": "high",
+    "sceneRefs": [
+      {
+        "sceneId": "scoring"
+      }
+    ]
+  },
+  {
+    "id": "next-round",
+    "topics": ["end", "setup"],
+    "summary": {
+      "en": "Set the round's cards aside (don't shuffle them in) and pass the deck to the left: that player is the new Dealer. Shuffle the discards into a new deck only when it runs out.",
+      "it": "Metti da parte le carte del round (senza rimescolarle) e passa il mazzo a sinistra: quel giocatore è il nuovo mazziere. Rimescola gli scarti in un nuovo mazzo solo quando finisce."
+    },
+    "detail": {
+      "en": "If you reshuffle mid-round, cards in front of players stay where they are, even for busted players.",
+      "it": "Se rimescoli a metà round, le carte davanti ai giocatori restano dove sono, anche per chi ha sballato."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 12
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "end-of-game",
+    "topics": ["end"],
+    "summary": {
+      "en": "At the end of a round in which someone reached 200 points, the player with the most points wins. Tied above 200? Keep playing rounds until there's one winner.",
+      "it": "Alla fine del round in cui qualcuno ha raggiunto 200 punti vince chi ne ha di più. Pareggio sopra 200? Si giocano altri round finché c'è un solo vincitore."
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 12
+      },
+      {
+        "kind": "url",
+        "sourceId": "faq"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "rounds-challenge",
+    "topics": ["end"],
+    "summary": {
+      "en": "Two or fewer players: play the same rules and count how many rounds you need to reach 200.",
+      "it": "Due giocatori o meno: si gioca con le stesse regole e si contano i round necessari per arrivare a 200."
+    },
+    "conditions": {
+      "variants": ["rounds-challenge"]
+    },
+    "citations": [
+      {
+        "kind": "page",
+        "sourceId": "rulebook-en",
+        "page": 12
+      }
+    ],
+    "confidence": "high"
+  }
+]

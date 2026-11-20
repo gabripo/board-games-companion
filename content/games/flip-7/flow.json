@@ -1,0 +1,181 @@
+{
+  "id": "rounds",
+  "kind": "repeat",
+  "title": {
+    "en": "Rounds",
+    "it": "Round"
+  },
+  "until": {
+    "en": "a round ends with someone on 200 points or more",
+    "it": "un round finisce con qualcuno a 200 punti o più"
+  },
+  "untilRuleRef": "end-of-game",
+  "ruleRefs": ["objective"],
+  "children": [
+    {
+      "id": "card-arrives",
+      "kind": "trigger",
+      "title": {
+        "en": "A card is dealt to you",
+        "it": "Ricevi una carta"
+      },
+      "when": {
+        "en": "you get a card (deal, Hit or Flip Three)",
+        "it": "ricevi una carta (distribuzione, \"Carta!\" o Tre Carte)"
+      },
+      "actor": "each-player",
+      "children": [
+        {
+          "id": "new-number",
+          "kind": "step",
+          "title": {
+            "en": "New number: add it to your line",
+            "it": "Numero nuovo: aggiungilo alla fila"
+          },
+          "ruleRefs": ["hit-or-stay"]
+        },
+        {
+          "id": "duplicate",
+          "kind": "step",
+          "title": {
+            "en": "Duplicate number: Second Chance, or you bust",
+            "it": "Numero doppio: Seconda Chance, o sballi"
+          },
+          "ruleRefs": ["bust", "second-chance"],
+          "sceneRef": {
+            "sceneId": "end-of-round",
+            "hotspotId": "bust"
+          }
+        },
+        {
+          "id": "modifier",
+          "kind": "step",
+          "title": {
+            "en": "Modifier: place it above your line (never busts)",
+            "it": "Carta Bonus: mettila sopra la fila (non fa sballare)"
+          },
+          "ruleRefs": ["modifiers"]
+        },
+        {
+          "id": "action",
+          "kind": "step",
+          "title": {
+            "en": "Action: resolve it now on any active player",
+            "it": "Carta Azione: risolvila subito su un giocatore attivo"
+          },
+          "ruleRefs": ["action-cards", "freeze", "flip-three", "second-chance"]
+        },
+        {
+          "id": "seventh",
+          "kind": "step",
+          "title": {
+            "en": "Seventh different number: Flip 7! The round ends",
+            "it": "Settimo numero diverso: Flip 7! Il round finisce"
+          },
+          "ruleRefs": ["round-end", "seven-numbers-only"],
+          "sceneRef": {
+            "sceneId": "end-of-round",
+            "hotspotId": "flip-7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deal",
+      "kind": "step",
+      "title": {
+        "en": "Dealer deals one card face up to everyone",
+        "it": "Il mazziere dà una carta scoperta a tutti"
+      },
+      "actor": "leader",
+      "ruleRefs": ["initial-deal"]
+    },
+    {
+      "id": "go-around",
+      "kind": "repeat",
+      "title": {
+        "en": "Go around the table",
+        "it": "Giro del tavolo"
+      },
+      "until": {
+        "en": "no active players are left or someone flips 7",
+        "it": "non restano giocatori attivi o qualcuno fa Flip 7"
+      },
+      "untilRuleRef": "round-end",
+      "children": [
+        {
+          "id": "ask",
+          "kind": "turnOrder",
+          "order": "clockwise",
+          "title": {
+            "en": "Dealer asks each active player",
+            "it": "Il mazziere chiede a ogni giocatore attivo"
+          },
+          "firstPlayer": {
+            "en": "Deal order",
+            "it": "Ordine di distribuzione"
+          },
+          "actor": "active-player",
+          "ruleRefs": ["hit-or-stay"],
+          "children": [
+            {
+              "id": "hit-or-stay",
+              "kind": "choice",
+              "title": {
+                "en": "Hit or Stay?",
+                "it": "Carta o Sto?"
+              },
+              "pick": {
+                "min": 1,
+                "max": 1
+              },
+              "options": [
+                {
+                  "id": "hit",
+                  "kind": "step",
+                  "title": {
+                    "en": "Hit — take another card",
+                    "it": "Carta! — prendi un'altra carta"
+                  },
+                  "ruleRefs": ["hit-or-stay", "bust"]
+                },
+                {
+                  "id": "stay",
+                  "kind": "step",
+                  "title": {
+                    "en": "Stay — bank your points, leave the round",
+                    "it": "Sto! — metti da parte i punti, esci dal round"
+                  },
+                  "ruleRefs": ["hit-or-stay"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "score",
+      "kind": "step",
+      "title": {
+        "en": "Score the round: numbers, x2, +cards, +15 for Flip 7",
+        "it": "Punteggio del round: numeri, x2, carte +, +15 per Flip 7"
+      },
+      "actor": "all-players",
+      "ruleRefs": ["scoring-order"],
+      "sceneRef": {
+        "sceneId": "scoring"
+      }
+    },
+    {
+      "id": "pass-deck",
+      "kind": "step",
+      "title": {
+        "en": "Set cards aside, pass the deck left: new Dealer",
+        "it": "Metti da parte le carte, passa il mazzo a sinistra: nuovo mazziere"
+      },
+      "actor": "leader",
+      "ruleRefs": ["next-round"]
+    }
+  ]
+}
